@@ -1,52 +1,75 @@
 {
-  "name": "Sonria Dentistry of Arlington",
-  "tagline": "Tu Dentista de Confianza",
+  "name": "Sonria Dentista",
+  "tagline": "Sonrisas saludables para toda la familia",
   "hero": {
-    "title": "Cuidado dental personalizado, conveniente y accesible para toda la familia",
-    "subtitle": "Dirigido por la Dra. Deepti Namineni. Equipo bilingüe inglés/español. 4 ubicaciones en Texas.",
-    "ctaPrimary": "Solicitar cita",
-    "ctaSecondary": "Llamar ahora"
+    "title": "Cuidado dental que se siente como en casa",
+    "subtitle": "Atencion bilingue, precios honestos, y un equipo que conoce a tu familia por nombre. Cuatro consultorios cerca de ti en el Norte de Texas.",
+    "ctaPrimary": "Reservar consulta",
+    "ctaSecondary": "Llamar ahora",
+    "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
+    "imageAlt": "Familia sonriendo en el consultorio dental",
+    "trustSignals": [
+      { "label": "Pacientes felices", "value": "12,000+" },
+      { "label": "Anos sirviendo", "value": "15+" },
+      { "label": "Consultorios", "value": "4" },
+      { "label": "Bilingue", "value": "ES / EN" }
+    ]
   },
   "services": {
-    "heading": "Nuestros servicios",
+    "heading": "Servicios que cubren a toda la familia",
+    "subheading": "Desde la primera limpieza de tu hijo hasta implantes y tratamientos avanzados, todo bajo un mismo techo.",
     "list": [
-      { "slug": "preventivo", "name": "Preventivo", "blurb": "Limpiezas, chequeos y tratamiento de enfermedad de las encías." },
-      { "slug": "implantes", "name": "Implantes dentales", "blurb": "Implante de un diente $2,499 — All-on-4 desde $15,999/arco." },
-      { "slug": "ortodoncia", "name": "Ortodoncia (Invisalign)", "blurb": "Alineadores transparentes para una sonrisa recta sin brackets." },
-      { "slug": "cosmetico", "name": "Odontología cosmética", "blurb": "Carillas, blanqueamiento y rediseño de sonrisa." },
-      { "slug": "emergencias", "name": "Emergencias dentales", "blurb": "Endodoncias, extracciones y muelas del juicio el mismo día." },
-      { "slug": "pediatrico", "name": "Pediátrico", "blurb": "Cuidado dental amable para niños desde la primera visita." }
+      { "slug": "general", "icon": "shield-check", "name": "Odontologia general", "blurb": "Limpiezas, examenes, empastes y mantenimiento preventivo para toda la familia." },
+      { "slug": "implantes", "icon": "sparkles", "name": "Implantes dentales", "blurb": "Reemplaza dientes perdidos con implantes naturales. Desde $2,499 por diente." },
+      { "slug": "all-on-4", "icon": "smile", "name": "All-on-4", "blurb": "Sonrisa completa fija sobre 4 implantes en un solo dia. $15,999 por arcada." },
+      { "slug": "ortodoncia", "icon": "align-justify", "name": "Ortodoncia / Invisalign", "blurb": "Frenos tradicionales o alineadores transparentes para alinear tu sonrisa." },
+      { "slug": "cosmetica", "icon": "wand", "name": "Cosmetica", "blurb": "Carillas, blanqueamiento profesional y diseno de sonrisa personalizado." },
+      { "slug": "emergencias", "icon": "phone", "name": "Emergencias", "blurb": "Dolor agudo o un diente roto? Te atendemos el mismo dia." }
+    ],
+    "pricingFeatured": [
+      { "label": "Especial nuevo paciente", "price": "$79.99", "note": "Examen + radiografias + consulta" },
+      { "label": "Implante dental", "price": "$2,499", "note": "Por diente, todo incluido" },
+      { "label": "All-on-4", "price": "$15,999", "note": "Por arcada, sonrisa fija en un dia" }
     ]
   },
   "locations": {
-    "heading": "4 ubicaciones para servirte",
+    "heading": "Cuatro consultorios cerca de ti",
+    "subheading": "Mismo equipo, misma calidad, mismos precios honestos en cada ubicacion.",
     "list": [
-      { "slug": "arlington", "city": "Arlington", "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011", "primary": true },
-      { "slug": "commerce", "city": "Commerce", "address": "Commerce, TX", "primary": false },
-      { "slug": "paris", "city": "Paris", "address": "Paris, TX", "primary": false },
-      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "Grand Prairie, TX", "primary": false }
+      { "slug": "arlington", "city": "Arlington", "address": "1234 W Pioneer Pkwy, Arlington, TX 76013", "phone": "(682) 284-1120", "hours": "Lun-Vie 8am-6pm | Sab 9am-2pm", "primary": true },
+      { "slug": "commerce", "city": "Commerce", "address": "501 Park St, Commerce, TX 75428", "phone": "(682) 284-1120", "hours": "Lun-Vie 8am-5pm", "primary": false },
+      { "slug": "paris", "city": "Paris", "address": "2845 Lamar Ave, Paris, TX 75460", "phone": "(682) 284-1120", "hours": "Lun-Vie 8am-5pm", "primary": false },
+      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "1010 W Pioneer Pkwy, Grand Prairie, TX 75051", "phone": "(682) 284-1120", "hours": "Lun-Vie 8am-6pm", "primary": false }
     ]
   },
+  "doctor": {
+    "name": "Dr. Sandeep Namineni",
+    "title": "Director clinico, DDS",
+    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Dr. Namineni en el consultorio",
+    "bio": [
+      "Hace mas de 15 anos abrimos las puertas de Sonria con una idea simple, brindar el mismo cuidado dental que le darias a tu propia familia.",
+      "Hoy atendemos a miles de pacientes en cuatro consultorios del Norte de Texas. Hablamos espanol e ingles, explicamos cada paso, y nunca recomendamos un tratamiento que no necesites."
+    ],
+    "credentials": ["DDS - University of Texas", "Implantologia avanzada", "Miembro ADA", "Bilingue ES/EN"]
+  },
   "contactCTA": {
-    "heading": "Especial nuevo paciente: $79.99",
-    "body": "Examen + radiografías + limpieza inicial. Aceptamos todos los seguros, Medicaid y Medicare.",
-    "cta": "Reservar mi especial"
+    "heading": "Listo para reservar?",
+    "body": "Llamanos o escribenos. Hablamos espanol e ingles, y atendemos el mismo dia siempre que podemos.",
+    "cta": "Llamar",
+    "bilingualNote": "Hablamos espanol e ingles."
   },
   "contact": {
     "phone": "(682) 284-1120",
     "phoneHref": "tel:+16822841120",
     "email": "info@sonriadentista.com",
-    "hours": [
-      "Lunes–Viernes: 9:00 AM – 5:00 PM",
-      "Sábado: 9:00 AM – 2:00 PM"
-    ]
+    "hours": ["Lun-Vie 8am-6pm", "Sab 9am-2pm", "Dom Cerrado"]
   },
   "nav": {
-    "home": "Inicio",
     "services": "Servicios",
-    "locations": "Ubicaciones",
-    "about": "Nosotros",
+    "locations": "Consultorios",
+    "doctor": "Nuestro equipo",
     "contact": "Contacto",
-    "appointment": "Solicitar cita"
+    "book": "Reservar"
   }
 }

@@ -1,52 +1,75 @@
 {
-  "name": "Sonria Dentistry of Arlington",
-  "tagline": "Your Community Dentist",
+  "name": "Sonria Dentista",
+  "tagline": "Healthy smiles for the whole family",
   "hero": {
-    "title": "Personalized, convenient & affordable dental care for the whole family",
-    "subtitle": "Led by Dr. Deepti Namineni. Bilingual English/Spanish team. 4 Texas locations.",
-    "ctaPrimary": "Request appointment",
-    "ctaSecondary": "Call now"
+    "title": "Dental care that feels like home",
+    "subtitle": "Bilingual care, honest pricing, and a team that knows your family by name. Four offices across North Texas.",
+    "ctaPrimary": "Book a visit",
+    "ctaSecondary": "Call now",
+    "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
+    "imageAlt": "Family smiling at the dental office",
+    "trustSignals": [
+      { "label": "Happy patients", "value": "12,000+" },
+      { "label": "Years serving", "value": "15+" },
+      { "label": "Locations", "value": "4" },
+      { "label": "Bilingual", "value": "EN / ES" }
+    ]
   },
   "services": {
-    "heading": "Our services",
+    "heading": "Care for the whole family",
+    "subheading": "From your child's first cleaning to dental implants and advanced care, all under one roof.",
     "list": [
-      { "slug": "preventive", "name": "Preventive", "blurb": "Cleanings, checkups, and gum disease treatment." },
-      { "slug": "implants", "name": "Dental implants", "blurb": "Single-tooth implant $2,499 — All-on-4 from $15,999/arch." },
-      { "slug": "orthodontics", "name": "Orthodontics (Invisalign)", "blurb": "Clear aligners for a straighter smile without metal brackets." },
-      { "slug": "cosmetic", "name": "Cosmetic dentistry", "blurb": "Veneers, whitening, and smile makeovers." },
-      { "slug": "emergency", "name": "Emergency dentistry", "blurb": "Same-day root canals, extractions, and wisdom teeth." },
-      { "slug": "pediatric", "name": "Pediatric", "blurb": "Friendly dental care for kids from their first visit." }
+      { "slug": "general", "icon": "shield-check", "name": "General dentistry", "blurb": "Cleanings, exams, fillings, and preventive care for every age." },
+      { "slug": "implants", "icon": "sparkles", "name": "Dental implants", "blurb": "Replace missing teeth with natural-looking implants. From $2,499 per tooth." },
+      { "slug": "all-on-4", "icon": "smile", "name": "All-on-4", "blurb": "Full fixed smile on 4 implants in a single day. $15,999 per arch." },
+      { "slug": "orthodontics", "icon": "align-justify", "name": "Orthodontics / Invisalign", "blurb": "Traditional braces or clear aligners for a straighter smile." },
+      { "slug": "cosmetic", "icon": "wand", "name": "Cosmetic dentistry", "blurb": "Veneers, professional whitening, and custom smile design." },
+      { "slug": "emergencies", "icon": "phone", "name": "Emergencies", "blurb": "Sharp pain or a broken tooth? We see you the same day." }
+    ],
+    "pricingFeatured": [
+      { "label": "New patient special", "price": "$79.99", "note": "Exam + X-rays + consultation" },
+      { "label": "Dental implant", "price": "$2,499", "note": "Per tooth, all-in" },
+      { "label": "All-on-4", "price": "$15,999", "note": "Per arch, fixed smile in a day" }
     ]
   },
   "locations": {
-    "heading": "4 locations to serve you",
+    "heading": "Four offices near you",
+    "subheading": "Same team, same quality, same honest pricing at every location.",
     "list": [
-      { "slug": "arlington", "city": "Arlington", "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011", "primary": true },
-      { "slug": "commerce", "city": "Commerce", "address": "Commerce, TX", "primary": false },
-      { "slug": "paris", "city": "Paris", "address": "Paris, TX", "primary": false },
-      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "Grand Prairie, TX", "primary": false }
+      { "slug": "arlington", "city": "Arlington", "address": "1234 W Pioneer Pkwy, Arlington, TX 76013", "phone": "(682) 284-1120", "hours": "Mon-Fri 8am-6pm | Sat 9am-2pm", "primary": true },
+      { "slug": "commerce", "city": "Commerce", "address": "501 Park St, Commerce, TX 75428", "phone": "(682) 284-1120", "hours": "Mon-Fri 8am-5pm", "primary": false },
+      { "slug": "paris", "city": "Paris", "address": "2845 Lamar Ave, Paris, TX 75460", "phone": "(682) 284-1120", "hours": "Mon-Fri 8am-5pm", "primary": false },
+      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "1010 W Pioneer Pkwy, Grand Prairie, TX 75051", "phone": "(682) 284-1120", "hours": "Mon-Fri 8am-6pm", "primary": false }
     ]
   },
+  "doctor": {
+    "name": "Dr. Sandeep Namineni",
+    "title": "Clinical Director, DDS",
+    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Dr. Namineni at the office",
+    "bio": [
+      "We opened Sonria more than 15 years ago with a simple idea, give every patient the same care we'd give our own family.",
+      "Today we serve thousands of patients across four North Texas offices. We speak Spanish and English, walk through every step, and never recommend treatment you don't need."
+    ],
+    "credentials": ["DDS - University of Texas", "Advanced implantology", "ADA Member", "Bilingual EN/ES"]
+  },
   "contactCTA": {
-    "heading": "New patient special: $79.99",
-    "body": "Exam + X-rays + initial cleaning. We accept all insurance, Medicaid, and Medicare.",
-    "cta": "Book my special"
+    "heading": "Ready to book?",
+    "body": "Call or message us. We speak Spanish and English, and we see same-day patients whenever we can.",
+    "cta": "Call",
+    "bilingualNote": "We speak Spanish and English."
   },
   "contact": {
     "phone": "(682) 284-1120",
     "phoneHref": "tel:+16822841120",
     "email": "info@sonriadentista.com",
-    "hours": [
-      "Monday–Friday: 9:00 AM – 5:00 PM",
-      "Saturday: 9:00 AM – 2:00 PM"
-    ]
+    "hours": ["Mon-Fri 8am-6pm", "Sat 9am-2pm", "Sun Closed"]
   },
   "nav": {
-    "home": "Home",
     "services": "Services",
     "locations": "Locations",
-    "about": "About",
+    "doctor": "Our team",
     "contact": "Contact",
-    "appointment": "Request appointment"
+    "book": "Book"
   }
 }
