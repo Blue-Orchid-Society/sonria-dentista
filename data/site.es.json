@@ -1,0 +1,52 @@
+{
+  "name": "Sonria Dentistry of Arlington",
+  "tagline": "Tu Dentista de Confianza",
+  "hero": {
+    "title": "Cuidado dental personalizado, conveniente y accesible para toda la familia",
+    "subtitle": "Dirigido por la Dra. Deepti Namineni. Equipo bilingüe inglés/español. 4 ubicaciones en Texas.",
+    "ctaPrimary": "Solicitar cita",
+    "ctaSecondary": "Llamar ahora"
+  },
+  "services": {
+    "heading": "Nuestros servicios",
+    "list": [
+      { "slug": "preventivo", "name": "Preventivo", "blurb": "Limpiezas, chequeos y tratamiento de enfermedad de las encías." },
+      { "slug": "implantes", "name": "Implantes dentales", "blurb": "Implante de un diente $2,499 — All-on-4 desde $15,999/arco." },
+      { "slug": "ortodoncia", "name": "Ortodoncia (Invisalign)", "blurb": "Alineadores transparentes para una sonrisa recta sin brackets." },
+      { "slug": "cosmetico", "name": "Odontología cosmética", "blurb": "Carillas, blanqueamiento y rediseño de sonrisa." },
+      { "slug": "emergencias", "name": "Emergencias dentales", "blurb": "Endodoncias, extracciones y muelas del juicio el mismo día." },
+      { "slug": "pediatrico", "name": "Pediátrico", "blurb": "Cuidado dental amable para niños desde la primera visita." }
+    ]
+  },
+  "locations": {
+    "heading": "4 ubicaciones para servirte",
+    "list": [
+      { "slug": "arlington", "city": "Arlington", "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011", "primary": true },
+      { "slug": "commerce", "city": "Commerce", "address": "Commerce, TX", "primary": false },
+      { "slug": "paris", "city": "Paris", "address": "Paris, TX", "primary": false },
+      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "Grand Prairie, TX", "primary": false }
+    ]
+  },
+  "contactCTA": {
+    "heading": "Especial nuevo paciente: $79.99",
+    "body": "Examen + radiografías + limpieza inicial. Aceptamos todos los seguros, Medicaid y Medicare.",
+    "cta": "Reservar mi especial"
+  },
+  "contact": {
+    "phone": "(682) 284-1120",
+    "phoneHref": "tel:+16822841120",
+    "email": "info@sonriadentista.com",
+    "hours": [
+      "Lunes–Viernes: 9:00 AM – 5:00 PM",
+      "Sábado: 9:00 AM – 2:00 PM"
+    ]
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "locations": "Ubicaciones",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "appointment": "Solicitar cita"
+  }
+}

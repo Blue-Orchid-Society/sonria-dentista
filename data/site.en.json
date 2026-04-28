@@ -1,0 +1,52 @@
+{
+  "name": "Sonria Dentistry of Arlington",
+  "tagline": "Your Community Dentist",
+  "hero": {
+    "title": "Personalized, convenient & affordable dental care for the whole family",
+    "subtitle": "Led by Dr. Deepti Namineni. Bilingual English/Spanish team. 4 Texas locations.",
+    "ctaPrimary": "Request appointment",
+    "ctaSecondary": "Call now"
+  },
+  "services": {
+    "heading": "Our services",
+    "list": [
+      { "slug": "preventive", "name": "Preventive", "blurb": "Cleanings, checkups, and gum disease treatment." },
+      { "slug": "implants", "name": "Dental implants", "blurb": "Single-tooth implant $2,499 — All-on-4 from $15,999/arch." },
+      { "slug": "orthodontics", "name": "Orthodontics (Invisalign)", "blurb": "Clear aligners for a straighter smile without metal brackets." },
+      { "slug": "cosmetic", "name": "Cosmetic dentistry", "blurb": "Veneers, whitening, and smile makeovers." },
+      { "slug": "emergency", "name": "Emergency dentistry", "blurb": "Same-day root canals, extractions, and wisdom teeth." },
+      { "slug": "pediatric", "name": "Pediatric", "blurb": "Friendly dental care for kids from their first visit." }
+    ]
+  },
+  "locations": {
+    "heading": "4 locations to serve you",
+    "list": [
+      { "slug": "arlington", "city": "Arlington", "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011", "primary": true },
+      { "slug": "commerce", "city": "Commerce", "address": "Commerce, TX", "primary": false },
+      { "slug": "paris", "city": "Paris", "address": "Paris, TX", "primary": false },
+      { "slug": "grand-prairie", "city": "Grand Prairie", "address": "Grand Prairie, TX", "primary": false }
+    ]
+  },
+  "contactCTA": {
+    "heading": "New patient special: $79.99",
+    "body": "Exam + X-rays + initial cleaning. We accept all insurance, Medicaid, and Medicare.",
+    "cta": "Book my special"
+  },
+  "contact": {
+    "phone": "(682) 284-1120",
+    "phoneHref": "tel:+16822841120",
+    "email": "info@sonriadentista.com",
+    "hours": [
+      "Monday–Friday: 9:00 AM – 5:00 PM",
+      "Saturday: 9:00 AM – 2:00 PM"
+    ]
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "locations": "Locations",
+    "about": "About",
+    "contact": "Contact",
+    "appointment": "Request appointment"
+  }
+}

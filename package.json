@@ -2,16 +2,23 @@
   "name": "sonria-dentista",
   "version": "0.1.0",
   "private": true,
+  "description": "Sonria Dentistry of Arlington — bilingual EN/ES dental practice website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "vercel deploy --prod --scope syndicate-e66a97a1"
   },
   "dependencies": {
+    "@vercel/og": "^0.8.6",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.555.0",
     "next": "16.2.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "resend": "^6.6.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local context (agent-only, not for git)
+.context/screenshots/
+.env.local
