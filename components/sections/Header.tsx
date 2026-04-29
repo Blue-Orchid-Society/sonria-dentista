@@ -13,11 +13,14 @@ export async function Header({ locale }: { locale: Locale }) {
             {site.name}
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-7 text-sm text-muted">
+        <nav className="hidden lg:flex items-center gap-6 text-sm text-muted">
           <Link href={`/${locale}#services`} className="hover:text-foreground transition">{site.nav.services}</Link>
           <Link href={`/${locale}#locations`} className="hover:text-foreground transition">{site.nav.locations}</Link>
-          <Link href={`/${locale}#doctor`} className="hover:text-foreground transition">{site.nav.doctor}</Link>
-          <Link href={`/${locale}#contact`} className="hover:text-foreground transition">{site.nav.contact}</Link>
+          <Link href={`/${locale}/about`} className="hover:text-foreground transition">{site.nav.about}</Link>
+          <Link href={`/${locale}/new-patients`} className="hover:text-foreground transition">{site.nav.newPatients}</Link>
+          <Link href={`/${locale}/insurance`} className="hover:text-foreground transition">{site.nav.insurance}</Link>
+          <Link href={`/${locale}/faq`} className="hover:text-foreground transition">{site.nav.faq}</Link>
+          <Link href={`/${locale}/contact`} className="hover:text-foreground transition">{site.nav.contact}</Link>
         </nav>
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center rounded-full border border-border-soft bg-card text-xs overflow-hidden">
@@ -36,7 +39,7 @@ export async function Header({ locale }: { locale: Locale }) {
             </Link>
           </div>
           <Link
-            href={`/${locale}#contact`}
+            href={`/${locale}/contact`}
             className="rounded-full bg-terracotta px-4 py-2 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
           >
             {site.nav.book}
