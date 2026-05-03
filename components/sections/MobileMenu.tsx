@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import type { Locale } from "@/lib/content";
 
@@ -18,6 +19,9 @@ interface Props {
 
 export function MobileMenu({ locale, altLocale, groups, bookLabel, bookHref, contactPhone }: Props) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -47,9 +51,9 @@ export function MobileMenu({ locale, altLocale, groups, bookLabel, bookHref, con
         </svg>
       </button>
 
-      {open && (
+      {open && mounted && createPortal(
         <div
-          className="lg:hidden fixed inset-0 z-50 bg-background overflow-y-auto"
+          className="lg:hidden fixed inset-0 z-[100] bg-background overflow-y-auto"
           role="dialog"
           aria-modal="true"
         >
@@ -139,7 +143,8 @@ export function MobileMenu({ locale, altLocale, groups, bookLabel, bookHref, con
               </div>
             </div>
           </nav>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
