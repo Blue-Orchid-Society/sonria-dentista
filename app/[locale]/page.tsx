@@ -1,9 +1,13 @@
 import { Hero } from "@/components/sections/Hero";
+import { TrustBand } from "@/components/sections/TrustBand";
+import { LocationChips } from "@/components/sections/LocationChips";
+import { Welcome } from "@/components/sections/Welcome";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
-import { LocationsGrid } from "@/components/sections/LocationsGrid";
+import { TestimonialsWall } from "@/components/sections/TestimonialsWall";
+import { NAPBlock } from "@/components/sections/NAPBlock";
 import { MeetTheDoctor } from "@/components/sections/MeetTheDoctor";
 import { ContactCTA } from "@/components/sections/ContactCTA";
-import { getSite } from "@/lib/content";
+import { getSite, type Locale } from "@/lib/content";
 
 export default async function HomePage({
   params,
@@ -11,7 +15,8 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const site = await getSite(locale as "en" | "es");
+  const typedLocale = locale as Locale;
+  const site = await getSite(typedLocale);
   const doctorHeading = locale === "es" ? "Conoce a tu equipo" : "Meet your team";
 
   return (
@@ -27,6 +32,9 @@ export default async function HomePage({
         trustSignals={site.hero.trustSignals}
         bilingualNote={site.contactCTA.bilingualNote}
       />
+      <TrustBand locale={typedLocale} />
+      <LocationChips locale={typedLocale} />
+      <Welcome locale={typedLocale} />
       <ServicesGrid
         heading={site.services.heading}
         subheading={site.services.subheading}
@@ -34,13 +42,9 @@ export default async function HomePage({
         pricingFeatured={site.services.pricingFeatured}
         locale={locale}
       />
-      <LocationsGrid
-        heading={site.locations.heading}
-        subheading={site.locations.subheading}
-        locations={site.locations.list}
-        locale={locale}
-      />
+      <TestimonialsWall locale={typedLocale} />
       <MeetTheDoctor heading={doctorHeading} doctor={site.doctor} />
+      <NAPBlock locale={typedLocale} />
       <ContactCTA
         heading={site.contactCTA.heading}
         body={site.contactCTA.body}

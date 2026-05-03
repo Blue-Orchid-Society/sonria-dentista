@@ -19,6 +19,7 @@ export async function Header({ locale }: { locale: Locale }) {
           <Link href={`/${locale}/about`} className="hover:text-foreground transition">{site.nav.about}</Link>
           <Link href={`/${locale}/new-patients`} className="hover:text-foreground transition">{site.nav.newPatients}</Link>
           <Link href={`/${locale}/insurance`} className="hover:text-foreground transition">{site.nav.insurance}</Link>
+          <Link href={`/${locale}/articles`} className="hover:text-foreground transition">{site.nav.articles}</Link>
           <Link href={`/${locale}/faq`} className="hover:text-foreground transition">{site.nav.faq}</Link>
           <Link href={`/${locale}/contact`} className="hover:text-foreground transition">{site.nav.contact}</Link>
         </nav>

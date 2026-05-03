@@ -723,7 +723,8 @@
     "insurance": "Seguro",
     "faq": "Preguntas",
     "contact": "Contacto",
-    "book": "Reservar"
+    "book": "Reservar",
+    "articles": "Artículos"
   },
   "stats": {
     "totalReviews": 1501,

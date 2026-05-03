@@ -723,7 +723,8 @@
     "insurance": "Insurance",
     "faq": "FAQ",
     "contact": "Contact",
-    "book": "Book"
+    "book": "Book",
+    "articles": "Articles"
   },
   "stats": {
     "totalReviews": 1501,
