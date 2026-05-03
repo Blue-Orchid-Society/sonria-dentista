@@ -3,16 +3,28 @@
   "tagline": "Sonrisas saludables para toda la familia",
   "hero": {
     "title": "Cuidado dental que se siente como en casa",
-    "subtitle": "Atencion bilingue, precios honestos, y un equipo que conoce a tu familia por nombre. Cuatro consultorios cerca de ti en el Norte de Texas.",
+    "subtitle": "Cuidado dental familiar bilingüe con la Dra. Deepti Namineni. Implantes, ortodoncia y citas el mismo día en Arlington, Grand Prairie, Paris y Commerce — más de 1,500 reseñas de 5 estrellas en Google.",
     "ctaPrimary": "Reservar consulta",
     "ctaSecondary": "Llamar ahora",
     "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
     "imageAlt": "Familia sonriendo en el consultorio dental",
     "trustSignals": [
-      { "label": "Pacientes felices", "value": "12,000+" },
-      { "label": "Anos sirviendo", "value": "15+" },
-      { "label": "Consultorios", "value": "4" },
-      { "label": "Bilingue", "value": "ES / EN" }
+      {
+        "label": "Pacientes felices",
+        "value": "12,000+"
+      },
+      {
+        "label": "Anos sirviendo",
+        "value": "15+"
+      },
+      {
+        "label": "Consultorios",
+        "value": "4"
+      },
+      {
+        "label": "Bilingue",
+        "value": "ES / EN"
+      }
     ]
   },
   "services": {
@@ -27,10 +39,22 @@
         "longBlurb": "La odontologia general es la base de una sonrisa saludable. En Sonria atendemos a ninos, adultos y adultos mayores con cuidado preventivo completo y tratamientos restaurativos cuando se necesitan.",
         "whatIsIt": "La odontologia general cubre limpiezas profesionales, examenes anuales con radiografias digitales, empastes de resina del color del diente, tratamientos de fluor, selladores, y educacion sobre higiene oral.",
         "fourSteps": [
-          { "title": "Examen completo", "body": "Revisamos dientes, encias, mordida y radiografias para detectar problemas a tiempo." },
-          { "title": "Limpieza profesional", "body": "Eliminamos placa y sarro, pulimos los dientes y aplicamos fluor si es necesario." },
-          { "title": "Plan personalizado", "body": "Te explicamos en espanol o ingles que necesitas, cuando, y cuanto cuesta." },
-          { "title": "Cuidado continuo", "body": "Te recordamos tu proxima visita y te apoyamos entre citas con consejos claros." }
+          {
+            "title": "Examen completo",
+            "body": "Revisamos dientes, encias, mordida y radiografias para detectar problemas a tiempo."
+          },
+          {
+            "title": "Limpieza profesional",
+            "body": "Eliminamos placa y sarro, pulimos los dientes y aplicamos fluor si es necesario."
+          },
+          {
+            "title": "Plan personalizado",
+            "body": "Te explicamos en espanol o ingles que necesitas, cuando, y cuanto cuesta."
+          },
+          {
+            "title": "Cuidado continuo",
+            "body": "Te recordamos tu proxima visita y te apoyamos entre citas con consejos claros."
+          }
         ],
         "benefits": [
           "Prevencion de caries y enfermedad de encias",
@@ -40,9 +64,18 @@
         ],
         "whyChoose": "Nuestro equipo bilingue dedica el tiempo que necesites, te explica cada paso, y nunca te recomienda un tratamiento que no necesites. Toda la familia es bienvenida en una sola visita.",
         "faqs": [
-          { "q": "Con que frecuencia debo visitar al dentista?", "a": "Recomendamos cada 6 meses para limpieza y examen, aunque algunos pacientes con factores de riesgo pueden necesitar visitas mas frecuentes." },
-          { "q": "Atienden a ninos pequenos?", "a": "Si, atendemos desde la primera muela. Hacemos la primera visita divertida y educativa." },
-          { "q": "Aceptan seguro dental?", "a": "Aceptamos la mayoria de los planes PPO. Llamanos con tu informacion y verificamos cobertura sin costo." }
+          {
+            "q": "Con que frecuencia debo visitar al dentista?",
+            "a": "Recomendamos cada 6 meses para limpieza y examen, aunque algunos pacientes con factores de riesgo pueden necesitar visitas mas frecuentes."
+          },
+          {
+            "q": "Atienden a ninos pequenos?",
+            "a": "Si, atendemos desde la primera muela. Hacemos la primera visita divertida y educativa."
+          },
+          {
+            "q": "Aceptan seguro dental?",
+            "a": "Aceptamos la mayoria de los planes PPO. Llamanos con tu informacion y verificamos cobertura sin costo."
+          }
         ],
         "seoTitle": "Odontologia general en Arlington TX | Limpiezas + examenes",
         "seoDescription": "Limpiezas, examenes, empastes y cuidado preventivo bilingue en Arlington, Commerce, Paris y Grand Prairie TX. Llama (682) 284-1120."
@@ -55,10 +88,22 @@
         "longBlurb": "Un implante dental reemplaza la raiz de un diente perdido con un poste de titanio que se integra al hueso, y luego se cubre con una corona ceramica que se ve y funciona como un diente natural.",
         "whatIsIt": "El implante dental es la solucion mas duradera para reemplazar uno o varios dientes perdidos. A diferencia de un puente o dentadura, el implante preserva el hueso y no afecta los dientes vecinos.",
         "fourSteps": [
-          { "title": "Consulta y radiografias 3D", "body": "Evaluamos tu hueso, encias y salud general para confirmar que eres candidato." },
-          { "title": "Colocacion del implante", "body": "Procedimiento ambulatorio con anestesia local. La mayoria regresa al trabajo al dia siguiente." },
-          { "title": "Periodo de integracion", "body": "El hueso crece alrededor del implante por 3 a 6 meses. Te damos un diente provisional." },
-          { "title": "Corona definitiva", "body": "Colocamos la corona ceramica permanente, hecha a la medida del color de tus dientes." }
+          {
+            "title": "Consulta y radiografias 3D",
+            "body": "Evaluamos tu hueso, encias y salud general para confirmar que eres candidato."
+          },
+          {
+            "title": "Colocacion del implante",
+            "body": "Procedimiento ambulatorio con anestesia local. La mayoria regresa al trabajo al dia siguiente."
+          },
+          {
+            "title": "Periodo de integracion",
+            "body": "El hueso crece alrededor del implante por 3 a 6 meses. Te damos un diente provisional."
+          },
+          {
+            "title": "Corona definitiva",
+            "body": "Colocamos la corona ceramica permanente, hecha a la medida del color de tus dientes."
+          }
         ],
         "benefits": [
           "Se ve y se siente como un diente natural",
@@ -68,10 +113,22 @@
         ],
         "whyChoose": "Hacemos cientos de implantes al ano y ofrecemos el precio todo-incluido mas honesto del Norte de Texas: $2,499 por implante completo. Sin sorpresas. Financiamiento disponible.",
         "faqs": [
-          { "q": "Cuanto duele?", "a": "Mucho menos de lo que la gente espera. La mayoria de los pacientes solo necesitan ibuprofeno por uno o dos dias." },
-          { "q": "Cuanto tiempo dura todo el proceso?", "a": "De inicio a fin, entre 3 y 6 meses. La integracion del hueso es la parte mas larga, pero no requiere visitas frecuentes." },
-          { "q": "Soy candidato si tengo poco hueso?", "a": "En muchos casos podemos hacer un injerto de hueso menor. La consulta inicial confirma tus opciones." },
-          { "q": "Que incluye los $2,499?", "a": "Implante de titanio, pilar y corona ceramica. Todo. Solo se cobra extra si necesitas un injerto." }
+          {
+            "q": "Cuanto duele?",
+            "a": "Mucho menos de lo que la gente espera. La mayoria de los pacientes solo necesitan ibuprofeno por uno o dos dias."
+          },
+          {
+            "q": "Cuanto tiempo dura todo el proceso?",
+            "a": "De inicio a fin, entre 3 y 6 meses. La integracion del hueso es la parte mas larga, pero no requiere visitas frecuentes."
+          },
+          {
+            "q": "Soy candidato si tengo poco hueso?",
+            "a": "En muchos casos podemos hacer un injerto de hueso menor. La consulta inicial confirma tus opciones."
+          },
+          {
+            "q": "Que incluye los $2,499?",
+            "a": "Implante de titanio, pilar y corona ceramica. Todo. Solo se cobra extra si necesitas un injerto."
+          }
         ],
         "price": "Desde $2,499 por implante",
         "seoTitle": "Implantes dentales Arlington TX | $2,499 todo incluido",
@@ -85,10 +142,22 @@
         "longBlurb": "All-on-4 reemplaza una arcada completa de dientes con solo 4 implantes estrategicamente colocados, soportando una protesis fija que se siente y funciona como dientes naturales.",
         "whatIsIt": "Es la solucion ideal para pacientes que han perdido la mayoria o todos sus dientes, o que estan cansados de dentaduras removibles. La protesis se atornilla a los implantes y solo el dentista la retira.",
         "fourSteps": [
-          { "title": "Evaluacion 3D y plan", "body": "Tomamos un escaneo CBCT y disenamos digitalmente la posicion de los 4 implantes." },
-          { "title": "Cirugia el mismo dia", "body": "Extraemos los dientes restantes, colocamos los 4 implantes y la protesis provisional, todo en un solo dia." },
-          { "title": "Recuperacion guiada", "body": "Sales con dientes funcionales. Te damos guia clara de alimentacion blanda durante 4 a 6 meses." },
-          { "title": "Protesis definitiva", "body": "Despues de la integracion, colocamos la protesis permanente disenada para que dure decadas." }
+          {
+            "title": "Evaluacion 3D y plan",
+            "body": "Tomamos un escaneo CBCT y disenamos digitalmente la posicion de los 4 implantes."
+          },
+          {
+            "title": "Cirugia el mismo dia",
+            "body": "Extraemos los dientes restantes, colocamos los 4 implantes y la protesis provisional, todo en un solo dia."
+          },
+          {
+            "title": "Recuperacion guiada",
+            "body": "Sales con dientes funcionales. Te damos guia clara de alimentacion blanda durante 4 a 6 meses."
+          },
+          {
+            "title": "Protesis definitiva",
+            "body": "Despues de la integracion, colocamos la protesis permanente disenada para que dure decadas."
+          }
         ],
         "benefits": [
           "Sonrisa fija el mismo dia, sin esperas",
@@ -98,10 +167,22 @@
         ],
         "whyChoose": "Nuestro equipo coloca All-on-4 cada semana. Tenemos laboratorio dental en consulta para que la protesis se ajuste perfectamente. Precio plano $15,999 por arcada incluye todo.",
         "faqs": [
-          { "q": "Realmente puedo salir con dientes el mismo dia?", "a": "Si. Sales con la protesis provisional el mismo dia de la cirugia. La definitiva llega meses despues." },
-          { "q": "Sirve si todavia tengo algunos dientes?", "a": "Si. Si los dientes restantes no se pueden salvar o estan causando problemas, los retiramos en la misma cita." },
-          { "q": "Que incluye los $15,999?", "a": "Extracciones, 4 implantes, protesis provisional el mismo dia, y protesis definitiva final. Todo." },
-          { "q": "Hay financiamiento?", "a": "Si. Trabajamos con CareCredit y opciones internas. La mayoria de los pacientes paga $300-$500 al mes." }
+          {
+            "q": "Realmente puedo salir con dientes el mismo dia?",
+            "a": "Si. Sales con la protesis provisional el mismo dia de la cirugia. La definitiva llega meses despues."
+          },
+          {
+            "q": "Sirve si todavia tengo algunos dientes?",
+            "a": "Si. Si los dientes restantes no se pueden salvar o estan causando problemas, los retiramos en la misma cita."
+          },
+          {
+            "q": "Que incluye los $15,999?",
+            "a": "Extracciones, 4 implantes, protesis provisional el mismo dia, y protesis definitiva final. Todo."
+          },
+          {
+            "q": "Hay financiamiento?",
+            "a": "Si. Trabajamos con CareCredit y opciones internas. La mayoria de los pacientes paga $300-$500 al mes."
+          }
         ],
         "price": "$15,999 por arcada",
         "seoTitle": "All-on-4 Arlington TX | $15,999 sonrisa fija en un dia",
@@ -115,10 +196,22 @@
         "longBlurb": "Ofrecemos tanto frenos tradicionales como Invisalign para corregir mordida, espacios y dientes torcidos en pacientes adolescentes y adultos.",
         "whatIsIt": "La ortodoncia mueve los dientes a su posicion ideal. Invisalign usa alineadores transparentes removibles. Los frenos tradicionales son fijos y suelen ser mas economicos.",
         "fourSteps": [
-          { "title": "Consulta y escaneo digital", "body": "Tomamos fotos, radiografias y un escaneo 3D de tus dientes para disenar tu plan." },
-          { "title": "Plan de tratamiento", "body": "Te mostramos como se moveran tus dientes y cuanto tiempo tomara. Eliges Invisalign o frenos." },
-          { "title": "Tratamiento activo", "body": "Cambias alineadores cada 1 a 2 semanas (Invisalign) o ajustamos los frenos cada 6 a 8 semanas." },
-          { "title": "Retencion", "body": "Una vez alineados, usas un retenedor para que los dientes no regresen. Es para toda la vida." }
+          {
+            "title": "Consulta y escaneo digital",
+            "body": "Tomamos fotos, radiografias y un escaneo 3D de tus dientes para disenar tu plan."
+          },
+          {
+            "title": "Plan de tratamiento",
+            "body": "Te mostramos como se moveran tus dientes y cuanto tiempo tomara. Eliges Invisalign o frenos."
+          },
+          {
+            "title": "Tratamiento activo",
+            "body": "Cambias alineadores cada 1 a 2 semanas (Invisalign) o ajustamos los frenos cada 6 a 8 semanas."
+          },
+          {
+            "title": "Retencion",
+            "body": "Una vez alineados, usas un retenedor para que los dientes no regresen. Es para toda la vida."
+          }
         ],
         "benefits": [
           "Sonrisa mas alineada y atractiva",
@@ -128,9 +221,18 @@
         ],
         "whyChoose": "Somos proveedores certificados de Invisalign. Pago flexible y consulta inicial sin costo. Dr. Namineni te explica las opciones para que elijas con confianza.",
         "faqs": [
-          { "q": "Cuanto dura el tratamiento?", "a": "Casos simples: 6 a 9 meses. Casos complejos: 18 a 24 meses. La consulta te da un estimado preciso." },
-          { "q": "Invisalign realmente funciona como frenos?", "a": "Si para la mayoria de los casos. Para casos muy complejos a veces recomendamos frenos tradicionales." },
-          { "q": "Cuanto cuesta?", "a": "Frenos tradicionales: desde $3,500. Invisalign: desde $4,500. Damos un precio fijo despues de la consulta." }
+          {
+            "q": "Cuanto dura el tratamiento?",
+            "a": "Casos simples: 6 a 9 meses. Casos complejos: 18 a 24 meses. La consulta te da un estimado preciso."
+          },
+          {
+            "q": "Invisalign realmente funciona como frenos?",
+            "a": "Si para la mayoria de los casos. Para casos muy complejos a veces recomendamos frenos tradicionales."
+          },
+          {
+            "q": "Cuanto cuesta?",
+            "a": "Frenos tradicionales: desde $3,500. Invisalign: desde $4,500. Damos un precio fijo despues de la consulta."
+          }
         ],
         "seoTitle": "Ortodoncia + Invisalign Arlington TX | Frenos para adultos y adolescentes",
         "seoDescription": "Ortodoncia con frenos tradicionales o Invisalign en Arlington TX. Consulta sin costo. Pago flexible. (682) 284-1120."
@@ -143,10 +245,22 @@
         "longBlurb": "La odontologia cosmetica transforma tu sonrisa con carillas de porcelana, blanqueamiento profesional y diseno de sonrisa adaptado a tus rasgos faciales.",
         "whatIsIt": "Combinamos arte y ciencia para crear una sonrisa que se vea natural y proporcionada a tu cara. Cada caso es disenado digitalmente antes de tocar un solo diente.",
         "fourSteps": [
-          { "title": "Consulta de diseno", "body": "Hablamos sobre lo que te gustaria cambiar y mostramos opciones con un diseno digital." },
-          { "title": "Vista previa", "body": "Hacemos un mock-up temporal en boca para que veas tu nueva sonrisa antes de comprometerte." },
-          { "title": "Preparacion suave", "body": "Las carillas modernas requieren preparacion minima del esmalte." },
-          { "title": "Sonrisa final", "body": "Colocamos las carillas o el tratamiento final, ajustamos el color y la forma." }
+          {
+            "title": "Consulta de diseno",
+            "body": "Hablamos sobre lo que te gustaria cambiar y mostramos opciones con un diseno digital."
+          },
+          {
+            "title": "Vista previa",
+            "body": "Hacemos un mock-up temporal en boca para que veas tu nueva sonrisa antes de comprometerte."
+          },
+          {
+            "title": "Preparacion suave",
+            "body": "Las carillas modernas requieren preparacion minima del esmalte."
+          },
+          {
+            "title": "Sonrisa final",
+            "body": "Colocamos las carillas o el tratamiento final, ajustamos el color y la forma."
+          }
         ],
         "benefits": [
           "Sonrisa mas blanca y simetrica",
@@ -156,9 +270,18 @@
         ],
         "whyChoose": "Mostramos vista previa digital y temporal antes de cualquier tratamiento permanente. No queremos sorpresas. Tu apruebas el diseno antes de continuar.",
         "faqs": [
-          { "q": "Las carillas se ven naturales?", "a": "Si las hacemos bien, si. Usamos porcelana de capas que imita la translucidez de un diente real." },
-          { "q": "Cuanto cuesta una carilla?", "a": "Desde $1,200 por carilla. Un diseno completo de sonrisa (8-10 carillas) suele costar $9,600-$12,000." },
-          { "q": "El blanqueamiento profesional es seguro?", "a": "Si, hecho por un dentista. Algunos pacientes sienten sensibilidad temporal que pasa en pocos dias." }
+          {
+            "q": "Las carillas se ven naturales?",
+            "a": "Si las hacemos bien, si. Usamos porcelana de capas que imita la translucidez de un diente real."
+          },
+          {
+            "q": "Cuanto cuesta una carilla?",
+            "a": "Desde $1,200 por carilla. Un diseno completo de sonrisa (8-10 carillas) suele costar $9,600-$12,000."
+          },
+          {
+            "q": "El blanqueamiento profesional es seguro?",
+            "a": "Si, hecho por un dentista. Algunos pacientes sienten sensibilidad temporal que pasa en pocos dias."
+          }
         ],
         "seoTitle": "Cosmetica dental Arlington TX | Carillas + blanqueamiento",
         "seoDescription": "Carillas, blanqueamiento profesional y diseno de sonrisa en Arlington TX. Vista previa digital sin compromiso. (682) 284-1120."
@@ -171,10 +294,22 @@
         "longBlurb": "Una emergencia dental no espera. Reservamos espacios cada dia para pacientes con dolor severo, dientes rotos, infecciones o trauma.",
         "whatIsIt": "Atendemos dolor de muelas, abscesos, dientes fracturados, coronas o empastes que se cayeron, traumas deportivos, y sangrado de encias que no se detiene.",
         "fourSteps": [
-          { "title": "Llama al (682) 284-1120", "body": "Habla con nuestro equipo. Te damos primeros pasos por telefono y te asignamos cita el mismo dia." },
-          { "title": "Llegada y triage", "body": "Hacemos radiografia y examen rapido para identificar la causa exacta del problema." },
-          { "title": "Alivio inmediato", "body": "Te aliviamos el dolor con anestesia local, drenaje de absceso, o reparacion temporal." },
-          { "title": "Plan a seguir", "body": "Te explicamos los pasos para resolver el problema permanentemente, con precios claros." }
+          {
+            "title": "Llama al (682) 284-1120",
+            "body": "Habla con nuestro equipo. Te damos primeros pasos por telefono y te asignamos cita el mismo dia."
+          },
+          {
+            "title": "Llegada y triage",
+            "body": "Hacemos radiografia y examen rapido para identificar la causa exacta del problema."
+          },
+          {
+            "title": "Alivio inmediato",
+            "body": "Te aliviamos el dolor con anestesia local, drenaje de absceso, o reparacion temporal."
+          },
+          {
+            "title": "Plan a seguir",
+            "body": "Te explicamos los pasos para resolver el problema permanentemente, con precios claros."
+          }
         ],
         "benefits": [
           "Atencion el mismo dia, sin sala de emergencias",
@@ -184,18 +319,39 @@
         ],
         "whyChoose": "Tenemos 4 ubicaciones en el Norte de Texas, asi que siempre hay un consultorio cerca. Si llamas antes de mediodia, casi siempre te vemos el mismo dia.",
         "faqs": [
-          { "q": "Que es una emergencia dental?", "a": "Dolor severo, sangrado que no para, diente fracturado, o trauma. Si dudas, llama y te orientamos." },
-          { "q": "Que hago si se me cae un diente entero?", "a": "Mantenlo humedo (en leche o saliva), no toques la raiz, y llamanos inmediato. Tienes 30-60 minutos para reimplantarlo." },
-          { "q": "Atienden sin cita?", "a": "Llama primero, casi siempre podemos verte el mismo dia." }
+          {
+            "q": "Que es una emergencia dental?",
+            "a": "Dolor severo, sangrado que no para, diente fracturado, o trauma. Si dudas, llama y te orientamos."
+          },
+          {
+            "q": "Que hago si se me cae un diente entero?",
+            "a": "Mantenlo humedo (en leche o saliva), no toques la raiz, y llamanos inmediato. Tienes 30-60 minutos para reimplantarlo."
+          },
+          {
+            "q": "Atienden sin cita?",
+            "a": "Llama primero, casi siempre podemos verte el mismo dia."
+          }
         ],
         "seoTitle": "Dentista de emergencia Arlington TX | Atencion el mismo dia",
         "seoDescription": "Dentista de emergencia en Arlington TX. Dolor de muela, dientes rotos, abscesos. Atencion el mismo dia. (682) 284-1120."
       }
     ],
     "pricingFeatured": [
-      { "label": "Especial nuevo paciente", "price": "$79.99", "note": "Examen + radiografias + consulta" },
-      { "label": "Implante dental", "price": "$2,499", "note": "Por diente, todo incluido" },
-      { "label": "All-on-4", "price": "$15,999", "note": "Por arcada, sonrisa fija en un dia" }
+      {
+        "label": "Especial nuevo paciente",
+        "price": "$79.99",
+        "note": "Examen + radiografias + consulta"
+      },
+      {
+        "label": "Implante dental",
+        "price": "$2,499",
+        "note": "Por diente, todo incluido"
+      },
+      {
+        "label": "All-on-4",
+        "price": "$15,999",
+        "note": "Por arcada, sonrisa fija en un dia"
+      }
     ]
   },
   "locations": {
@@ -206,70 +362,144 @@
         "slug": "arlington",
         "city": "Arlington",
         "state": "TX",
-        "address": "1234 W Pioneer Pkwy, Arlington, TX 76013",
+        "address": "2024 Baird Farm Rd Ste.100, Arlington, TX 76006",
         "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-6pm | Sab 9am-2pm",
+        "hours": "Mon-Fri 9am-5pm | Sat 9am-2pm",
         "primary": true,
         "longBlurb": "Nuestra ubicacion principal en Arlington esta en W Pioneer Pkwy, con estacionamiento amplio y acceso facil desde I-30 e I-20. Atendemos a familias de Arlington, Mansfield, Pantego y Dalworthington Gardens.",
-        "neighborhoods": ["Arlington Heights", "Pantego", "Mansfield", "Dalworthington Gardens", "Kennedale"],
+        "neighborhoods": [
+          "Arlington Heights",
+          "Pantego",
+          "Mansfield",
+          "Dalworthington Gardens",
+          "Kennedale"
+        ],
         "directions": "Cerca de la interseccion de Pioneer Pkwy y Cooper St. Estacionamiento gratuito al frente del edificio.",
-        "googleMapsUrl": "https://maps.google.com/?q=1234+W+Pioneer+Pkwy+Arlington+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=1558676577930962228",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "all-on-4",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentista en Arlington TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Arlington TX. Familia, implantes, All-on-4, emergencias. 1234 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Dentista bilingue en Arlington TX. Familia, implantes, All-on-4, emergencias. 1234 W Pioneer Pkwy. (682) 284-1120.",
+        "phoneRaw": "+16822841120",
+        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-14:00",
+        "rating": 4.9,
+        "reviewCount": 255,
+        "lat": 32.768,
+        "lng": -97.086
       },
       {
         "slug": "commerce",
         "city": "Commerce",
         "state": "TX",
-        "address": "501 Park St, Commerce, TX 75428",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-5pm",
+        "address": "2210 Live Oak St ste c, Commerce, TX 75428",
+        "phone": "(903) 246-4424",
+        "hours": "Mon-Fri 9am-5pm",
         "primary": false,
         "longBlurb": "Nuestra ubicacion en Commerce sirve a la comunidad universitaria de Texas A&M Commerce y a las familias del condado de Hunt. Cerca del centro y con estacionamiento en la calle.",
-        "neighborhoods": ["Commerce", "Cooper", "Wolfe City", "Campbell", "Greenville"],
+        "neighborhoods": [
+          "Commerce",
+          "Cooper",
+          "Wolfe City",
+          "Campbell",
+          "Greenville"
+        ],
         "directions": "En Park St, a dos cuadras del centro de Commerce. Cerca del campus de Texas A&M Commerce.",
-        "googleMapsUrl": "https://maps.google.com/?q=501+Park+St+Commerce+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=9991201295560044088",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentista en Commerce TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Commerce TX cerca de Texas A&M. Familia, implantes, emergencias. 501 Park St. (682) 284-1120."
+        "seoDescription": "Dentista bilingue en Commerce TX cerca de Texas A&M. Familia, implantes, emergencias. 501 Park St. (682) 284-1120.",
+        "phoneRaw": "+19032464424",
+        "hoursOpen": "Mo-Fr 09:00-17:00",
+        "rating": 4.9,
+        "reviewCount": 525,
+        "lat": 33.249,
+        "lng": -95.913
       },
       {
         "slug": "paris",
         "city": "Paris",
         "state": "TX",
-        "address": "2845 Lamar Ave, Paris, TX 75460",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-5pm",
+        "address": "707 Lamar Ave L, Paris, TX 75460",
+        "phone": "(903) 609-0567",
+        "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
         "primary": false,
         "longBlurb": "Nuestra ubicacion en Paris en Lamar Ave atiende a las familias de Paris, Reno, Powderly y todo el condado de Lamar. Cerca de Paris Junior College y del centro de la ciudad.",
-        "neighborhoods": ["Paris", "Reno", "Powderly", "Blossom", "Roxton"],
+        "neighborhoods": [
+          "Paris",
+          "Reno",
+          "Powderly",
+          "Blossom",
+          "Roxton"
+        ],
         "directions": "En Lamar Ave, ruta principal de Paris. Estacionamiento amplio. A 5 minutos de Paris Junior College.",
-        "googleMapsUrl": "https://maps.google.com/?q=2845+Lamar+Ave+Paris+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=18055522069307288222",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentista en Paris TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Paris TX. Familia, implantes, ortodoncia, emergencias. 2845 Lamar Ave. (682) 284-1120."
+        "seoDescription": "Dentista bilingue en Paris TX. Familia, implantes, ortodoncia, emergencias. 2845 Lamar Ave. (682) 284-1120.",
+        "phoneRaw": "+19036090567",
+        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-15:00",
+        "rating": 5.0,
+        "reviewCount": 67,
+        "lat": 33.661,
+        "lng": -95.549
       },
       {
         "slug": "grand-prairie",
         "city": "Grand Prairie",
         "state": "TX",
-        "address": "1010 W Pioneer Pkwy, Grand Prairie, TX 75051",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-6pm",
+        "address": "325 W Westchester Pkwy #300, Grand Prairie, TX 75052",
+        "phone": "(972) 262-5593",
+        "hours": "Mon-Fri 9am-5pm",
         "primary": false,
         "longBlurb": "Grand Prairie en Pioneer Pkwy sirve a familias de Grand Prairie, Cedar Hill y Duncanville. Acceso directo desde Highway 161 y I-20. Estacionamiento amplio.",
-        "neighborhoods": ["Grand Prairie", "Cedar Hill", "Duncanville", "Dalworth Park", "Lake Joe Pool"],
+        "neighborhoods": [
+          "Grand Prairie",
+          "Cedar Hill",
+          "Duncanville",
+          "Dalworth Park",
+          "Lake Joe Pool"
+        ],
         "directions": "Pioneer Pkwy entre Carrier Pkwy y SH-360. Cerca de Lone Star Park.",
-        "googleMapsUrl": "https://maps.google.com/?q=1010+W+Pioneer+Pkwy+Grand+Prairie+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=535386060820614263",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "all-on-4",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentista en Grand Prairie TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Grand Prairie TX. Familia, implantes, All-on-4, emergencias. 1010 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Dentista bilingue en Grand Prairie TX. Familia, implantes, All-on-4, emergencias. 1010 W Pioneer Pkwy. (682) 284-1120.",
+        "phoneRaw": "+19722625593",
+        "hoursOpen": "Mo-Fr 09:00-17:00",
+        "rating": 4.9,
+        "reviewCount": 654,
+        "lat": 32.671,
+        "lng": -97.008
       }
     ]
   },
   "doctor": {
-    "name": "Dr. Sandeep Namineni",
+    "name": "Dr. Deepti Namineni",
     "title": "Director clinico, DDS",
     "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
     "imageAlt": "Dr. Namineni en el consultorio",
@@ -277,7 +507,12 @@
       "Hace mas de 15 anos abrimos las puertas de Sonria con una idea simple, brindar el mismo cuidado dental que le darias a tu propia familia.",
       "Hoy atendemos a miles de pacientes en cuatro consultorios del Norte de Texas. Hablamos espanol e ingles, explicamos cada paso, y nunca recomendamos un tratamiento que no necesites."
     ],
-    "credentials": ["DDS - University of Texas", "Implantologia avanzada", "Miembro ADA", "Bilingue ES/EN"]
+    "credentials": [
+      "DDS - University of Texas",
+      "Implantologia avanzada",
+      "Miembro ADA",
+      "Bilingue ES/EN"
+    ]
   },
   "about": {
     "heading": "Una clinica familiar, no una cadena",
@@ -289,16 +524,40 @@
       "Cada uno de nuestros cuatro consultorios tiene la misma tecnologia moderna, el mismo estandar clinico, y la misma cultura de respeto por tu tiempo y tu confianza."
     ],
     "values": [
-      { "title": "Honestidad sobre todo", "body": "Precios claros publicados. Si no lo necesitas, no te lo recomendamos." },
-      { "title": "Bilingue de verdad", "body": "Todo el equipo, todos los consultorios, espanol e ingles igual." },
-      { "title": "Familia primero", "body": "Atendemos desde ninos hasta abuelos, todos en la misma visita si quieres." },
-      { "title": "Tecnologia moderna", "body": "Radiografias digitales, escaneos 3D, laboratorio en consulta." }
+      {
+        "title": "Honestidad sobre todo",
+        "body": "Precios claros publicados. Si no lo necesitas, no te lo recomendamos."
+      },
+      {
+        "title": "Bilingue de verdad",
+        "body": "Todo el equipo, todos los consultorios, espanol e ingles igual."
+      },
+      {
+        "title": "Familia primero",
+        "body": "Atendemos desde ninos hasta abuelos, todos en la misma visita si quieres."
+      },
+      {
+        "title": "Tecnologia moderna",
+        "body": "Radiografias digitales, escaneos 3D, laboratorio en consulta."
+      }
     ],
     "stats": [
-      { "label": "Pacientes felices", "value": "12,000+" },
-      { "label": "Anos atendiendo", "value": "15+" },
-      { "label": "Consultorios", "value": "4" },
-      { "label": "Implantes colocados", "value": "3,000+" }
+      {
+        "label": "Pacientes felices",
+        "value": "12,000+"
+      },
+      {
+        "label": "Anos atendiendo",
+        "value": "15+"
+      },
+      {
+        "label": "Consultorios",
+        "value": "4"
+      },
+      {
+        "label": "Implantes colocados",
+        "value": "3,000+"
+      }
     ]
   },
   "newPatients": {
@@ -310,10 +569,22 @@
       "note": "Examen completo + radiografias digitales + consulta personalizada. Sin sorpresas."
     },
     "steps": [
-      { "title": "Reserva en 3 minutos", "body": "Llamanos al (682) 284-1120 o usa el formulario. Confirmamos por SMS." },
-      { "title": "Llega 10 min antes", "body": "Trae tu identificacion, seguro (si tienes) y formularios completos." },
-      { "title": "Examen completo", "body": "Tomamos radiografias digitales, examen oral completo y discutimos tu historial." },
-      { "title": "Plan claro", "body": "Te explicamos lo que necesitas, cuando, y cuanto cuesta. Tu decides." }
+      {
+        "title": "Reserva en 3 minutos",
+        "body": "Llamanos al (682) 284-1120 o usa el formulario. Confirmamos por SMS."
+      },
+      {
+        "title": "Llega 10 min antes",
+        "body": "Trae tu identificacion, seguro (si tienes) y formularios completos."
+      },
+      {
+        "title": "Examen completo",
+        "body": "Tomamos radiografias digitales, examen oral completo y discutimos tu historial."
+      },
+      {
+        "title": "Plan claro",
+        "body": "Te explicamos lo que necesitas, cuando, y cuanto cuesta. Tu decides."
+      }
     ],
     "whatToBring": [
       "Identificacion con foto",
@@ -327,35 +598,91 @@
     "heading": "Seguro y financiamiento",
     "intro": "Aceptamos la mayoria de los planes PPO. Si tu plan no esta en la lista, llamanos, casi siempre podemos atenderte como proveedor fuera de red con beneficios similares.",
     "plansAccepted": [
-      "Aetna", "Cigna", "Delta Dental PPO", "Guardian", "Humana",
-      "MetLife", "Principal", "United Concordia", "United Healthcare", "Blue Cross Blue Shield"
+      "Aetna",
+      "Cigna",
+      "Delta Dental PPO",
+      "Guardian",
+      "Humana",
+      "MetLife",
+      "Principal",
+      "United Concordia",
+      "United Healthcare",
+      "Blue Cross Blue Shield"
     ],
     "noInsurance": "Sin seguro? Tenemos un plan de membresia anual desde $199 que incluye dos limpiezas, examenes y descuentos en otros tratamientos.",
     "financing": [
-      { "name": "CareCredit", "body": "Financiamiento medico con planes sin interes de 6 a 24 meses." },
-      { "name": "Plan interno Sonria", "body": "Pagos mensuales fijos, sin verificacion de credito agresiva." },
-      { "name": "Efectivo / tarjeta", "body": "Descuento del 5% pagando por adelantado." }
+      {
+        "name": "CareCredit",
+        "body": "Financiamiento medico con planes sin interes de 6 a 24 meses."
+      },
+      {
+        "name": "Plan interno Sonria",
+        "body": "Pagos mensuales fijos, sin verificacion de credito agresiva."
+      },
+      {
+        "name": "Efectivo / tarjeta",
+        "body": "Descuento del 5% pagando por adelantado."
+      }
     ],
     "faqs": [
-      { "q": "Verifican mi seguro antes de la cita?", "a": "Si, sin costo. Llamanos con tu informacion y verificamos cobertura en menos de 24 horas." },
-      { "q": "Que pasa si mi seguro no cubre todo?", "a": "Te explicamos exactamente cuanto debes antes del tratamiento, con opciones de pago si no puedes cubrirlo de inmediato." },
-      { "q": "Aceptan Medicaid?", "a": "No directamente. Pero tenemos planes accesibles para pacientes sin cobertura." }
+      {
+        "q": "Verifican mi seguro antes de la cita?",
+        "a": "Si, sin costo. Llamanos con tu informacion y verificamos cobertura en menos de 24 horas."
+      },
+      {
+        "q": "Que pasa si mi seguro no cubre todo?",
+        "a": "Te explicamos exactamente cuanto debes antes del tratamiento, con opciones de pago si no puedes cubrirlo de inmediato."
+      },
+      {
+        "q": "Aceptan Medicaid?",
+        "a": "No directamente. Pero tenemos planes accesibles para pacientes sin cobertura."
+      }
     ]
   },
   "faq": {
     "heading": "Preguntas frecuentes",
     "subheading": "Lo que mas nos preguntan, respondido en una linea.",
     "items": [
-      { "q": "Hablan espanol?", "a": "Si. Todo el equipo, en los cuatro consultorios. No solo el dentista." },
-      { "q": "Aceptan pacientes sin seguro?", "a": "Si. Tenemos especiales nuevos pacientes ($79.99), planes de membresia ($199/ano), y financiamiento sin interes." },
-      { "q": "Que tan rapido me atienden si tengo dolor?", "a": "Casi siempre el mismo dia si llamas antes de mediodia. Reservamos espacios diarios para emergencias." },
-      { "q": "Atienden ninos?", "a": "Si, desde la primera muela. Hacemos las primeras visitas divertidas y educativas." },
-      { "q": "Donde estan los consultorios?", "a": "Arlington, Commerce, Paris y Grand Prairie. Mismo equipo y precios en cada uno." },
-      { "q": "Cuanto cuesta un implante?", "a": "$2,499 todo-incluido por diente. Sin sorpresas. Financiamiento disponible." },
-      { "q": "Cuanto cuesta All-on-4?", "a": "$15,999 por arcada, todo incluido (extracciones, 4 implantes, protesis provisional y final)." },
-      { "q": "Puedo pagar a meses?", "a": "Si. CareCredit, plan interno Sonria, o tarjeta. La mayoria de pacientes paga $200-500 al mes." },
-      { "q": "Cual es el horario?", "a": "Lun-Vie 8am-6pm. Arlington tambien abre Sabados 9am-2pm." },
-      { "q": "Atienden de emergencia?", "a": "Si. Llama al (682) 284-1120 y casi siempre te vemos el mismo dia." }
+      {
+        "q": "Hablan espanol?",
+        "a": "Si. Todo el equipo, en los cuatro consultorios. No solo el dentista."
+      },
+      {
+        "q": "Aceptan pacientes sin seguro?",
+        "a": "Si. Tenemos especiales nuevos pacientes ($79.99), planes de membresia ($199/ano), y financiamiento sin interes."
+      },
+      {
+        "q": "Que tan rapido me atienden si tengo dolor?",
+        "a": "Casi siempre el mismo dia si llamas antes de mediodia. Reservamos espacios diarios para emergencias."
+      },
+      {
+        "q": "Atienden ninos?",
+        "a": "Si, desde la primera muela. Hacemos las primeras visitas divertidas y educativas."
+      },
+      {
+        "q": "Donde estan los consultorios?",
+        "a": "Arlington, Commerce, Paris y Grand Prairie. Mismo equipo y precios en cada uno."
+      },
+      {
+        "q": "Cuanto cuesta un implante?",
+        "a": "$2,499 todo-incluido por diente. Sin sorpresas. Financiamiento disponible."
+      },
+      {
+        "q": "Cuanto cuesta All-on-4?",
+        "a": "$15,999 por arcada, todo incluido (extracciones, 4 implantes, protesis provisional y final)."
+      },
+      {
+        "q": "Puedo pagar a meses?",
+        "a": "Si. CareCredit, plan interno Sonria, o tarjeta. La mayoria de pacientes paga $200-500 al mes."
+      },
+      {
+        "q": "Cual es el horario?",
+        "a": "Lun-Vie 8am-6pm. Arlington tambien abre Sabados 9am-2pm."
+      },
+      {
+        "q": "Atienden de emergencia?",
+        "a": "Si. Llama al (682) 284-1120 y casi siempre te vemos el mismo dia."
+      }
     ]
   },
   "contactPage": {
@@ -381,7 +708,11 @@
     "phone": "(682) 284-1120",
     "phoneHref": "tel:+16822841120",
     "email": "info@sonriadentista.com",
-    "hours": ["Lun-Vie 8am-6pm", "Sab 9am-2pm", "Dom Cerrado"]
+    "hours": [
+      "Mon-Fri 9am-5pm",
+      "Sat 9am-2pm (Arlington & Paris only)",
+      "Sun Closed"
+    ]
   },
   "nav": {
     "services": "Servicios",
@@ -393,5 +724,12 @@
     "faq": "Preguntas",
     "contact": "Contacto",
     "book": "Reservar"
+  },
+  "stats": {
+    "totalReviews": 1501,
+    "avgRating": 4.93,
+    "locationsCount": 4,
+    "veteranOwned": true,
+    "womanOwned": true
   }
 }

@@ -3,16 +3,28 @@
   "tagline": "Healthy smiles for the whole family",
   "hero": {
     "title": "Dental care that feels like home",
-    "subtitle": "Bilingual care, honest pricing, and a team that knows your family by name. Four offices across North Texas.",
+    "subtitle": "Bilingual family dental care led by Dr. Deepti Namineni. Implants, orthodontics, and same-day visits across Arlington, Grand Prairie, Paris, and Commerce — over 1,500 5-star Google reviews.",
     "ctaPrimary": "Book a visit",
     "ctaSecondary": "Call now",
     "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
     "imageAlt": "Family smiling at the dental office",
     "trustSignals": [
-      { "label": "Happy patients", "value": "12,000+" },
-      { "label": "Years serving", "value": "15+" },
-      { "label": "Locations", "value": "4" },
-      { "label": "Bilingual", "value": "EN / ES" }
+      {
+        "label": "Happy patients",
+        "value": "12,000+"
+      },
+      {
+        "label": "Years serving",
+        "value": "15+"
+      },
+      {
+        "label": "Locations",
+        "value": "4"
+      },
+      {
+        "label": "Bilingual",
+        "value": "EN / ES"
+      }
     ]
   },
   "services": {
@@ -27,10 +39,22 @@
         "longBlurb": "General dentistry is the foundation of a healthy smile. At Sonria we care for kids, adults, and seniors with comprehensive preventive care and restorative treatments when needed.",
         "whatIsIt": "General dentistry covers professional cleanings, annual exams with digital X-rays, tooth-colored composite fillings, fluoride treatments, sealants, and oral hygiene education.",
         "fourSteps": [
-          { "title": "Comprehensive exam", "body": "We check teeth, gums, bite, and X-rays to catch issues early." },
-          { "title": "Professional cleaning", "body": "We remove plaque and tartar, polish the teeth, and apply fluoride if needed." },
-          { "title": "Personalized plan", "body": "We explain in English or Spanish what you need, when, and how much it costs." },
-          { "title": "Ongoing care", "body": "We remind you of your next visit and support you between appointments with clear advice." }
+          {
+            "title": "Comprehensive exam",
+            "body": "We check teeth, gums, bite, and X-rays to catch issues early."
+          },
+          {
+            "title": "Professional cleaning",
+            "body": "We remove plaque and tartar, polish the teeth, and apply fluoride if needed."
+          },
+          {
+            "title": "Personalized plan",
+            "body": "We explain in English or Spanish what you need, when, and how much it costs."
+          },
+          {
+            "title": "Ongoing care",
+            "body": "We remind you of your next visit and support you between appointments with clear advice."
+          }
         ],
         "benefits": [
           "Cavity and gum disease prevention",
@@ -40,9 +64,18 @@
         ],
         "whyChoose": "Our bilingual team takes the time you need, explains every step, and never recommends treatment you don't need. The whole family can be seen in a single visit.",
         "faqs": [
-          { "q": "How often should I see the dentist?", "a": "Every 6 months for cleanings and exams, though some patients with risk factors may need more frequent visits." },
-          { "q": "Do you see young children?", "a": "Yes, starting at the first tooth. We make first visits fun and educational." },
-          { "q": "Do you accept dental insurance?", "a": "We accept most PPO plans. Call us with your info and we verify coverage at no charge." }
+          {
+            "q": "How often should I see the dentist?",
+            "a": "Every 6 months for cleanings and exams, though some patients with risk factors may need more frequent visits."
+          },
+          {
+            "q": "Do you see young children?",
+            "a": "Yes, starting at the first tooth. We make first visits fun and educational."
+          },
+          {
+            "q": "Do you accept dental insurance?",
+            "a": "We accept most PPO plans. Call us with your info and we verify coverage at no charge."
+          }
         ],
         "seoTitle": "General Dentistry in Arlington TX | Cleanings + Exams",
         "seoDescription": "Cleanings, exams, fillings, and bilingual preventive care in Arlington, Commerce, Paris, and Grand Prairie TX. Call (682) 284-1120."
@@ -55,10 +88,22 @@
         "longBlurb": "A dental implant replaces the root of a missing tooth with a titanium post that fuses with the bone, then is topped with a ceramic crown that looks and works like a natural tooth.",
         "whatIsIt": "Dental implants are the most durable way to replace one or more missing teeth. Unlike a bridge or denture, an implant preserves bone and doesn't affect neighboring teeth.",
         "fourSteps": [
-          { "title": "Consult and 3D X-rays", "body": "We assess your bone, gums, and overall health to confirm you're a candidate." },
-          { "title": "Implant placement", "body": "Outpatient procedure with local anesthesia. Most patients return to work the next day." },
-          { "title": "Integration period", "body": "Bone grows around the implant for 3 to 6 months. We give you a temporary tooth." },
-          { "title": "Final crown", "body": "We place the permanent ceramic crown, custom-matched to your tooth color." }
+          {
+            "title": "Consult and 3D X-rays",
+            "body": "We assess your bone, gums, and overall health to confirm you're a candidate."
+          },
+          {
+            "title": "Implant placement",
+            "body": "Outpatient procedure with local anesthesia. Most patients return to work the next day."
+          },
+          {
+            "title": "Integration period",
+            "body": "Bone grows around the implant for 3 to 6 months. We give you a temporary tooth."
+          },
+          {
+            "title": "Final crown",
+            "body": "We place the permanent ceramic crown, custom-matched to your tooth color."
+          }
         ],
         "benefits": [
           "Looks and feels like a natural tooth",
@@ -68,10 +113,22 @@
         ],
         "whyChoose": "We place hundreds of implants per year and offer the most honest all-inclusive price in North Texas: $2,499 per complete implant. No surprises. Financing available.",
         "faqs": [
-          { "q": "How much does it hurt?", "a": "Far less than people expect. Most patients only need ibuprofen for one or two days." },
-          { "q": "How long does the whole process take?", "a": "Start to finish, 3 to 6 months. Bone integration is the longest stage but doesn't require frequent visits." },
-          { "q": "Am I a candidate if I have low bone?", "a": "In many cases we can do a minor bone graft. The initial consult confirms your options." },
-          { "q": "What's included in the $2,499?", "a": "Titanium implant, abutment, and ceramic crown. All of it. Extra only applies if you need a graft." }
+          {
+            "q": "How much does it hurt?",
+            "a": "Far less than people expect. Most patients only need ibuprofen for one or two days."
+          },
+          {
+            "q": "How long does the whole process take?",
+            "a": "Start to finish, 3 to 6 months. Bone integration is the longest stage but doesn't require frequent visits."
+          },
+          {
+            "q": "Am I a candidate if I have low bone?",
+            "a": "In many cases we can do a minor bone graft. The initial consult confirms your options."
+          },
+          {
+            "q": "What's included in the $2,499?",
+            "a": "Titanium implant, abutment, and ceramic crown. All of it. Extra only applies if you need a graft."
+          }
         ],
         "price": "From $2,499 per implant",
         "seoTitle": "Dental Implants Arlington TX | $2,499 All-Inclusive",
@@ -85,10 +142,22 @@
         "longBlurb": "All-on-4 replaces a full arch of teeth with just 4 strategically placed implants, supporting a fixed prosthesis that feels and works like natural teeth.",
         "whatIsIt": "It's the ideal solution for patients who have lost most or all of their teeth, or who are tired of removable dentures. The prosthesis screws onto the implants and only the dentist removes it.",
         "fourSteps": [
-          { "title": "3D evaluation and plan", "body": "We take a CBCT scan and digitally design the position of all 4 implants." },
-          { "title": "Same-day surgery", "body": "We extract remaining teeth, place the 4 implants, and a temporary prosthesis, all in one day." },
-          { "title": "Guided recovery", "body": "You leave with functional teeth. We give clear soft-food guidance for 4 to 6 months." },
-          { "title": "Final prosthesis", "body": "After integration, we place the permanent prosthesis designed to last decades." }
+          {
+            "title": "3D evaluation and plan",
+            "body": "We take a CBCT scan and digitally design the position of all 4 implants."
+          },
+          {
+            "title": "Same-day surgery",
+            "body": "We extract remaining teeth, place the 4 implants, and a temporary prosthesis, all in one day."
+          },
+          {
+            "title": "Guided recovery",
+            "body": "You leave with functional teeth. We give clear soft-food guidance for 4 to 6 months."
+          },
+          {
+            "title": "Final prosthesis",
+            "body": "After integration, we place the permanent prosthesis designed to last decades."
+          }
         ],
         "benefits": [
           "Fixed smile the same day, no waiting",
@@ -98,10 +167,22 @@
         ],
         "whyChoose": "Our team places All-on-4 every week. We have an in-office dental lab so the prosthesis fits perfectly. Flat $15,999 per arch includes everything.",
         "faqs": [
-          { "q": "Can I really leave with teeth the same day?", "a": "Yes. You leave with the temporary prosthesis the same day as surgery. The final one comes months later." },
-          { "q": "Does it work if I still have some teeth?", "a": "Yes. If remaining teeth can't be saved or are causing problems, we remove them in the same visit." },
-          { "q": "What's included in the $15,999?", "a": "Extractions, 4 implants, same-day temporary prosthesis, and the final permanent prosthesis. All of it." },
-          { "q": "Is there financing?", "a": "Yes. We work with CareCredit and in-house options. Most patients pay $300-$500 per month." }
+          {
+            "q": "Can I really leave with teeth the same day?",
+            "a": "Yes. You leave with the temporary prosthesis the same day as surgery. The final one comes months later."
+          },
+          {
+            "q": "Does it work if I still have some teeth?",
+            "a": "Yes. If remaining teeth can't be saved or are causing problems, we remove them in the same visit."
+          },
+          {
+            "q": "What's included in the $15,999?",
+            "a": "Extractions, 4 implants, same-day temporary prosthesis, and the final permanent prosthesis. All of it."
+          },
+          {
+            "q": "Is there financing?",
+            "a": "Yes. We work with CareCredit and in-house options. Most patients pay $300-$500 per month."
+          }
         ],
         "price": "$15,999 per arch",
         "seoTitle": "All-on-4 Arlington TX | $15,999 Fixed Smile in a Day",
@@ -115,10 +196,22 @@
         "longBlurb": "We offer both traditional braces and Invisalign to correct bite, gaps, and crooked teeth in teens and adults.",
         "whatIsIt": "Orthodontics moves teeth into ideal position. Invisalign uses clear removable aligners. Traditional braces are fixed and usually more affordable.",
         "fourSteps": [
-          { "title": "Consult and digital scan", "body": "We take photos, X-rays, and a 3D scan of your teeth to design your plan." },
-          { "title": "Treatment plan", "body": "We show how your teeth will move and how long it'll take. You choose Invisalign or braces." },
-          { "title": "Active treatment", "body": "You change aligners every 1 to 2 weeks (Invisalign) or we adjust braces every 6 to 8 weeks." },
-          { "title": "Retention", "body": "Once aligned, you wear a retainer so teeth don't shift back. It's lifelong." }
+          {
+            "title": "Consult and digital scan",
+            "body": "We take photos, X-rays, and a 3D scan of your teeth to design your plan."
+          },
+          {
+            "title": "Treatment plan",
+            "body": "We show how your teeth will move and how long it'll take. You choose Invisalign or braces."
+          },
+          {
+            "title": "Active treatment",
+            "body": "You change aligners every 1 to 2 weeks (Invisalign) or we adjust braces every 6 to 8 weeks."
+          },
+          {
+            "title": "Retention",
+            "body": "Once aligned, you wear a retainer so teeth don't shift back. It's lifelong."
+          }
         ],
         "benefits": [
           "Straighter, more attractive smile",
@@ -128,9 +221,18 @@
         ],
         "whyChoose": "We're certified Invisalign providers. Flexible pay and no-cost initial consult. Dr. Namineni walks through options so you choose with confidence.",
         "faqs": [
-          { "q": "How long does treatment take?", "a": "Simple cases: 6 to 9 months. Complex cases: 18 to 24 months. The consult gives a precise estimate." },
-          { "q": "Does Invisalign really work like braces?", "a": "Yes for most cases. For very complex cases we sometimes recommend traditional braces." },
-          { "q": "How much does it cost?", "a": "Traditional braces: from $3,500. Invisalign: from $4,500. We give a fixed price after the consult." }
+          {
+            "q": "How long does treatment take?",
+            "a": "Simple cases: 6 to 9 months. Complex cases: 18 to 24 months. The consult gives a precise estimate."
+          },
+          {
+            "q": "Does Invisalign really work like braces?",
+            "a": "Yes for most cases. For very complex cases we sometimes recommend traditional braces."
+          },
+          {
+            "q": "How much does it cost?",
+            "a": "Traditional braces: from $3,500. Invisalign: from $4,500. We give a fixed price after the consult."
+          }
         ],
         "seoTitle": "Orthodontics + Invisalign Arlington TX | Braces for Adults and Teens",
         "seoDescription": "Orthodontics with traditional braces or Invisalign in Arlington TX. Free consult. Flexible pay. (682) 284-1120."
@@ -143,10 +245,22 @@
         "longBlurb": "Cosmetic dentistry transforms your smile with porcelain veneers, professional whitening, and smile design tailored to your facial features.",
         "whatIsIt": "We combine art and science to create a smile that looks natural and proportional to your face. Every case is digitally designed before we touch a single tooth.",
         "fourSteps": [
-          { "title": "Design consult", "body": "We talk about what you'd like to change and show options with a digital design." },
-          { "title": "Preview", "body": "We make a temporary mock-up in your mouth so you see the new smile before committing." },
-          { "title": "Gentle prep", "body": "Modern veneers require minimal enamel preparation." },
-          { "title": "Final smile", "body": "We place the veneers or final treatment, fine-tune color and shape." }
+          {
+            "title": "Design consult",
+            "body": "We talk about what you'd like to change and show options with a digital design."
+          },
+          {
+            "title": "Preview",
+            "body": "We make a temporary mock-up in your mouth so you see the new smile before committing."
+          },
+          {
+            "title": "Gentle prep",
+            "body": "Modern veneers require minimal enamel preparation."
+          },
+          {
+            "title": "Final smile",
+            "body": "We place the veneers or final treatment, fine-tune color and shape."
+          }
         ],
         "benefits": [
           "Whiter, more symmetrical smile",
@@ -156,9 +270,18 @@
         ],
         "whyChoose": "We show a digital and temporary preview before any permanent treatment. No surprises. You approve the design before we proceed.",
         "faqs": [
-          { "q": "Do veneers look natural?", "a": "If we do them right, yes. We use layered porcelain that mimics the translucency of a real tooth." },
-          { "q": "How much does a veneer cost?", "a": "From $1,200 per veneer. A full smile design (8-10 veneers) usually runs $9,600-$12,000." },
-          { "q": "Is professional whitening safe?", "a": "Yes, when done by a dentist. Some patients feel temporary sensitivity that passes in a few days." }
+          {
+            "q": "Do veneers look natural?",
+            "a": "If we do them right, yes. We use layered porcelain that mimics the translucency of a real tooth."
+          },
+          {
+            "q": "How much does a veneer cost?",
+            "a": "From $1,200 per veneer. A full smile design (8-10 veneers) usually runs $9,600-$12,000."
+          },
+          {
+            "q": "Is professional whitening safe?",
+            "a": "Yes, when done by a dentist. Some patients feel temporary sensitivity that passes in a few days."
+          }
         ],
         "seoTitle": "Cosmetic Dentistry Arlington TX | Veneers + Whitening",
         "seoDescription": "Veneers, professional whitening, and smile design in Arlington TX. Digital preview, no-pressure consult. (682) 284-1120."
@@ -171,10 +294,22 @@
         "longBlurb": "A dental emergency doesn't wait. We hold space every day for patients with severe pain, broken teeth, infections, or trauma.",
         "whatIsIt": "We treat toothaches, abscesses, fractured teeth, lost crowns or fillings, sports trauma, and gum bleeding that won't stop.",
         "fourSteps": [
-          { "title": "Call (682) 284-1120", "body": "Talk to our team. We give first steps over the phone and book you a same-day appointment." },
-          { "title": "Arrival and triage", "body": "We take an X-ray and quick exam to identify the exact cause." },
-          { "title": "Immediate relief", "body": "We relieve pain with local anesthesia, abscess drainage, or a temporary repair." },
-          { "title": "Plan to follow", "body": "We explain the steps to fix the problem permanently, with clear pricing." }
+          {
+            "title": "Call (682) 284-1120",
+            "body": "Talk to our team. We give first steps over the phone and book you a same-day appointment."
+          },
+          {
+            "title": "Arrival and triage",
+            "body": "We take an X-ray and quick exam to identify the exact cause."
+          },
+          {
+            "title": "Immediate relief",
+            "body": "We relieve pain with local anesthesia, abscess drainage, or a temporary repair."
+          },
+          {
+            "title": "Plan to follow",
+            "body": "We explain the steps to fix the problem permanently, with clear pricing."
+          }
         ],
         "benefits": [
           "Same-day care, no emergency room",
@@ -184,18 +319,39 @@
         ],
         "whyChoose": "We have 4 offices across North Texas, so there's always one nearby. If you call before noon, we almost always see you the same day.",
         "faqs": [
-          { "q": "What counts as a dental emergency?", "a": "Severe pain, bleeding that won't stop, fractured tooth, or trauma. If unsure, call and we'll guide you." },
-          { "q": "What do I do if a whole tooth gets knocked out?", "a": "Keep it moist (in milk or saliva), don't touch the root, and call us right away. You have 30-60 minutes to reimplant." },
-          { "q": "Walk-ins?", "a": "Call first, we can almost always see you the same day." }
+          {
+            "q": "What counts as a dental emergency?",
+            "a": "Severe pain, bleeding that won't stop, fractured tooth, or trauma. If unsure, call and we'll guide you."
+          },
+          {
+            "q": "What do I do if a whole tooth gets knocked out?",
+            "a": "Keep it moist (in milk or saliva), don't touch the root, and call us right away. You have 30-60 minutes to reimplant."
+          },
+          {
+            "q": "Walk-ins?",
+            "a": "Call first, we can almost always see you the same day."
+          }
         ],
         "seoTitle": "Emergency Dentist Arlington TX | Same-Day Care",
         "seoDescription": "Emergency dentist in Arlington TX. Toothaches, broken teeth, abscesses. Same-day care. (682) 284-1120."
       }
     ],
     "pricingFeatured": [
-      { "label": "New patient special", "price": "$79.99", "note": "Exam + X-rays + consultation" },
-      { "label": "Dental implant", "price": "$2,499", "note": "Per tooth, all-in" },
-      { "label": "All-on-4", "price": "$15,999", "note": "Per arch, fixed smile in a day" }
+      {
+        "label": "New patient special",
+        "price": "$79.99",
+        "note": "Exam + X-rays + consultation"
+      },
+      {
+        "label": "Dental implant",
+        "price": "$2,499",
+        "note": "Per tooth, all-in"
+      },
+      {
+        "label": "All-on-4",
+        "price": "$15,999",
+        "note": "Per arch, fixed smile in a day"
+      }
     ]
   },
   "locations": {
@@ -206,70 +362,144 @@
         "slug": "arlington",
         "city": "Arlington",
         "state": "TX",
-        "address": "1234 W Pioneer Pkwy, Arlington, TX 76013",
+        "address": "2024 Baird Farm Rd Ste.100, Arlington, TX 76006",
         "phone": "(682) 284-1120",
-        "hours": "Mon-Fri 8am-6pm | Sat 9am-2pm",
+        "hours": "Mon-Fri 9am-5pm | Sat 9am-2pm",
         "primary": true,
         "longBlurb": "Our flagship Arlington office is on W Pioneer Pkwy, with ample parking and easy access from I-30 and I-20. We serve families across Arlington, Mansfield, Pantego, and Dalworthington Gardens.",
-        "neighborhoods": ["Arlington Heights", "Pantego", "Mansfield", "Dalworthington Gardens", "Kennedale"],
+        "neighborhoods": [
+          "Arlington Heights",
+          "Pantego",
+          "Mansfield",
+          "Dalworthington Gardens",
+          "Kennedale"
+        ],
         "directions": "Near the intersection of Pioneer Pkwy and Cooper St. Free parking in front of the building.",
-        "googleMapsUrl": "https://maps.google.com/?q=1234+W+Pioneer+Pkwy+Arlington+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=1558676577930962228",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "all-on-4",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentist in Arlington TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Arlington TX. Family, implants, All-on-4, emergencies. 1234 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Bilingual dentist in Arlington TX. Family, implants, All-on-4, emergencies. 1234 W Pioneer Pkwy. (682) 284-1120.",
+        "phoneRaw": "+16822841120",
+        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-14:00",
+        "rating": 4.9,
+        "reviewCount": 255,
+        "lat": 32.768,
+        "lng": -97.086
       },
       {
         "slug": "commerce",
         "city": "Commerce",
         "state": "TX",
-        "address": "501 Park St, Commerce, TX 75428",
-        "phone": "(682) 284-1120",
-        "hours": "Mon-Fri 8am-5pm",
+        "address": "2210 Live Oak St ste c, Commerce, TX 75428",
+        "phone": "(903) 246-4424",
+        "hours": "Mon-Fri 9am-5pm",
         "primary": false,
         "longBlurb": "Our Commerce office serves the Texas A&M Commerce university community and Hunt County families. Near downtown with street parking.",
-        "neighborhoods": ["Commerce", "Cooper", "Wolfe City", "Campbell", "Greenville"],
+        "neighborhoods": [
+          "Commerce",
+          "Cooper",
+          "Wolfe City",
+          "Campbell",
+          "Greenville"
+        ],
         "directions": "On Park St, two blocks from downtown Commerce. Near the Texas A&M Commerce campus.",
-        "googleMapsUrl": "https://maps.google.com/?q=501+Park+St+Commerce+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=9991201295560044088",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentist in Commerce TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Commerce TX near Texas A&M. Family, implants, emergencies. 501 Park St. (682) 284-1120."
+        "seoDescription": "Bilingual dentist in Commerce TX near Texas A&M. Family, implants, emergencies. 501 Park St. (682) 284-1120.",
+        "phoneRaw": "+19032464424",
+        "hoursOpen": "Mo-Fr 09:00-17:00",
+        "rating": 4.9,
+        "reviewCount": 525,
+        "lat": 33.249,
+        "lng": -95.913
       },
       {
         "slug": "paris",
         "city": "Paris",
         "state": "TX",
-        "address": "2845 Lamar Ave, Paris, TX 75460",
-        "phone": "(682) 284-1120",
-        "hours": "Mon-Fri 8am-5pm",
+        "address": "707 Lamar Ave L, Paris, TX 75460",
+        "phone": "(903) 609-0567",
+        "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
         "primary": false,
         "longBlurb": "Our Paris office on Lamar Ave serves families in Paris, Reno, Powderly, and across Lamar County. Near Paris Junior College and downtown.",
-        "neighborhoods": ["Paris", "Reno", "Powderly", "Blossom", "Roxton"],
+        "neighborhoods": [
+          "Paris",
+          "Reno",
+          "Powderly",
+          "Blossom",
+          "Roxton"
+        ],
         "directions": "On Lamar Ave, the main route through Paris. Ample parking. 5 minutes from Paris Junior College.",
-        "googleMapsUrl": "https://maps.google.com/?q=2845+Lamar+Ave+Paris+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=18055522069307288222",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentist in Paris TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Paris TX. Family, implants, orthodontics, emergencies. 2845 Lamar Ave. (682) 284-1120."
+        "seoDescription": "Bilingual dentist in Paris TX. Family, implants, orthodontics, emergencies. 2845 Lamar Ave. (682) 284-1120.",
+        "phoneRaw": "+19036090567",
+        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-15:00",
+        "rating": 5.0,
+        "reviewCount": 67,
+        "lat": 33.661,
+        "lng": -95.549
       },
       {
         "slug": "grand-prairie",
         "city": "Grand Prairie",
         "state": "TX",
-        "address": "1010 W Pioneer Pkwy, Grand Prairie, TX 75051",
-        "phone": "(682) 284-1120",
-        "hours": "Mon-Fri 8am-6pm",
+        "address": "325 W Westchester Pkwy #300, Grand Prairie, TX 75052",
+        "phone": "(972) 262-5593",
+        "hours": "Mon-Fri 9am-5pm",
         "primary": false,
         "longBlurb": "Grand Prairie on Pioneer Pkwy serves families in Grand Prairie, Cedar Hill, and Duncanville. Direct access from Highway 161 and I-20. Ample parking.",
-        "neighborhoods": ["Grand Prairie", "Cedar Hill", "Duncanville", "Dalworth Park", "Lake Joe Pool"],
+        "neighborhoods": [
+          "Grand Prairie",
+          "Cedar Hill",
+          "Duncanville",
+          "Dalworth Park",
+          "Lake Joe Pool"
+        ],
         "directions": "Pioneer Pkwy between Carrier Pkwy and SH-360. Near Lone Star Park.",
-        "googleMapsUrl": "https://maps.google.com/?q=1010+W+Pioneer+Pkwy+Grand+Prairie+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "googleMapsUrl": "https://www.google.com/maps?cid=535386060820614263",
+        "servicesOffered": [
+          "general",
+          "implants",
+          "all-on-4",
+          "orthodontics",
+          "cosmetic",
+          "emergencies"
+        ],
         "seoTitle": "Dentist in Grand Prairie TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Grand Prairie TX. Family, implants, All-on-4, emergencies. 1010 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Bilingual dentist in Grand Prairie TX. Family, implants, All-on-4, emergencies. 1010 W Pioneer Pkwy. (682) 284-1120.",
+        "phoneRaw": "+19722625593",
+        "hoursOpen": "Mo-Fr 09:00-17:00",
+        "rating": 4.9,
+        "reviewCount": 654,
+        "lat": 32.671,
+        "lng": -97.008
       }
     ]
   },
   "doctor": {
-    "name": "Dr. Sandeep Namineni",
+    "name": "Dr. Deepti Namineni",
     "title": "Clinical Director, DDS",
     "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
     "imageAlt": "Dr. Namineni at the office",
@@ -277,7 +507,12 @@
       "We opened Sonria more than 15 years ago with a simple idea, give every patient the same care we'd give our own family.",
       "Today we serve thousands of patients across four North Texas offices. We speak Spanish and English, walk through every step, and never recommend treatment you don't need."
     ],
-    "credentials": ["DDS - University of Texas", "Advanced implantology", "ADA Member", "Bilingual EN/ES"]
+    "credentials": [
+      "DDS - University of Texas",
+      "Advanced implantology",
+      "ADA Member",
+      "Bilingual EN/ES"
+    ]
   },
   "about": {
     "heading": "A family practice, not a chain",
@@ -289,16 +524,40 @@
       "Each of our four offices has the same modern technology, the same clinical standard, and the same culture of respect for your time and trust."
     ],
     "values": [
-      { "title": "Honesty above all", "body": "Clear posted pricing. If you don't need it, we don't recommend it." },
-      { "title": "Truly bilingual", "body": "Whole team, every office, Spanish and English equally." },
-      { "title": "Family first", "body": "We treat children through grandparents, all in the same visit if you'd like." },
-      { "title": "Modern technology", "body": "Digital X-rays, 3D scans, in-office lab." }
+      {
+        "title": "Honesty above all",
+        "body": "Clear posted pricing. If you don't need it, we don't recommend it."
+      },
+      {
+        "title": "Truly bilingual",
+        "body": "Whole team, every office, Spanish and English equally."
+      },
+      {
+        "title": "Family first",
+        "body": "We treat children through grandparents, all in the same visit if you'd like."
+      },
+      {
+        "title": "Modern technology",
+        "body": "Digital X-rays, 3D scans, in-office lab."
+      }
     ],
     "stats": [
-      { "label": "Happy patients", "value": "12,000+" },
-      { "label": "Years serving", "value": "15+" },
-      { "label": "Locations", "value": "4" },
-      { "label": "Implants placed", "value": "3,000+" }
+      {
+        "label": "Happy patients",
+        "value": "12,000+"
+      },
+      {
+        "label": "Years serving",
+        "value": "15+"
+      },
+      {
+        "label": "Locations",
+        "value": "4"
+      },
+      {
+        "label": "Implants placed",
+        "value": "3,000+"
+      }
     ]
   },
   "newPatients": {
@@ -310,10 +569,22 @@
       "note": "Comprehensive exam + digital X-rays + personalized consultation. No surprises."
     },
     "steps": [
-      { "title": "Book in 3 minutes", "body": "Call (682) 284-1120 or use the form. We confirm by SMS." },
-      { "title": "Arrive 10 min early", "body": "Bring your ID, insurance (if any), and completed forms." },
-      { "title": "Comprehensive exam", "body": "We take digital X-rays, do a full oral exam, and discuss your history." },
-      { "title": "Clear plan", "body": "We explain what you need, when, and how much it costs. You decide." }
+      {
+        "title": "Book in 3 minutes",
+        "body": "Call (682) 284-1120 or use the form. We confirm by SMS."
+      },
+      {
+        "title": "Arrive 10 min early",
+        "body": "Bring your ID, insurance (if any), and completed forms."
+      },
+      {
+        "title": "Comprehensive exam",
+        "body": "We take digital X-rays, do a full oral exam, and discuss your history."
+      },
+      {
+        "title": "Clear plan",
+        "body": "We explain what you need, when, and how much it costs. You decide."
+      }
     ],
     "whatToBring": [
       "Photo ID",
@@ -327,35 +598,91 @@
     "heading": "Insurance and financing",
     "intro": "We accept most PPO plans. If yours isn't on the list, call us, we can almost always see you as out-of-network with similar benefits.",
     "plansAccepted": [
-      "Aetna", "Cigna", "Delta Dental PPO", "Guardian", "Humana",
-      "MetLife", "Principal", "United Concordia", "United Healthcare", "Blue Cross Blue Shield"
+      "Aetna",
+      "Cigna",
+      "Delta Dental PPO",
+      "Guardian",
+      "Humana",
+      "MetLife",
+      "Principal",
+      "United Concordia",
+      "United Healthcare",
+      "Blue Cross Blue Shield"
     ],
     "noInsurance": "No insurance? We have an annual membership plan from $199 that includes two cleanings, exams, and discounts on other treatments.",
     "financing": [
-      { "name": "CareCredit", "body": "Medical financing with no-interest plans from 6 to 24 months." },
-      { "name": "Sonria in-house plan", "body": "Fixed monthly payments, no aggressive credit check." },
-      { "name": "Cash / card", "body": "5% discount when you pay up front." }
+      {
+        "name": "CareCredit",
+        "body": "Medical financing with no-interest plans from 6 to 24 months."
+      },
+      {
+        "name": "Sonria in-house plan",
+        "body": "Fixed monthly payments, no aggressive credit check."
+      },
+      {
+        "name": "Cash / card",
+        "body": "5% discount when you pay up front."
+      }
     ],
     "faqs": [
-      { "q": "Do you verify my insurance before the visit?", "a": "Yes, at no charge. Call us with your info and we verify coverage in under 24 hours." },
-      { "q": "What if my insurance doesn't cover everything?", "a": "We explain exactly what you owe before treatment, with payment options if you can't cover it right away." },
-      { "q": "Do you accept Medicaid?", "a": "Not directly. But we have accessible plans for patients without coverage." }
+      {
+        "q": "Do you verify my insurance before the visit?",
+        "a": "Yes, at no charge. Call us with your info and we verify coverage in under 24 hours."
+      },
+      {
+        "q": "What if my insurance doesn't cover everything?",
+        "a": "We explain exactly what you owe before treatment, with payment options if you can't cover it right away."
+      },
+      {
+        "q": "Do you accept Medicaid?",
+        "a": "Not directly. But we have accessible plans for patients without coverage."
+      }
     ]
   },
   "faq": {
     "heading": "Frequently asked questions",
     "subheading": "What we get asked most, answered in one line.",
     "items": [
-      { "q": "Do you speak Spanish?", "a": "Yes. The whole team, in all four offices. Not just the dentist." },
-      { "q": "Do you accept patients without insurance?", "a": "Yes. We have new patient specials ($79.99), membership plans ($199/year), and no-interest financing." },
-      { "q": "How fast can you see me if I'm in pain?", "a": "Almost always same-day if you call before noon. We hold daily emergency slots." },
-      { "q": "Do you see kids?", "a": "Yes, starting at the first tooth. We make first visits fun and educational." },
-      { "q": "Where are the offices?", "a": "Arlington, Commerce, Paris, and Grand Prairie. Same team and pricing at each one." },
-      { "q": "How much does an implant cost?", "a": "$2,499 all-inclusive per tooth. No surprises. Financing available." },
-      { "q": "How much is All-on-4?", "a": "$15,999 per arch, all-inclusive (extractions, 4 implants, temporary and final prosthesis)." },
-      { "q": "Can I pay monthly?", "a": "Yes. CareCredit, Sonria in-house plan, or card. Most patients pay $200-500 per month." },
-      { "q": "What are the hours?", "a": "Mon-Fri 8am-6pm. Arlington also open Saturdays 9am-2pm." },
-      { "q": "Do you handle emergencies?", "a": "Yes. Call (682) 284-1120 and we almost always see you the same day." }
+      {
+        "q": "Do you speak Spanish?",
+        "a": "Yes. The whole team, in all four offices. Not just the dentist."
+      },
+      {
+        "q": "Do you accept patients without insurance?",
+        "a": "Yes. We have new patient specials ($79.99), membership plans ($199/year), and no-interest financing."
+      },
+      {
+        "q": "How fast can you see me if I'm in pain?",
+        "a": "Almost always same-day if you call before noon. We hold daily emergency slots."
+      },
+      {
+        "q": "Do you see kids?",
+        "a": "Yes, starting at the first tooth. We make first visits fun and educational."
+      },
+      {
+        "q": "Where are the offices?",
+        "a": "Arlington, Commerce, Paris, and Grand Prairie. Same team and pricing at each one."
+      },
+      {
+        "q": "How much does an implant cost?",
+        "a": "$2,499 all-inclusive per tooth. No surprises. Financing available."
+      },
+      {
+        "q": "How much is All-on-4?",
+        "a": "$15,999 per arch, all-inclusive (extractions, 4 implants, temporary and final prosthesis)."
+      },
+      {
+        "q": "Can I pay monthly?",
+        "a": "Yes. CareCredit, Sonria in-house plan, or card. Most patients pay $200-500 per month."
+      },
+      {
+        "q": "What are the hours?",
+        "a": "Mon-Fri 8am-6pm. Arlington also open Saturdays 9am-2pm."
+      },
+      {
+        "q": "Do you handle emergencies?",
+        "a": "Yes. Call (682) 284-1120 and we almost always see you the same day."
+      }
     ]
   },
   "contactPage": {
@@ -381,7 +708,11 @@
     "phone": "(682) 284-1120",
     "phoneHref": "tel:+16822841120",
     "email": "info@sonriadentista.com",
-    "hours": ["Mon-Fri 8am-6pm", "Sat 9am-2pm", "Sun Closed"]
+    "hours": [
+      "Mon-Fri 9am-5pm",
+      "Sat 9am-2pm (Arlington & Paris only)",
+      "Sun Closed"
+    ]
   },
   "nav": {
     "services": "Services",
@@ -393,5 +724,12 @@
     "faq": "FAQ",
     "contact": "Contact",
     "book": "Book"
+  },
+  "stats": {
+    "totalReviews": 1501,
+    "avgRating": 4.93,
+    "locationsCount": 4,
+    "veteranOwned": true,
+    "womanOwned": true
   }
 }

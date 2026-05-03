@@ -8,11 +8,11 @@ const playfair = Playfair_Display({ variable: "--font-display", subsets: ["latin
 export const metadata: Metadata = {
   metadataBase: new URL("https://sonriadentista.com"),
   title: {
-    default: "Sonria Dentista | Bilingual family dental care in North Texas",
+    default: "Bilingual Dentist in Arlington TX | Sonria Dentista",
     template: "%s | Sonria Dentista",
   },
   description:
-    "Bilingual dental care for the whole family. Dr. Sandeep Namineni and team across Arlington, Commerce, Paris, and Grand Prairie. Honest pricing, same-day care.",
+    "Bilingual family dental care led by Dr. Deepti Namineni. Implants, orthodontics, same-day visits across Arlington, Grand Prairie, Paris, and Commerce. 1,500+ 5-star reviews.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

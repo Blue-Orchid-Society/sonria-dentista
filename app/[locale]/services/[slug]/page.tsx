@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getSite, type Locale } from "@/lib/content";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const dynamicParams = false;
 
@@ -61,9 +62,16 @@ export default async function ServiceDetailPage({
     l.servicesOffered?.includes(service.slug),
   );
   const otherServices = site.services.list.filter((s) => s.slug !== service.slug);
+  const baseUrl = "https://sonriadentista.com";
+  const breadcrumbs = [
+    { name: "Home", url: `${baseUrl}/${locale}` },
+    { name: locale === "es" ? "Servicios" : "Services", url: `${baseUrl}/${locale}#services` },
+    { name: service.name, url: `${baseUrl}/${locale}/services/${service.slug}` },
+  ];
 
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
       <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
           <Link
