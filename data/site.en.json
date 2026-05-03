@@ -366,15 +366,14 @@
         "phone": "(682) 284-1120",
         "hours": "Mon-Fri 9am-5pm | Sat 9am-2pm",
         "primary": true,
-        "longBlurb": "Our flagship Arlington office is on W Pioneer Pkwy, with ample parking and easy access from I-30 and I-20. We serve families across Arlington, Mansfield, Pantego, and Dalworthington Gardens.",
+        "longBlurb": "Our flagship Arlington office is at 2024 Baird Farm Rd in North Arlington, with on-site parking and easy access from major Arlington thoroughfares. We serve families across Arlington, Pantego, Kennedale, and the surrounding North Arlington area, in English and Spanish.",
         "neighborhoods": [
-          "Arlington Heights",
+          "North Arlington",
           "Pantego",
-          "Mansfield",
-          "Dalworthington Gardens",
-          "Kennedale"
+          "Kennedale",
+          "Arlington Heights"
         ],
-        "directions": "Near the intersection of Pioneer Pkwy and Cooper St. Free parking in front of the building.",
+        "directions": "On Baird Farm Rd in North Arlington, suite 100. On-site parking available.",
         "googleMapsUrl": "https://www.google.com/maps?cid=1558676577930962228",
         "servicesOffered": [
           "general",
@@ -401,15 +400,15 @@
         "phone": "(903) 246-4424",
         "hours": "Mon-Fri 9am-5pm",
         "primary": false,
-        "longBlurb": "Our Commerce office serves the Texas A&M Commerce university community and Hunt County families. Near downtown with street parking.",
+        "longBlurb": "Our Commerce office on Live Oak St serves families across Hunt County and Northeast Texas. With dental implants, orthodontics, and oral surgery available on-site, we keep most cases in one place rather than referring out. Bilingual care for Spanish-speaking and English-speaking patients alike.",
         "neighborhoods": [
           "Commerce",
+          "Hunt County",
           "Cooper",
-          "Wolfe City",
-          "Campbell",
-          "Greenville"
+          "Greenville (NE)",
+          "Sulphur Springs (W)"
         ],
-        "directions": "On Park St, two blocks from downtown Commerce. Near the Texas A&M Commerce campus.",
+        "directions": "On Live Oak St in Commerce, suite C. On-site parking. Veteran-owned and woman-owned per Google Business listing.",
         "googleMapsUrl": "https://www.google.com/maps?cid=9991201295560044088",
         "servicesOffered": [
           "general",
@@ -435,15 +434,15 @@
         "phone": "(903) 609-0567",
         "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
         "primary": false,
-        "longBlurb": "Our Paris office on Lamar Ave serves families in Paris, Reno, Powderly, and across Lamar County. Near Paris Junior College and downtown.",
+        "longBlurb": "Our Paris, TX office on Lamar Ave brings advanced implant and restorative dentistry to Lamar County. We handle full-arch implants, snap-on dentures, TMJ care, and cosmetic dentistry in addition to general family care. Wheelchair accessible, on-site parking, bilingual team.",
         "neighborhoods": [
           "Paris",
+          "Lamar County",
           "Reno",
           "Powderly",
-          "Blossom",
-          "Roxton"
+          "Blossom"
         ],
-        "directions": "On Lamar Ave, the main route through Paris. Ample parking. 5 minutes from Paris Junior College.",
+        "directions": "On Lamar Ave in Paris, suite L. On-site parking. Wheelchair accessible entrance, parking, restroom, and seating.",
         "googleMapsUrl": "https://www.google.com/maps?cid=18055522069307288222",
         "servicesOffered": [
           "general",
@@ -469,15 +468,15 @@
         "phone": "(972) 262-5593",
         "hours": "Mon-Fri 9am-5pm",
         "primary": false,
-        "longBlurb": "Grand Prairie on Pioneer Pkwy serves families in Grand Prairie, Cedar Hill, and Duncanville. Direct access from Highway 161 and I-20. Ample parking.",
+        "longBlurb": "Our Grand Prairie office on W Westchester Pkwy serves families across the Mid-Cities and southwest DFW. With multiple dentists on staff, we offer same-day implants, emergency care (including after-hours), and the full spectrum of cosmetic and family dentistry. Woman-owned, bilingual team.",
         "neighborhoods": [
           "Grand Prairie",
-          "Cedar Hill",
-          "Duncanville",
-          "Dalworth Park",
-          "Lake Joe Pool"
+          "Mansfield",
+          "Cedar Hill (NW)",
+          "Duncanville (W)",
+          "Mid-Cities"
         ],
-        "directions": "Pioneer Pkwy between Carrier Pkwy and SH-360. Near Lone Star Park.",
+        "directions": "On W Westchester Pkwy, suite #300. On-site parking.",
         "googleMapsUrl": "https://www.google.com/maps?cid=535386060820614263",
         "servicesOffered": [
           "general",

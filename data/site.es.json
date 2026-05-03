@@ -366,15 +366,14 @@
         "phone": "(682) 284-1120",
         "hours": "Mon-Fri 9am-5pm | Sat 9am-2pm",
         "primary": true,
-        "longBlurb": "Nuestra ubicacion principal en Arlington esta en W Pioneer Pkwy, con estacionamiento amplio y acceso facil desde I-30 e I-20. Atendemos a familias de Arlington, Mansfield, Pantego y Dalworthington Gardens.",
+        "longBlurb": "Nuestra sede principal en Arlington está en 2024 Baird Farm Rd, en el norte de Arlington, con estacionamiento en el lugar y fácil acceso desde las principales avenidas. Atendemos a familias de Arlington, Pantego, Kennedale y los alrededores del norte de Arlington, en inglés y español.",
         "neighborhoods": [
-          "Arlington Heights",
+          "North Arlington",
           "Pantego",
-          "Mansfield",
-          "Dalworthington Gardens",
-          "Kennedale"
+          "Kennedale",
+          "Arlington Heights"
         ],
-        "directions": "Cerca de la interseccion de Pioneer Pkwy y Cooper St. Estacionamiento gratuito al frente del edificio.",
+        "directions": "On Baird Farm Rd in North Arlington, suite 100. On-site parking available.",
         "googleMapsUrl": "https://www.google.com/maps?cid=1558676577930962228",
         "servicesOffered": [
           "general",
@@ -401,15 +400,15 @@
         "phone": "(903) 246-4424",
         "hours": "Mon-Fri 9am-5pm",
         "primary": false,
-        "longBlurb": "Nuestra ubicacion en Commerce sirve a la comunidad universitaria de Texas A&M Commerce y a las familias del condado de Hunt. Cerca del centro y con estacionamiento en la calle.",
+        "longBlurb": "Nuestra oficina de Commerce en Live Oak St atiende a familias de todo el condado de Hunt y el noreste de Texas. Con implantes dentales, ortodoncia y cirugía oral disponibles en el lugar, mantenemos la mayoría de los casos en un solo sitio sin remisiones externas. Atención bilingüe para pacientes hispanohablantes y angloparlantes.",
         "neighborhoods": [
           "Commerce",
+          "Hunt County",
           "Cooper",
-          "Wolfe City",
-          "Campbell",
-          "Greenville"
+          "Greenville (NE)",
+          "Sulphur Springs (W)"
         ],
-        "directions": "En Park St, a dos cuadras del centro de Commerce. Cerca del campus de Texas A&M Commerce.",
+        "directions": "On Live Oak St in Commerce, suite C. On-site parking. Veteran-owned and woman-owned per Google Business listing.",
         "googleMapsUrl": "https://www.google.com/maps?cid=9991201295560044088",
         "servicesOffered": [
           "general",
@@ -435,15 +434,15 @@
         "phone": "(903) 609-0567",
         "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
         "primary": false,
-        "longBlurb": "Nuestra ubicacion en Paris en Lamar Ave atiende a las familias de Paris, Reno, Powderly y todo el condado de Lamar. Cerca de Paris Junior College y del centro de la ciudad.",
+        "longBlurb": "Nuestra oficina de Paris, TX en Lamar Ave ofrece implantología avanzada y odontología restauradora al condado de Lamar. Manejamos implantes de arco completo, dentaduras tipo snap-on, atención de ATM y odontología cosmética además de cuidado familiar general. Acceso para sillas de ruedas, estacionamiento en el lugar, equipo bilingüe.",
         "neighborhoods": [
           "Paris",
+          "Lamar County",
           "Reno",
           "Powderly",
-          "Blossom",
-          "Roxton"
+          "Blossom"
         ],
-        "directions": "En Lamar Ave, ruta principal de Paris. Estacionamiento amplio. A 5 minutos de Paris Junior College.",
+        "directions": "On Lamar Ave in Paris, suite L. On-site parking. Wheelchair accessible entrance, parking, restroom, and seating.",
         "googleMapsUrl": "https://www.google.com/maps?cid=18055522069307288222",
         "servicesOffered": [
           "general",
@@ -469,15 +468,15 @@
         "phone": "(972) 262-5593",
         "hours": "Mon-Fri 9am-5pm",
         "primary": false,
-        "longBlurb": "Grand Prairie en Pioneer Pkwy sirve a familias de Grand Prairie, Cedar Hill y Duncanville. Acceso directo desde Highway 161 y I-20. Estacionamiento amplio.",
+        "longBlurb": "Nuestra oficina de Grand Prairie en W Westchester Pkwy atiende a familias de las Mid-Cities y el suroeste de DFW. Con varios dentistas en el equipo, ofrecemos implantes el mismo día, atención de emergencias (incluso fuera del horario regular) y todo el espectro de odontología cosmética y familiar. Práctica de mujer, equipo bilingüe.",
         "neighborhoods": [
           "Grand Prairie",
-          "Cedar Hill",
-          "Duncanville",
-          "Dalworth Park",
-          "Lake Joe Pool"
+          "Mansfield",
+          "Cedar Hill (NW)",
+          "Duncanville (W)",
+          "Mid-Cities"
         ],
-        "directions": "Pioneer Pkwy entre Carrier Pkwy y SH-360. Cerca de Lone Star Park.",
+        "directions": "On W Westchester Pkwy, suite #300. On-site parking.",
         "googleMapsUrl": "https://www.google.com/maps?cid=535386060820614263",
         "servicesOffered": [
           "general",
