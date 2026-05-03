@@ -61,16 +61,6 @@ export function Hero({
           />
         </div>
       </div>
-      <div className="border-y border-border-soft bg-card/60">
-        <div className="mx-auto max-w-6xl px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {trustSignals.map((t) => (
-            <div key={t.label} className="text-center md:text-left">
-              <div className="font-display text-2xl md:text-3xl text-foreground">{t.value}</div>
-              <div className="text-xs uppercase tracking-wider text-muted-2 mt-1">{t.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
