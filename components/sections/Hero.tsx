@@ -31,23 +31,23 @@ export function Hero({
             <span className="h-1.5 w-1.5 rounded-full bg-sage" />
             {bilingualNote}
           </span>
-          <h1 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground max-w-xl">
+          <h1 className="mt-5 font-display text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground max-w-xl text-balance">
             {title}
           </h1>
-          <p className="mt-5 text-lg text-muted max-w-xl leading-relaxed">{subtitle}</p>
+          <p className="mt-5 text-base sm:text-lg text-muted max-w-xl leading-relaxed text-pretty">{subtitle}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
               href="#contact"
-              className="rounded-full bg-terracotta px-6 py-3.5 text-white font-semibold hover:bg-terracotta-deep transition shadow-warm"
+              className="rounded-full bg-terracotta px-5 sm:px-6 py-3.5 text-white font-semibold hover:bg-terracotta-deep transition shadow-warm"
             >
               {ctaPrimary}
             </a>
             <a
               href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
-              className="rounded-full border border-border-soft bg-card px-6 py-3.5 text-foreground font-semibold hover:border-foreground transition inline-flex items-center gap-2"
+              className="rounded-full border border-border-soft bg-card px-5 sm:px-6 py-3.5 text-foreground font-semibold hover:border-foreground transition inline-flex items-center gap-2 text-sm sm:text-base"
             >
               <span aria-hidden>📞</span>
-              {ctaSecondary} <span className="text-muted font-normal">{phone}</span>
+              {ctaSecondary} <span className="text-muted font-normal hidden sm:inline">{phone}</span>
             </a>
           </div>
         </div>
