@@ -10,3 +10,7 @@ npm run deploy   # vercel deploy --prod --scope syndicate-e66a97a1
 ```
 
 See `CLAUDE.md` for editing conventions, `.context/HANDOFF.md` for the source-of-truth content captured from the original site.
+
+## Hivemind agent smoke test
+
+This repo was used to validate the Linear -> Hivemind -> Dev Agent -> GitHub PR flow through the wrapper with a small README-only change.
