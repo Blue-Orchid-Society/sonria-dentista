@@ -15,21 +15,27 @@ const testimonials = {
     items: [
       {
         quote:
-          "Love my new dentist. They are very affordable. Dentist was very professional and staff were great.",
-        name: "Annie C.",
-        detail: "Arlington patient",
+          "From the receptionist to the hygienist to the dentist, everyone greeted me with a big smile and made me feel welcome. Scheduling was easy and the place was clean and hygienic, with almost no wait.",
+        name: "Angela",
+        detail: "Patient review",
       },
       {
         quote:
-          "Been a patient of dr. C for longtime. He does an amazing job. Staff are great and friendly.",
-        name: "Michael D.",
-        detail: "Arlington patient",
+          "I've been to this dentist three times in six months for a cleaning, a filling, and a crown. I experienced excellent care and value each time and refer everyone I can.",
+        name: "Larry Batson",
+        detail: "Patient review",
       },
       {
         quote:
-          "The current site highlights a 4.9 average rating and more than 10k happy patients across Sonria locations.",
-        name: "Sonria Dentista",
-        detail: "Current site trust signal",
+          "The entire staff was friendly and helpful. I appreciate their kind and respectful professionalism. They helped me relax enough to move forward with repairing my dental health and self-confidence.",
+        name: "Angela Gayford",
+        detail: "Patient review",
+      },
+      {
+        quote:
+          "The physician communicated everything in a way I could understand, and she and her assistant showed genuine compassion that calmed my nervousness.",
+        name: "Regina Boyd",
+        detail: "Patient review",
       },
     ],
   },
@@ -41,21 +47,27 @@ const testimonials = {
     items: [
       {
         quote:
-          "Love my new dentist. They are very affordable. Dentist was very professional and staff were great.",
-        name: "Annie C.",
-        detail: "Paciente de Arlington",
+          "From the receptionist to the hygienist to the dentist, everyone greeted me with a big smile and made me feel welcome. Scheduling was easy and the place was clean and hygienic, with almost no wait.",
+        name: "Angela",
+        detail: "Resena de paciente",
       },
       {
         quote:
-          "Been a patient of dr. C for longtime. He does an amazing job. Staff are great and friendly.",
-        name: "Michael D.",
-        detail: "Paciente de Arlington",
+          "I've been to this dentist three times in six months for a cleaning, a filling, and a crown. I experienced excellent care and value each time and refer everyone I can.",
+        name: "Larry Batson",
+        detail: "Resena de paciente",
       },
       {
         quote:
-          "El sitio actual destaca una calificacion promedio de 4.9 y mas de 10k pacientes felices en las ubicaciones de Sonria.",
-        name: "Sonria Dentista",
-        detail: "Senal de confianza del sitio actual",
+          "The entire staff was friendly and helpful. I appreciate their kind and respectful professionalism. They helped me relax enough to move forward with repairing my dental health and self-confidence.",
+        name: "Angela Gayford",
+        detail: "Resena de paciente",
+      },
+      {
+        quote:
+          "The physician communicated everything in a way I could understand, and she and her assistant showed genuine compassion that calmed my nervousness.",
+        name: "Regina Boyd",
+        detail: "Resena de paciente",
       },
     ],
   },

@@ -697,6 +697,84 @@
       "Cuatro ubicaciones en el Norte de Texas"
     ]
   },
+  "team": {
+    "providers": [
+      {
+        "slug": "deepti-namineni",
+        "name": "Dra. Deepti Namineni",
+        "initials": "DN",
+        "title": "DDS, MS - Dentista principal y especialista en implantes dentales",
+        "bio": [
+          "La Dra. Namineni es una dentista general compasiva y meticulosa, con enfoque en odontologia cosmetica y familiar.",
+          "Ofrece atencion individualizada en un ambiente tranquilo y acogedor, donde se combinan comodidad, precision y estetica."
+        ],
+        "highlights": [
+          "Miembro de ADA y TDA",
+          "Atencion compasiva e individualizada",
+          "Dentista principal y especialista"
+        ],
+        "locationSlugs": [
+          "arlington",
+          "grand-prairie"
+        ]
+      },
+      {
+        "slug": "ahn",
+        "name": "Dr. Ahn",
+        "initials": "AA",
+        "title": "DDS, MS - Especialista en ortodoncia",
+        "bio": [
+          "El Dr. Ahn es un ortodoncista altamente capacitado, dedicado a crear sonrisas seguras y saludables con cuidado avanzado.",
+          "Como proveedor certificado en Invisalign, ofrece opciones discretas y personalizadas para adaptarse al estilo de vida de cada paciente."
+        ],
+        "highlights": [
+          "Mas de 20 anos de experiencia en ortodoncia",
+          "Resultados predecibles",
+          "Enfoque en precision y atencion al paciente"
+        ],
+        "locationSlugs": [
+          "arlington"
+        ]
+      },
+      {
+        "slug": "tarun-mundluru",
+        "name": "Dr. Tarun Mundluru",
+        "initials": "TM",
+        "title": "BDS, MSc, DABOP - Odontologia familiar y general",
+        "bio": [
+          "El Dr. Mundluru es un dentista experimentado dedicado a brindar atencion integral centrada en el paciente.",
+          "Su practica incluye odontologia restaurativa, endodoncia, extraccion de muelas del juicio, implantes dentales y planificacion de tratamientos."
+        ],
+        "highlights": [
+          "Experto en odontologia familiar y preventiva",
+          "Miembro de la Asociacion Dental Americana",
+          "Enfoque gentil y centrado en el paciente"
+        ],
+        "locationSlugs": [
+          "commerce",
+          "paris"
+        ]
+      },
+      {
+        "slug": "chu",
+        "name": "Dra. Chu",
+        "initials": "CC",
+        "title": "DDS, PhD - Ortodoncia",
+        "bio": [
+          "La Dra. Chu aporta mas de 20 anos de experiencia en ortodoncia y un doctorado en Biologia Oral de Ohio State University.",
+          "Se especializa en brackets e Invisalign con un enfoque basado en la ciencia para el movimiento dental preciso."
+        ],
+        "highlights": [
+          "Doctorado en Biologia Oral",
+          "Mas de 20 anos de experiencia en ortodoncia",
+          "Miembro de la Asociacion Americana de Ortodoncistas"
+        ],
+        "locationSlugs": [
+          "commerce"
+        ]
+      }
+    ]
+  },
   "about": {
     "heading": "Un verdadero hogar dental",
     "subheading": "Sobre Sonria Dentista",

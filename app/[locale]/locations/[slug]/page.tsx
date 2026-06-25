@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { CalendarDays, ClipboardList, MapPin, Phone, Star } from "lucide-react";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { getSite, type Locale } from "@/lib/content";
 
 export const dynamicParams = false;
@@ -49,6 +50,7 @@ export default async function LocationDetailPage({
 
   const isEs = locale === "es";
   const servicesHere = site.services.list.filter((s) => loc.servicesOffered?.includes(s.slug));
+  const providersHere = site.team.providers.filter((provider) => provider.locationSlugs.includes(slug));
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
   const phoneHref = loc.phoneHref ?? `tel:${loc.phone.replace(/[^0-9+]/g, "")}`;
@@ -211,41 +213,70 @@ export default async function LocationDetailPage({
         </section>
       )}
 
-      {servicesHere.length > 0 && (
-        <section className="bg-foreground py-16 text-background md:py-20">
+      {providersHere.length > 0 && (
+        <section className="border-y border-border-soft bg-card py-16 md:py-20">
           <div className="mx-auto max-w-6xl px-4">
-            <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+            <div className="grid gap-8 md:grid-cols-[0.75fr_1.25fr] md:items-end">
               <div>
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
-                  {labels.services}
+                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-terracotta">
+                  {labels.providers}
                 </span>
-                <h2 className="mt-3 font-display text-3xl text-white md:text-5xl">
-                  {labels.servicesHeading}
+                <h2 className="mt-3 font-display text-3xl text-foreground md:text-5xl">
+                  {labels.providersHeading}
                 </h2>
               </div>
-              <p className="max-w-xl text-base leading-relaxed text-background/70">
-                {labels.servicesBody}
-              </p>
+              <p className="text-base leading-relaxed text-muted">{labels.providersBody}</p>
             </div>
 
-            <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {servicesHere.map((service) => (
-                <Link
-                  key={service.slug}
-                  href={`/${locale}/services/${service.slug}`}
-                  className="group rounded-xl border border-white/10 bg-white/8 p-5 transition hover:bg-white hover:text-foreground"
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {providersHere.map((provider) => (
+                <article
+                  key={provider.slug}
+                  className="rounded-2xl border border-border-soft bg-background p-6 shadow-warm"
                 >
-                  <h3 className="font-display text-xl text-white transition group-hover:text-foreground">
-                    {service.name}
-                  </h3>
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-background/68 transition group-hover:text-muted">
-                    {service.blurb}
-                  </p>
-                </Link>
+                  <div className="flex items-start gap-4">
+                    <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-foreground font-display text-xl text-background">
+                      {provider.initials}
+                    </div>
+                    <div>
+                      <h3 className="font-display text-2xl text-foreground">{provider.name}</h3>
+                      <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-terracotta">
+                        {provider.title}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-5 space-y-3 text-sm leading-relaxed text-muted">
+                    {provider.bio.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+
+                  <ul className="mt-6 grid gap-2 text-sm">
+                    {provider.highlights.map((highlight) => (
+                      <li
+                        key={highlight}
+                        className="rounded-lg border border-border-soft bg-card px-3 py-2 text-foreground"
+                      >
+                        {highlight}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
               ))}
             </div>
           </div>
         </section>
+      )}
+
+      {servicesHere.length > 0 && (
+        <ServicesGrid
+          heading={labels.servicesHeading}
+          subheading={labels.servicesBody}
+          services={servicesHere}
+          pricingFeatured={site.services.pricingFeatured}
+          locale={locale}
+        />
       )}
 
       <section className="bg-background py-14 md:py-16">
@@ -347,6 +378,11 @@ function getLabels(isEs: boolean, city: string) {
     mapBody: isEs ? "Abre indicaciones actualizadas en Google Maps." : "Open current directions in Google Maps.",
     reviews: isEs ? "Resenas" : "Reviews",
     reviewBody: isEs ? "Lee resenas y senales de confianza de esta ubicacion." : "Read reviews and trust signals for this office.",
+    providers: isEs ? "Equipo dental" : "Dental team",
+    providersHeading: isEs ? `Dentistas disponibles en ${city}` : `Providers at ${city}`,
+    providersBody: isEs
+      ? "Conoce a los doctores que atienden en este consultorio. La disponibilidad puede variar segun el tipo de cita."
+      : "Meet the doctors connected to this office. Availability can vary by appointment type.",
   };
 }
 
