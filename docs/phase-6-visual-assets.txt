@@ -1,0 +1,73 @@
+Sonria Dentista visual assets plan
+
+Current temporary asset approach
+The site currently uses high-quality Unsplash images as placeholders. These are meant to make the site feel more polished during buildout, not to replace real Sonria photography long-term.
+
+
+Where stock images are currently used
+
+Homepage hero
+Purpose: warm family/dental setting
+Replacement later: real Sonria patient-friendly office or team video/image
+
+Homepage and location service showcase
+Purpose: dental care, family care, clean office, and smile-focused service visuals
+Replacement later: real treatment-room photos, team photos, approved service imagery
+
+Location page heroes
+Purpose: each location now has a distinct warm dental/healthcare hero image
+Replacement later: exterior/interior photo of each office
+
+Provider cards on location pages
+Purpose: temporary professional profile placeholders
+Replacement later: real headshots for each dentist/provider
+
+
+Real assets to request from Sonria
+
+Office exterior photos for:
+Arlington
+Commerce
+Paris
+Grand Prairie
+
+Office interior photos:
+Reception area
+Treatment room
+Team working with patient
+Parent and child friendly care moment
+
+Provider headshots:
+Dr. Deepti Namineni
+Dr. Ahn
+Dr. Tarun Mundluru
+Dr. Chu
+
+Trust assets:
+Patient testimonial videos
+Team group photo
+Approved smile gallery images
+Before/after photos only with written approval
+
+
+Photo style guidance
+
+Use:
+Warm natural lighting
+Real smiles
+Friendly dentist/team imagery
+Clean modern dental office shots
+Parent and child moments
+Local office details that prove the practice is real
+
+Avoid:
+Extreme closeups of dental procedures
+Cold hospital-like images
+Overly fake stock poses
+Generic corporate healthcare imagery
+Graphic before/after images without approval
+
+
+Implementation note
+Images are currently stored in JSON fields where possible, so replacing stock later should mostly mean changing URLs in content data instead of rewriting page components.
+

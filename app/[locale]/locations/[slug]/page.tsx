@@ -49,7 +49,9 @@ export default async function LocationDetailPage({
   if (!loc) notFound();
 
   const isEs = locale === "es";
-  const servicesHere = site.services.list.filter((s) => loc.servicesOffered?.includes(s.slug));
+  const servicesHere = site.services.list.filter(
+    (s) => loc.servicesOffered?.includes(s.slug) && s.showInOverview !== false,
+  );
   const providersHere = site.team.providers.filter((provider) => provider.locationSlugs.includes(slug));
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
@@ -71,8 +73,8 @@ export default async function LocationDetailPage({
 
       <section className="relative overflow-hidden bg-foreground text-background">
         <img
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80"
-          alt=""
+          src={loc.heroImageUrl}
+          alt={loc.heroImageAlt}
           className="absolute inset-0 h-full w-full object-cover opacity-35"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/82 to-foreground/35" />
@@ -232,36 +234,45 @@ export default async function LocationDetailPage({
               {providersHere.map((provider) => (
                 <article
                   key={provider.slug}
-                  className="rounded-2xl border border-border-soft bg-background p-6 shadow-warm"
+                  className="overflow-hidden rounded-2xl border border-border-soft bg-background shadow-warm"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-foreground font-display text-xl text-background">
-                      {provider.initials}
+                  <div className="grid gap-0 sm:grid-cols-[0.42fr_0.58fr]">
+                    <div className="relative min-h-72 sm:min-h-full">
+                      <img
+                        src={provider.imageUrl}
+                        alt={provider.imageAlt}
+                        className="absolute inset-0 h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
                     </div>
-                    <div>
-                      <h3 className="font-display text-2xl text-foreground">{provider.name}</h3>
+                    <div className="p-6">
+                      <div className="inline-grid h-12 w-12 place-items-center rounded-full bg-foreground font-display text-lg text-background">
+                        {provider.initials}
+                      </div>
+                      <h3 className="mt-4 font-display text-2xl text-foreground">{provider.name}</h3>
                       <p className="mt-1 text-sm font-semibold uppercase tracking-wider text-terracotta">
                         {provider.title}
                       </p>
+
+                      <div className="mt-5 space-y-3 text-sm leading-relaxed text-muted">
+                        {provider.bio.map((paragraph) => (
+                          <p key={paragraph}>{paragraph}</p>
+                        ))}
+                      </div>
+
+                      <ul className="mt-6 grid gap-2 text-sm">
+                        {provider.highlights.map((highlight) => (
+                          <li
+                            key={highlight}
+                            className="rounded-lg border border-border-soft bg-card px-3 py-2 text-foreground"
+                          >
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-
-                  <div className="mt-5 space-y-3 text-sm leading-relaxed text-muted">
-                    {provider.bio.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
-                  </div>
-
-                  <ul className="mt-6 grid gap-2 text-sm">
-                    {provider.highlights.map((highlight) => (
-                      <li
-                        key={highlight}
-                        className="rounded-lg border border-border-soft bg-card px-3 py-2 text-foreground"
-                      >
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
                 </article>
               ))}
             </div>

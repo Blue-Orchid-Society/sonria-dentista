@@ -101,7 +101,7 @@ export function ServicesGrid({ heading, subheading, services, pricingFeatured, l
             {activeService && (
               <div className="mt-10 rounded-xl border border-border-soft bg-card p-5 shadow-warm">
                 <div className="text-xs font-semibold uppercase tracking-wider text-muted-2">
-                  {isEs ? "Ahora destacado" : "Now highlighting"}
+                  {isEs ? "Ahora destacado" : "Now Active"}
                 </div>
                 <div className="mt-2 font-display text-3xl text-foreground">{activeService.name}</div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{activeService.blurb}</p>

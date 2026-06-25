@@ -83,6 +83,7 @@ export default async function HomePage({
   const isEs = locale === "es";
   const doctorHeading = isEs ? "Conoce a tu equipo" : "Meet your team";
   const testimonialContent = isEs ? testimonials.es : testimonials.en;
+  const overviewServices = site.services.list.filter((service) => service.showInOverview !== false);
 
   return (
     <>
@@ -99,12 +100,12 @@ export default async function HomePage({
         trustSignals={site.hero.trustSignals}
         bilingualNote={site.contactCTA.bilingualNote}
         locations={site.locations.list.map((l) => ({ slug: l.slug, city: l.city }))}
-        services={site.services.list.map((s) => ({ slug: s.slug, name: s.name }))}
+        services={overviewServices.map((s) => ({ slug: s.slug, name: s.name }))}
       />
       <ServicesGrid
         heading={site.services.heading}
         subheading={site.services.subheading}
-        services={site.services.list}
+        services={overviewServices}
         pricingFeatured={site.services.pricingFeatured}
         locale={locale}
       />
