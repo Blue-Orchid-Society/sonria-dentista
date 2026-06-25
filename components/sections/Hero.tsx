@@ -1,5 +1,12 @@
+import type { Locale } from "@/lib/content";
+import { HeroLeadForm } from "@/components/sections/HeroLeadForm";
+
 type TrustSignal = { label: string; value: string };
+type LocationOption = { slug: string; city: string };
+type ServiceOption = { slug: string; name: string };
+
 type Props = {
+  locale: Locale;
   title: string;
   subtitle: string;
   ctaPrimary: string;
@@ -7,11 +14,15 @@ type Props = {
   phone: string;
   imageUrl: string;
   imageAlt: string;
+  videoUrl?: string;
   trustSignals: TrustSignal[];
   bilingualNote: string;
+  locations: LocationOption[];
+  services: ServiceOption[];
 };
 
 export function Hero({
+  locale,
   title,
   subtitle,
   ctaPrimary,
@@ -19,58 +30,79 @@ export function Hero({
   phone,
   imageUrl,
   imageAlt,
+  videoUrl,
   trustSignals,
   bilingualNote,
+  locations,
+  services,
 }: Props) {
+  const phoneHref = `tel:${phone.replace(/[^0-9+]/g, "")}`;
+
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40 -z-10" />
-      <div className="mx-auto max-w-6xl px-4 pt-14 pb-20 md:pt-20 md:pb-24 grid gap-12 md:grid-cols-[1.1fr_1fr] items-center">
-        <div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-card border border-border-soft px-3 py-1 text-xs text-muted">
-            <span className="h-1.5 w-1.5 rounded-full bg-sage" />
+    <section className="relative overflow-hidden bg-foreground text-background">
+      <div className="absolute inset-0" aria-hidden>
+        {videoUrl ? (
+          <video
+            className="h-full w-full object-cover"
+            src={videoUrl}
+            poster={imageUrl}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        ) : (
+          <img src={imageUrl} alt="" className="h-full w-full object-cover" loading="eager" />
+        )}
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,18,14,0.84)_0%,rgba(20,18,14,0.62)_42%,rgba(20,18,14,0.22)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-foreground/80 to-transparent" />
+      </div>
+
+      <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col justify-center px-4 py-16 md:py-20">
+        <div className="max-w-3xl">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold text-background/85 backdrop-blur">
+            <span className="h-1.5 w-1.5 rounded-full bg-gold" />
             {bilingualNote}
           </span>
-          <h1 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-foreground max-w-xl">
+          <h1 className="mt-6 max-w-3xl font-display text-5xl leading-[0.95] tracking-tight text-white md:text-7xl">
             {title}
           </h1>
-          <p className="mt-5 text-lg text-muted max-w-xl leading-relaxed">{subtitle}</p>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-background/82 md:text-xl">
+            {subtitle}
+          </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="#contact"
-              className="rounded-full bg-terracotta px-6 py-3.5 text-white font-semibold hover:bg-terracotta-deep transition shadow-warm"
+              href="#hero-appointment"
+              className="rounded-full bg-terracotta px-6 py-3.5 text-sm font-semibold text-white shadow-warm transition hover:bg-terracotta-deep"
             >
               {ctaPrimary}
             </a>
             <a
-              href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
-              className="rounded-full border border-border-soft bg-card px-6 py-3.5 text-foreground font-semibold hover:border-foreground transition inline-flex items-center gap-2"
+              href={phoneHref}
+              className="rounded-full border border-white/25 bg-white/12 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
             >
-              <span aria-hidden>📞</span>
-              {ctaSecondary} <span className="text-muted font-normal">{phone}</span>
+              {ctaSecondary} {phone}
             </a>
           </div>
-        </div>
-        <div className="relative">
-          <div className="absolute -inset-4 bg-gradient-to-br from-sage/15 to-terracotta/15 rounded-[2rem] -z-10" />
-          <img
-            src={imageUrl}
-            alt={imageAlt}
-            className="w-full aspect-[5/6] object-cover rounded-[1.75rem] shadow-warm-lg"
-            loading="eager"
-          />
+
+          <div id="hero-appointment">
+            <HeroLeadForm locale={locale} locations={locations} services={services} />
+          </div>
         </div>
       </div>
-      <div className="border-y border-border-soft bg-card/60">
-        <div className="mx-auto max-w-6xl px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+
+      <div className="relative border-y border-white/10 bg-background text-foreground">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 py-4 md:grid-cols-4">
           {trustSignals.map((t) => (
-            <div key={t.label} className="text-center md:text-left">
-              <div className="font-display text-2xl md:text-3xl text-foreground">{t.value}</div>
-              <div className="text-xs uppercase tracking-wider text-muted-2 mt-1">{t.label}</div>
+            <div key={t.label} className="rounded-xl bg-card px-4 py-4 ring-1 ring-border-soft">
+              <div className="font-display text-2xl text-foreground md:text-3xl">{t.value}</div>
+              <div className="mt-1 text-xs uppercase tracking-wider text-muted-2">{t.label}</div>
             </div>
           ))}
         </div>
       </div>
+
+      <span className="sr-only">{imageAlt}</span>
     </section>
   );
 }

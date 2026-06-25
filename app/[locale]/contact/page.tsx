@@ -44,6 +44,7 @@ export default async function ContactPage({
             locale={locale as Locale}
             labels={site.contactPage.formLabels}
             locations={site.locations.list.map((l) => ({ slug: l.slug, city: l.city }))}
+            services={site.services.list.map((s) => ({ slug: s.slug, name: s.name }))}
           />
           <aside className="space-y-6">
             <div className="rounded-2xl bg-card border border-border-soft p-6">

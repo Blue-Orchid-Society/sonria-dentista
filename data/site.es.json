@@ -2,303 +2,745 @@
   "name": "Sonria Dentista",
   "tagline": "Sonrisas saludables para toda la familia",
   "hero": {
-    "title": "Cuidado dental que se siente como en casa",
-    "subtitle": "Atencion bilingue, precios honestos, y un equipo que conoce a tu familia por nombre. Cuatro consultorios cerca de ti en el Norte de Texas.",
+    "title": "Tu dentista comunitario para toda la familia",
+    "subtitle": "Cuidado dental personalizado, conveniente y accesible en Arlington, Commerce, Paris y Grand Prairie. Hablamos ingles y espanol.",
     "ctaPrimary": "Reservar consulta",
     "ctaSecondary": "Llamar ahora",
     "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
     "imageAlt": "Familia sonriendo en el consultorio dental",
     "trustSignals": [
-      { "label": "Pacientes felices", "value": "12,000+" },
-      { "label": "Anos sirviendo", "value": "15+" },
-      { "label": "Consultorios", "value": "4" },
-      { "label": "Bilingue", "value": "ES / EN" }
-    ]
-  },
-  "services": {
-    "heading": "Servicios que cubren a toda la familia",
-    "subheading": "Desde la primera limpieza de tu hijo hasta implantes y tratamientos avanzados, todo bajo un mismo techo.",
-    "list": [
       {
-        "slug": "general",
-        "icon": "shield-check",
-        "name": "Odontologia general",
-        "blurb": "Limpiezas, examenes, empastes y mantenimiento preventivo para toda la familia.",
-        "longBlurb": "La odontologia general es la base de una sonrisa saludable. En Sonria atendemos a ninos, adultos y adultos mayores con cuidado preventivo completo y tratamientos restaurativos cuando se necesitan.",
-        "whatIsIt": "La odontologia general cubre limpiezas profesionales, examenes anuales con radiografias digitales, empastes de resina del color del diente, tratamientos de fluor, selladores, y educacion sobre higiene oral.",
-        "fourSteps": [
-          { "title": "Examen completo", "body": "Revisamos dientes, encias, mordida y radiografias para detectar problemas a tiempo." },
-          { "title": "Limpieza profesional", "body": "Eliminamos placa y sarro, pulimos los dientes y aplicamos fluor si es necesario." },
-          { "title": "Plan personalizado", "body": "Te explicamos en espanol o ingles que necesitas, cuando, y cuanto cuesta." },
-          { "title": "Cuidado continuo", "body": "Te recordamos tu proxima visita y te apoyamos entre citas con consejos claros." }
-        ],
-        "benefits": [
-          "Prevencion de caries y enfermedad de encias",
-          "Deteccion temprana de problemas mas serios",
-          "Aliento fresco y dientes mas blancos",
-          "Mejor salud general (la salud oral afecta el corazon)"
-        ],
-        "whyChoose": "Nuestro equipo bilingue dedica el tiempo que necesites, te explica cada paso, y nunca te recomienda un tratamiento que no necesites. Toda la familia es bienvenida en una sola visita.",
-        "faqs": [
-          { "q": "Con que frecuencia debo visitar al dentista?", "a": "Recomendamos cada 6 meses para limpieza y examen, aunque algunos pacientes con factores de riesgo pueden necesitar visitas mas frecuentes." },
-          { "q": "Atienden a ninos pequenos?", "a": "Si, atendemos desde la primera muela. Hacemos la primera visita divertida y educativa." },
-          { "q": "Aceptan seguro dental?", "a": "Aceptamos la mayoria de los planes PPO. Llamanos con tu informacion y verificamos cobertura sin costo." }
-        ],
-        "seoTitle": "Odontologia general en Arlington TX | Limpiezas + examenes",
-        "seoDescription": "Limpiezas, examenes, empastes y cuidado preventivo bilingue en Arlington, Commerce, Paris y Grand Prairie TX. Llama (682) 284-1120."
+        "label": "Clientes transformados",
+        "value": "500+"
       },
       {
+        "label": "Pacientes felices",
+        "value": "10k+"
+      },
+      {
+        "label": "Calificacion promedio",
+        "value": "4.9"
+      },
+      {
+        "label": "Ubicaciones",
+        "value": "4"
+      }
+    ],
+    "videoUrl": ""
+  },
+  "services": {
+    "heading": "El cuidado correcto para cada sonrisa",
+    "subheading": "Desde examenes y limpiezas hasta implantes, ortodoncia, extracciones, dentaduras y mas, toda tu familia es bienvenida.",
+    "list": [
+      {
+        "price": "",
+        "slug": "preventive",
+        "icon": "shield-check",
+        "name": "Odontologia preventiva",
+        "blurb": "Examenes dentales, limpiezas y cuidado preventivo para mantener dientes sanos.",
+        "longBlurb": "La odontologia preventiva es la base de una sonrisa saludable por muchos anos. Sonria se enfoca en cuidado proactivo para pacientes de todas las edades.",
+        "whatIsIt": "La odontologia preventiva incluye examenes dentales, limpiezas profesionales, radiografias digitales cuando se necesitan, educacion de higiene y deteccion temprana de caries o problemas de encias.",
+        "fourSteps": [
+          {
+            "title": "Examen",
+            "body": "Revisamos dientes, encias, mordida y tus preguntas para detectar problemas temprano."
+          },
+          {
+            "title": "Limpieza",
+            "body": "Removemos acumulacion, pulimos tus dientes y te ayudamos con habitos en casa."
+          },
+          {
+            "title": "Guia clara",
+            "body": "Explicamos todo en espanol o ingles antes de cualquier tratamiento."
+          },
+          {
+            "title": "Cuidado continuo",
+            "body": "Te ayudamos a mantener tus visitas y recomendaciones preventivas al dia."
+          }
+        ],
+        "benefits": [
+          "Ayuda a prevenir caries y enfermedad de encias",
+          "Apoya la salud oral a largo plazo",
+          "Evita que problemas pequenos se vuelvan mas costosos",
+          "Ideal para ninos, adultos y adultos mayores"
+        ],
+        "whyChoose": "Sonria esta hecha para familias que quieren atencion amable, bilingue y sin presion.",
+        "faqs": [
+          {
+            "q": "Cada cuanto debo hacerme una limpieza?",
+            "a": "La mayoria de pacientes se beneficia de un examen y limpieza cada 6 meses, aunque algunos necesitan otro calendario."
+          },
+          {
+            "q": "Atienden ninos?",
+            "a": "Si. Sonria recibe ninos y familias en sus cuatro ubicaciones."
+          },
+          {
+            "q": "Pueden verificar mi seguro?",
+            "a": "Si. El equipo puede ayudarte con preguntas sobre cobertura antes de tu visita."
+          }
+        ],
+        "seoTitle": "Dentista preventivo en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Examenes, limpiezas y cuidado preventivo para familias en Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "price": "",
+        "slug": "children",
+        "icon": "smile",
+        "name": "Odontologia infantil",
+        "blurb": "Cuidado dental amable para ayudar a los ninos a crear buenos habitos.",
+        "longBlurb": "La odontologia infantil ayuda a que los ninos empiecen su cuidado dental de forma positiva. Sonria recibe familias y ayuda a los ninos a sentirse comodos.",
+        "whatIsIt": "La odontologia infantil incluye examenes, limpiezas, prevencion, educacion y cuidado suave para pacientes pequenos.",
+        "fourSteps": [
+          {
+            "title": "Bienvenida amable",
+            "body": "Ayudamos a que los ninos se sientan tranquilos antes del examen."
+          },
+          {
+            "title": "Examen suave",
+            "body": "Revisamos dientes y encias explicando cada paso con calma."
+          },
+          {
+            "title": "Limpieza y prevencion",
+            "body": "Limpiamos los dientes y compartimos consejos de higiene segun la edad."
+          },
+          {
+            "title": "Plan familiar",
+            "body": "Los padres salen con pasos claros y respuestas a sus preguntas."
+          }
+        ],
+        "benefits": [
+          "Ayuda a los ninos a sentirse comodos con el dentista",
+          "Forma buenos habitos desde temprano",
+          "Ayuda a prevenir caries",
+          "Conveniente para familias con varios ninos"
+        ],
+        "whyChoose": "El equipo de Sonria es bilingue, familiar y enfocado en hacer las visitas mas faciles para padres e hijos.",
+        "faqs": [
+          {
+            "q": "Pueden atender a la familia junta?",
+            "a": "Llama al consultorio y el equipo te ayudara a coordinar opciones de cita para tu familia."
+          },
+          {
+            "q": "Hablan espanol con ninos y padres?",
+            "a": "Si. Sonria tiene un equipo dental bilingue en ingles y espanol."
+          }
+        ],
+        "seoTitle": "Dentista infantil en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Cuidado dental infantil, examenes y limpiezas para familias en Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "price": "",
+        "slug": "restorative",
+        "icon": "badge-plus",
+        "name": "Odontologia restaurativa",
+        "blurb": "Cuidado para dientes danados, incluyendo empastes, coronas y reparacion de sonrisa.",
+        "longBlurb": "La odontologia restaurativa devuelve fuerza, salud y belleza a dientes danados con cuidado preciso y enfocado en el paciente.",
+        "whatIsIt": "La odontologia restaurativa puede incluir empastes, coronas, plan de tratamiento y otros cuidados para reparar dientes con dano, caries o desgaste.",
+        "fourSteps": [
+          {
+            "title": "Diagnostico",
+            "body": "Identificamos la causa de molestia, dano o desgaste dental."
+          },
+          {
+            "title": "Opciones",
+            "body": "Explicamos las opciones, tiempos y costos esperados antes de avanzar."
+          },
+          {
+            "title": "Tratamiento",
+            "body": "Restauramos el diente de acuerdo con el plan recomendado."
+          },
+          {
+            "title": "Seguimiento",
+            "body": "Te ayudamos a proteger el diente restaurado y mantener tu sonrisa."
+          }
+        ],
+        "benefits": [
+          "Restaura la funcion al masticar",
+          "Protege dientes debilitados",
+          "Mejora comodidad y apariencia",
+          "Ayuda a evitar problemas mayores"
+        ],
+        "whyChoose": "Sonria se enfoca en comunicacion clara, precios accesibles y apoyo bilingue durante el tratamiento.",
+        "faqs": [
+          {
+            "q": "Me explican el costo primero?",
+            "a": "Si. Sonria prioriza opciones claras y guia de pago antes de empezar el cuidado."
+          },
+          {
+            "q": "Ofrecen financiamiento?",
+            "a": "Hay opciones de financiamiento de terceros para ayudar a pacientes a empezar tratamiento con confianza."
+          }
+        ],
+        "seoTitle": "Dentista restaurativo en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Cuidado dental restaurativo para dientes danados, coronas, empastes y reparacion de sonrisa en Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "price": "",
+        "slug": "missing-teeth",
+        "icon": "sparkles",
+        "name": "Reemplazo de dientes perdidos",
+        "blurb": "Opciones para restaurar confianza, habla, masticacion y funcion de la sonrisa.",
+        "longBlurb": "Los dientes perdidos pueden afectar salud, habla, confianza y comodidad diaria. Sonria ofrece opciones modernas para reemplazo dental.",
+        "whatIsIt": "El reemplazo de dientes perdidos puede incluir dentaduras, parciales, implantes dentales, dentaduras tipo snap-on o una combinacion personalizada.",
+        "fourSteps": [
+          {
+            "title": "Consulta",
+            "body": "Aprendemos que dientes faltan, que te molesta mas y que resultado deseas."
+          },
+          {
+            "title": "Opciones",
+            "body": "Explicamos opciones removibles y apoyadas por implantes con claridad."
+          },
+          {
+            "title": "Plan de cuidado",
+            "body": "Creamos un plan segun salud, presupuesto, comodidad y tiempo."
+          },
+          {
+            "title": "Restauracion",
+            "body": "Ayudamos a restaurar masticacion, habla y confianza."
+          }
+        ],
+        "benefits": [
+          "Mejora la confianza",
+          "Apoya comer y hablar",
+          "Puede ayudar a proteger dientes restantes",
+          "Incluye varias opciones de tratamiento"
+        ],
+        "whyChoose": "Sonria se especializa en ayudar a pacientes a reemplazar dientes perdidos con soluciones practicas, accesibles y personalizadas.",
+        "faqs": [
+          {
+            "q": "Que opciones tengo para dientes perdidos?",
+            "a": "Segun tus necesidades, las opciones pueden incluir dentaduras, parciales, implantes dentales o dentaduras tipo snap-on."
+          },
+          {
+            "q": "Puedo financiar el tratamiento?",
+            "a": "Si. Hay financiamiento de terceros disponible para pacientes que califican."
+          }
+        ],
+        "seoTitle": "Reemplazo de dientes perdidos en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Reemplaza dientes perdidos con dentaduras, parciales, implantes dentales y opciones snap-on en Sonria Dentista."
+      },
+      {
+        "price": "",
+        "slug": "cosmetic",
+        "icon": "wand",
+        "name": "Odontologia cosmetica",
+        "blurb": "Cuidado enfocado en la sonrisa para mejorar confianza y apariencia.",
+        "longBlurb": "La odontologia cosmetica combina arte y ciencia para ayudar a pacientes a sentirse mas seguros con su sonrisa.",
+        "whatIsIt": "El cuidado cosmetico puede incluir mejoras de sonrisa, blanqueamiento, carillas, bonding u otros tratamientos segun las metas del paciente.",
+        "fourSteps": [
+          {
+            "title": "Metas de sonrisa",
+            "body": "Hablamos sobre lo que quieres mejorar y lo que mas te importa."
+          },
+          {
+            "title": "Evaluacion",
+            "body": "Revisamos salud dental, mordida, color y apariencia."
+          },
+          {
+            "title": "Opciones",
+            "body": "Explicamos tratamientos que se ajustan a tu sonrisa y presupuesto."
+          },
+          {
+            "title": "Resultados",
+            "body": "Completamos el cuidado buscando un resultado natural."
+          }
+        ],
+        "benefits": [
+          "Mejora la confianza en la sonrisa",
+          "Puede tratar manchas, fracturas, espacios o dientes irregulares",
+          "Disenado para verse natural",
+          "Puede combinarse con cuidado restaurativo"
+        ],
+        "whyChoose": "Sonria ofrece cuidado cosmetico con un enfoque comodo, bilingue y centrado en el paciente.",
+        "faqs": [
+          {
+            "q": "El cuidado cosmetico puede verse natural?",
+            "a": "Si. La meta es mejorar tu sonrisa manteniendo un resultado equilibrado y natural."
+          },
+          {
+            "q": "Necesito una consulta primero?",
+            "a": "Si. Una consulta ayuda a confirmar que opciones son adecuadas para tu sonrisa."
+          }
+        ],
+        "seoTitle": "Dentista cosmetico en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Cuidado dental cosmetico y opciones para mejorar la sonrisa en Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "price": "",
+        "slug": "sedation",
+        "icon": "heart-handshake",
+        "name": "Odontologia con sedacion",
+        "blurb": "Opciones enfocadas en comodidad para pacientes nerviosos por el dentista.",
+        "longBlurb": "La odontologia con sedacion ayuda a pacientes ansiosos a sentirse mas tranquilos mientras reciben el cuidado dental que necesitan.",
+        "whatIsIt": "Las opciones de sedacion apoyan la comodidad durante visitas dentales. La opcion correcta depende de salud, procedimiento y nivel de ansiedad.",
+        "fourSteps": [
+          {
+            "title": "Hablar de tus preocupaciones",
+            "body": "Escuchamos que hace dificil el cuidado dental para ti."
+          },
+          {
+            "title": "Revisar historial de salud",
+            "body": "Confirmamos que opciones pueden ser apropiadas y seguras."
+          },
+          {
+            "title": "Planear la visita",
+            "body": "Explicamos que esperar antes, durante y despues del cuidado."
+          },
+          {
+            "title": "Tratamiento comodo",
+            "body": "Nos enfocamos en hacer la cita mas facil de completar."
+          }
+        ],
+        "benefits": [
+          "Ayuda a reducir ansiedad dental",
+          "Apoya recibir cuidado necesario sin retraso",
+          "Puede hacer citas largas mas faciles",
+          "Enfoque de comodidad para el paciente"
+        ],
+        "whyChoose": "Sonria entiende que muchos pacientes sienten nervios y trabaja para hacer visitas tranquilas, respetuosas y claras.",
+        "faqs": [
+          {
+            "q": "La sedacion es para todos?",
+            "a": "No siempre. El dentista revisara tu historial de salud y necesidades antes de recomendar una opcion."
+          },
+          {
+            "q": "Puedo preguntar sobre sedacion antes de mi visita?",
+            "a": "Si. Llama al consultorio y pregunta por opciones de comodidad antes de agendar."
+          }
+        ],
+        "seoTitle": "Odontologia con sedacion en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Cuidado dental enfocado en comodidad y opciones de sedacion para pacientes ansiosos en Sonria Dentista."
+      },
+      {
+        "price": "",
+        "slug": "clear-braces",
+        "icon": "align-justify",
+        "name": "Frenos transparentes",
+        "blurb": "Una forma mas discreta de alinear dientes con cuidado tipo alineadores transparentes.",
+        "longBlurb": "Los frenos transparentes ofrecen una opcion estetica para alinear dientes sin la apariencia de brackets metalicos tradicionales.",
+        "whatIsIt": "Los frenos transparentes o tratamiento tipo alineadores pueden ayudar a mejorar alineacion dental y apariencia de mordida en pacientes que califican.",
+        "fourSteps": [
+          {
+            "title": "Consulta",
+            "body": "Revisamos tus dientes, mordida y metas de sonrisa."
+          },
+          {
+            "title": "Plan",
+            "body": "Explicamos si frenos transparentes u otra opcion ortodontica es adecuada."
+          },
+          {
+            "title": "Tratamiento",
+            "body": "Sigues el plan de tratamiento y regresas para revisiones de progreso."
+          },
+          {
+            "title": "Retencion",
+            "body": "Despues del tratamiento, la retencion ayuda a evitar que los dientes se muevan."
+          }
+        ],
+        "benefits": [
+          "Mas discreto que frenos tradicionales",
+          "Puede mejorar la alineacion de la sonrisa",
+          "Apoya una mordida mas saludable",
+          "Buena opcion para muchos adolescentes y adultos"
+        ],
+        "whyChoose": "Sonria ofrece opciones ortodonticas con guia bilingue y planeacion practica.",
+        "faqs": [
+          {
+            "q": "Los frenos transparentes sirven para todos los casos?",
+            "a": "No. Una consulta ayuda a confirmar si frenos transparentes u otra opcion es mejor."
+          },
+          {
+            "q": "Atienden adultos?",
+            "a": "Si. Puede haber opciones ortodonticas para adolescentes y adultos."
+          }
+        ],
+        "seoTitle": "Frenos transparentes en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Frenos transparentes y opciones de ortodoncia para adolescentes y adultos en Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "price": "",
         "slug": "implants",
         "icon": "sparkles",
         "name": "Implantes dentales",
-        "blurb": "Reemplaza dientes perdidos con implantes naturales. Desde $2,499 por diente.",
-        "longBlurb": "Un implante dental reemplaza la raiz de un diente perdido con un poste de titanio que se integra al hueso, y luego se cubre con una corona ceramica que se ve y funciona como un diente natural.",
-        "whatIsIt": "El implante dental es la solucion mas duradera para reemplazar uno o varios dientes perdidos. A diferencia de un puente o dentadura, el implante preserva el hueso y no afecta los dientes vecinos.",
+        "blurb": "Opciones permanentes y de apariencia natural para reemplazar dientes perdidos.",
+        "longBlurb": "Los implantes dentales ayudan a recuperar funcion y apariencia de la sonrisa con una opcion segura de reemplazo dental.",
+        "whatIsIt": "Un implante dental es una opcion de reemplazo de dientes disenada para restaurar funcion y apoyar una sonrisa natural.",
         "fourSteps": [
-          { "title": "Consulta y radiografias 3D", "body": "Evaluamos tu hueso, encias y salud general para confirmar que eres candidato." },
-          { "title": "Colocacion del implante", "body": "Procedimiento ambulatorio con anestesia local. La mayoria regresa al trabajo al dia siguiente." },
-          { "title": "Periodo de integracion", "body": "El hueso crece alrededor del implante por 3 a 6 meses. Te damos un diente provisional." },
-          { "title": "Corona definitiva", "body": "Colocamos la corona ceramica permanente, hecha a la medida del color de tus dientes." }
+          {
+            "title": "Evaluacion",
+            "body": "Evaluamos tu boca, soporte oseo, salud y metas."
+          },
+          {
+            "title": "Planeacion",
+            "body": "Explicamos si los implantes son adecuados y que incluye el proceso."
+          },
+          {
+            "title": "Tratamiento",
+            "body": "El cuidado con implantes se completa segun tu plan personalizado."
+          },
+          {
+            "title": "Restauracion",
+            "body": "El resultado final se disena para funcion, comodidad y apariencia."
+          }
         ],
         "benefits": [
-          "Se ve y se siente como un diente natural",
-          "Preserva el hueso de la mandibula",
-          "Dura 25 anos o mas con cuidado adecuado",
-          "No afecta los dientes vecinos"
+          "Puede reemplazar uno o varios dientes perdidos",
+          "Disenado para verse y sentirse natural",
+          "Apoya masticacion y confianza",
+          "Puede combinarse con soluciones de dentaduras"
         ],
-        "whyChoose": "Hacemos cientos de implantes al ano y ofrecemos el precio todo-incluido mas honesto del Norte de Texas: $2,499 por implante completo. Sin sorpresas. Financiamiento disponible.",
+        "whyChoose": "Sonria destaca los implantes dentales como una solucion importante para dientes perdidos y ayuda a pacientes a entender sus opciones.",
         "faqs": [
-          { "q": "Cuanto duele?", "a": "Mucho menos de lo que la gente espera. La mayoria de los pacientes solo necesitan ibuprofeno por uno o dos dias." },
-          { "q": "Cuanto tiempo dura todo el proceso?", "a": "De inicio a fin, entre 3 y 6 meses. La integracion del hueso es la parte mas larga, pero no requiere visitas frecuentes." },
-          { "q": "Soy candidato si tengo poco hueso?", "a": "En muchos casos podemos hacer un injerto de hueso menor. La consulta inicial confirma tus opciones." },
-          { "q": "Que incluye los $2,499?", "a": "Implante de titanio, pilar y corona ceramica. Todo. Solo se cobra extra si necesitas un injerto." }
+          {
+            "q": "Soy candidato para implantes?",
+            "a": "Se necesita una consulta para evaluar tu salud, soporte oseo y metas de tratamiento."
+          },
+          {
+            "q": "Los implantes pueden ayudar con dentaduras?",
+            "a": "Si. Algunas dentaduras pueden sujetarse a implantes dentales para mayor estabilidad."
+          }
         ],
-        "price": "Desde $2,499 por implante",
-        "seoTitle": "Implantes dentales Arlington TX | $2,499 todo incluido",
-        "seoDescription": "Implantes dentales en Arlington TX desde $2,499 todo incluido. Equipo bilingue, financiamiento disponible. Llama (682) 284-1120."
+        "seoTitle": "Implantes dentales en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Opciones de implantes dentales para dientes perdidos en Sonria Dentista en Arlington, Commerce, Paris y Grand Prairie."
       },
       {
-        "slug": "all-on-4",
-        "icon": "smile",
-        "name": "All-on-4",
-        "blurb": "Sonrisa completa fija sobre 4 implantes en un solo dia. $15,999 por arcada.",
-        "longBlurb": "All-on-4 reemplaza una arcada completa de dientes con solo 4 implantes estrategicamente colocados, soportando una protesis fija que se siente y funciona como dientes naturales.",
-        "whatIsIt": "Es la solucion ideal para pacientes que han perdido la mayoria o todos sus dientes, o que estan cansados de dentaduras removibles. La protesis se atornilla a los implantes y solo el dentista la retira.",
+        "price": "",
+        "slug": "snap-on-dentures",
+        "icon": "badge-check",
+        "name": "Dentaduras snap-on",
+        "blurb": "Una alternativa mas segura que dentaduras tradicionales usando implantes para estabilidad.",
+        "longBlurb": "Las dentaduras snap-on pueden ofrecer mejor estabilidad que las dentaduras tradicionales al sujetarse a implantes dentales.",
+        "whatIsIt": "Las dentaduras snap-on son dentaduras apoyadas por implantes disenadas para sentirse mas seguras que dentaduras removibles tradicionales.",
         "fourSteps": [
-          { "title": "Evaluacion 3D y plan", "body": "Tomamos un escaneo CBCT y disenamos digitalmente la posicion de los 4 implantes." },
-          { "title": "Cirugia el mismo dia", "body": "Extraemos los dientes restantes, colocamos los 4 implantes y la protesis provisional, todo en un solo dia." },
-          { "title": "Recuperacion guiada", "body": "Sales con dientes funcionales. Te damos guia clara de alimentacion blanda durante 4 a 6 meses." },
-          { "title": "Protesis definitiva", "body": "Despues de la integracion, colocamos la protesis permanente disenada para que dure decadas." }
+          {
+            "title": "Consulta",
+            "body": "Hablamos de tu experiencia con dentaduras actuales o tus necesidades por dientes perdidos."
+          },
+          {
+            "title": "Evaluacion",
+            "body": "Revisamos si el soporte con implantes puede ser adecuado."
+          },
+          {
+            "title": "Plan",
+            "body": "Explicamos opciones de dentaduras y soluciones apoyadas por implantes."
+          },
+          {
+            "title": "Restauracion",
+            "body": "Ayudamos a recuperar comodidad, estabilidad y confianza."
+          }
         ],
         "benefits": [
-          "Sonrisa fija el mismo dia, sin esperas",
-          "Solo 4 implantes en lugar de 6 a 8",
-          "Mucho mas estable que dentaduras tradicionales",
-          "Mantenimiento simple, como dientes naturales"
+          "Mas estable que dentaduras tradicionales",
+          "Puede mejorar confianza al masticar",
+          "Puede reducir movimiento",
+          "Disenado para restaurar dientes perdidos"
         ],
-        "whyChoose": "Nuestro equipo coloca All-on-4 cada semana. Tenemos laboratorio dental en consulta para que la protesis se ajuste perfectamente. Precio plano $15,999 por arcada incluye todo.",
+        "whyChoose": "Sonria ofrece opciones para dientes perdidos y ayuda a comparar alternativas practicas de comodidad y precio.",
         "faqs": [
-          { "q": "Realmente puedo salir con dientes el mismo dia?", "a": "Si. Sales con la protesis provisional el mismo dia de la cirugia. La definitiva llega meses despues." },
-          { "q": "Sirve si todavia tengo algunos dientes?", "a": "Si. Si los dientes restantes no se pueden salvar o estan causando problemas, los retiramos en la misma cita." },
-          { "q": "Que incluye los $15,999?", "a": "Extracciones, 4 implantes, protesis provisional el mismo dia, y protesis definitiva final. Todo." },
-          { "q": "Hay financiamiento?", "a": "Si. Trabajamos con CareCredit y opciones internas. La mayoria de los pacientes paga $300-$500 al mes." }
+          {
+            "q": "Las dentaduras snap-on son removibles?",
+            "a": "Estan disenadas para sujetarse a implantes y ser removibles segun las indicaciones del dentista."
+          },
+          {
+            "q": "Necesito implantes para dentaduras snap-on?",
+            "a": "Si. Las dentaduras snap-on usan implantes dentales como soporte."
+          }
         ],
-        "price": "$15,999 por arcada",
-        "seoTitle": "All-on-4 Arlington TX | $15,999 sonrisa fija en un dia",
-        "seoDescription": "All-on-4 en Arlington TX: sonrisa fija sobre 4 implantes en un solo dia, $15,999 por arcada todo incluido. (682) 284-1120."
+        "seoTitle": "Dentaduras snap-on en el Norte de Texas | Sonria Dentista",
+        "seoDescription": "Dentaduras snap-on y opciones de dentaduras apoyadas por implantes en Sonria Dentista."
       },
       {
-        "slug": "orthodontics",
-        "icon": "align-justify",
-        "name": "Ortodoncia / Invisalign",
-        "blurb": "Frenos tradicionales o alineadores transparentes para alinear tu sonrisa.",
-        "longBlurb": "Ofrecemos tanto frenos tradicionales como Invisalign para corregir mordida, espacios y dientes torcidos en pacientes adolescentes y adultos.",
-        "whatIsIt": "La ortodoncia mueve los dientes a su posicion ideal. Invisalign usa alineadores transparentes removibles. Los frenos tradicionales son fijos y suelen ser mas economicos.",
-        "fourSteps": [
-          { "title": "Consulta y escaneo digital", "body": "Tomamos fotos, radiografias y un escaneo 3D de tus dientes para disenar tu plan." },
-          { "title": "Plan de tratamiento", "body": "Te mostramos como se moveran tus dientes y cuanto tiempo tomara. Eliges Invisalign o frenos." },
-          { "title": "Tratamiento activo", "body": "Cambias alineadores cada 1 a 2 semanas (Invisalign) o ajustamos los frenos cada 6 a 8 semanas." },
-          { "title": "Retencion", "body": "Una vez alineados, usas un retenedor para que los dientes no regresen. Es para toda la vida." }
-        ],
-        "benefits": [
-          "Sonrisa mas alineada y atractiva",
-          "Mejor mordida (menos desgaste y problemas de mandibula)",
-          "Mas facil de limpiar dientes alineados",
-          "Aumenta la confianza"
-        ],
-        "whyChoose": "Somos proveedores certificados de Invisalign. Pago flexible y consulta inicial sin costo. Dr. Namineni te explica las opciones para que elijas con confianza.",
-        "faqs": [
-          { "q": "Cuanto dura el tratamiento?", "a": "Casos simples: 6 a 9 meses. Casos complejos: 18 a 24 meses. La consulta te da un estimado preciso." },
-          { "q": "Invisalign realmente funciona como frenos?", "a": "Si para la mayoria de los casos. Para casos muy complejos a veces recomendamos frenos tradicionales." },
-          { "q": "Cuanto cuesta?", "a": "Frenos tradicionales: desde $3,500. Invisalign: desde $4,500. Damos un precio fijo despues de la consulta." }
-        ],
-        "seoTitle": "Ortodoncia + Invisalign Arlington TX | Frenos para adultos y adolescentes",
-        "seoDescription": "Ortodoncia con frenos tradicionales o Invisalign en Arlington TX. Consulta sin costo. Pago flexible. (682) 284-1120."
-      },
-      {
-        "slug": "cosmetic",
-        "icon": "wand",
-        "name": "Cosmetica",
-        "blurb": "Carillas, blanqueamiento profesional y diseno de sonrisa personalizado.",
-        "longBlurb": "La odontologia cosmetica transforma tu sonrisa con carillas de porcelana, blanqueamiento profesional y diseno de sonrisa adaptado a tus rasgos faciales.",
-        "whatIsIt": "Combinamos arte y ciencia para crear una sonrisa que se vea natural y proporcionada a tu cara. Cada caso es disenado digitalmente antes de tocar un solo diente.",
-        "fourSteps": [
-          { "title": "Consulta de diseno", "body": "Hablamos sobre lo que te gustaria cambiar y mostramos opciones con un diseno digital." },
-          { "title": "Vista previa", "body": "Hacemos un mock-up temporal en boca para que veas tu nueva sonrisa antes de comprometerte." },
-          { "title": "Preparacion suave", "body": "Las carillas modernas requieren preparacion minima del esmalte." },
-          { "title": "Sonrisa final", "body": "Colocamos las carillas o el tratamiento final, ajustamos el color y la forma." }
-        ],
-        "benefits": [
-          "Sonrisa mas blanca y simetrica",
-          "Cubre manchas, fracturas y espacios",
-          "Resultados duraderos (carillas: 10-15 anos)",
-          "Mas confianza en fotos y al hablar"
-        ],
-        "whyChoose": "Mostramos vista previa digital y temporal antes de cualquier tratamiento permanente. No queremos sorpresas. Tu apruebas el diseno antes de continuar.",
-        "faqs": [
-          { "q": "Las carillas se ven naturales?", "a": "Si las hacemos bien, si. Usamos porcelana de capas que imita la translucidez de un diente real." },
-          { "q": "Cuanto cuesta una carilla?", "a": "Desde $1,200 por carilla. Un diseno completo de sonrisa (8-10 carillas) suele costar $9,600-$12,000." },
-          { "q": "El blanqueamiento profesional es seguro?", "a": "Si, hecho por un dentista. Algunos pacientes sienten sensibilidad temporal que pasa en pocos dias." }
-        ],
-        "seoTitle": "Cosmetica dental Arlington TX | Carillas + blanqueamiento",
-        "seoDescription": "Carillas, blanqueamiento profesional y diseno de sonrisa en Arlington TX. Vista previa digital sin compromiso. (682) 284-1120."
-      },
-      {
-        "slug": "emergencies",
+        "price": "",
+        "slug": "emergencies-extractions",
         "icon": "phone",
-        "name": "Emergencias",
-        "blurb": "Dolor agudo o un diente roto? Te atendemos el mismo dia.",
-        "longBlurb": "Una emergencia dental no espera. Reservamos espacios cada dia para pacientes con dolor severo, dientes rotos, infecciones o trauma.",
-        "whatIsIt": "Atendemos dolor de muelas, abscesos, dientes fracturados, coronas o empastes que se cayeron, traumas deportivos, y sangrado de encias que no se detiene.",
+        "name": "Emergencias y extracciones",
+        "blurb": "Tratamiento de emergencia y extracciones dentales cuando el problema no puede esperar.",
+        "longBlurb": "Sonria ofrece tratamiento de emergencia y extracciones para pacientes que necesitan ayuda dental urgente.",
+        "whatIsIt": "El cuidado dental de emergencia puede incluir evaluacion de dolor, inflamacion, dientes rotos, infeccion o un diente que puede necesitar extraccion.",
         "fourSteps": [
-          { "title": "Llama al (682) 284-1120", "body": "Habla con nuestro equipo. Te damos primeros pasos por telefono y te asignamos cita el mismo dia." },
-          { "title": "Llegada y triage", "body": "Hacemos radiografia y examen rapido para identificar la causa exacta del problema." },
-          { "title": "Alivio inmediato", "body": "Te aliviamos el dolor con anestesia local, drenaje de absceso, o reparacion temporal." },
-          { "title": "Plan a seguir", "body": "Te explicamos los pasos para resolver el problema permanentemente, con precios claros." }
+          {
+            "title": "Llama al consultorio",
+            "body": "Cuenta al equipo que esta pasando y que ubicacion te queda mejor."
+          },
+          {
+            "title": "Evaluacion urgente",
+            "body": "Examinamos el problema e identificamos el siguiente paso."
+          },
+          {
+            "title": "Alivio y tratamiento",
+            "body": "Nos enfocamos en aliviar dolor y tratar la causa del problema."
+          },
+          {
+            "title": "Plan de seguimiento",
+            "body": "Explicamos que sigue y como proteger tu salud oral."
+          }
         ],
         "benefits": [
-          "Atencion el mismo dia, sin sala de emergencias",
-          "Mas barato que el hospital para problemas dentales",
-          "Equipo bilingue cuando estas en panico",
-          "Pago flexible disponible"
+          "Ayuda con dolor o problemas dentales urgentes",
+          "Disponible en varias ubicaciones",
+          "Apoyo de equipo bilingue",
+          "Pasos claros despues de la evaluacion"
         ],
-        "whyChoose": "Tenemos 4 ubicaciones en el Norte de Texas, asi que siempre hay un consultorio cerca. Si llamas antes de mediodia, casi siempre te vemos el mismo dia.",
+        "whyChoose": "Sonria tiene cuatro ubicaciones y equipo bilingue, haciendo el cuidado urgente mas accesible.",
         "faqs": [
-          { "q": "Que es una emergencia dental?", "a": "Dolor severo, sangrado que no para, diente fracturado, o trauma. Si dudas, llama y te orientamos." },
-          { "q": "Que hago si se me cae un diente entero?", "a": "Mantenlo humedo (en leche o saliva), no toques la raiz, y llamanos inmediato. Tienes 30-60 minutos para reimplantarlo." },
-          { "q": "Atienden sin cita?", "a": "Llama primero, casi siempre podemos verte el mismo dia." }
+          {
+            "q": "Que hago si tengo dolor dental?",
+            "a": "Llama a la ubicacion de Sonria mas cercana y el equipo te ayudara con opciones de cita."
+          },
+          {
+            "q": "Hacen extracciones?",
+            "a": "Si. Las extracciones dentales estan listadas entre los servicios de Sonria."
+          }
         ],
-        "seoTitle": "Dentista de emergencia Arlington TX | Atencion el mismo dia",
-        "seoDescription": "Dentista de emergencia en Arlington TX. Dolor de muela, dientes rotos, abscesos. Atencion el mismo dia. (682) 284-1120."
+        "seoTitle": "Dentista de emergencia y extracciones | Sonria Dentista",
+        "seoDescription": "Tratamiento dental de emergencia y extracciones en ubicaciones de Sonria Dentista en el Norte de Texas."
       }
     ],
     "pricingFeatured": [
-      { "label": "Especial nuevo paciente", "price": "$79.99", "note": "Examen + radiografias + consulta" },
-      { "label": "Implante dental", "price": "$2,499", "note": "Por diente, todo incluido" },
-      { "label": "All-on-4", "price": "$15,999", "note": "Por arcada, sonrisa fija en un dia" }
+      {
+        "label": "Seguro dental",
+        "price": "Bienvenido",
+        "note": "Ayudamos con preguntas de cobertura y trabajamos con proveedores."
+      },
+      {
+        "label": "Medicaid y Medicare",
+        "price": "Aceptados",
+        "note": "El sitio actual menciona seguro dental, Medicare y Medicaid."
+      },
+      {
+        "label": "Financiamiento de terceros",
+        "price": "Disponible",
+        "note": "Opciones flexibles ayudan a empezar tratamiento con confianza."
+      }
     ]
   },
   "locations": {
     "heading": "Cuatro consultorios cerca de ti",
-    "subheading": "Mismo equipo, misma calidad, mismos precios honestos en cada ubicacion.",
+    "subheading": "Cuidado dental bilingue en Arlington, Commerce, Paris y Grand Prairie.",
     "list": [
       {
         "slug": "arlington",
         "city": "Arlington",
         "state": "TX",
-        "address": "1234 W Pioneer Pkwy, Arlington, TX 76013",
+        "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011",
         "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-6pm | Sab 9am-2pm",
+        "phoneHref": "tel:+16822841120",
+        "hours": "Lun-Vie 9am-5pm | Sab 9am-3pm",
         "primary": true,
-        "longBlurb": "Nuestra ubicacion principal en Arlington esta en W Pioneer Pkwy, con estacionamiento amplio y acceso facil desde I-30 e I-20. Atendemos a familias de Arlington, Mansfield, Pantego y Dalworthington Gardens.",
-        "neighborhoods": ["Arlington Heights", "Pantego", "Mansfield", "Dalworthington Gardens", "Kennedale"],
-        "directions": "Cerca de la interseccion de Pioneer Pkwy y Cooper St. Estacionamiento gratuito al frente del edificio.",
-        "googleMapsUrl": "https://maps.google.com/?q=1234+W+Pioneer+Pkwy+Arlington+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "longBlurb": "Sonria Dentista de Arlington atiende familias desde el consultorio principal en Baird Farm Rd con cuidado bilingue, odontologia preventiva, emergencias, reemplazo dental y servicios para la familia.",
+        "neighborhoods": [
+          "Arlington",
+          "North Arlington",
+          "Pantego",
+          "Dalworthington Gardens",
+          "Grand Prairie"
+        ],
+        "directions": "Ubicado en 2024 Baird Farm Rd Ste. 100 en Arlington. Usa el enlace del mapa para indicaciones actuales.",
+        "servicesOffered": [
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
+          "cosmetic",
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions"
+        ],
         "seoTitle": "Dentista en Arlington TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Arlington TX. Familia, implantes, All-on-4, emergencias. 1234 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Sonria Dentista en Arlington TX. Cuidado dental bilingue para familias, examenes, implantes, extracciones, dentaduras y mas. Llama (682) 284-1120.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-arlington/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-arlington/",
+        "googleMapsUrl": "https://share.google/EsTl4cn0L1ebLWzIA",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/sonrisadentista/",
+          "yelp": "https://www.yelp.com/biz/sonria-dentista-of-arlington-arlington"
+        }
       },
       {
         "slug": "commerce",
         "city": "Commerce",
         "state": "TX",
-        "address": "501 Park St, Commerce, TX 75428",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-5pm",
+        "address": "2210 Live Oak Street, Suite #C, Commerce, TX 75428",
+        "phone": "(903) 246-4424",
+        "phoneHref": "tel:+19032464424",
+        "hours": "Lun-Vie 9am-5pm",
         "primary": false,
-        "longBlurb": "Nuestra ubicacion en Commerce sirve a la comunidad universitaria de Texas A&M Commerce y a las familias del condado de Hunt. Cerca del centro y con estacionamiento en la calle.",
-        "neighborhoods": ["Commerce", "Cooper", "Wolfe City", "Campbell", "Greenville"],
-        "directions": "En Park St, a dos cuadras del centro de Commerce. Cerca del campus de Texas A&M Commerce.",
-        "googleMapsUrl": "https://maps.google.com/?q=501+Park+St+Commerce+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "longBlurb": "Sonria Dentista en Commerce ofrece cuidado dental bilingue para familias, estudiantes y vecinos cerca de Live Oak Street.",
+        "neighborhoods": [
+          "Commerce",
+          "Texas A&M University-Commerce",
+          "Campbell",
+          "Wolfe City",
+          "Greenville"
+        ],
+        "directions": "Ubicado en 2210 Live Oak Street, Suite #C en Commerce. Usa el enlace del mapa para indicaciones actuales.",
+        "servicesOffered": [
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
+          "cosmetic",
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions"
+        ],
         "seoTitle": "Dentista en Commerce TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Commerce TX cerca de Texas A&M. Familia, implantes, emergencias. 501 Park St. (682) 284-1120."
+        "seoDescription": "Sonria Dentista en Commerce TX. Examenes, limpiezas, implantes, ortodoncia, extracciones y cuidado familiar bilingue. Llama (903) 246-4424.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-commerce/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-commerce/",
+        "googleMapsUrl": "https://share.google/cgWdMmvMl1IAiXHpM",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/commercedentalandorthodontics/",
+          "instagram": "https://www.instagram.com/explore/locations/424148375032272/commerce-dental-implants-orthodontics/"
+        }
       },
       {
         "slug": "paris",
         "city": "Paris",
         "state": "TX",
-        "address": "2845 Lamar Ave, Paris, TX 75460",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-5pm",
+        "address": "707 Lamar Ave, Suite #L, Paris, TX 75460",
+        "phone": "(903) 609-0567",
+        "phoneHref": "tel:+19036090567",
+        "hours": "Lun-Vie 9am-5pm | Sab 9am-3pm",
         "primary": false,
-        "longBlurb": "Nuestra ubicacion en Paris en Lamar Ave atiende a las familias de Paris, Reno, Powderly y todo el condado de Lamar. Cerca de Paris Junior College y del centro de la ciudad.",
-        "neighborhoods": ["Paris", "Reno", "Powderly", "Blossom", "Roxton"],
-        "directions": "En Lamar Ave, ruta principal de Paris. Estacionamiento amplio. A 5 minutos de Paris Junior College.",
-        "googleMapsUrl": "https://maps.google.com/?q=2845+Lamar+Ave+Paris+TX",
-        "servicesOffered": ["general", "implants", "orthodontics", "cosmetic", "emergencies"],
+        "longBlurb": "Sonria Dentista en Paris atiende familias locales desde Lamar Ave con cuidado dental bilingue, emergencias, reemplazo dental y odontologia general.",
+        "neighborhoods": [
+          "Paris",
+          "Reno",
+          "Powderly",
+          "Blossom",
+          "Condado de Lamar"
+        ],
+        "directions": "Ubicado en 707 Lamar Ave, Suite #L en Paris. Usa el enlace del mapa para indicaciones actuales.",
+        "servicesOffered": [
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
+          "cosmetic",
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions"
+        ],
         "seoTitle": "Dentista en Paris TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Paris TX. Familia, implantes, ortodoncia, emergencias. 2845 Lamar Ave. (682) 284-1120."
+        "seoDescription": "Sonria Dentista en Paris TX. Cuidado dental bilingue para familias, examenes, extracciones, dentaduras, implantes y mas. Llama (903) 609-0567.",
+        "appointmentUrl": "https://sonriadentista.com/new-patient-form-paris/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-paris/",
+        "googleMapsUrl": "https://share.google/AWVla7LUrtlAHN7jE",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/sonriadentistaofparis/",
+          "instagram": "https://www.instagram.com/sonriadentistaofparis.tx/",
+          "yelp": "https://www.yelp.com/biz/sonria-dentista-paris"
+        }
       },
       {
         "slug": "grand-prairie",
         "city": "Grand Prairie",
         "state": "TX",
-        "address": "1010 W Pioneer Pkwy, Grand Prairie, TX 75051",
-        "phone": "(682) 284-1120",
-        "hours": "Lun-Vie 8am-6pm",
+        "address": "325 W Westchester Pkwy, Ste 300, Grand Prairie, TX 75052",
+        "phone": "(972) 262-5593",
+        "phoneHref": "tel:+19722625593",
+        "hours": "Lun-Vie 9am-5pm",
         "primary": false,
-        "longBlurb": "Grand Prairie en Pioneer Pkwy sirve a familias de Grand Prairie, Cedar Hill y Duncanville. Acceso directo desde Highway 161 y I-20. Estacionamiento amplio.",
-        "neighborhoods": ["Grand Prairie", "Cedar Hill", "Duncanville", "Dalworth Park", "Lake Joe Pool"],
-        "directions": "Pioneer Pkwy entre Carrier Pkwy y SH-360. Cerca de Lone Star Park.",
-        "googleMapsUrl": "https://maps.google.com/?q=1010+W+Pioneer+Pkwy+Grand+Prairie+TX",
-        "servicesOffered": ["general", "implants", "all-on-4", "orthodontics", "cosmetic", "emergencies"],
+        "longBlurb": "Sonria Dentista en Grand Prairie ofrece cuidado dental bilingue desde Westchester Pkwy, incluyendo examenes, ortodoncia, reemplazo dental y emergencias.",
+        "neighborhoods": [
+          "Grand Prairie",
+          "South Grand Prairie",
+          "Arlington",
+          "Cedar Hill",
+          "Duncanville"
+        ],
+        "directions": "Ubicado en 325 W Westchester Pkwy, Ste 300 en Grand Prairie. Usa el enlace del mapa para indicaciones actuales.",
+        "servicesOffered": [
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
+          "cosmetic",
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions"
+        ],
         "seoTitle": "Dentista en Grand Prairie TX | Sonria Dentista",
-        "seoDescription": "Dentista bilingue en Grand Prairie TX. Familia, implantes, All-on-4, emergencias. 1010 W Pioneer Pkwy. (682) 284-1120."
+        "seoDescription": "Sonria Dentista en Grand Prairie TX. Cuidado dental bilingue, limpiezas, implantes, extracciones, dentaduras y mas. Llama (972) 262-5593.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-grand-prairie/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
+        "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/thegrandprairiedentistimplantsandbraces/"
+        }
       }
     ]
   },
   "doctor": {
-    "name": "Dr. Sandeep Namineni",
-    "title": "Director clinico, DDS",
+    "name": "Equipo dental de Sonria",
+    "title": "Cuidado dental familiar bilingue",
     "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
-    "imageAlt": "Dr. Namineni en el consultorio",
+    "imageAlt": "Equipo dental de Sonria Dentista",
     "bio": [
-      "Hace mas de 15 anos abrimos las puertas de Sonria con una idea simple, brindar el mismo cuidado dental que le darias a tu propia familia.",
-      "Hoy atendemos a miles de pacientes en cuatro consultorios del Norte de Texas. Hablamos espanol e ingles, explicamos cada paso, y nunca recomendamos un tratamiento que no necesites."
+      "En Sonria Dentista, los pacientes son recibidos por un equipo dental experimentado enfocado en cuidado comodo y de alta calidad para toda la familia.",
+      "El equipo habla ingles y espanol y ofrece examenes, limpiezas, emergencias, reemplazo dental, ortodoncia y mas en cuatro ubicaciones del Norte de Texas."
     ],
-    "credentials": ["DDS - University of Texas", "Implantologia avanzada", "Miembro ADA", "Bilingue ES/EN"]
+    "credentials": [
+      "Equipo bilingue en ingles y espanol",
+      "Cuidado dental familiar",
+      "Reemplazo de dientes perdidos",
+      "Cuatro ubicaciones en el Norte de Texas"
+    ]
   },
   "about": {
-    "heading": "Una clinica familiar, no una cadena",
+    "heading": "Un verdadero hogar dental",
     "subheading": "Sobre Sonria Dentista",
-    "intro": "Empezamos como un consultorio. Hoy somos cuatro, todos dirigidos por la misma familia, con el mismo compromiso de tratar a cada paciente como si fuera tuyo.",
+    "intro": "Sonria Dentista ofrece cuidado dental personalizado, conveniente y accesible para toda la familia.",
     "story": [
-      "El Dr. Sandeep Namineni abrio Sonria en 2009 con la idea de que la atencion dental de calidad no deberia depender del idioma que hablas o del tamano de tu cuenta de banco.",
-      "Hoy nuestro equipo bilingue atiende a miles de familias del Norte de Texas. Mantenemos precios fijos y transparentes, financiamiento accesible, y un compromiso simple: si no necesitas un tratamiento, no te lo recomendamos.",
-      "Cada uno de nuestros cuatro consultorios tiene la misma tecnologia moderna, el mismo estandar clinico, y la misma cultura de respeto por tu tiempo y tu confianza."
+      "Sonria Dentista se basa en una promesa simple: hacer que el cuidado dental sea amable, practico y mas facil para las familias.",
+      "El equipo ofrece examenes y limpiezas para pacientes de todas las edades, ademas de implantes, ortodoncia, extracciones, dentaduras y emergencias.",
+      "Con cuatro ubicaciones y un equipo bilingue en ingles y espanol, Sonria ayuda a que los pacientes se sientan comprendidos desde la primera llamada hasta la ultima visita."
     ],
     "values": [
-      { "title": "Honestidad sobre todo", "body": "Precios claros publicados. Si no lo necesitas, no te lo recomendamos." },
-      { "title": "Bilingue de verdad", "body": "Todo el equipo, todos los consultorios, espanol e ingles igual." },
-      { "title": "Familia primero", "body": "Atendemos desde ninos hasta abuelos, todos en la misma visita si quieres." },
-      { "title": "Tecnologia moderna", "body": "Radiografias digitales, escaneos 3D, laboratorio en consulta." }
+      {
+        "title": "Equipo de expertos dentales",
+        "body": "Los pacientes pueden confiar en un equipo con experiencia en varias disciplinas dentales."
+      },
+      {
+        "title": "Conveniencia en un solo lugar",
+        "body": "Sonria ofrece examenes, limpiezas, implantes, ortodoncia, extracciones y reemplazo dental."
+      },
+      {
+        "title": "Accesibilidad constante",
+        "body": "El mensaje actual incluye seguro dental, Medicaid, Medicare y financiamiento de terceros."
+      },
+      {
+        "title": "Equipo dental bilingue",
+        "body": "El equipo habla ingles y espanol para atender a pacientes en el idioma que prefieran."
+      }
     ],
     "stats": [
-      { "label": "Pacientes felices", "value": "12,000+" },
-      { "label": "Anos atendiendo", "value": "15+" },
-      { "label": "Consultorios", "value": "4" },
-      { "label": "Implantes colocados", "value": "3,000+" }
+      {
+        "label": "Clientes transformados",
+        "value": "500+"
+      },
+      {
+        "label": "Pacientes felices",
+        "value": "10k+"
+      },
+      {
+        "label": "Calificacion promedio",
+        "value": "4.9"
+      },
+      {
+        "label": "Ubicaciones",
+        "value": "4"
+      }
     ]
   },
   "newPatients": {
@@ -310,10 +752,22 @@
       "note": "Examen completo + radiografias digitales + consulta personalizada. Sin sorpresas."
     },
     "steps": [
-      { "title": "Reserva en 3 minutos", "body": "Llamanos al (682) 284-1120 o usa el formulario. Confirmamos por SMS." },
-      { "title": "Llega 10 min antes", "body": "Trae tu identificacion, seguro (si tienes) y formularios completos." },
-      { "title": "Examen completo", "body": "Tomamos radiografias digitales, examen oral completo y discutimos tu historial." },
-      { "title": "Plan claro", "body": "Te explicamos lo que necesitas, cuando, y cuanto cuesta. Tu decides." }
+      {
+        "title": "Reserva en 3 minutos",
+        "body": "Llama a tu consultorio preferido, usa el enlace de cita o completa el formulario de nuevo paciente de tu ubicacion."
+      },
+      {
+        "title": "Llega 10 min antes",
+        "body": "Trae tu identificacion, seguro (si tienes) y formularios completos."
+      },
+      {
+        "title": "Examen completo",
+        "body": "Tomamos radiografias digitales, examen oral completo y discutimos tu historial."
+      },
+      {
+        "title": "Plan claro",
+        "body": "Te explicamos lo que necesitas, cuando, y cuanto cuesta. Tu decides."
+      }
     ],
     "whatToBring": [
       "Identificacion con foto",
@@ -325,37 +779,72 @@
   },
   "insurance": {
     "heading": "Seguro y financiamiento",
-    "intro": "Aceptamos la mayoria de los planes PPO. Si tu plan no esta en la lista, llamanos, casi siempre podemos atenderte como proveedor fuera de red con beneficios similares.",
+    "intro": "El sitio actual de Sonria destaca seguro dental, Medicare, Medicaid, opciones de pago flexibles y financiamiento de terceros para hacer el cuidado dental mas accesible.",
     "plansAccepted": [
-      "Aetna", "Cigna", "Delta Dental PPO", "Guardian", "Humana",
-      "MetLife", "Principal", "United Concordia", "United Healthcare", "Blue Cross Blue Shield"
+      "Seguro dental",
+      "Medicare",
+      "Medicaid",
+      "Financiamiento de terceros",
+      "Opciones de pago flexibles"
     ],
-    "noInsurance": "Sin seguro? Tenemos un plan de membresia anual desde $199 que incluye dos limpiezas, examenes y descuentos en otros tratamientos.",
+    "noInsurance": "Si tienes preguntas sobre cobertura o pagos, el equipo de Sonria puede ayudarte a entender tus opciones antes del tratamiento.",
     "financing": [
-      { "name": "CareCredit", "body": "Financiamiento medico con planes sin interes de 6 a 24 meses." },
-      { "name": "Plan interno Sonria", "body": "Pagos mensuales fijos, sin verificacion de credito agresiva." },
-      { "name": "Efectivo / tarjeta", "body": "Descuento del 5% pagando por adelantado." }
+      {
+        "name": "Seguro dental",
+        "body": "El equipo puede responder preguntas sobre cobertura y trabajar con tu proveedor para ayudarte a maximizar beneficios."
+      },
+      {
+        "name": "Opciones de pago flexibles",
+        "body": "Soluciones de pago convenientes ayudan a pacientes a empezar tratamiento con confianza."
+      },
+      {
+        "name": "Financiamiento de terceros",
+        "body": "Los socios de financiamiento pueden permitir que pacientes distribuyan costos dentales con poco o ningun interes."
+      }
     ],
     "faqs": [
-      { "q": "Verifican mi seguro antes de la cita?", "a": "Si, sin costo. Llamanos con tu informacion y verificamos cobertura en menos de 24 horas." },
-      { "q": "Que pasa si mi seguro no cubre todo?", "a": "Te explicamos exactamente cuanto debes antes del tratamiento, con opciones de pago si no puedes cubrirlo de inmediato." },
-      { "q": "Aceptan Medicaid?", "a": "No directamente. Pero tenemos planes accesibles para pacientes sin cobertura." }
+      {
+        "q": "Aceptan seguro dental?",
+        "a": "Si. El sitio actual indica que el seguro dental es bienvenido y que el equipo ayuda con preguntas de cobertura."
+      },
+      {
+        "q": "Aceptan Medicaid?",
+        "a": "Si. El sitio actual indica que Medicaid es bienvenido."
+      },
+      {
+        "q": "Hay financiamiento disponible?",
+        "a": "Si. El sitio actual menciona opciones de pago flexibles y financiamiento de terceros."
+      }
     ]
   },
   "faq": {
     "heading": "Preguntas frecuentes",
     "subheading": "Lo que mas nos preguntan, respondido en una linea.",
     "items": [
-      { "q": "Hablan espanol?", "a": "Si. Todo el equipo, en los cuatro consultorios. No solo el dentista." },
-      { "q": "Aceptan pacientes sin seguro?", "a": "Si. Tenemos especiales nuevos pacientes ($79.99), planes de membresia ($199/ano), y financiamiento sin interes." },
-      { "q": "Que tan rapido me atienden si tengo dolor?", "a": "Casi siempre el mismo dia si llamas antes de mediodia. Reservamos espacios diarios para emergencias." },
-      { "q": "Atienden ninos?", "a": "Si, desde la primera muela. Hacemos las primeras visitas divertidas y educativas." },
-      { "q": "Donde estan los consultorios?", "a": "Arlington, Commerce, Paris y Grand Prairie. Mismo equipo y precios en cada uno." },
-      { "q": "Cuanto cuesta un implante?", "a": "$2,499 todo-incluido por diente. Sin sorpresas. Financiamiento disponible." },
-      { "q": "Cuanto cuesta All-on-4?", "a": "$15,999 por arcada, todo incluido (extracciones, 4 implantes, protesis provisional y final)." },
-      { "q": "Puedo pagar a meses?", "a": "Si. CareCredit, plan interno Sonria, o tarjeta. La mayoria de pacientes paga $200-500 al mes." },
-      { "q": "Cual es el horario?", "a": "Lun-Vie 8am-6pm. Arlington tambien abre Sabados 9am-2pm." },
-      { "q": "Atienden de emergencia?", "a": "Si. Llama al (682) 284-1120 y casi siempre te vemos el mismo dia." }
+      {
+        "q": "Hablan espanol?",
+        "a": "Si. Sonria tiene un equipo dental bilingue en ingles y espanol."
+      },
+      {
+        "q": "Donde estan los consultorios?",
+        "a": "Arlington, Commerce, Paris y Grand Prairie."
+      },
+      {
+        "q": "Aceptan Medicaid?",
+        "a": "El sitio actual indica que Medicaid es bienvenido."
+      },
+      {
+        "q": "Mencionan Medicare?",
+        "a": "Si. El sitio actual incluye mensajes sobre seguro dental, Medicare y financiamiento."
+      },
+      {
+        "q": "Ofrecen financiamiento?",
+        "a": "Si. El sitio actual menciona opciones de pago flexibles y financiamiento de terceros."
+      },
+      {
+        "q": "Que servicios ofrecen?",
+        "a": "Sonria lista examenes, limpiezas, implantes, ortodoncia, extracciones, dentaduras, parciales, frenos transparentes, sedacion y mas."
+      }
     ]
   },
   "contactPage": {
@@ -368,7 +857,20 @@
       "location": "Consultorio preferido",
       "message": "Como podemos ayudarte?",
       "submit": "Enviar mensaje",
-      "selectLocation": "Selecciona una ubicacion"
+      "selectLocation": "Selecciona una ubicacion",
+      "service": "Servicio necesario",
+      "insuranceStatus": "Estado del seguro",
+      "preferredTime": "Horario preferido para la cita",
+      "consent": "Acepto que Sonria Dentista me contacte por telefono, texto o correo sobre mi solicitud.",
+      "selectService": "Selecciona un servicio",
+      "selectInsuranceStatus": "Selecciona estado del seguro",
+      "insuranceOptions": {
+        "insured": "Tengo seguro dental",
+        "medicaid": "Medicaid",
+        "medicare": "Medicare",
+        "uninsured": "Sin seguro",
+        "unsure": "No estoy seguro"
+      }
     }
   },
   "contactCTA": {
@@ -381,7 +883,12 @@
     "phone": "(682) 284-1120",
     "phoneHref": "tel:+16822841120",
     "email": "info@sonriadentista.com",
-    "hours": ["Lun-Vie 8am-6pm", "Sab 9am-2pm", "Dom Cerrado"]
+    "hours": [
+      "Lun-Vie 9am-5pm",
+      "Sabado varia por ubicacion",
+      "Dom Cerrado"
+    ],
+    "appointmentUrl": "https://sonriadentista.com/request-an-appointment/"
   },
   "nav": {
     "services": "Servicios",
