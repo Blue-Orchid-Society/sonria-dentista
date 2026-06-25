@@ -73,12 +73,19 @@ export function Hero({
           <div className="mt-7 flex flex-wrap gap-3">
             <a
               href="#hero-appointment"
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="hero_primary"
               className="rounded-full bg-terracotta px-6 py-3.5 text-sm font-semibold text-white shadow-warm transition hover:bg-terracotta-deep"
             >
               {ctaPrimary}
             </a>
             <a
               href={phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="hero_phone"
+              data-track-destination={phoneHref}
               className="rounded-full border border-white/25 bg-white/12 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
             >
               {ctaSecondary} {phone}

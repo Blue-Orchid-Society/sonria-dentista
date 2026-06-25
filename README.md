@@ -21,4 +21,17 @@ CONTACT_FROM=Sonria Website <onboarding@resend.dev>
 
 `CONTACT_FROM` should be changed to a verified Sonria sender after the domain is configured in Resend.
 
+## Analytics and conversion tracking
+
+Configure these in Vercel when the client provides them:
+
+```
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-...
+NEXT_PUBLIC_GOOGLE_ADS_ID=AW-...
+NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL=...
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=...
+```
+
+Tracked conversion signals include phone clicks, form submissions, appointment links, new patient intake links, map clicks, service CTA clicks, and insurance CTA clicks.
+
 See `CLAUDE.md` for editing conventions, `.context/HANDOFF.md` for the source-of-truth content captured from the original site.

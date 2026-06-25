@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackAdsConversion, trackEvent } from "@/lib/analytics";
 import type { Locale } from "@/lib/content";
 
 type Labels = {
@@ -61,6 +62,14 @@ export function ContactForm({
       });
 
       if (!res.ok) throw new Error("Contact form submission failed");
+
+      trackEvent("form_submit", {
+        event_category: "lead",
+        event_label: "contact_form",
+        location: String(data.location ?? ""),
+        service: String(data.service ?? ""),
+      });
+      trackAdsConversion();
 
       form.reset();
       setStatus("ok");

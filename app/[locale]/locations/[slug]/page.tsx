@@ -107,6 +107,11 @@ export default async function LocationDetailPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href={phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="location_hero_phone"
+              data-track-location={loc.slug}
+              data-track-destination={phoneHref}
               className="inline-flex items-center gap-2 rounded-full bg-terracotta px-6 py-3 text-sm font-semibold text-white shadow-warm transition hover:bg-terracotta-deep"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
@@ -115,6 +120,11 @@ export default async function LocationDetailPage({
             {loc.appointmentUrl && (
               <a
                 href={loc.appointmentUrl}
+                data-track-event="appointment_click"
+                data-track-category="lead"
+                data-track-label="location_hero_appointment"
+                data-track-location={loc.slug}
+                data-track-destination={loc.appointmentUrl}
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
               >
                 <CalendarDays className="h-4 w-4" aria-hidden="true" />
@@ -126,6 +136,11 @@ export default async function LocationDetailPage({
                 href={loc.googleMapsUrl}
                 target="_blank"
                 rel="noopener"
+                data-track-event="map_click"
+                data-track-category="location"
+                data-track-label="location_hero_map"
+                data-track-location={loc.slug}
+                data-track-destination={loc.googleMapsUrl}
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
               >
                 <MapPin className="h-4 w-4" aria-hidden="true" />
@@ -160,6 +175,10 @@ export default async function LocationDetailPage({
             {loc.appointmentUrl && (
               <ActionCard
                 href={loc.appointmentUrl}
+                eventName="appointment_click"
+                category="lead"
+                label="location_action_appointment"
+                location={loc.slug}
                 icon={<CalendarDays className="h-5 w-5" aria-hidden="true" />}
                 title={labels.bookHere}
                 body={labels.bookBody}
@@ -168,6 +187,10 @@ export default async function LocationDetailPage({
             {loc.intakeFormUrl && (
               <ActionCard
                 href={loc.intakeFormUrl}
+                eventName="intake_click"
+                category="lead"
+                label="location_action_intake"
+                location={loc.slug}
                 icon={<ClipboardList className="h-5 w-5" aria-hidden="true" />}
                 title={labels.intake}
                 body={labels.intakeBody}
@@ -176,6 +199,10 @@ export default async function LocationDetailPage({
             {loc.googleMapsUrl && (
               <ActionCard
                 href={loc.googleMapsUrl}
+                eventName="map_click"
+                category="location"
+                label="location_action_map"
+                location={loc.slug}
                 icon={<MapPin className="h-5 w-5" aria-hidden="true" />}
                 title={labels.map}
                 body={labels.mapBody}
@@ -185,6 +212,10 @@ export default async function LocationDetailPage({
             {reviewUrl && (
               <ActionCard
                 href={reviewUrl}
+                eventName="review_click"
+                category="trust"
+                label="location_action_reviews"
+                location={loc.slug}
                 icon={<Star className="h-5 w-5 fill-current" aria-hidden="true" />}
                 title={labels.reviews}
                 body={labels.reviewBody}
@@ -299,6 +330,11 @@ export default async function LocationDetailPage({
           <div className="flex flex-wrap gap-3">
             <a
               href={phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="location_final_phone"
+              data-track-location={loc.slug}
+              data-track-destination={phoneHref}
               className="rounded-full bg-terracotta px-6 py-3 text-sm font-semibold text-white shadow-warm transition hover:bg-terracotta-deep"
             >
               {loc.phone}
@@ -306,6 +342,11 @@ export default async function LocationDetailPage({
             {loc.appointmentUrl && (
               <a
                 href={loc.appointmentUrl}
+                data-track-event="appointment_click"
+                data-track-category="lead"
+                data-track-label="location_final_appointment"
+                data-track-location={loc.slug}
+                data-track-destination={loc.appointmentUrl}
                 className="rounded-full border border-border-soft bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
               >
                 {labels.cta}
@@ -341,18 +382,31 @@ function ActionCard({
   title,
   body,
   external,
+  eventName,
+  category,
+  label,
+  location,
 }: {
   href: string;
   icon: ReactNode;
   title: string;
   body: string;
   external?: boolean;
+  eventName?: string;
+  category?: string;
+  label?: string;
+  location?: string;
 }) {
   return (
     <a
       href={href}
       target={external ? "_blank" : undefined}
       rel={external ? "noopener" : undefined}
+      data-track-event={eventName}
+      data-track-category={category}
+      data-track-label={label}
+      data-track-location={location}
+      data-track-destination={href}
       className="group rounded-xl border border-border-soft bg-background p-5 shadow-warm transition hover:-translate-y-0.5 hover:border-terracotta hover:shadow-warm-lg"
     >
       <div className="grid h-11 w-11 place-items-center rounded-full bg-sage-soft text-sage-deep transition group-hover:bg-terracotta group-hover:text-white">

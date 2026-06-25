@@ -1,0 +1,95 @@
+Sonria Dentista Phase 7 analytics and conversion tracking
+
+Purpose
+Measure which pages and actions produce patient lead intent before paid ads begin.
+
+
+What is implemented in code
+
+Google Analytics 4
+The site loads GA4 when NEXT_PUBLIC_GA_MEASUREMENT_ID is configured.
+
+Google Ads conversion tracking
+The site loads Google Ads through gtag when NEXT_PUBLIC_GOOGLE_ADS_ID is configured.
+Form submissions can send a conversion event when NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL is configured.
+
+Google Search Console
+The root layout adds the verification meta tag when NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION is configured.
+
+Click tracking
+The site tracks explicit data-track-event links and also infers common conversion clicks from link URLs.
+
+
+Events tracked
+
+phone_click
+Triggered by phone links.
+
+form_submit
+Triggered after the contact form or homepage lead form successfully posts to the API.
+
+appointment_click
+Triggered by appointment links and hero appointment CTAs.
+
+intake_click
+Triggered by new patient intake form links.
+
+map_click
+Triggered by Google Maps or share.google links.
+
+service_cta_click
+Triggered by links to service pages and service showcase cards.
+
+insurance_cta_click
+Triggered by insurance page links and insurance CTAs.
+
+email_click
+Triggered by email links.
+
+review_click
+Triggered by location review links.
+
+
+Client details still needed
+
+GA4 measurement ID
+Example format: G-XXXXXXXXXX
+
+Google Ads conversion ID
+Example format: AW-XXXXXXXXXX
+
+Google Ads conversion label
+Needed if paid ad conversions should be counted from successful form submissions.
+
+Google Search Console verification token
+Can be provided as a meta tag token, DNS verification, or HTML file verification. The current implementation supports the meta tag token.
+
+Confirmed production domain
+Needed for GA4, Google Ads, and Search Console property setup.
+
+
+Recommended GA4 conversion events
+
+Mark these events as key events/conversions in GA4:
+form_submit
+phone_click
+appointment_click
+intake_click
+
+Secondary events to monitor:
+map_click
+service_cta_click
+insurance_cta_click
+review_click
+
+
+Testing checklist
+
+Open the live site with GA configured.
+Open browser dev tools and confirm gtag loads.
+Click a phone link and verify phone_click appears in GA4 DebugView.
+Submit a test lead form and verify form_submit appears only after success.
+Click appointment, intake, map, service, and insurance CTAs.
+Confirm Search Console verification succeeds.
+Confirm Google Ads conversion appears after a successful test form submission.
+

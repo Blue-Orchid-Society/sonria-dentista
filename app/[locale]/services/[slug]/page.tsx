@@ -98,12 +98,21 @@ export default async function ServiceDetailPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={`/${locale}/contact`}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="service_hero_appointment"
+              data-track-service={service.slug}
               className="rounded-full bg-foreground px-6 py-3 text-background text-sm font-semibold hover:bg-terracotta transition"
             >
               {labels.cta}
             </Link>
             <a
               href={site.contact.phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="service_hero_phone"
+              data-track-service={service.slug}
+              data-track-destination={site.contact.phoneHref}
               className="rounded-full border border-border-soft bg-card px-6 py-3 text-foreground text-sm font-semibold hover:border-terracotta hover:text-terracotta transition"
             >
               {site.contact.phone}
@@ -182,6 +191,11 @@ export default async function ServiceDetailPage({
                 <Link
                   key={l.slug}
                   href={`/${locale}/locations/${l.slug}`}
+                  data-track-event="location_cta_click"
+                  data-track-category="service"
+                  data-track-label="service_available_location"
+                  data-track-service={service.slug}
+                  data-track-location={l.slug}
                   className="rounded-2xl bg-background border border-border-soft p-5 hover:border-terracotta transition"
                 >
                   <div className="font-display text-xl text-foreground">{l.city}</div>
@@ -222,12 +236,21 @@ export default async function ServiceDetailPage({
           <div className="flex flex-wrap gap-3">
             <a
               href={site.contact.phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="service_final_phone"
+              data-track-service={service.slug}
+              data-track-destination={site.contact.phoneHref}
               className="rounded-full bg-terracotta px-6 py-3 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
             >
               {site.contact.phone}
             </a>
             <Link
               href={`/${locale}/contact`}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="service_final_appointment"
+              data-track-service={service.slug}
               className="rounded-full border border-background/30 px-6 py-3 text-background text-sm font-semibold hover:bg-background hover:text-foreground transition"
             >
               {labels.cta}
@@ -245,6 +268,10 @@ export default async function ServiceDetailPage({
             <Link
               key={s.slug}
               href={`/${locale}/services/${s.slug}`}
+              data-track-event="service_cta_click"
+              data-track-category="service"
+              data-track-label="related_service"
+              data-track-service={s.slug}
               className="rounded-2xl bg-card border border-border-soft p-6 hover:border-terracotta transition"
             >
               <h3 className="font-display text-xl text-foreground">{s.name}</h3>

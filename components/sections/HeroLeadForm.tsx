@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { trackAdsConversion, trackEvent } from "@/lib/analytics";
 import type { Locale } from "@/lib/content";
 
 type LocationOption = { slug: string; city: string };
@@ -42,6 +43,14 @@ export function HeroLeadForm({
       });
 
       if (!res.ok) throw new Error("Homepage lead form submission failed");
+
+      trackEvent("form_submit", {
+        event_category: "lead",
+        event_label: "hero_lead_form",
+        location: String(data.location ?? ""),
+        service: String(data.service ?? ""),
+      });
+      trackAdsConversion();
 
       form.reset();
       setStatus("ok");

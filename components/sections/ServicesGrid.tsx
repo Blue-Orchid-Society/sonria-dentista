@@ -168,6 +168,10 @@ function ServiceShowcaseCard({
   return (
     <Link
       href={`/${locale}/services/${service.slug}`}
+      data-track-event="service_cta_click"
+      data-track-category="service"
+      data-track-label={service.slug}
+      data-track-service={service.slug}
       className="group sticky top-28 mx-auto block w-full max-w-[600px] overflow-hidden rounded-2xl bg-foreground shadow-[0_30px_70px_-30px_rgba(45,42,36,0.55)] transition-all duration-500 ease-out"
       style={{
         opacity: isActive ? 1 : Math.max(0.35, 1 - Math.abs(offset) * 0.35),

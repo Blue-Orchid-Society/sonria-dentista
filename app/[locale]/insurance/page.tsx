@@ -110,12 +110,19 @@ export default async function InsurancePage({
           <div className="flex flex-wrap gap-3">
             <a
               href={site.contact.phoneHref}
+              data-track-event="insurance_cta_click"
+              data-track-category="lead"
+              data-track-label="insurance_phone"
+              data-track-destination={site.contact.phoneHref}
               className="rounded-full bg-terracotta px-6 py-3 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
             >
               {site.contact.phone}
             </a>
             <Link
               href={`/${locale}/contact`}
+              data-track-event="insurance_cta_click"
+              data-track-category="lead"
+              data-track-label="insurance_contact"
               className="rounded-full border border-background/30 px-6 py-3 text-background text-sm font-semibold hover:bg-background hover:text-foreground transition"
             >
               {site.nav.book}
