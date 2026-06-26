@@ -45,6 +45,7 @@ export function Hero({
           <video
             className="h-full w-full object-cover"
             src={videoUrl}
+            // https://cdn.sanity.io/files/e5ozko3p/production/5123f22fb1a3f2e9069e3ef78c111cde4b701f06.mp4
             poster={imageUrl}
             autoPlay
             muted

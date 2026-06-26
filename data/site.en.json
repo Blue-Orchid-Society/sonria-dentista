@@ -26,7 +26,7 @@
         "value": "4"
       }
     ],
-    "videoUrl": "https://cdn.sanity.io/files/e5ozko3p/production/5123f22fb1a3f2e9069e3ef78c111cde4b701f06.mp4"
+    "videoUrl": "https://res.cloudinary.com/dl0uoovgu/video/upload/v1782459307/InShot_20260626_071553934_qq5nsu.mp4"
   },
   "services": {
     "heading": "The right approach for every smile",
@@ -1389,7 +1389,7 @@
         "slug": "deepti-namineni",
         "name": "Dr. Deepti Namineni",
         "initials": "DN",
-        "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/DR%20deepti.jpg",
         "imageAlt": "Dentist profile placeholder for Dr. Deepti Namineni",
         "title": "DDS, MS - Lead Dentist and Dental Implant Specialist",
         "bio": [
@@ -1410,7 +1410,7 @@
         "slug": "ahn",
         "name": "Dr. Ahn",
         "initials": "AA",
-        "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr-ahn.webp",
         "imageAlt": "Orthodontist profile placeholder for Dr. Ahn",
         "title": "DDS, MS - Orthodontic Specialist",
         "bio": [
@@ -1430,7 +1430,7 @@
         "slug": "tarun-mundluru",
         "name": "Dr. Tarun Mundluru",
         "initials": "TM",
-        "imageUrl": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr%20Tarun.jpg",
         "imageAlt": "Dentist profile placeholder for Dr. Tarun Mundluru",
         "title": "BDS, MSc, DABOP - Family and General Dentistry",
         "bio": [
@@ -1451,7 +1451,7 @@
         "slug": "chu",
         "name": "Dr. Chu",
         "initials": "CC",
-        "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr%20Joy.webp",
         "imageAlt": "Orthodontist profile placeholder for Dr. Chu",
         "title": "DDS, PhD - Orthodontics",
         "bio": [

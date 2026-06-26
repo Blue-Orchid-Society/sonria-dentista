@@ -26,7 +26,7 @@
         "value": "4"
       }
     ],
-    "videoUrl": ""
+    "videoUrl": "https://res.cloudinary.com/dl0uoovgu/video/upload/v1782459307/InShot_20260626_071553934_qq5nsu.mp4"
   },
   "services": {
     "heading": "El cuidado correcto para cada sonrisa",
@@ -1377,7 +1377,7 @@
         "slug": "deepti-namineni",
         "name": "Dra. Deepti Namineni",
         "initials": "DN",
-        "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/DR%20deepti.jpg",
         "imageAlt": "Foto temporal de perfil para Dra. Deepti Namineni",
         "title": "DDS, MS - Dentista principal y especialista en implantes dentales",
         "bio": [
@@ -1398,7 +1398,7 @@
         "slug": "ahn",
         "name": "Dr. Ahn",
         "initials": "AA",
-        "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr-ahn.webp",
         "imageAlt": "Foto temporal de perfil para Dr. Ahn",
         "title": "DDS, MS - Especialista en ortodoncia",
         "bio": [
@@ -1418,7 +1418,7 @@
         "slug": "tarun-mundluru",
         "name": "Dr. Tarun Mundluru",
         "initials": "TM",
-        "imageUrl": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr%20Tarun.jpg",
         "imageAlt": "Foto temporal de perfil para Dr. Tarun Mundluru",
         "title": "BDS, MSc, DABOP - Odontologia familiar y general",
         "bio": [
@@ -1439,7 +1439,7 @@
         "slug": "chu",
         "name": "Dra. Chu",
         "initials": "CC",
-        "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr%20Joy.webp",
         "imageAlt": "Foto temporal de perfil para Dra. Chu",
         "title": "DDS, PhD - Ortodoncia",
         "bio": [

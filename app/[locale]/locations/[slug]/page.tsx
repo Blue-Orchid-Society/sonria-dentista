@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { CalendarDays, ClipboardList, MapPin, Phone, Star } from "lucide-react";
-import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { getSite, type Locale } from "@/lib/content";
 
 export const dynamicParams = false;
@@ -309,16 +308,6 @@ export default async function LocationDetailPage({
             </div>
           </div>
         </section>
-      )}
-
-      {servicesHere.length > 0 && (
-        <ServicesGrid
-          heading={labels.servicesHeading}
-          subheading={labels.servicesBody}
-          services={servicesHere}
-          pricingFeatured={site.services.pricingFeatured}
-          locale={locale}
-        />
       )}
 
       <section className="bg-background py-14 md:py-16">
