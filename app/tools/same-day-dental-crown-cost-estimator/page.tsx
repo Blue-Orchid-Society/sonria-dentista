@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Same Day Dental Crown Cost Estimator Tool for SMB Teams | Blue Orchid Society",
+  title: "Same Day Dental Crown Cost Estimator | Sonria Dentista",
   description:
-    "Use this practical same day dental crown cost estimator resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+    "Use this practical same day dental crown cost estimator resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/same-day-dental-crown-cost-estimator",
   },
@@ -95,14 +95,14 @@ export default async function SameDayDentalCrownCostEstimatorPage({
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Same Day Dental Crown Cost Estimator Tool for SMB Teams",
+    name: "Same Day Dental Crown Cost Estimator",
     description:
-      "Use this practical same day dental crown cost estimator resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+      "Use this practical same day dental crown cost estimator resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
     url: "https://sonriadentista.com/tools/same-day-dental-crown-cost-estimator",
     mainEntity: {
       "@type": "SoftwareApplication",
       name: "Same Day Dental Crown Cost Estimator Calculator",
-      applicationCategory: "BusinessApplication",
+      applicationCategory: "HealthApplication",
       operatingSystem: "Web",
       offers: {
         "@type": "Offer",
@@ -247,7 +247,7 @@ export default async function SameDayDentalCrownCostEstimatorPage({
               href="/contact"
               className="rounded-md bg-brand-deep px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-brand-deep/90"
             >
-              Talk with Blue Orchid Society
+              Contact Sonria Dentista
             </Link>
             <Link
               href="/tools"
@@ -269,14 +269,14 @@ export default async function SameDayDentalCrownCostEstimatorPage({
                 improve lead quality, and make treatment conversations clearer.
               </p>
             </div>
-            <Link href="/ai-readiness" className="rounded-lg border border-border-soft bg-card p-5 transition hover:shadow-warm">
-              <span className="font-semibold text-brand-deep">AI readiness assessment</span>
+            <Link href="/tools" className="rounded-lg border border-border-soft bg-card p-5 transition hover:shadow-warm">
+              <span className="font-semibold text-brand-deep">Dental planning guide</span>
               <span className="mt-2 block text-sm leading-6 text-muted-foreground">
                 See where automation can improve patient intake, follow-up, and scheduling.
               </span>
             </Link>
             <Link href="/services" className="rounded-lg border border-border-soft bg-card p-5 transition hover:shadow-warm">
-              <span className="font-semibold text-brand-deep">AI implementation services</span>
+              <span className="font-semibold text-brand-deep">Dental services</span>
               <span className="mt-2 block text-sm leading-6 text-muted-foreground">
                 Turn calculators, workflows, and operational bottlenecks into useful production systems.
               </span>
