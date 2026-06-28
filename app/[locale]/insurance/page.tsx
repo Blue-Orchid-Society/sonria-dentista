@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { BadgeCheck, CreditCard, ShieldCheck } from "lucide-react";
 import { getSite, type Locale } from "@/lib/content";
 
 export async function generateMetadata({
@@ -23,63 +24,103 @@ export default async function InsurancePage({
   const { locale } = await params;
   const site = await getSite(locale as Locale);
   const isEs = locale === "es";
+  const financeIcons = [ShieldCheck, CreditCard, BadgeCheck];
+  const financeCardStyles = [
+    "bg-foreground text-background",
+    "bg-sage-deep text-white",
+    "bg-terracotta text-white",
+  ];
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-muted">
-            {isEs ? "Seguro y financiamiento" : "Insurance and financing"}
-          </div>
-          <h1 className="mt-3 font-display text-4xl md:text-6xl tracking-tight text-foreground max-w-3xl">
-            {site.insurance.heading}
-          </h1>
-          <p className="mt-5 text-lg text-muted max-w-2xl leading-relaxed">{site.insurance.intro}</p>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-        <h2 className="font-display text-3xl md:text-4xl tracking-tight text-foreground">
-          {isEs ? "Planes que aceptamos" : "Plans we accept"}
-        </h2>
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-          {site.insurance.plansAccepted.map((p) => (
-            <div
-              key={p}
-              className="rounded-xl bg-card border border-border-soft px-4 py-4 text-center text-sm font-semibold text-foreground"
-            >
-              {p}
+      <section className="relative overflow-hidden bg-foreground text-background">
+        <img
+          src="/images/insurance-1.png"
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-42"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/82 to-foreground/28" />
+        <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
+          <div className="max-w-3xl">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
+              {isEs ? "Seguro y financiamiento" : "Insurance and financing"}
             </div>
-          ))}
+            <h1 className="mt-3 font-display text-5xl leading-tight text-white md:text-7xl">
+              {site.insurance.heading}
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-background/78">{site.insurance.intro}</p>
+          </div>
         </div>
-        <p className="mt-6 text-sm text-muted-2 italic max-w-3xl">
-          {isEs
-            ? "No ves tu plan? Llamanos. Casi siempre podemos atenderte como proveedor fuera de red con beneficios similares."
-            : "Don't see your plan? Call us. We can almost always see you as out-of-network with similar benefits."}
-        </p>
       </section>
 
-      <section className="bg-card border-y border-border-soft">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <div className="rounded-2xl bg-terracotta-soft/40 border border-terracotta/30 p-8 md:p-10">
-            <h2 className="font-display text-2xl md:text-3xl tracking-tight text-foreground">
-              {isEs ? "Sin seguro?" : "No insurance?"}
+      <section className="bg-background py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
+            <h2 className="font-display text-4xl tracking-tight text-foreground md:text-5xl">
+              {isEs ? "Planes que aceptamos" : "Plans we accept"}
             </h2>
-            <p className="mt-4 text-base text-foreground leading-relaxed max-w-3xl">
-              {site.insurance.noInsurance}
+            <p className="text-base leading-relaxed text-muted">
+              {isEs
+                ? "Trae tu informacion de cobertura y el equipo te ayuda a entender opciones antes de comenzar."
+                : "Bring your coverage information and the team can help you understand options before care begins."}
             </p>
           </div>
-
-          <h2 className="mt-12 font-display text-3xl md:text-4xl tracking-tight text-foreground">
-            {isEs ? "Opciones de pago" : "Payment options"}
-          </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {site.insurance.financing.map((f) => (
-              <div key={f.name} className="rounded-2xl bg-background border border-border-soft p-6">
-                <h3 className="font-display text-xl text-foreground">{f.name}</h3>
-                <p className="mt-2 text-sm text-muted leading-relaxed">{f.body}</p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {site.insurance.plansAccepted.map((p, index) => (
+              <div
+                key={p}
+                className={
+                  "rounded-xl px-5 py-5 text-sm font-semibold shadow-warm " +
+                  (index % 3 === 0
+                    ? "bg-foreground text-background"
+                    : index % 3 === 1
+                      ? "bg-sage-deep text-white"
+                      : "bg-gold text-foreground")
+                }
+              >
+                {p}
               </div>
             ))}
+          </div>
+          <p className="mt-6 max-w-3xl text-sm italic text-muted-2">
+            {isEs
+              ? "No ves tu plan? Llamanos. Casi siempre podemos atenderte como proveedor fuera de red con beneficios similares."
+              : "Don't see your plan? Call us. We can almost always see you as out-of-network with similar benefits."}
+          </p>
+        </div>
+      </section>
+
+      <section className="border-y border-border-soft bg-card py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="grid gap-4 sm:grid-cols-2">
+            <img src="/images/insurance-2.png" alt="" className="h-full min-h-56 w-full rounded-xl object-cover shadow-warm" loading="lazy" />
+            <img src="/images/insurance-3.png" alt="" className="h-full min-h-56 w-full rounded-xl object-cover shadow-warm" loading="lazy" />
+            <div className="rounded-xl bg-terracotta p-6 text-white shadow-warm sm:col-span-2">
+              <h2 className="font-display text-3xl tracking-tight">
+                {isEs ? "Sin seguro?" : "No insurance?"}
+              </h2>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/82">
+                {site.insurance.noInsurance}
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-display text-4xl tracking-tight text-foreground md:text-5xl">
+              {isEs ? "Opciones de pago" : "Payment options"}
+            </h2>
+            <div className="mt-8 grid gap-4">
+              {site.insurance.financing.map((f, index) => {
+                const Icon = financeIcons[index % financeIcons.length];
+                return (
+                  <div key={f.name} className={`rounded-xl p-6 shadow-warm ${financeCardStyles[index % financeCardStyles.length]}`}>
+                    <Icon className="h-6 w-6" aria-hidden="true" />
+                    <h3 className="mt-4 font-display text-2xl">{f.name}</h3>
+                    <p className="mt-2 text-sm leading-relaxed opacity-80">{f.body}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
