@@ -52,6 +52,7 @@ export default async function LocationDetailPage({
     (s) => loc.servicesOffered?.includes(s.slug) && s.showInOverview !== false,
   );
   const providersHere = site.team.providers.filter((provider) => provider.locationSlugs.includes(slug));
+  const hasSingleProvider = providersHere.length === 1;
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
   const phoneHref = loc.phoneHref ?? `tel:${loc.phone.replace(/[^0-9+]/g, "")}`;
@@ -260,23 +261,33 @@ export default async function LocationDetailPage({
               <p className="text-base leading-relaxed text-muted">{labels.providersBody}</p>
             </div>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <div className={hasSingleProvider ? "mt-10 grid gap-5" : "mt-10 grid gap-6 lg:grid-cols-2"}>
               {providersHere.map((provider) => (
                 <article
                   key={provider.slug}
-                  className="overflow-hidden rounded-2xl border border-border-soft bg-background shadow-warm"
+                  className={
+                    "overflow-hidden rounded-2xl border border-border-soft bg-background shadow-warm " +
+                    (hasSingleProvider ? "mx-auto w-full max-w-5xl" : "")
+                  }
                 >
-                  <div className="grid gap-0 sm:grid-cols-[0.42fr_0.58fr]">
-                    <div className="relative min-h-72 sm:min-h-full">
+                  <div
+                    className={
+                      "grid gap-0 " +
+                      (hasSingleProvider
+                        ? "md:grid-cols-[0.46fr_0.54fr]"
+                        : "md:grid-cols-[0.48fr_0.52fr] lg:grid-cols-[0.46fr_0.54fr]")
+                    }
+                  >
+                    <div className={hasSingleProvider ? "relative min-h-[28rem]" : "relative min-h-[24rem]"}>
                       <img
                         src={provider.imageUrl}
                         alt={provider.imageAlt}
-                        className="absolute inset-0 h-full w-full object-cover"
+                        className="absolute inset-0 h-full w-full object-cover object-top"
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 to-transparent" />
                     </div>
-                    <div className="p-6">
+                    <div className={hasSingleProvider ? "p-7 md:p-9" : "p-6 md:p-7"}>
                       <div className="inline-grid h-12 w-12 place-items-center rounded-full bg-foreground font-display text-lg text-background">
                         {provider.initials}
                       </div>
