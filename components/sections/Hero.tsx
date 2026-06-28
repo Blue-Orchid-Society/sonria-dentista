@@ -37,6 +37,12 @@ export function Hero({
   services,
 }: Props) {
   const phoneHref = `tel:${phone.replace(/[^0-9+]/g, "")}`;
+  const statStyles = [
+    "bg-foreground text-background",
+    "bg-terracotta text-white",
+    "bg-sage-deep text-white",
+    "bg-gold text-foreground",
+  ];
 
   return (
     <section className="relative overflow-hidden bg-foreground text-background">
@@ -101,10 +107,13 @@ export function Hero({
 
       <div className="relative border-y border-white/10 bg-background text-foreground">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 py-4 md:grid-cols-4">
-          {trustSignals.map((t) => (
-            <div key={t.label} className="rounded-xl bg-card px-4 py-4 ring-1 ring-border-soft">
-              <div className="font-display text-2xl text-foreground md:text-3xl">{t.value}</div>
-              <div className="mt-1 text-xs uppercase tracking-wider text-muted-2">{t.label}</div>
+          {trustSignals.map((t, index) => (
+            <div
+              key={t.label}
+              className={`rounded-xl px-5 py-5 shadow-warm ${statStyles[index % statStyles.length]}`}
+            >
+              <div className="font-display text-3xl md:text-4xl">{t.value}</div>
+              <div className="mt-1 text-xs font-semibold uppercase tracking-wider opacity-78">{t.label}</div>
             </div>
           ))}
         </div>

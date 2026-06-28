@@ -1,0 +1,90 @@
+Sonria Dentista theme and tracking handoff
+
+Google Ads and analytics
+
+Yes, the GA4, Google Ads, and Search Console values are for tracking leads and paid ad performance.
+
+The site already supports these environment variables:
+
+NEXT_PUBLIC_GA_MEASUREMENT_ID
+Google Analytics 4 measurement ID.
+Example: G-XXXXXXXXXX
+
+NEXT_PUBLIC_GOOGLE_ADS_ID
+Google Ads conversion ID.
+Example: AW-XXXXXXXXXX
+
+NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL
+Google Ads conversion label for lead conversions.
+
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+Google Search Console meta verification token.
+
+If the client does not know the IDs, the alternative is to get access to their Google Analytics, Google Ads, and Google Search Console accounts and retrieve or create the values there.
+
+
+Theme customization
+
+Yes, the theme is intentionally controlled through a small set of CSS variables.
+
+Primary file:
+app/globals.css
+
+Main variables:
+
+--background
+Main page background.
+
+--card
+Card and surface background.
+
+--foreground
+Main dark text and dark section color.
+
+--muted
+Body copy color.
+
+--muted-2
+Secondary label color.
+
+--sage
+Soft green brand accent.
+
+--sage-deep
+Deeper green accent.
+
+--sage-soft
+Light green background.
+
+--terracotta
+Primary warm CTA/accent color.
+
+--terracotta-deep
+Hover/active version of terracotta.
+
+--terracotta-soft
+Soft warm background.
+
+--border-soft
+Borders and subtle dividers.
+
+--gold
+Review stars, highlights, and warm accent blocks.
+
+
+How to change the theme
+
+Change the hex values in app/globals.css under :root.
+Most of the site updates automatically because Tailwind colors are mapped to those variables through @theme inline.
+
+Example:
+Changing --terracotta updates primary CTA buttons, badges, and warm accents.
+Changing --background updates most page backgrounds.
+Changing --foreground updates dark sections and primary text.
+
+
+Important note
+
+Some overlays, shadows, and email-template colors are intentionally hardcoded because they are not part of the public website theme system.
+The main site UI should be changed through app/globals.css variables.
+

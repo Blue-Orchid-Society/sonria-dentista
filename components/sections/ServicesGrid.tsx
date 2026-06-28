@@ -74,7 +74,7 @@ export function ServicesGrid({ heading, subheading, services, pricingFeatured, l
   const activeService = services[activeIndex] ?? services[0];
 
   return (
-    <section id="services" className="bg-[#f3f1eb] py-20 md:py-24">
+    <section id="services" className="bg-background py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-10 lg:grid-cols-[0.82fr_1.18fr]">
           <div className="lg:sticky lg:top-28 lg:self-start">

@@ -1370,7 +1370,7 @@
   "doctor": {
     "name": "Sonria Dental Team",
     "title": "Bilingual family dental care",
-    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
+    "imageUrl": "https://res.cloudinary.com/dl0uoovgu/image/upload/v1782648173/48c52811-1bb6-4a3a-88e7-aaed454b51ea_docn8x.png",
     "imageAlt": "Sonria Dentista dental team",
     "bio": [
       "At Sonria Dentista, patients are welcomed by an experienced dental team focused on comfortable, high-quality care for the whole family.",
@@ -1389,7 +1389,7 @@
         "slug": "deepti-namineni",
         "name": "Dr. Deepti Namineni",
         "initials": "DN",
-        "imageUrl": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/DR%20deepti.jpg",
         "imageAlt": "Dentist profile placeholder for Dr. Deepti Namineni",
         "title": "DDS, MS - Lead Dentist and Dental Implant Specialist",
         "bio": [
@@ -1410,7 +1410,7 @@
         "slug": "ahn",
         "name": "Dr. Ahn",
         "initials": "AA",
-        "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80",
+        "imageUrl":  "/images/Dr-ahn.webp",
         "imageAlt": "Orthodontist profile placeholder for Dr. Ahn",
         "title": "DDS, MS - Orthodontic Specialist",
         "bio": [
@@ -1430,7 +1430,7 @@
         "slug": "tarun-mundluru",
         "name": "Dr. Tarun Mundluru",
         "initials": "TM",
-        "imageUrl": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr Tarun.jpg",
         "imageAlt": "Dentist profile placeholder for Dr. Tarun Mundluru",
         "title": "BDS, MSc, DABOP - Family and General Dentistry",
         "bio": [
@@ -1451,7 +1451,7 @@
         "slug": "chu",
         "name": "Dr. Chu",
         "initials": "CC",
-        "imageUrl": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80",
+        "imageUrl": "/images/Dr%20Joy.webp",
         "imageAlt": "Orthodontist profile placeholder for Dr. Chu",
         "title": "DDS, PhD - Orthodontics",
         "bio": [

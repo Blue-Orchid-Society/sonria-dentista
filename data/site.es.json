@@ -1358,7 +1358,7 @@
   "doctor": {
     "name": "Equipo dental de Sonria",
     "title": "Cuidado dental familiar bilingue",
-    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
+    "imageUrl": "https://res.cloudinary.com/dl0uoovgu/image/upload/v1782648173/48c52811-1bb6-4a3a-88e7-aaed454b51ea_docn8x.png",
     "imageAlt": "Equipo dental de Sonria Dentista",
     "bio": [
       "En Sonria Dentista, los pacientes son recibidos por un equipo dental experimentado enfocado en cuidado comodo y de alta calidad para toda la familia.",
@@ -1418,7 +1418,7 @@
         "slug": "tarun-mundluru",
         "name": "Dr. Tarun Mundluru",
         "initials": "TM",
-        "imageUrl": "/images/Dr%20Tarun.jpg",
+        "imageUrl": "/images/Dr Tarun.jpg",
         "imageAlt": "Foto temporal de perfil para Dr. Tarun Mundluru",
         "title": "BDS, MSc, DABOP - Odontologia familiar y general",
         "bio": [

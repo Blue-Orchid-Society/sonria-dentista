@@ -5,7 +5,7 @@ const IMAGES = [
   "/images/gallery-3.jpg",
   "/images/missing-teeth.jpg",
   // "/images/gallery-5.png",
-  "/images/gallery-6.webp",
+  // "/images/gallery-6.webp",
 ];
 
 type Props = {

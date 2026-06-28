@@ -1,5 +1,4 @@
 import { Hero } from "@/components/sections/Hero";
-import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { TrueDentalHome } from "@/components/sections/TrueDentalHome";
 import { MissingTeethFeature } from "@/components/sections/MissingTeethFeature";
 import { SmileGallery } from "@/components/sections/SmileGallery";
@@ -160,13 +159,6 @@ export default async function HomePage({
         heading={homeCopy.trueHome.heading}
         intro={homeCopy.trueHome.intro}
         values={site.about.values}
-      />
-      <ServicesGrid
-        heading={site.services.heading}
-        subheading={site.services.subheading}
-        services={overviewServices}
-        pricingFeatured={site.services.pricingFeatured}
-        locale={locale}
       />
       <MissingTeethFeature
         locale={locale}
