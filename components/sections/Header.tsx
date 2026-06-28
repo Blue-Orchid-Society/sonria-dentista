@@ -25,6 +25,7 @@ export async function Header({ locale }: { locale: Locale }) {
         </Link>
         <nav className="hidden lg:flex items-center gap-6 text-sm text-muted">
           <Link href={`/${locale}/services`} className="hover:text-foreground transition">{site.nav.services}</Link>
+          <Link href={`/${locale}/tools`} className="hover:text-foreground transition">{isEs ? "Herramientas" : "Tools"}</Link>
           <div className="group relative">
             <Link
               href={`/${locale}#locations`}
