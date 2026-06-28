@@ -4,7 +4,8 @@
   "private": true,
   "description": "Sonria Dentistry of Arlington — bilingual EN/ES dental practice website",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",

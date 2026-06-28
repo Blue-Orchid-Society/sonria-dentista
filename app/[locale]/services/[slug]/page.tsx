@@ -2,7 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getSite, type Locale } from "@/lib/content";
-import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const dynamicParams = false;
 
@@ -46,32 +45,37 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   const isEs = locale === "es";
+  const offeredAt = site.locations.list.filter((l) =>
+    l.servicesOffered?.includes(service.slug),
+  );
   const labels = {
     whatIsIt: isEs ? "Que es?" : "What is it?",
-    fourSteps: isEs ? "Como funciona en 4 pasos" : "How it works in 4 steps",
+    whoFor: isEs ? "Para quien es?" : "Who is it for?",
+    fourSteps: isEs ? "Que esperar" : "What to expect",
     benefits: isEs ? "Beneficios" : "Benefits",
     whyChoose: isEs ? "Por que Sonria?" : "Why Sonria?",
+    insurance: isEs ? "Seguro y financiamiento" : "Insurance and financing",
     faqs: isEs ? "Preguntas frecuentes" : "Frequently asked questions",
     cta: isEs ? "Reservar consulta" : "Book a visit",
     available: isEs ? "Disponible en" : "Available at",
     relatedServices: isEs ? "Otros servicios" : "Other services",
     backToServices: isEs ? "Todos los servicios" : "All services",
   };
-
-  const offeredAt = site.locations.list.filter((l) =>
-    l.servicesOffered?.includes(service.slug),
-  );
   const otherServices = site.services.list.filter((s) => s.slug !== service.slug);
-  const baseUrl = "https://sonriadentista.com";
-  const breadcrumbs = [
-    { name: "Home", url: `${baseUrl}/${locale}` },
-    { name: locale === "es" ? "Servicios" : "Services", url: `${baseUrl}/${locale}#services` },
-    { name: service.name, url: `${baseUrl}/${locale}/services/${service.slug}` },
-  ];
+  const schema = buildServiceSchema({
+    siteName: site.name,
+    service,
+    url: `https://sonriadentista.com/${locale}/services/${slug}`,
+    locations: offeredAt.map((location) => location.city),
+  });
 
   return (
     <>
-      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
         <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
           <Link
@@ -94,12 +98,21 @@ export default async function ServiceDetailPage({
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href={`/${locale}/contact`}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="service_hero_appointment"
+              data-track-service={service.slug}
               className="rounded-full bg-foreground px-6 py-3 text-background text-sm font-semibold hover:bg-terracotta transition"
             >
               {labels.cta}
             </Link>
             <a
               href={site.contact.phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="service_hero_phone"
+              data-track-service={service.slug}
+              data-track-destination={site.contact.phoneHref}
               className="rounded-full border border-border-soft bg-card px-6 py-3 text-foreground text-sm font-semibold hover:border-terracotta hover:text-terracotta transition"
             >
               {site.contact.phone}
@@ -110,11 +123,10 @@ export default async function ServiceDetailPage({
 
       {service.whatIsIt && (
         <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <div className="grid gap-10 md:grid-cols-[1fr_2fr]">
-            <h2 className="font-display text-3xl md:text-4xl tracking-tight text-foreground">
-              {labels.whatIsIt}
-            </h2>
-            <p className="text-lg text-muted leading-relaxed">{service.whatIsIt}</p>
+          <div className="grid gap-5 md:grid-cols-3">
+            <InfoPanel title={labels.whatIsIt} body={service.whatIsIt} />
+            {service.whoFor && <InfoPanel title={labels.whoFor} body={service.whoFor} />}
+            {service.insuranceNote && <InfoPanel title={labels.insurance} body={service.insuranceNote} />}
           </div>
         </section>
       )}
@@ -145,7 +157,7 @@ export default async function ServiceDetailPage({
           <div className="grid gap-10 md:grid-cols-2">
             <div>
               <h2 className="font-display text-3xl md:text-4xl tracking-tight text-foreground">
-                {labels.benefits}
+            {labels.benefits}
               </h2>
               <ul className="mt-6 space-y-3">
                 {service.benefits.map((b) => (
@@ -179,6 +191,11 @@ export default async function ServiceDetailPage({
                 <Link
                   key={l.slug}
                   href={`/${locale}/locations/${l.slug}`}
+                  data-track-event="location_cta_click"
+                  data-track-category="service"
+                  data-track-label="service_available_location"
+                  data-track-service={service.slug}
+                  data-track-location={l.slug}
                   className="rounded-2xl bg-background border border-border-soft p-5 hover:border-terracotta transition"
                 >
                   <div className="font-display text-xl text-foreground">{l.city}</div>
@@ -219,12 +236,21 @@ export default async function ServiceDetailPage({
           <div className="flex flex-wrap gap-3">
             <a
               href={site.contact.phoneHref}
+              data-track-event="phone_click"
+              data-track-category="lead"
+              data-track-label="service_final_phone"
+              data-track-service={service.slug}
+              data-track-destination={site.contact.phoneHref}
               className="rounded-full bg-terracotta px-6 py-3 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
             >
               {site.contact.phone}
             </a>
             <Link
               href={`/${locale}/contact`}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="service_final_appointment"
+              data-track-service={service.slug}
               className="rounded-full border border-background/30 px-6 py-3 text-background text-sm font-semibold hover:bg-background hover:text-foreground transition"
             >
               {labels.cta}
@@ -242,6 +268,10 @@ export default async function ServiceDetailPage({
             <Link
               key={s.slug}
               href={`/${locale}/services/${s.slug}`}
+              data-track-event="service_cta_click"
+              data-track-category="service"
+              data-track-label="related_service"
+              data-track-service={s.slug}
               className="rounded-2xl bg-card border border-border-soft p-6 hover:border-terracotta transition"
             >
               <h3 className="font-display text-xl text-foreground">{s.name}</h3>
@@ -252,4 +282,51 @@ export default async function ServiceDetailPage({
       </section>
     </>
   );
+}
+
+function InfoPanel({ title, body }: { title: string; body: string }) {
+  return (
+    <article className="rounded-2xl border border-border-soft bg-card p-6 shadow-warm">
+      <h2 className="font-display text-2xl tracking-tight text-foreground">{title}</h2>
+      <p className="mt-3 text-base leading-relaxed text-muted">{body}</p>
+    </article>
+  );
+}
+
+function buildServiceSchema({
+  siteName,
+  service,
+  url,
+  locations,
+}: {
+  siteName: string;
+  service: {
+    name: string;
+    blurb: string;
+    seoDescription?: string;
+    faqs?: { q: string; a: string }[];
+  };
+  url: string;
+  locations: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: `${service.name} | ${siteName}`,
+    url,
+    description: service.seoDescription ?? service.blurb,
+    about: {
+      "@type": "MedicalProcedure",
+      name: service.name,
+    },
+    areaServed: locations,
+    mainEntity: service.faqs?.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  };
 }

@@ -43,3 +43,10 @@ next-env.d.ts
 # Local context (agent-only, not for git)
 .context/screenshots/
 .env.local
+
+
+
+agent.js
+agent.log
+codex-output.json
+codex-run.log

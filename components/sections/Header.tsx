@@ -1,81 +1,93 @@
 import Link from "next/link";
+import { ChevronDown, MapPin } from "lucide-react";
 import { getSite, altLocale, type Locale } from "@/lib/content";
-import { NavDropdown } from "./NavDropdown";
-import { MobileMenu } from "./MobileMenu";
 
 export async function Header({ locale }: { locale: Locale }) {
   const site = await getSite(locale);
   const other = altLocale(locale);
-
-  const servicesItems = site.services.list.map((s) => ({
-    label: s.name,
-    href: `/${locale}/services/${s.slug}`,
-    description: s.blurb,
-  }));
-
-  const locationsItems = site.locations.list.map((l) => ({
-    label: `${l.city}, ${l.state}${l.primary ? " · HQ" : ""}`,
-    href: `/${locale}/locations/${l.slug}`,
-    description: l.address,
-  }));
-
-  const patientsItems = [
-    { label: site.nav.newPatients, href: `/${locale}/new-patients` },
-    { label: site.nav.insurance, href: `/${locale}/insurance` },
-    { label: site.nav.faq, href: `/${locale}/faq` },
-  ];
-
-  const groups = [
-    { label: site.nav.services, items: servicesItems },
-    { label: site.nav.locations, items: locationsItems },
-    { label: locale === "es" ? "Para pacientes" : "For patients", items: patientsItems },
-    { label: site.nav.about, items: [], href: `/${locale}/about` },
-    { label: site.nav.articles, items: [], href: `/${locale}/articles` },
-  ];
+  const isEs = locale === "es";
 
   return (
     <header className="sticky top-0 z-40 border-b border-border-soft bg-background/85 backdrop-blur">
-      <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4">
-        <Link href={`/${locale}`} className="flex items-center gap-2.5 group flex-shrink-0">
-          <span aria-hidden className="grid place-items-center w-9 h-9 rounded-full bg-brand text-white font-display text-lg leading-none">
-            S
-          </span>
-          <span className="font-display text-xl text-foreground tracking-tight group-hover:text-brand-deep transition">
+      <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-6">
+        <Link href={`/${locale}`} className="flex items-center gap-2.5 group">
+          <div className="flex items-center justify-center rounded-full  bg-terracotta border border-border-soft w-9 h-9 overflow-hidden">
+            <img
+              src={site.logoUrl}
+              alt={site.name}
+              className="h-9 w-9 rounded-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <span className="font-display text-xl text-foreground tracking-tight group-hover:text-terracotta transition">
             {site.name}
           </span>
         </Link>
-
-        <nav className="hidden lg:flex items-center gap-7 text-sm text-muted">
-          <NavDropdown label={site.nav.services} items={servicesItems} />
-          <NavDropdown label={site.nav.locations} items={locationsItems} />
-          <NavDropdown label={locale === "es" ? "Para pacientes" : "For patients"} items={patientsItems} />
+        <nav className="hidden lg:flex items-center gap-6 text-sm text-muted">
+          <Link href={`/${locale}/services`} className="hover:text-foreground transition">{site.nav.services}</Link>
+          <Link href={`/${locale}/tools`} className="hover:text-foreground transition">{isEs ? "Herramientas" : "Tools"}</Link>
+          <div className="group relative">
+            <Link
+              href={`/${locale}#locations`}
+              className="inline-flex items-center gap-1.5 hover:text-foreground transition"
+            >
+              {site.nav.locations}
+              <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden="true" />
+            </Link>
+            <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[28rem] max-w-[calc(100vw-2rem)] -translate-x-1/2 pt-4 opacity-0 transition group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+              <div className="rounded-xl border border-border-soft bg-background p-2 shadow-warm-lg">
+                <div className="px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-terracotta">
+                  {isEs ? "Elige un consultorio" : "Choose a location"}
+                </div>
+                <div className="grid gap-1">
+                  {site.locations.list.map((location) => (
+                    <Link
+                      key={location.slug}
+                      href={`/${locale}/locations/${location.slug}`}
+                      className="group/item flex w-full items-start gap-3 rounded-lg px-3 py-3 transition hover:bg-card"
+                    >
+                      <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-sage-soft text-sage-deep transition group-hover/item:bg-terracotta group-hover/item:text-white">
+                        <MapPin className="h-4 w-4" aria-hidden="true" />
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block font-semibold text-foreground">{location.city}</span>
+                        <span className="mt-0.5 block text-xs leading-snug text-muted">{location.address}</span>
+                        <span className="mt-1 block text-xs font-semibold text-terracotta">{location.phone}</span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
           <Link href={`/${locale}/about`} className="hover:text-foreground transition">{site.nav.about}</Link>
-          <Link href={`/${locale}/articles`} className="hover:text-foreground transition">{site.nav.articles}</Link>
+          <Link href={`/${locale}/new-patients`} className="hover:text-foreground transition">{site.nav.newPatients}</Link>
+          <Link href={`/${locale}/insurance`} className="hover:text-foreground transition">{site.nav.insurance}</Link>
+          <Link href={`/${locale}/faq`} className="hover:text-foreground transition">{site.nav.faq}</Link>
+          <Link href={`/${locale}/contact`} className="hover:text-foreground transition">{site.nav.contact}</Link>
         </nav>
-
         <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center rounded-full border border-border-soft bg-card text-xs overflow-hidden">
-            <Link href={`/${locale}`} aria-current="page" className="px-3 py-1.5 font-semibold bg-foreground text-background">
+          <div className="hidden sm:flex items-center rounded-full border border-border-soft bg-card text-xs overflow-hidden">
+            <Link
+              href={`/${locale}`}
+              aria-current="page"
+              className="px-3 py-1.5 font-semibold bg-foreground text-background"
+            >
               {locale.toUpperCase()}
             </Link>
-            <Link href={`/${other}`} className="px-3 py-1.5 text-muted hover:text-foreground transition">
+            <Link
+              href={`/${other}`}
+              className="px-3 py-1.5 text-muted hover:text-foreground transition"
+            >
               {other.toUpperCase()}
             </Link>
           </div>
           <Link
             href={`/${locale}/contact`}
-            className="hidden sm:inline-flex rounded-full bg-brand px-4 py-2 text-white text-sm font-semibold hover:bg-brand-deep transition shadow-warm"
+            className="rounded-full bg-terracotta px-4 py-2 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
           >
             {site.nav.book}
           </Link>
-          <MobileMenu
-            locale={locale}
-            altLocale={other}
-            groups={groups}
-            bookLabel={site.nav.book}
-            bookHref={`/${locale}/contact`}
-            contactPhone={site.contact.phone}
-          />
         </div>
       </div>
     </header>

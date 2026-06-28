@@ -1,0 +1,155 @@
+Sonria Dentista source content map
+
+Purpose
+This document organizes the content copied from the current Sonria website so we can place each item in the right part of the rebuild without mixing homepage, team, and location SEO content.
+
+
+1. Location facts
+
+Use for:
+Location page JSON files
+Homepage location cards
+Contact page location list
+LocalBusiness schema
+
+Already captured in the current site data:
+
+Arlington
+Address: 2024 Baird Farm Rd Ste. 100, Arlington, TX 76011
+Phone: (682) 284-1120
+Hours: Mon-Fri 9am-5pm, Sat 9am-3pm
+Social: Facebook, Yelp
+
+Commerce
+Address: 2210 Live Oak Street, Suite #C, Commerce, TX 75428
+Phone: (903) 246-4424
+Hours: Mon-Fri 9am-5pm
+Social: Facebook, Instagram
+
+Paris
+Address: 707 Lamar Ave, Suite #L, Paris, TX 75460
+Phone: (903) 609-0567
+Hours: Mon-Fri 9am-5pm, Sat 9am-3pm
+Social: Facebook, Instagram, Yelp
+
+Grand Prairie
+Address: 325 W Westchester Pkwy, Ste 300, Grand Prairie, TX 75052
+Phone: (972) 262-5593
+Hours: Mon-Fri 9am-5pm
+Social: Facebook, Instagram
+
+
+2. Dentist and team bios
+
+Use for:
+About page team section
+Location page "providers available here" cards
+Potential doctor schema later
+
+Recommended data structure:
+Keep a team list in content data, then reference each provider by slug on location pages.
+
+Suggested provider slugs:
+deepti-namineni
+ahn
+tarun-mundluru
+chu
+
+Location mapping from the copied source:
+
+Dr. Deepti Namineni
+Role: Lead Dentist and Dental Implant Specialist
+Available in: Arlington, Grand Prairie
+
+Dr. Ahn
+Role: Orthodontic Specialist
+Available in: Arlington
+
+Dr. Tarun Mundluru
+Role: Family and General Dentistry
+Available in: Commerce, Paris
+
+Dr. Chu
+Role: Orthodontics
+Available in: Commerce
+
+Important note:
+The English bios are ready to use as source content. Spanish bios should be translated or reviewed by a Spanish-fluent reviewer before publishing because the copy includes clinical terms and credentials.
+
+Spanish draft received:
+An AI-translated Spanish draft exists for the provider bios and testimonials. Use it only as a review draft, not final approved clinical copy. Before publishing provider bios in Spanish, ask Sonria for approval or have a Spanish-fluent reviewer clean up dental terms, credentials, tone, and accents.
+
+
+3. Testimonials
+
+Use for:
+Homepage reviews section
+Potential location page trust section
+
+Added to the homepage:
+
+Angela
+Review theme: welcoming staff, easy scheduling, clean office, low wait time, clear explanations.
+
+Larry Batson
+Review theme: cleaning, filling, crown, excellent care and value.
+
+Angela Gayford
+Review theme: friendly staff, respectful professionalism, helped patient feel relaxed and confident.
+
+Regina Boyd
+Review theme: clear communication, compassion, nervous patient support, deep cleaning experience.
+
+Open question:
+We still need to confirm whether these reviews belong to specific locations or should remain as shared site-wide testimonials.
+
+
+4. What is still missing for stronger local SEO
+
+Ask the Sonria team for:
+
+Exact Google review links for each location
+Parking notes for each office
+Landmarks or plaza names near each office
+Whether each service is truly available at every office
+Whether emergency appointments are available at every office
+Approved Spanish versions of provider bios
+Real provider headshots or permission to use placeholders
+Preferred appointment recipient/admin email for form submissions
+
+
+5. Recommended next implementation step
+
+Create dedicated location content files:
+
+data/locations/arlington.en.json
+data/locations/arlington.es.json
+data/locations/commerce.en.json
+data/locations/commerce.es.json
+data/locations/paris.en.json
+data/locations/paris.es.json
+data/locations/grand-prairie.en.json
+data/locations/grand-prairie.es.json
+
+Each file should include:
+
+slug
+city
+state
+address
+phone
+hours
+seoTitle
+seoDescription
+heroTitle
+intro
+nearbyNeighborhoods
+directions
+parking
+appointmentUrl
+intakeFormUrl
+mapUrl
+reviewUrl
+servicesOffered
+providerSlugs
+faqs

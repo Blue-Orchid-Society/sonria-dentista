@@ -1,561 +1,1518 @@
 {
   "name": "Sonria Dentista",
+  "logoUrl": "/logo.png",
   "tagline": "Healthy smiles for the whole family",
   "hero": {
-    "title": "Dental care that feels like home",
-    "subtitle": "Bilingual family dental care led by Dr. Deepti Namineni. Implants, orthodontics, and same-day visits across Arlington, Grand Prairie, Paris, and Commerce — over 1,500 5-star Google reviews.",
+    "title": "Your community dentist for the whole family",
+    "subtitle": "Personalized, convenient, and affordable dental care in Arlington, Commerce, Paris, and Grand Prairie. English and Spanish spoken here.",
     "ctaPrimary": "Book a visit",
     "ctaSecondary": "Call now",
     "imageUrl": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1600&q=80",
     "imageAlt": "Family smiling at the dental office",
     "trustSignals": [
       {
-        "label": "Happy patients",
-        "value": "12,000+"
+        "label": "Clients transformed",
+        "value": "500+"
       },
       {
-        "label": "Years serving",
-        "value": "15+"
+        "label": "Happy patients",
+        "value": "10k+"
+      },
+      {
+        "label": "Average rating",
+        "value": "4.9"
       },
       {
         "label": "Locations",
         "value": "4"
-      },
-      {
-        "label": "Bilingual",
-        "value": "EN / ES"
       }
-    ]
+    ],
+    "videoUrl": "https://res.cloudinary.com/dl0uoovgu/video/upload/v1782459307/InShot_20260626_071553934_qq5nsu.mp4"
   },
   "services": {
-    "heading": "Care for the whole family",
-    "subheading": "From your child's first cleaning to dental implants and advanced care, all under one roof.",
+    "heading": "The right approach for every smile",
+    "subheading": "From checkups and cleanings to implants, orthodontics, extractions, dentures, and more, every member of your family is welcome here.",
     "list": [
       {
-        "slug": "general",
+        "price": "",
+        "slug": "preventive",
         "icon": "shield-check",
-        "name": "General dentistry",
-        "blurb": "Cleanings, exams, fillings, and preventive care for every age.",
-        "longBlurb": "General dentistry is the foundation of a healthy smile. At Sonria we care for kids, adults, and seniors with comprehensive preventive care and restorative treatments when needed.",
-        "whatIsIt": "General dentistry covers professional cleanings, annual exams with digital X-rays, tooth-colored composite fillings, fluoride treatments, sealants, and oral hygiene education.",
+        "name": "Preventive dentistry",
+        "blurb": "Dental checkups, teeth cleanings, and proactive care to keep natural teeth healthy.",
+        "longBlurb": "Preventive dentistry is the foundation of a lifetime of healthy smiles. Sonria focuses on proactive care that helps patients of all ages keep their natural teeth strong, beautiful, and functional.",
+        "whatIsIt": "Preventive dentistry includes routine dental checkups, professional teeth cleanings, digital X-rays when needed, hygiene coaching, and early detection of cavities or gum problems.",
         "fourSteps": [
           {
-            "title": "Comprehensive exam",
-            "body": "We check teeth, gums, bite, and X-rays to catch issues early."
+            "title": "Checkup",
+            "body": "We review your teeth, gums, bite, and concerns so small issues can be caught early."
           },
           {
-            "title": "Professional cleaning",
-            "body": "We remove plaque and tartar, polish the teeth, and apply fluoride if needed."
+            "title": "Cleaning",
+            "body": "We remove buildup, polish your teeth, and help you maintain healthy habits at home."
           },
           {
-            "title": "Personalized plan",
-            "body": "We explain in English or Spanish what you need, when, and how much it costs."
+            "title": "Clear guidance",
+            "body": "We explain what we see in plain English or Spanish and answer questions before treatment."
           },
           {
             "title": "Ongoing care",
-            "body": "We remind you of your next visit and support you between appointments with clear advice."
+            "body": "We help you stay on schedule with regular visits and prevention-focused recommendations."
           }
         ],
         "benefits": [
-          "Cavity and gum disease prevention",
-          "Early detection of larger problems",
-          "Fresher breath and brighter teeth",
-          "Better overall health (oral health affects the heart)"
+          "Helps prevent cavities and gum disease",
+          "Supports long-term oral health",
+          "Keeps dental problems from becoming more expensive",
+          "Good for children, adults, and seniors"
         ],
-        "whyChoose": "Our bilingual team takes the time you need, explains every step, and never recommends treatment you don't need. The whole family can be seen in a single visit.",
+        "whyChoose": "Sonria is built for families who want friendly, bilingual care and practical guidance without pressure.",
         "faqs": [
           {
-            "q": "How often should I see the dentist?",
-            "a": "Every 6 months for cleanings and exams, though some patients with risk factors may need more frequent visits."
+            "q": "How often should I schedule a cleaning?",
+            "a": "Most patients benefit from a checkup and cleaning every 6 months, though some may need a different schedule."
           },
           {
-            "q": "Do you see young children?",
-            "a": "Yes, starting at the first tooth. We make first visits fun and educational."
+            "q": "Do you see children?",
+            "a": "Yes. Sonria welcomes children and families across all four locations."
           },
           {
-            "q": "Do you accept dental insurance?",
-            "a": "We accept most PPO plans. Call us with your info and we verify coverage at no charge."
+            "q": "Can you verify my insurance?",
+            "a": "Yes. The team can help answer coverage questions before your visit."
           }
         ],
-        "seoTitle": "General Dentistry in Arlington TX | Cleanings + Exams",
-        "seoDescription": "Cleanings, exams, fillings, and bilingual preventive care in Arlington, Commerce, Paris, and Grand Prairie TX. Call (682) 284-1120."
+        "seoTitle": "Preventive Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Dental checkups, teeth cleanings, and preventive care for families in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
       },
       {
-        "slug": "implants",
-        "icon": "sparkles",
-        "name": "Dental implants",
-        "blurb": "Replace missing teeth with natural-looking implants. From $2,499 per tooth.",
-        "longBlurb": "A dental implant replaces the root of a missing tooth with a titanium post that fuses with the bone, then is topped with a ceramic crown that looks and works like a natural tooth.",
-        "whatIsIt": "Dental implants are the most durable way to replace one or more missing teeth. Unlike a bridge or denture, an implant preserves bone and doesn't affect neighboring teeth.",
-        "fourSteps": [
-          {
-            "title": "Consult and 3D X-rays",
-            "body": "We assess your bone, gums, and overall health to confirm you're a candidate."
-          },
-          {
-            "title": "Implant placement",
-            "body": "Outpatient procedure with local anesthesia. Most patients return to work the next day."
-          },
-          {
-            "title": "Integration period",
-            "body": "Bone grows around the implant for 3 to 6 months. We give you a temporary tooth."
-          },
-          {
-            "title": "Final crown",
-            "body": "We place the permanent ceramic crown, custom-matched to your tooth color."
-          }
-        ],
-        "benefits": [
-          "Looks and feels like a natural tooth",
-          "Preserves jawbone",
-          "Lasts 25 years or more with proper care",
-          "Doesn't affect neighboring teeth"
-        ],
-        "whyChoose": "We place hundreds of implants per year and offer the most honest all-inclusive price in North Texas: $2,499 per complete implant. No surprises. Financing available.",
-        "faqs": [
-          {
-            "q": "How much does it hurt?",
-            "a": "Far less than people expect. Most patients only need ibuprofen for one or two days."
-          },
-          {
-            "q": "How long does the whole process take?",
-            "a": "Start to finish, 3 to 6 months. Bone integration is the longest stage but doesn't require frequent visits."
-          },
-          {
-            "q": "Am I a candidate if I have low bone?",
-            "a": "In many cases we can do a minor bone graft. The initial consult confirms your options."
-          },
-          {
-            "q": "What's included in the $2,499?",
-            "a": "Titanium implant, abutment, and ceramic crown. All of it. Extra only applies if you need a graft."
-          }
-        ],
-        "price": "From $2,499 per implant",
-        "seoTitle": "Dental Implants Arlington TX | $2,499 All-Inclusive",
-        "seoDescription": "Dental implants in Arlington TX from $2,499 all-inclusive. Bilingual team, financing available. Call (682) 284-1120."
-      },
-      {
-        "slug": "all-on-4",
+        "price": "",
+        "slug": "children",
         "icon": "smile",
-        "name": "All-on-4",
-        "blurb": "Full fixed smile on 4 implants in a single day. $15,999 per arch.",
-        "longBlurb": "All-on-4 replaces a full arch of teeth with just 4 strategically placed implants, supporting a fixed prosthesis that feels and works like natural teeth.",
-        "whatIsIt": "It's the ideal solution for patients who have lost most or all of their teeth, or who are tired of removable dentures. The prosthesis screws onto the implants and only the dentist removes it.",
+        "name": "Children's dentistry",
+        "blurb": "Friendly dental care that helps children build healthy habits early.",
+        "longBlurb": "Children's dentistry gives kids a positive start with dental care. Sonria welcomes families and helps children feel comfortable during checkups, cleanings, and routine visits.",
+        "whatIsIt": "Children's dentistry includes exams, cleanings, prevention, education, and gentle care for young patients.",
         "fourSteps": [
           {
-            "title": "3D evaluation and plan",
-            "body": "We take a CBCT scan and digitally design the position of all 4 implants."
+            "title": "Warm welcome",
+            "body": "We help children feel comfortable before the exam begins."
           },
           {
-            "title": "Same-day surgery",
-            "body": "We extract remaining teeth, place the 4 implants, and a temporary prosthesis, all in one day."
+            "title": "Gentle exam",
+            "body": "We check teeth and gums while explaining each step in a calm way."
           },
           {
-            "title": "Guided recovery",
-            "body": "You leave with functional teeth. We give clear soft-food guidance for 4 to 6 months."
+            "title": "Cleaning and prevention",
+            "body": "We clean the teeth and share age-appropriate hygiene guidance."
           },
           {
-            "title": "Final prosthesis",
-            "body": "After integration, we place the permanent prosthesis designed to last decades."
+            "title": "Family plan",
+            "body": "Parents leave with clear next steps and answers to their questions."
           }
         ],
         "benefits": [
-          "Fixed smile the same day, no waiting",
-          "Only 4 implants instead of 6 to 8",
-          "Far more stable than traditional dentures",
-          "Simple maintenance, like natural teeth"
+          "Builds comfort with dental visits",
+          "Supports healthy habits early",
+          "Helps prevent cavities",
+          "Convenient for families with multiple children"
         ],
-        "whyChoose": "Our team places All-on-4 every week. We have an in-office dental lab so the prosthesis fits perfectly. Flat $15,999 per arch includes everything.",
+        "whyChoose": "The Sonria team is bilingual, family-friendly, and focused on making dental visits easier for parents and children.",
         "faqs": [
           {
-            "q": "Can I really leave with teeth the same day?",
-            "a": "Yes. You leave with the temporary prosthesis the same day as surgery. The final one comes months later."
+            "q": "Can families schedule together?",
+            "a": "Call the office and the team will help coordinate appointment options for your family."
           },
           {
-            "q": "Does it work if I still have some teeth?",
-            "a": "Yes. If remaining teeth can't be saved or are causing problems, we remove them in the same visit."
-          },
-          {
-            "q": "What's included in the $15,999?",
-            "a": "Extractions, 4 implants, same-day temporary prosthesis, and the final permanent prosthesis. All of it."
-          },
-          {
-            "q": "Is there financing?",
-            "a": "Yes. We work with CareCredit and in-house options. Most patients pay $300-$500 per month."
+            "q": "Do you speak Spanish with children and parents?",
+            "a": "Yes. Sonria has a bilingual English and Spanish dental team."
           }
         ],
-        "price": "$15,999 per arch",
-        "seoTitle": "All-on-4 Arlington TX | $15,999 Fixed Smile in a Day",
-        "seoDescription": "All-on-4 in Arlington TX: fixed smile on 4 implants in a single day, $15,999 per arch all-inclusive. (682) 284-1120."
+        "seoTitle": "Children's Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Friendly children's dental care, checkups, and cleanings for families in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
       },
       {
-        "slug": "orthodontics",
-        "icon": "align-justify",
-        "name": "Orthodontics / Invisalign",
-        "blurb": "Traditional braces or clear aligners for a straighter smile.",
-        "longBlurb": "We offer both traditional braces and Invisalign to correct bite, gaps, and crooked teeth in teens and adults.",
-        "whatIsIt": "Orthodontics moves teeth into ideal position. Invisalign uses clear removable aligners. Traditional braces are fixed and usually more affordable.",
+        "price": "",
+        "slug": "restorative",
+        "icon": "badge-plus",
+        "name": "Restorative dentistry",
+        "blurb": "Care for damaged teeth, including fillings, crowns, and smile repair.",
+        "longBlurb": "Restorative dentistry brings strength, health, and beauty back to damaged teeth with precise, patient-focused care.",
+        "whatIsIt": "Restorative dentistry can include fillings, crowns, treatment planning, and other care that repairs teeth after damage, decay, or wear.",
         "fourSteps": [
           {
-            "title": "Consult and digital scan",
-            "body": "We take photos, X-rays, and a 3D scan of your teeth to design your plan."
+            "title": "Diagnosis",
+            "body": "We identify the cause of discomfort, damage, or tooth breakdown."
           },
           {
-            "title": "Treatment plan",
-            "body": "We show how your teeth will move and how long it'll take. You choose Invisalign or braces."
+            "title": "Options",
+            "body": "We explain the treatment choices, timing, and expected costs before moving forward."
           },
           {
-            "title": "Active treatment",
-            "body": "You change aligners every 1 to 2 weeks (Invisalign) or we adjust braces every 6 to 8 weeks."
+            "title": "Treatment",
+            "body": "We restore the tooth with the recommended care plan."
           },
           {
-            "title": "Retention",
-            "body": "Once aligned, you wear a retainer so teeth don't shift back. It's lifelong."
+            "title": "Follow-up",
+            "body": "We help you protect the restored tooth and maintain your smile."
           }
         ],
         "benefits": [
-          "Straighter, more attractive smile",
-          "Better bite (less wear and jaw issues)",
-          "Easier to keep aligned teeth clean",
-          "Confidence boost"
+          "Restores chewing function",
+          "Protects weakened teeth",
+          "Improves comfort and appearance",
+          "Helps avoid bigger problems later"
         ],
-        "whyChoose": "We're certified Invisalign providers. Flexible pay and no-cost initial consult. Dr. Namineni walks through options so you choose with confidence.",
+        "whyChoose": "Sonria focuses on clear communication, affordability, and bilingual support throughout treatment.",
         "faqs": [
           {
-            "q": "How long does treatment take?",
-            "a": "Simple cases: 6 to 9 months. Complex cases: 18 to 24 months. The consult gives a precise estimate."
+            "q": "Will you explain the cost first?",
+            "a": "Yes. Sonria emphasizes clear treatment options and payment guidance before care begins."
           },
           {
-            "q": "Does Invisalign really work like braces?",
-            "a": "Yes for most cases. For very complex cases we sometimes recommend traditional braces."
-          },
-          {
-            "q": "How much does it cost?",
-            "a": "Traditional braces: from $3,500. Invisalign: from $4,500. We give a fixed price after the consult."
+            "q": "Do you offer financing?",
+            "a": "Third-party financing options are available to help patients start treatment with confidence."
           }
         ],
-        "seoTitle": "Orthodontics + Invisalign Arlington TX | Braces for Adults and Teens",
-        "seoDescription": "Orthodontics with traditional braces or Invisalign in Arlington TX. Free consult. Flexible pay. (682) 284-1120."
+        "seoTitle": "Restorative Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Restorative dental care for damaged teeth, crowns, fillings, and smile repair in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
       },
       {
+        "price": "",
+        "slug": "missing-teeth",
+        "icon": "sparkles",
+        "name": "Replace missing teeth",
+        "blurb": "Options to restore confidence, speech, chewing, and smile function.",
+        "longBlurb": "Missing teeth can affect health, speech, confidence, and daily comfort. Sonria offers modern tooth replacement options designed to look and feel natural.",
+        "whatIsIt": "Missing teeth replacement may include dentures, partials, dental implants, snap-on dentures, or a personalized combination of treatments.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "We learn what is missing, what bothers you most, and what outcome you want."
+          },
+          {
+            "title": "Treatment options",
+            "body": "We explain removable and implant-supported options in clear language."
+          },
+          {
+            "title": "Care plan",
+            "body": "We build a plan around health, budget, comfort, and timeline."
+          },
+          {
+            "title": "Smile restoration",
+            "body": "We help restore chewing, speaking, and confidence."
+          }
+        ],
+        "benefits": [
+          "Improves confidence",
+          "Supports eating and speaking",
+          "Can help protect remaining teeth",
+          "Includes several treatment options"
+        ],
+        "whyChoose": "Sonria specializes in helping patients replace missing teeth with practical, affordable, and personalized solutions.",
+        "faqs": [
+          {
+            "q": "What are my options for missing teeth?",
+            "a": "Depending on your needs, options may include dentures, partials, dental implants, or snap-on dentures."
+          },
+          {
+            "q": "Can I finance treatment?",
+            "a": "Yes. Third-party financing is available for qualifying patients."
+          }
+        ],
+        "seoTitle": "Missing Teeth Replacement in North Texas | Sonria Dentista",
+        "seoDescription": "Replace missing teeth with dentures, partials, dental implants, and snap-on denture options at Sonria Dentista.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
         "slug": "cosmetic",
         "icon": "wand",
         "name": "Cosmetic dentistry",
-        "blurb": "Veneers, professional whitening, and custom smile design.",
-        "longBlurb": "Cosmetic dentistry transforms your smile with porcelain veneers, professional whitening, and smile design tailored to your facial features.",
-        "whatIsIt": "We combine art and science to create a smile that looks natural and proportional to your face. Every case is digitally designed before we touch a single tooth.",
+        "blurb": "Smile-focused care designed to improve confidence and appearance.",
+        "longBlurb": "Cosmetic dentistry combines art and science to help patients feel more confident in their smiles.",
+        "whatIsIt": "Cosmetic dental care may include smile improvements, whitening, veneers, bonding, or other treatments based on the patient's goals.",
         "fourSteps": [
           {
-            "title": "Design consult",
-            "body": "We talk about what you'd like to change and show options with a digital design."
+            "title": "Smile goals",
+            "body": "We discuss what you want to improve and what matters most to you."
           },
           {
-            "title": "Preview",
-            "body": "We make a temporary mock-up in your mouth so you see the new smile before committing."
+            "title": "Evaluation",
+            "body": "We review tooth health, bite, color, and appearance."
           },
           {
-            "title": "Gentle prep",
-            "body": "Modern veneers require minimal enamel preparation."
+            "title": "Options",
+            "body": "We explain treatment options that fit your smile and budget."
           },
           {
-            "title": "Final smile",
-            "body": "We place the veneers or final treatment, fine-tune color and shape."
+            "title": "Results",
+            "body": "We complete care with a natural-looking outcome in mind."
           }
         ],
         "benefits": [
-          "Whiter, more symmetrical smile",
-          "Covers stains, fractures, and gaps",
-          "Long-lasting (veneers: 10-15 years)",
-          "More confidence in photos and conversations"
+          "Improves smile confidence",
+          "Can address stains, chips, gaps, or uneven teeth",
+          "Designed around a natural look",
+          "Can be combined with restorative care"
         ],
-        "whyChoose": "We show a digital and temporary preview before any permanent treatment. No surprises. You approve the design before we proceed.",
+        "whyChoose": "Sonria provides cosmetic care with a comfortable, bilingual, patient-first approach.",
         "faqs": [
           {
-            "q": "Do veneers look natural?",
-            "a": "If we do them right, yes. We use layered porcelain that mimics the translucency of a real tooth."
+            "q": "Can cosmetic care look natural?",
+            "a": "Yes. The goal is to improve your smile while keeping the result balanced and natural-looking."
           },
           {
-            "q": "How much does a veneer cost?",
-            "a": "From $1,200 per veneer. A full smile design (8-10 veneers) usually runs $9,600-$12,000."
-          },
-          {
-            "q": "Is professional whitening safe?",
-            "a": "Yes, when done by a dentist. Some patients feel temporary sensitivity that passes in a few days."
+            "q": "Do I need a consultation first?",
+            "a": "Yes. A consultation helps confirm which options are appropriate for your smile."
           }
         ],
-        "seoTitle": "Cosmetic Dentistry Arlington TX | Veneers + Whitening",
-        "seoDescription": "Veneers, professional whitening, and smile design in Arlington TX. Digital preview, no-pressure consult. (682) 284-1120."
+        "seoTitle": "Cosmetic Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Cosmetic dental care and smile improvement options for patients in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
       },
       {
-        "slug": "emergencies",
-        "icon": "phone",
-        "name": "Emergencies",
-        "blurb": "Sharp pain or a broken tooth? We see you the same day.",
-        "longBlurb": "A dental emergency doesn't wait. We hold space every day for patients with severe pain, broken teeth, infections, or trauma.",
-        "whatIsIt": "We treat toothaches, abscesses, fractured teeth, lost crowns or fillings, sports trauma, and gum bleeding that won't stop.",
+        "price": "",
+        "slug": "sedation",
+        "icon": "heart-handshake",
+        "name": "Sedation dentistry",
+        "blurb": "Comfort-focused options for patients who feel nervous about dental care.",
+        "longBlurb": "Sedation dentistry helps anxious patients feel more relaxed while getting the dental care they need.",
+        "whatIsIt": "Sedation options are used to support comfort during dental visits. The right option depends on the patient's health, procedure, and anxiety level.",
         "fourSteps": [
           {
-            "title": "Call (682) 284-1120",
-            "body": "Talk to our team. We give first steps over the phone and book you a same-day appointment."
+            "title": "Talk through concerns",
+            "body": "We listen to what makes dental care stressful for you."
           },
           {
-            "title": "Arrival and triage",
-            "body": "We take an X-ray and quick exam to identify the exact cause."
+            "title": "Review health history",
+            "body": "We confirm what options may be appropriate and safe."
           },
           {
-            "title": "Immediate relief",
-            "body": "We relieve pain with local anesthesia, abscess drainage, or a temporary repair."
+            "title": "Plan the visit",
+            "body": "We explain what to expect before, during, and after care."
           },
           {
-            "title": "Plan to follow",
-            "body": "We explain the steps to fix the problem permanently, with clear pricing."
+            "title": "Comfortable treatment",
+            "body": "We focus on making the appointment easier to complete."
           }
         ],
         "benefits": [
-          "Same-day care, no emergency room",
-          "Cheaper than the hospital for dental issues",
-          "Bilingual team when you're panicked",
-          "Flexible payment available"
+          "Helps reduce dental anxiety",
+          "Supports needed care without delay",
+          "Can make longer visits easier",
+          "Patient-first comfort approach"
         ],
-        "whyChoose": "We have 4 offices across North Texas, so there's always one nearby. If you call before noon, we almost always see you the same day.",
+        "whyChoose": "Sonria understands that many patients feel nervous and works to make visits calm, respectful, and clear.",
+        "faqs": [
+          {
+            "q": "Is sedation right for everyone?",
+            "a": "Not always. The dentist will review your health history and treatment needs before recommending an option."
+          },
+          {
+            "q": "Can I ask about sedation before my visit?",
+            "a": "Yes. Call the office and ask about comfort options before scheduling."
+          }
+        ],
+        "seoTitle": "Sedation Dentistry in North Texas | Sonria Dentista",
+        "seoDescription": "Comfort-focused dental care and sedation options for anxious patients at Sonria Dentista.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
+        "slug": "clear-braces",
+        "icon": "align-justify",
+        "name": "Clear braces",
+        "blurb": "A more discreet way to straighten teeth with transparent aligner-style care.",
+        "longBlurb": "Clear braces offer an aesthetic approach to straightening teeth without the look of traditional metal brackets.",
+        "whatIsIt": "Clear braces or aligner-style treatment can help improve tooth alignment and bite appearance for qualifying patients.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "We check your teeth, bite, and smile goals."
+          },
+          {
+            "title": "Plan",
+            "body": "We explain whether clear braces or another orthodontic option is appropriate."
+          },
+          {
+            "title": "Treatment",
+            "body": "You follow the treatment plan and return for progress checks."
+          },
+          {
+            "title": "Retention",
+            "body": "After treatment, retention helps keep teeth from shifting back."
+          }
+        ],
+        "benefits": [
+          "More discreet than traditional braces",
+          "Can improve smile alignment",
+          "Supports a healthier bite",
+          "Good option for many teens and adults"
+        ],
+        "whyChoose": "Sonria provides orthodontic options with bilingual guidance and practical treatment planning.",
+        "faqs": [
+          {
+            "q": "Are clear braces right for every case?",
+            "a": "No. A consultation helps confirm whether clear braces or another option is best."
+          },
+          {
+            "q": "Do you treat adults?",
+            "a": "Yes. Orthodontic options may be available for teens and adults."
+          }
+        ],
+        "seoTitle": "Clear Braces in North Texas | Sonria Dentista",
+        "seoDescription": "Clear braces and orthodontic options for teens and adults in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
+        "slug": "implants",
+        "icon": "sparkles",
+        "name": "Dental implants",
+        "blurb": "Permanent, natural-looking replacement options for missing teeth.",
+        "longBlurb": "Dental implants help patients regain smile function and appearance with a secure tooth replacement option.",
+        "whatIsIt": "A dental implant is a tooth replacement option designed to restore missing tooth function and support a natural-looking smile.",
+        "fourSteps": [
+          {
+            "title": "Evaluation",
+            "body": "We evaluate your mouth, bone support, health, and goals."
+          },
+          {
+            "title": "Planning",
+            "body": "We explain whether implants are appropriate and what the process involves."
+          },
+          {
+            "title": "Treatment",
+            "body": "Implant care is completed according to your personalized plan."
+          },
+          {
+            "title": "Restoration",
+            "body": "The final result is designed for function, comfort, and appearance."
+          }
+        ],
+        "benefits": [
+          "Can replace one or more missing teeth",
+          "Designed to look and feel natural",
+          "Supports chewing and confidence",
+          "Can be paired with denture solutions"
+        ],
+        "whyChoose": "Sonria highlights dental implants as a key missing-teeth solution and helps patients understand options clearly.",
+        "faqs": [
+          {
+            "q": "Am I a candidate for implants?",
+            "a": "A consultation is needed to evaluate your health, bone support, and treatment goals."
+          },
+          {
+            "q": "Can implants help with dentures?",
+            "a": "Yes. Some denture options can attach to dental implants for better stability."
+          }
+        ],
+        "seoTitle": "Dental Implants in North Texas | Sonria Dentista",
+        "seoDescription": "Dental implant options for missing teeth at Sonria Dentista in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
+        "slug": "snap-on-dentures",
+        "icon": "badge-check",
+        "name": "Snap-on dentures",
+        "blurb": "A more secure alternative to traditional dentures using dental implants for stability.",
+        "longBlurb": "Snap-on dentures can provide better stability than traditional dentures by attaching to dental implants.",
+        "whatIsIt": "Snap-on dentures are implant-supported dentures that are designed to feel more secure than removable traditional dentures.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "We discuss your current denture experience or missing-teeth needs."
+          },
+          {
+            "title": "Evaluation",
+            "body": "We check whether implant support may be appropriate."
+          },
+          {
+            "title": "Plan",
+            "body": "We explain denture and implant-supported options."
+          },
+          {
+            "title": "Restoration",
+            "body": "We help restore comfort, stability, and confidence."
+          }
+        ],
+        "benefits": [
+          "More stable than traditional dentures",
+          "Can improve chewing confidence",
+          "May reduce slipping",
+          "Designed for missing-teeth restoration"
+        ],
+        "whyChoose": "Sonria offers missing-teeth options and helps patients compare practical choices for comfort and affordability.",
+        "faqs": [
+          {
+            "q": "Are snap-on dentures removable?",
+            "a": "They are designed to attach securely to implants while still being removable as directed by the dentist."
+          },
+          {
+            "q": "Do I need implants for snap-on dentures?",
+            "a": "Yes. Snap-on dentures use dental implants for support."
+          }
+        ],
+        "seoTitle": "Snap-on Dentures in North Texas | Sonria Dentista",
+        "seoDescription": "Snap-on dentures and implant-supported denture options at Sonria Dentista.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
+        "slug": "emergencies-extractions",
+        "icon": "phone",
+        "name": "Emergencies and extractions",
+        "blurb": "Emergency treatment and tooth extractions when dental problems cannot wait.",
+        "longBlurb": "Sonria provides emergency treatment and tooth extraction care for patients who need urgent dental help.",
+        "whatIsIt": "Emergency dental care may include evaluation of pain, swelling, broken teeth, infection, or a tooth that may need removal.",
+        "fourSteps": [
+          {
+            "title": "Call the office",
+            "body": "Tell the team what is happening and which location is most convenient."
+          },
+          {
+            "title": "Urgent evaluation",
+            "body": "We examine the problem and identify the next step."
+          },
+          {
+            "title": "Relief and treatment",
+            "body": "We focus on relieving pain and addressing the source of the problem."
+          },
+          {
+            "title": "Follow-up plan",
+            "body": "We explain what happens next and how to protect your oral health."
+          }
+        ],
+        "benefits": [
+          "Helps with urgent pain or dental problems",
+          "Available across multiple locations",
+          "Bilingual team support",
+          "Clear next steps after evaluation"
+        ],
+        "whyChoose": "Sonria has four locations and a bilingual team, making urgent dental care easier to access.",
+        "faqs": [
+          {
+            "q": "What should I do if I have dental pain?",
+            "a": "Call the nearest Sonria location and the team will help guide you on appointment options."
+          },
+          {
+            "q": "Do you perform extractions?",
+            "a": "Yes. Tooth extractions are listed as part of Sonria's dental services."
+          }
+        ],
+        "seoTitle": "Emergency Dentist and Tooth Extractions | Sonria Dentista",
+        "seoDescription": "Emergency dental treatment and tooth extractions at Sonria Dentista locations in North Texas.",
+        "showInOverview": true,
+        "whoFor": "This service is for patients who want clear options, practical guidance, and a treatment recommendation before starting care.",
+        "insuranceNote": "The team can review dental insurance, Medicaid, Medicare, and third-party financing questions before treatment."
+      },
+      {
+        "price": "",
+        "slug": "emergency-dentist",
+        "icon": "phone",
+        "name": "Emergency dentist",
+        "blurb": "Urgent dental care for tooth pain, swelling, broken teeth, and dental problems that cannot wait.",
+        "longBlurb": "When dental pain or a broken tooth interrupts your day, Sonria helps patients get clear next steps quickly with bilingual emergency dental care across North Texas.",
+        "whatIsIt": "Emergency dental care focuses on evaluating urgent symptoms such as toothaches, swelling, infection, broken teeth, lost restorations, or injuries so the right treatment can begin.",
+        "whoFor": "This page is for patients with severe tooth pain, swelling, a broken tooth, a loose crown or filling, bleeding, or a dental concern that feels urgent.",
+        "fourSteps": [
+          {
+            "title": "Call the office",
+            "body": "Tell the team what happened, your symptoms, and which location is closest."
+          },
+          {
+            "title": "Urgent evaluation",
+            "body": "The dentist checks the tooth, gums, bite, and X-rays if needed."
+          },
+          {
+            "title": "Relief plan",
+            "body": "You get a clear recommendation for pain relief, treatment, or extraction if needed."
+          },
+          {
+            "title": "Follow-up care",
+            "body": "The team explains next steps to protect your mouth after the urgent visit."
+          }
+        ],
+        "benefits": [
+          "Helps address pain quickly",
+          "Clear guidance before problems worsen",
+          "Bilingual team support",
+          "Available through multiple Sonria locations"
+        ],
+        "whyChoose": "Sonria has four North Texas offices, bilingual care, and practical appointment guidance for patients who need help quickly.",
+        "insuranceNote": "Dental insurance, Medicaid, Medicare, and third-party financing may help with emergency treatment costs. The team can review options before care begins.",
         "faqs": [
           {
             "q": "What counts as a dental emergency?",
-            "a": "Severe pain, bleeding that won't stop, fractured tooth, or trauma. If unsure, call and we'll guide you."
+            "a": "Severe pain, swelling, infection, broken teeth, trauma, or a tooth that may need urgent care can all be dental emergencies."
           },
           {
-            "q": "What do I do if a whole tooth gets knocked out?",
-            "a": "Keep it moist (in milk or saliva), don't touch the root, and call us right away. You have 30-60 minutes to reimplant."
+            "q": "Should I call before coming in?",
+            "a": "Yes. Calling helps the team guide you to the right location and appointment option."
           },
           {
-            "q": "Walk-ins?",
-            "a": "Call first, we can almost always see you the same day."
+            "q": "Can an emergency visit lead to an extraction?",
+            "a": "Sometimes. The dentist will evaluate the tooth and explain whether it can be saved or needs removal."
           }
         ],
-        "seoTitle": "Emergency Dentist Arlington TX | Same-Day Care",
-        "seoDescription": "Emergency dentist in Arlington TX. Toothaches, broken teeth, abscesses. Same-day care. (682) 284-1120."
+        "seoTitle": "Emergency Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Emergency dental care for tooth pain, swelling, broken teeth, and urgent dental problems in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "dental-implants",
+        "icon": "sparkles",
+        "name": "Dental implants",
+        "blurb": "Secure tooth replacement options designed to restore chewing, confidence, and smile appearance.",
+        "longBlurb": "Dental implants are a long-term option for replacing missing teeth and supporting a smile that feels more stable and natural.",
+        "whatIsIt": "A dental implant is a replacement tooth option that uses an implant post and final restoration to help replace missing tooth structure.",
+        "whoFor": "Dental implants may be right for patients missing one tooth, several teeth, or looking for more stable denture support.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "The dentist reviews your goals, health history, and missing teeth."
+          },
+          {
+            "title": "Imaging and planning",
+            "body": "The team checks bone support and creates a personalized treatment plan."
+          },
+          {
+            "title": "Implant treatment",
+            "body": "Treatment is completed according to your plan and healing needs."
+          },
+          {
+            "title": "Final restoration",
+            "body": "The replacement tooth or denture attachment is designed for comfort and function."
+          }
+        ],
+        "benefits": [
+          "Can look and feel natural",
+          "Supports chewing confidence",
+          "Can replace one or many teeth",
+          "May help stabilize dentures"
+        ],
+        "whyChoose": "Sonria helps patients compare implant options, dentures, and snap-on solutions with clear explanations and bilingual support.",
+        "insuranceNote": "Implant coverage varies by plan. Sonria can review insurance and third-party financing options before treatment.",
+        "faqs": [
+          {
+            "q": "Am I a candidate for dental implants?",
+            "a": "A consultation is needed to check oral health, bone support, medical history, and your treatment goals."
+          },
+          {
+            "q": "Can implants replace dentures?",
+            "a": "Some patients use implants to support snap-on dentures or other tooth replacement solutions."
+          },
+          {
+            "q": "Is financing available?",
+            "a": "Third-party financing options may be available for qualifying patients."
+          }
+        ],
+        "seoTitle": "Dental Implants in North Texas | Sonria Dentista",
+        "seoDescription": "Dental implants for missing teeth in Arlington, Commerce, Paris, and Grand Prairie. Learn options, benefits, and financing support.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "dentures",
+        "icon": "badge-check",
+        "name": "Dentures",
+        "blurb": "Full denture options to restore your smile when many or all teeth are missing.",
+        "longBlurb": "Dentures can restore appearance, speech, and chewing ability for patients missing many or all teeth.",
+        "whatIsIt": "Dentures are removable tooth replacement appliances made to replace missing teeth and support the lips and cheeks.",
+        "whoFor": "Dentures may be right for patients who are missing many teeth, have failing teeth, or want an affordable full-arch replacement option.",
+        "fourSteps": [
+          {
+            "title": "Evaluation",
+            "body": "The dentist reviews your mouth, current teeth, gums, and goals."
+          },
+          {
+            "title": "Options",
+            "body": "You compare traditional, partial, and implant-supported denture options."
+          },
+          {
+            "title": "Design",
+            "body": "Your denture is planned for fit, smile appearance, and function."
+          },
+          {
+            "title": "Adjustments",
+            "body": "Follow-up visits help improve comfort and fit."
+          }
+        ],
+        "benefits": [
+          "Restores smile appearance",
+          "Can improve speech and chewing",
+          "Often more affordable than fixed options",
+          "Can be paired with implant support in some cases"
+        ],
+        "whyChoose": "Sonria offers missing-teeth solutions and helps patients understand dentures, partials, and implant-supported options.",
+        "insuranceNote": "Many plans may include denture benefits. The team can help review insurance, Medicaid, Medicare messaging, and financing options.",
+        "faqs": [
+          {
+            "q": "Are dentures removable?",
+            "a": "Traditional dentures are removable. Some options may connect to implants for added stability."
+          },
+          {
+            "q": "Will dentures need adjustments?",
+            "a": "Yes. Adjustments are common as your mouth adapts and the fit is refined."
+          },
+          {
+            "q": "Can I ask about snap-on dentures?",
+            "a": "Yes. Sonria can explain whether implant-supported dentures may be appropriate."
+          }
+        ],
+        "seoTitle": "Dentures in North Texas | Sonria Dentista",
+        "seoDescription": "Full dentures and missing-teeth replacement options at Sonria Dentista offices in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "partials",
+        "icon": "badge-check",
+        "name": "Partials",
+        "blurb": "Partial denture options for patients missing some teeth but not a full arch.",
+        "longBlurb": "Partials help fill gaps when some natural teeth remain, restoring smile appearance and everyday function.",
+        "whatIsIt": "A partial denture is a removable appliance that replaces several missing teeth while working around remaining natural teeth.",
+        "whoFor": "Partials may be for patients missing multiple teeth who still have healthy natural teeth that can remain in place.",
+        "fourSteps": [
+          {
+            "title": "Exam",
+            "body": "The dentist checks the remaining teeth, gums, and bite."
+          },
+          {
+            "title": "Planning",
+            "body": "You review whether a partial, bridge, implant, or denture option fits your needs."
+          },
+          {
+            "title": "Design",
+            "body": "The partial is planned to fit your mouth and fill visible gaps."
+          },
+          {
+            "title": "Fit visit",
+            "body": "The team checks comfort, bite, and instructions for use."
+          }
+        ],
+        "benefits": [
+          "Replaces multiple missing teeth",
+          "Helps protect smile appearance",
+          "Can support chewing and speech",
+          "Often more affordable than fixed replacement options"
+        ],
+        "whyChoose": "Sonria helps patients compare partials with implants and other missing-teeth options in clear English or Spanish.",
+        "insuranceNote": "Coverage for partials varies. Sonria can review insurance and financing options with you.",
+        "faqs": [
+          {
+            "q": "Are partials removable?",
+            "a": "Yes. Most partial dentures are removable and should be cleaned as directed."
+          },
+          {
+            "q": "Can a partial replace several teeth?",
+            "a": "Yes. A partial can replace multiple missing teeth when some natural teeth remain."
+          }
+        ],
+        "seoTitle": "Partial Dentures in North Texas | Sonria Dentista",
+        "seoDescription": "Partial dentures for missing teeth at Sonria Dentista in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "dental-crowns",
+        "icon": "badge-plus",
+        "name": "Dental crowns",
+        "blurb": "Crowns help protect damaged, weakened, or heavily restored teeth.",
+        "longBlurb": "Dental crowns are used to restore strength, shape, and appearance when a tooth needs more protection than a filling.",
+        "whatIsIt": "A dental crown is a custom restoration that covers a tooth to protect it after damage, decay, root canal treatment, or heavy wear.",
+        "whoFor": "A crown may be recommended for a cracked tooth, large cavity, worn tooth, root canal treated tooth, or tooth that needs cosmetic improvement.",
+        "fourSteps": [
+          {
+            "title": "Diagnosis",
+            "body": "The dentist checks the tooth and explains why a crown may be needed."
+          },
+          {
+            "title": "Preparation",
+            "body": "The tooth is shaped and prepared for a custom restoration."
+          },
+          {
+            "title": "Temporary or scan",
+            "body": "The team explains the timeline and protects the tooth while the crown is made."
+          },
+          {
+            "title": "Final fit",
+            "body": "The crown is placed and adjusted for comfort and bite."
+          }
+        ],
+        "benefits": [
+          "Protects weakened teeth",
+          "Restores chewing function",
+          "Can improve tooth appearance",
+          "Helps prevent further breakdown"
+        ],
+        "whyChoose": "Sonria provides restorative care with clear treatment explanations, bilingual support, and payment guidance.",
+        "insuranceNote": "Crowns are often plan-dependent. The team can help review dental insurance and financing options before treatment.",
+        "faqs": [
+          {
+            "q": "When is a crown better than a filling?",
+            "a": "A crown may be recommended when a tooth is too weak or damaged for a filling alone."
+          },
+          {
+            "q": "Can crowns look natural?",
+            "a": "Crowns are designed to restore function and can be planned with smile appearance in mind."
+          }
+        ],
+        "seoTitle": "Dental Crowns in North Texas | Sonria Dentista",
+        "seoDescription": "Dental crowns for damaged or weakened teeth at Sonria Dentista in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "tooth-extractions",
+        "icon": "phone",
+        "name": "Tooth extractions",
+        "blurb": "Tooth removal when a tooth cannot be saved or is causing pain, infection, or crowding.",
+        "longBlurb": "Tooth extractions may be needed when a tooth is severely damaged, infected, loose, painful, or creating other oral health problems.",
+        "whatIsIt": "A tooth extraction is the removal of a tooth after evaluation, diagnosis, and discussion of your options.",
+        "whoFor": "Extractions may be for patients with severe decay, infection, broken teeth, wisdom tooth issues, or teeth that cannot be restored.",
+        "fourSteps": [
+          {
+            "title": "Exam",
+            "body": "The dentist evaluates the tooth, symptoms, and X-rays if needed."
+          },
+          {
+            "title": "Options",
+            "body": "You learn whether the tooth can be saved or should be removed."
+          },
+          {
+            "title": "Removal",
+            "body": "The team focuses on comfort and safe tooth removal."
+          },
+          {
+            "title": "Healing plan",
+            "body": "You get instructions and replacement options when appropriate."
+          }
+        ],
+        "benefits": [
+          "Can relieve pain or infection",
+          "Removes teeth that cannot be restored",
+          "Protects surrounding teeth and gums",
+          "Can prepare for dentures, partials, or implants"
+        ],
+        "whyChoose": "Sonria offers extractions with bilingual communication, comfort-focused care, and next-step planning.",
+        "insuranceNote": "Extraction costs depend on the tooth and complexity. Insurance and financing options can be reviewed before treatment.",
+        "faqs": [
+          {
+            "q": "Will the dentist try to save the tooth first?",
+            "a": "The dentist will evaluate the tooth and explain whether restoration or removal is the better option."
+          },
+          {
+            "q": "What happens after an extraction?",
+            "a": "You receive healing instructions and may discuss replacement options such as partials, dentures, or implants."
+          }
+        ],
+        "seoTitle": "Tooth Extractions in North Texas | Sonria Dentista",
+        "seoDescription": "Tooth extraction care for painful, broken, infected, or non-restorable teeth at Sonria Dentista.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "orthodontics",
+        "icon": "align-justify",
+        "name": "Orthodontics",
+        "blurb": "Braces and clear aligner options to improve tooth alignment and bite function.",
+        "longBlurb": "Orthodontic care helps straighten teeth, improve bite relationships, and support a confident smile.",
+        "whatIsIt": "Orthodontics includes braces, clear aligner-style treatment, and bite guidance for qualifying children, teens, and adults.",
+        "whoFor": "Orthodontics may help patients with crowded teeth, gaps, bite issues, shifting teeth, or cosmetic alignment concerns.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "The orthodontic team reviews your teeth, bite, and smile goals."
+          },
+          {
+            "title": "Treatment plan",
+            "body": "You learn whether braces or clear aligner options fit your case."
+          },
+          {
+            "title": "Active care",
+            "body": "Progress visits keep treatment moving according to plan."
+          },
+          {
+            "title": "Retention",
+            "body": "Retainers help maintain the final result after treatment."
+          }
+        ],
+        "benefits": [
+          "Improves smile alignment",
+          "Can support healthier bite function",
+          "Options for teens and adults",
+          "May include discreet clear options"
+        ],
+        "whyChoose": "Sonria has orthodontic specialists connected to select locations and offers clear explanations for families.",
+        "insuranceNote": "Orthodontic coverage varies. The team can review insurance and financing options before treatment begins.",
+        "faqs": [
+          {
+            "q": "Do adults get orthodontic treatment?",
+            "a": "Yes. Many adults can be candidates for braces or clear aligner-style care."
+          },
+          {
+            "q": "Are clear options available?",
+            "a": "Clear braces or aligner-style options may be available depending on your case."
+          }
+        ],
+        "seoTitle": "Orthodontics in North Texas | Sonria Dentista",
+        "seoDescription": "Orthodontic care, braces, and clear aligner options for teens and adults at Sonria Dentista.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "teeth-cleaning",
+        "icon": "shield-check",
+        "name": "Teeth cleaning",
+        "blurb": "Professional dental cleanings to remove buildup and support healthier gums and teeth.",
+        "longBlurb": "Regular teeth cleanings help keep your smile healthy, fresh, and easier to maintain at home.",
+        "whatIsIt": "A professional teeth cleaning removes plaque and tartar buildup, polishes the teeth, and helps identify early signs of dental problems.",
+        "whoFor": "Cleanings are for children, teens, adults, and seniors who want to prevent cavities, gum disease, and bigger dental issues.",
+        "fourSteps": [
+          {
+            "title": "Review",
+            "body": "The team asks about concerns and checks your dental history."
+          },
+          {
+            "title": "Cleaning",
+            "body": "Plaque and tartar are removed from the teeth and gumline."
+          },
+          {
+            "title": "Polish",
+            "body": "The teeth are polished for a smooth, fresh feeling."
+          },
+          {
+            "title": "Guidance",
+            "body": "You get practical home-care advice and next steps."
+          }
+        ],
+        "benefits": [
+          "Helps prevent cavities",
+          "Supports gum health",
+          "Freshens the mouth",
+          "Allows early detection of problems"
+        ],
+        "whyChoose": "Sonria makes routine care friendly, bilingual, and convenient across four North Texas offices.",
+        "insuranceNote": "Many dental plans include preventive cleanings. Sonria can help answer coverage questions before your visit.",
+        "faqs": [
+          {
+            "q": "How often should I get my teeth cleaned?",
+            "a": "Many patients benefit from cleanings every 6 months, but your dentist may recommend a different schedule."
+          },
+          {
+            "q": "Is a cleaning different from a deep cleaning?",
+            "a": "Yes. A deep cleaning may be recommended when gum disease or deeper buildup is present."
+          }
+        ],
+        "seoTitle": "Teeth Cleaning in North Texas | Sonria Dentista",
+        "seoDescription": "Professional teeth cleanings and preventive dental care in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "dental-checkups",
+        "icon": "shield-check",
+        "name": "Dental checkups",
+        "blurb": "Routine dental exams to catch problems early and keep your smile on track.",
+        "longBlurb": "Dental checkups help patients understand their oral health and prevent small concerns from becoming bigger problems.",
+        "whatIsIt": "A dental checkup includes an exam of the teeth, gums, bite, and concerns, with X-rays when needed.",
+        "whoFor": "Checkups are for patients of all ages, including children, adults, seniors, and anyone who has not seen a dentist recently.",
+        "fourSteps": [
+          {
+            "title": "Conversation",
+            "body": "You share symptoms, goals, and any worries."
+          },
+          {
+            "title": "Exam",
+            "body": "The dentist checks teeth, gums, restorations, and bite."
+          },
+          {
+            "title": "Findings",
+            "body": "The team explains what they see in clear language."
+          },
+          {
+            "title": "Plan",
+            "body": "You leave with recommended next steps and timing."
+          }
+        ],
+        "benefits": [
+          "Catches problems early",
+          "Supports long-term oral health",
+          "Helps prevent surprise dental costs",
+          "Works well with routine cleanings"
+        ],
+        "whyChoose": "Sonria provides practical, bilingual explanations so patients understand their options.",
+        "insuranceNote": "Many plans include routine exams. The team can help review insurance and payment options.",
+        "faqs": [
+          {
+            "q": "Do I need X-rays at every checkup?",
+            "a": "Not always. X-rays are recommended based on your needs, history, and symptoms."
+          },
+          {
+            "q": "Can children get checkups at Sonria?",
+            "a": "Yes. Sonria welcomes families and children."
+          }
+        ],
+        "seoTitle": "Dental Checkups in North Texas | Sonria Dentista",
+        "seoDescription": "Dental exams and routine checkups for families in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "family-dentistry",
+        "icon": "smile",
+        "name": "Family dentistry",
+        "blurb": "Dental care for children, adults, parents, and seniors in one welcoming office.",
+        "longBlurb": "Family dentistry makes dental care simpler by supporting patients of different ages and needs under one dental home.",
+        "whatIsIt": "Family dentistry includes checkups, cleanings, fillings, emergency care, tooth replacement guidance, and prevention for the whole family.",
+        "whoFor": "This service is for families who want one dental team for children, adults, parents, and seniors.",
+        "fourSteps": [
+          {
+            "title": "Choose a location",
+            "body": "Pick the Sonria office that is easiest for your family."
+          },
+          {
+            "title": "Schedule care",
+            "body": "The team helps coordinate appointment options."
+          },
+          {
+            "title": "Personalized visits",
+            "body": "Each patient receives care based on age, needs, and comfort."
+          },
+          {
+            "title": "Ongoing support",
+            "body": "Sonria helps your family stay consistent with care."
+          }
+        ],
+        "benefits": [
+          "Convenient for households",
+          "Care for children and adults",
+          "Bilingual English and Spanish team",
+          "Multiple North Texas locations"
+        ],
+        "whyChoose": "Sonria is built around accessible, bilingual, family-friendly dental care.",
+        "insuranceNote": "The team can help families understand dental insurance, Medicaid, Medicare messaging, and financing options.",
+        "faqs": [
+          {
+            "q": "Can multiple family members be seen at Sonria?",
+            "a": "Yes. Call your preferred location and the team can help with scheduling options."
+          },
+          {
+            "q": "Do you speak Spanish?",
+            "a": "Yes. Sonria offers bilingual English and Spanish support."
+          }
+        ],
+        "seoTitle": "Family Dentist in North Texas | Sonria Dentista",
+        "seoDescription": "Family dental care for children, adults, and seniors in Arlington, Commerce, Paris, and Grand Prairie.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "missing-teeth-replacement",
+        "icon": "sparkles",
+        "name": "Missing teeth replacement",
+        "blurb": "Compare dentures, partials, implants, and snap-on options for replacing missing teeth.",
+        "longBlurb": "Missing teeth replacement helps restore eating, speech, appearance, and confidence with a plan designed around your mouth and budget.",
+        "whatIsIt": "Missing teeth replacement may include full dentures, partial dentures, dental implants, snap-on dentures, or a combination of treatments.",
+        "whoFor": "This page is for patients missing one tooth, several teeth, or a full arch who want to understand replacement options.",
+        "fourSteps": [
+          {
+            "title": "Consultation",
+            "body": "The dentist reviews what is missing and what you want to improve."
+          },
+          {
+            "title": "Compare options",
+            "body": "You learn the difference between dentures, partials, implants, and snap-on options."
+          },
+          {
+            "title": "Plan around budget",
+            "body": "The team explains timing, insurance, and financing considerations."
+          },
+          {
+            "title": "Restore function",
+            "body": "Treatment focuses on comfort, confidence, and daily use."
+          }
+        ],
+        "benefits": [
+          "Restores smile confidence",
+          "Improves chewing and speaking",
+          "Can protect remaining teeth",
+          "Includes removable and implant-supported options"
+        ],
+        "whyChoose": "Sonria has multiple replacement options and helps patients choose practical care without pressure.",
+        "insuranceNote": "Coverage depends on the option selected. Sonria can help review insurance and third-party financing choices.",
+        "faqs": [
+          {
+            "q": "What is the best way to replace missing teeth?",
+            "a": "The best option depends on your health, number of missing teeth, bone support, goals, and budget."
+          },
+          {
+            "q": "Can I replace all my teeth?",
+            "a": "Yes. Full dentures or implant-supported options may be discussed during a consultation."
+          }
+        ],
+        "seoTitle": "Missing Teeth Replacement in North Texas | Sonria Dentista",
+        "seoDescription": "Compare dentures, partials, dental implants, and snap-on dentures for missing teeth replacement at Sonria Dentista.",
+        "showInOverview": false
+      },
+      {
+        "price": "",
+        "slug": "insurance-financing",
+        "icon": "badge-check",
+        "name": "Insurance and financing",
+        "blurb": "Understand dental insurance, Medicaid, Medicare messaging, and third-party financing options.",
+        "longBlurb": "Sonria helps patients understand payment options before treatment so cost questions do not delay needed care.",
+        "whatIsIt": "Insurance and financing support includes reviewing dental insurance questions, accepted affordability messaging, and third-party financing options when available.",
+        "whoFor": "This page is for patients who want dental care but need help understanding coverage, payment timing, or financing choices.",
+        "fourSteps": [
+          {
+            "title": "Share coverage",
+            "body": "Bring or submit your insurance information before the visit."
+          },
+          {
+            "title": "Review options",
+            "body": "The team helps answer coverage and payment questions."
+          },
+          {
+            "title": "Plan treatment",
+            "body": "You receive treatment recommendations with cost context."
+          },
+          {
+            "title": "Start care",
+            "body": "Financing options may help qualifying patients begin care sooner."
+          }
+        ],
+        "benefits": [
+          "Helps reduce payment uncertainty",
+          "Supports treatment planning",
+          "Third-party financing may be available",
+          "Useful for families and larger treatment plans"
+        ],
+        "whyChoose": "Sonria emphasizes affordability, practical guidance, and clear communication before treatment begins.",
+        "insuranceNote": "Current site messaging includes dental insurance, Medicare, Medicaid, and third-party financing. Final benefits depend on patient plan and eligibility.",
+        "faqs": [
+          {
+            "q": "Do you accept dental insurance?",
+            "a": "The current Sonria messaging says dental insurance is welcome and the team can help answer coverage questions."
+          },
+          {
+            "q": "Is financing available?",
+            "a": "Third-party financing options may be available for qualifying patients."
+          }
+        ],
+        "seoTitle": "Dental Insurance and Financing | Sonria Dentista",
+        "seoDescription": "Learn about dental insurance, Medicaid, Medicare messaging, and third-party financing options at Sonria Dentista.",
+        "showInOverview": false
       }
     ],
     "pricingFeatured": [
       {
-        "label": "New patient special",
-        "price": "$79.99",
-        "note": "Exam + X-rays + consultation"
+        "label": "Dental insurance",
+        "price": "Welcome",
+        "note": "We help answer coverage questions and work with providers."
       },
       {
-        "label": "Dental implant",
-        "price": "$2,499",
-        "note": "Per tooth, all-in"
+        "label": "Medicaid and Medicare",
+        "price": "Accepted",
+        "note": "Current site lists dental insurance, Medicare, and Medicaid messaging."
       },
       {
-        "label": "All-on-4",
-        "price": "$15,999",
-        "note": "Per arch, fixed smile in a day"
+        "label": "3rd-party financing",
+        "price": "Available",
+        "note": "Flexible payment options help patients begin treatment with confidence."
       }
     ]
   },
   "locations": {
     "heading": "Four offices near you",
-    "subheading": "Same team, same quality, same honest pricing at every location.",
+    "subheading": "Bilingual dental care in Arlington, Commerce, Paris, and Grand Prairie.",
     "list": [
       {
         "slug": "arlington",
         "city": "Arlington",
         "state": "TX",
-        "address": "2024 Baird Farm Rd Ste.100, Arlington, TX 76006",
+        "address": "2024 Baird Farm Rd Ste. 100, Arlington, TX 76011",
         "phone": "(682) 284-1120",
-        "hours": "Mon-Fri 9am-5pm | Sat 9am-2pm",
+        "phoneHref": "tel:+16822841120",
+        "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
+        "heroImageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
+        "heroImageAlt": "Modern dental treatment room for Sonria Dentista Arlington",
         "primary": true,
-        "longBlurb": "Our flagship Arlington office is at 2024 Baird Farm Rd in North Arlington, with on-site parking and easy access from major Arlington thoroughfares. We serve families across Arlington, Pantego, Kennedale, and the surrounding North Arlington area, in English and Spanish.",
+        "longBlurb": "Sonria Dentista of Arlington serves families from the main Arlington office on Baird Farm Rd with bilingual care, preventive dentistry, emergency treatment, tooth replacement, and family dental services.",
         "neighborhoods": [
+          "Arlington",
           "North Arlington",
           "Pantego",
-          "Kennedale",
-          "Arlington Heights"
+          "Dalworthington Gardens",
+          "Grand Prairie"
         ],
-        "directions": "On Baird Farm Rd in North Arlington, suite 100. On-site parking available.",
-        "googleMapsUrl": "https://www.google.com/maps?cid=1558676577930962228",
+        "directions": "Located at 2024 Baird Farm Rd Ste. 100 in Arlington. Use the map link for current directions.",
         "servicesOffered": [
-          "general",
-          "implants",
-          "all-on-4",
-          "orthodontics",
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
           "cosmetic",
-          "emergencies"
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions",
+          "emergency-dentist",
+          "dental-implants",
+          "dentures",
+          "partials",
+          "dental-crowns",
+          "tooth-extractions",
+          "orthodontics",
+          "teeth-cleaning",
+          "dental-checkups",
+          "family-dentistry",
+          "missing-teeth-replacement",
+          "insurance-financing"
         ],
         "seoTitle": "Dentist in Arlington TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Arlington TX. Family, implants, All-on-4, emergencies. 1234 W Pioneer Pkwy. (682) 284-1120.",
-        "phoneRaw": "+16822841120",
-        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-14:00",
-        "rating": 4.9,
-        "reviewCount": 255,
-        "lat": 32.768,
-        "lng": -97.086
+        "seoDescription": "Sonria Dentista in Arlington TX. Bilingual family dental care, checkups, implants, extractions, dentures, and more. Call (682) 284-1120.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-arlington/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-arlington/",
+        "googleMapsUrl": "https://share.google/EsTl4cn0L1ebLWzIA",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/sonrisadentista/",
+          "yelp": "https://www.yelp.com/biz/sonria-dentista-of-arlington-arlington"
+        }
       },
       {
         "slug": "commerce",
         "city": "Commerce",
         "state": "TX",
-        "address": "2210 Live Oak St ste c, Commerce, TX 75428",
+        "address": "2210 Live Oak Street, Suite #C, Commerce, TX 75428",
         "phone": "(903) 246-4424",
+        "phoneHref": "tel:+19032464424",
         "hours": "Mon-Fri 9am-5pm",
+        "heroImageUrl": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
+        "heroImageAlt": "Friendly dental care setting for Sonria Dentista Commerce",
         "primary": false,
-        "longBlurb": "Our Commerce office on Live Oak St serves families across Hunt County and Northeast Texas. With dental implants, orthodontics, and oral surgery available on-site, we keep most cases in one place rather than referring out. Bilingual care for Spanish-speaking and English-speaking patients alike.",
+        "longBlurb": "Sonria Dentista in Commerce provides bilingual dental care for families, students, and neighbors near Live Oak Street.",
         "neighborhoods": [
           "Commerce",
-          "Hunt County",
-          "Cooper",
-          "Greenville (NE)",
-          "Sulphur Springs (W)"
+          "Texas A&M University-Commerce",
+          "Campbell",
+          "Wolfe City",
+          "Greenville"
         ],
-        "directions": "On Live Oak St in Commerce, suite C. On-site parking. Veteran-owned and woman-owned per Google Business listing.",
-        "googleMapsUrl": "https://www.google.com/maps?cid=9991201295560044088",
+        "directions": "Located at 2210 Live Oak Street, Suite #C in Commerce. Use the map link for current directions.",
         "servicesOffered": [
-          "general",
-          "implants",
-          "orthodontics",
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
           "cosmetic",
-          "emergencies"
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions",
+          "emergency-dentist",
+          "dental-implants",
+          "dentures",
+          "partials",
+          "dental-crowns",
+          "tooth-extractions",
+          "orthodontics",
+          "teeth-cleaning",
+          "dental-checkups",
+          "family-dentistry",
+          "missing-teeth-replacement",
+          "insurance-financing"
         ],
         "seoTitle": "Dentist in Commerce TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Commerce TX near Texas A&M. Family, implants, emergencies. 501 Park St. (682) 284-1120.",
-        "phoneRaw": "+19032464424",
-        "hoursOpen": "Mo-Fr 09:00-17:00",
-        "rating": 4.9,
-        "reviewCount": 525,
-        "lat": 33.249,
-        "lng": -95.913
+        "seoDescription": "Sonria Dentista in Commerce TX. Bilingual dental checkups, cleanings, implants, orthodontics, extractions, and family care. Call (903) 246-4424.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-commerce/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-commerce/",
+        "googleMapsUrl": "https://share.google/cgWdMmvMl1IAiXHpM",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/commercedentalandorthodontics/",
+          "instagram": "https://www.instagram.com/explore/locations/424148375032272/commerce-dental-implants-orthodontics/"
+        }
       },
       {
         "slug": "paris",
         "city": "Paris",
         "state": "TX",
-        "address": "707 Lamar Ave L, Paris, TX 75460",
+        "address": "707 Lamar Ave, Suite #L, Paris, TX 75460",
         "phone": "(903) 609-0567",
+        "phoneHref": "tel:+19036090567",
         "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
+        "heroImageUrl": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1800&q=80",
+        "heroImageAlt": "Warm family dental visit for Sonria Dentista Paris",
         "primary": false,
-        "longBlurb": "Our Paris, TX office on Lamar Ave brings advanced implant and restorative dentistry to Lamar County. We handle full-arch implants, snap-on dentures, TMJ care, and cosmetic dentistry in addition to general family care. Wheelchair accessible, on-site parking, bilingual team.",
+        "longBlurb": "Sonria Dentista in Paris serves local families from Lamar Ave with bilingual dental care, emergency treatment, tooth replacement, and general dentistry.",
         "neighborhoods": [
           "Paris",
-          "Lamar County",
           "Reno",
           "Powderly",
-          "Blossom"
+          "Blossom",
+          "Lamar County"
         ],
-        "directions": "On Lamar Ave in Paris, suite L. On-site parking. Wheelchair accessible entrance, parking, restroom, and seating.",
-        "googleMapsUrl": "https://www.google.com/maps?cid=18055522069307288222",
+        "directions": "Located at 707 Lamar Ave, Suite #L in Paris. Use the map link for current directions.",
         "servicesOffered": [
-          "general",
-          "implants",
-          "orthodontics",
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
           "cosmetic",
-          "emergencies"
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions",
+          "emergency-dentist",
+          "dental-implants",
+          "dentures",
+          "partials",
+          "dental-crowns",
+          "tooth-extractions",
+          "orthodontics",
+          "teeth-cleaning",
+          "dental-checkups",
+          "family-dentistry",
+          "missing-teeth-replacement",
+          "insurance-financing"
         ],
         "seoTitle": "Dentist in Paris TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Paris TX. Family, implants, orthodontics, emergencies. 2845 Lamar Ave. (682) 284-1120.",
-        "phoneRaw": "+19036090567",
-        "hoursOpen": "Mo-Fr 09:00-17:00, Sa 09:00-15:00",
-        "rating": 5.0,
-        "reviewCount": 67,
-        "lat": 33.661,
-        "lng": -95.549
+        "seoDescription": "Sonria Dentista in Paris TX. Bilingual family dental care, checkups, extractions, dentures, implants, and more. Call (903) 609-0567.",
+        "appointmentUrl": "https://sonriadentista.com/new-patient-form-paris/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-paris/",
+        "googleMapsUrl": "https://share.google/AWVla7LUrtlAHN7jE",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/sonriadentistaofparis/",
+          "instagram": "https://www.instagram.com/sonriadentistaofparis.tx/",
+          "yelp": "https://www.yelp.com/biz/sonria-dentista-paris"
+        }
       },
       {
         "slug": "grand-prairie",
         "city": "Grand Prairie",
         "state": "TX",
-        "address": "325 W Westchester Pkwy #300, Grand Prairie, TX 75052",
+        "address": "325 W Westchester Pkwy, Ste 300, Grand Prairie, TX 75052",
         "phone": "(972) 262-5593",
+        "phoneHref": "tel:+19722625593",
         "hours": "Mon-Fri 9am-5pm",
+        "heroImageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1800&q=80",
+        "heroImageAlt": "Friendly dental team for Sonria Dentista Grand Prairie",
         "primary": false,
-        "longBlurb": "Our Grand Prairie office on W Westchester Pkwy serves families across the Mid-Cities and southwest DFW. With multiple dentists on staff, we offer same-day implants, emergency care (including after-hours), and the full spectrum of cosmetic and family dentistry. Woman-owned, bilingual team.",
+        "longBlurb": "Sonria Dentista in Grand Prairie provides bilingual dental care from Westchester Pkwy, including checkups, orthodontics, tooth replacement, and emergency treatment.",
         "neighborhoods": [
           "Grand Prairie",
-          "Mansfield",
-          "Cedar Hill (NW)",
-          "Duncanville (W)",
-          "Mid-Cities"
+          "South Grand Prairie",
+          "Arlington",
+          "Cedar Hill",
+          "Duncanville"
         ],
-        "directions": "On W Westchester Pkwy, suite #300. On-site parking.",
-        "googleMapsUrl": "https://www.google.com/maps?cid=535386060820614263",
+        "directions": "Located at 325 W Westchester Pkwy, Ste 300 in Grand Prairie. Use the map link for current directions.",
         "servicesOffered": [
-          "general",
-          "implants",
-          "all-on-4",
-          "orthodontics",
+          "preventive",
+          "children",
+          "restorative",
+          "missing-teeth",
           "cosmetic",
-          "emergencies"
+          "sedation",
+          "clear-braces",
+          "implants",
+          "snap-on-dentures",
+          "emergencies-extractions",
+          "emergency-dentist",
+          "dental-implants",
+          "dentures",
+          "partials",
+          "dental-crowns",
+          "tooth-extractions",
+          "orthodontics",
+          "teeth-cleaning",
+          "dental-checkups",
+          "family-dentistry",
+          "missing-teeth-replacement",
+          "insurance-financing"
         ],
         "seoTitle": "Dentist in Grand Prairie TX | Sonria Dentista",
-        "seoDescription": "Bilingual dentist in Grand Prairie TX. Family, implants, All-on-4, emergencies. 1010 W Pioneer Pkwy. (682) 284-1120.",
-        "phoneRaw": "+19722625593",
-        "hoursOpen": "Mo-Fr 09:00-17:00",
-        "rating": 4.9,
-        "reviewCount": 654,
-        "lat": 32.671,
-        "lng": -97.008
+        "seoDescription": "Sonria Dentista in Grand Prairie TX. Bilingual dental care, cleanings, implants, extractions, dentures, and more. Call (972) 262-5593.",
+        "appointmentUrl": "https://sonriadentista.com/appointment-form-grand-prairie/",
+        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
+        "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
+        "socialLinks": {
+          "facebook": "https://www.facebook.com/thegrandprairiedentistimplantsandbraces/"
+        }
       }
     ]
   },
   "doctor": {
-    "name": "Dr. Deepti Namineni",
-    "title": "Clinical Director, DDS",
-    "imageUrl": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80",
-    "imageAlt": "Dr. Namineni at the office",
+    "name": "Sonria Dental Team",
+    "title": "Bilingual family dental care",
+    "imageUrl": "https://res.cloudinary.com/dl0uoovgu/image/upload/v1782648173/48c52811-1bb6-4a3a-88e7-aaed454b51ea_docn8x.png",
+    "imageAlt": "Sonria Dentista dental team",
     "bio": [
-      "We opened Sonria more than 15 years ago with a simple idea, give every patient the same care we'd give our own family.",
-      "Today we serve thousands of patients across four North Texas offices. We speak Spanish and English, walk through every step, and never recommend treatment you don't need."
+      "At Sonria Dentista, patients are welcomed by an experienced dental team focused on comfortable, high-quality care for the whole family.",
+      "The team is fluent in English and Spanish and provides checkups, cleanings, emergency treatment, tooth replacement, orthodontics, and more across four North Texas locations."
     ],
     "credentials": [
-      "DDS - University of Texas",
-      "Advanced implantology",
-      "ADA Member",
-      "Bilingual EN/ES"
+      "Bilingual English and Spanish team",
+      "Family dental care",
+      "Missing teeth replacement",
+      "Four North Texas locations"
+    ]
+  },
+  "team": {
+    "providers": [
+      {
+        "slug": "deepti-namineni",
+        "name": "Dr. Deepti Namineni",
+        "initials": "DN",
+        "imageUrl": "/images/DR%20deepti.jpg",
+        "imageAlt": "Dentist profile placeholder for Dr. Deepti Namineni",
+        "title": "DDS, MS - Lead Dentist and Dental Implant Specialist",
+        "bio": [
+          "Dr. Namineni is a compassionate and detail-oriented general dentist with a refined focus on cosmetic and family dentistry.",
+          "She provides individualized care in a calm, welcoming environment where comfort, precision, and aesthetics come together."
+        ],
+        "highlights": [
+          "Member of ADA and TDA",
+          "Compassionate, individualized care",
+          "Lead Dentist and Specialist"
+        ],
+        "locationSlugs": [
+          "arlington",
+          "grand-prairie"
+        ]
+      },
+      {
+        "slug": "ahn",
+        "name": "Dr. Ahn",
+        "initials": "AA",
+        "imageUrl":  "/images/Dr-ahn.webp",
+        "imageAlt": "Orthodontist profile placeholder for Dr. Ahn",
+        "title": "DDS, MS - Orthodontic Specialist",
+        "bio": [
+          "Dr. Ahn is a highly skilled orthodontist dedicated to creating confident, healthy smiles through advanced care.",
+          "As an Invisalign-certified provider, Dr. Ahn offers discreet, customized treatment options designed around each patient's lifestyle."
+        ],
+        "highlights": [
+          "20+ years orthodontic experience",
+          "Predictable results",
+          "Precision and patient-oriented care"
+        ],
+        "locationSlugs": [
+          "arlington"
+        ]
+      },
+      {
+        "slug": "tarun-mundluru",
+        "name": "Dr. Tarun Mundluru",
+        "initials": "TM",
+        "imageUrl": "/images/Dr Tarun.jpg",
+        "imageAlt": "Dentist profile placeholder for Dr. Tarun Mundluru",
+        "title": "BDS, MSc, DABOP - Family and General Dentistry",
+        "bio": [
+          "Dr. Mundluru is an experienced dentist focused on comprehensive, patient-centered care with an emphasis on precision, comfort, and long-term oral health.",
+          "His clinical work includes restorative dentistry, root canal therapy, wisdom tooth extractions, dental implants, and treatment planning."
+        ],
+        "highlights": [
+          "Expert in family and preventive dentistry",
+          "Member of the American Dental Association",
+          "Gentle, patient-focused approach"
+        ],
+        "locationSlugs": [
+          "commerce",
+          "paris"
+        ]
+      },
+      {
+        "slug": "chu",
+        "name": "Dr. Chu",
+        "initials": "CC",
+        "imageUrl": "/images/Dr%20Joy.webp",
+        "imageAlt": "Orthodontist profile placeholder for Dr. Chu",
+        "title": "DDS, PhD - Orthodontics",
+        "bio": [
+          "Dr. Chu brings more than 20 years of orthodontic expertise and a PhD in Oral Biology from Ohio State University.",
+          "She specializes in braces and Invisalign with a scientifically informed approach for precise tooth movement."
+        ],
+        "highlights": [
+          "PhD in Oral Biology",
+          "20+ years orthodontic experience",
+          "American Association of Orthodontists member"
+        ],
+        "locationSlugs": [
+          "commerce"
+        ]
+      }
     ]
   },
   "about": {
-    "heading": "A family practice, not a chain",
+    "heading": "A true dental home",
     "subheading": "About Sonria Dentista",
-    "intro": "We started as one office. Today we're four, all run by the same family, with the same commitment to treating every patient like they're our own.",
+    "intro": "Sonria Dentista provides personalized, convenient, and affordable dental care for the whole family.",
     "story": [
-      "Dr. Sandeep Namineni opened Sonria in 2009 with the idea that quality dental care shouldn't depend on the language you speak or the size of your bank account.",
-      "Today our bilingual team serves thousands of North Texas families. We keep prices fixed and transparent, financing accessible, and a simple commitment: if you don't need a treatment, we won't recommend it.",
-      "Each of our four offices has the same modern technology, the same clinical standard, and the same culture of respect for your time and trust."
+      "Sonria Dentista is built around a simple promise: make dental care welcoming, practical, and easier for families to access.",
+      "The team provides dental checkups and teeth cleanings for patients of all ages, along with dental implants, orthodontics, extractions, dentures, and emergency treatment.",
+      "With four locations and a bilingual English and Spanish team, Sonria helps patients feel understood from the first call through the final visit."
     ],
     "values": [
       {
-        "title": "Honesty above all",
-        "body": "Clear posted pricing. If you don't need it, we don't recommend it."
+        "title": "Team of dental experts",
+        "body": "Patients can trust they are in good hands thanks to broad experience and training across dental disciplines."
       },
       {
-        "title": "Truly bilingual",
-        "body": "Whole team, every office, Spanish and English equally."
+        "title": "One-stop convenience",
+        "body": "Checkups, cleanings, implants, orthodontics, extractions, and tooth replacement services are available through Sonria."
       },
       {
-        "title": "Family first",
-        "body": "We treat children through grandparents, all in the same visit if you'd like."
+        "title": "Consistent affordability",
+        "body": "Dental insurance, Medicaid, Medicare, and third-party financing are part of the current affordability message."
       },
       {
-        "title": "Modern technology",
-        "body": "Digital X-rays, 3D scans, in-office lab."
+        "title": "Bilingual dental team",
+        "body": "The team is fluent in English and Spanish so patients can receive care in the language that suits them best."
       }
     ],
     "stats": [
       {
-        "label": "Happy patients",
-        "value": "12,000+"
+        "label": "Clients transformed",
+        "value": "500+"
       },
       {
-        "label": "Years serving",
-        "value": "15+"
+        "label": "Happy patients",
+        "value": "10k+"
+      },
+      {
+        "label": "Average rating",
+        "value": "4.9"
       },
       {
         "label": "Locations",
         "value": "4"
-      },
-      {
-        "label": "Implants placed",
-        "value": "3,000+"
       }
     ]
   },
@@ -570,7 +1527,7 @@
     "steps": [
       {
         "title": "Book in 3 minutes",
-        "body": "Call (682) 284-1120 or use the form. We confirm by SMS."
+        "body": "Call your preferred office, use the appointment link, or complete the new patient intake form for your location."
       },
       {
         "title": "Arrive 10 min early",
@@ -595,46 +1552,41 @@
   },
   "insurance": {
     "heading": "Insurance and financing",
-    "intro": "We accept most PPO plans. If yours isn't on the list, call us, we can almost always see you as out-of-network with similar benefits.",
+    "intro": "The current Sonria site highlights dental insurance, Medicare, Medicaid, flexible payment options, and third-party financing to make dental care more affordable.",
     "plansAccepted": [
-      "Aetna",
-      "Cigna",
-      "Delta Dental PPO",
-      "Guardian",
-      "Humana",
-      "MetLife",
-      "Principal",
-      "United Concordia",
-      "United Healthcare",
-      "Blue Cross Blue Shield"
+      "Dental insurance",
+      "Medicare",
+      "Medicaid",
+      "Third-party financing",
+      "Flexible payment options"
     ],
-    "noInsurance": "No insurance? We have an annual membership plan from $199 that includes two cleanings, exams, and discounts on other treatments.",
+    "noInsurance": "If you have questions about coverage or payment, the Sonria team can help you understand options before treatment begins.",
     "financing": [
       {
-        "name": "CareCredit",
-        "body": "Medical financing with no-interest plans from 6 to 24 months."
+        "name": "Dental insurance",
+        "body": "The team can answer coverage questions and work with your provider to help maximize benefits."
       },
       {
-        "name": "Sonria in-house plan",
-        "body": "Fixed monthly payments, no aggressive credit check."
+        "name": "Flexible payment options",
+        "body": "Convenient payment solutions help patients begin treatment with confidence."
       },
       {
-        "name": "Cash / card",
-        "body": "5% discount when you pay up front."
+        "name": "3rd-party financing",
+        "body": "Financing partners may allow patients to space out dental costs with little to no interest."
       }
     ],
     "faqs": [
       {
-        "q": "Do you verify my insurance before the visit?",
-        "a": "Yes, at no charge. Call us with your info and we verify coverage in under 24 hours."
+        "q": "Do you accept dental insurance?",
+        "a": "Yes. The current site states that dental insurance is welcome and that the team can help answer coverage questions."
       },
       {
-        "q": "What if my insurance doesn't cover everything?",
-        "a": "We explain exactly what you owe before treatment, with payment options if you can't cover it right away."
+        "q": "Is Medicaid accepted?",
+        "a": "Yes. The current site states that Medicaid is welcome."
       },
       {
-        "q": "Do you accept Medicaid?",
-        "a": "Not directly. But we have accessible plans for patients without coverage."
+        "q": "Is financing available?",
+        "a": "Yes. The current site mentions flexible payment options and third-party financing."
       }
     ]
   },
@@ -644,43 +1596,27 @@
     "items": [
       {
         "q": "Do you speak Spanish?",
-        "a": "Yes. The whole team, in all four offices. Not just the dentist."
-      },
-      {
-        "q": "Do you accept patients without insurance?",
-        "a": "Yes. We have new patient specials ($79.99), membership plans ($199/year), and no-interest financing."
-      },
-      {
-        "q": "How fast can you see me if I'm in pain?",
-        "a": "Almost always same-day if you call before noon. We hold daily emergency slots."
-      },
-      {
-        "q": "Do you see kids?",
-        "a": "Yes, starting at the first tooth. We make first visits fun and educational."
+        "a": "Yes. Sonria has a bilingual English and Spanish dental team."
       },
       {
         "q": "Where are the offices?",
-        "a": "Arlington, Commerce, Paris, and Grand Prairie. Same team and pricing at each one."
+        "a": "Arlington, Commerce, Paris, and Grand Prairie."
       },
       {
-        "q": "How much does an implant cost?",
-        "a": "$2,499 all-inclusive per tooth. No surprises. Financing available."
+        "q": "Do you accept Medicaid?",
+        "a": "The current site states that Medicaid is welcome."
       },
       {
-        "q": "How much is All-on-4?",
-        "a": "$15,999 per arch, all-inclusive (extractions, 4 implants, temporary and final prosthesis)."
+        "q": "Is Medicare mentioned?",
+        "a": "Yes. The current site includes Dental Insurance, Medicare, and Financing messaging."
       },
       {
-        "q": "Can I pay monthly?",
-        "a": "Yes. CareCredit, Sonria in-house plan, or card. Most patients pay $200-500 per month."
+        "q": "Do you offer financing?",
+        "a": "Yes. The current site mentions flexible payment options and third-party financing."
       },
       {
-        "q": "What are the hours?",
-        "a": "Mon-Fri 8am-6pm. Arlington also open Saturdays 9am-2pm."
-      },
-      {
-        "q": "Do you handle emergencies?",
-        "a": "Yes. Call (682) 284-1120 and we almost always see you the same day."
+        "q": "What services do you offer?",
+        "a": "Sonria lists checkups, cleanings, implants, orthodontics, extractions, dentures, partials, clear braces, sedation, and more."
       }
     ]
   },
@@ -694,7 +1630,20 @@
       "location": "Preferred office",
       "message": "How can we help?",
       "submit": "Send message",
-      "selectLocation": "Select a location"
+      "selectLocation": "Select a location",
+      "service": "Service needed",
+      "insuranceStatus": "Insurance status",
+      "preferredTime": "Preferred appointment time",
+      "consent": "I agree to be contacted by Sonria Dentista by phone, text, or email about my inquiry.",
+      "selectService": "Select a service",
+      "selectInsuranceStatus": "Select insurance status",
+      "insuranceOptions": {
+        "insured": "I have dental insurance",
+        "medicaid": "Medicaid",
+        "medicare": "Medicare",
+        "uninsured": "No insurance",
+        "unsure": "Not sure"
+      }
     }
   },
   "contactCTA": {
@@ -709,9 +1658,10 @@
     "email": "info@sonriadentista.com",
     "hours": [
       "Mon-Fri 9am-5pm",
-      "Sat 9am-2pm (Arlington & Paris only)",
+      "Sat hours vary by location",
       "Sun Closed"
-    ]
+    ],
+    "appointmentUrl": "https://sonriadentista.com/request-an-appointment/"
   },
   "nav": {
     "services": "Services",
@@ -722,14 +1672,6 @@
     "insurance": "Insurance",
     "faq": "FAQ",
     "contact": "Contact",
-    "book": "Book",
-    "articles": "Articles"
-  },
-  "stats": {
-    "totalReviews": 1501,
-    "avgRating": 4.93,
-    "locationsCount": 4,
-    "veteranOwned": true,
-    "womanOwned": true
+    "book": "Book"
   }
 }

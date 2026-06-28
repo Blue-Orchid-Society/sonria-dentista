@@ -1,0 +1,500 @@
+SONRIA DENTISTA WEBSITE ROADMAP AND DELIVERY GUIDE
+
+Purpose
+
+We are rebuilding and improving the Sonria Dentista website so it becomes a real patient lead engine, not just a brochure website.
+
+The new website should use the current live site as the first source of truth for business information, then improve the structure, design, conversion flow, SEO, analytics, and lead capture.
+
+The goal is to help Sonria compete locally against larger dental chains by emphasizing private-practice trust, bilingual care, transparent pricing, real patient reviews, convenient locations, and fast appointment requests.
+
+
+Current Source Of Truth
+
+The current website is:
+https://sonriadentista.com/
+
+We should use the current site to collect the initial business data:
+
+Practice name
+Location addresses
+Phone numbers
+Working hours
+Service list
+Insurance and financing messaging
+Patient review copy
+Google review links
+New patient intake links
+Book appointment links
+Map links
+Social links
+Smile gallery concept
+Bilingual care messaging
+Affordable care positioning
+
+Even though the current site is our starting source of truth, the Sonria team should still confirm the final business details before launch.
+
+
+Known Locations From Current Site
+
+Arlington
+2024 Baird Farm Rd Ste. 100, Arlington, TX 76011
+(682) 284-1120
+Monday to Friday, 9:00 AM to 5:00 PM
+Saturday, 9:00 AM to 3:00 PM
+
+Commerce
+2210 Live Oak Street, Suite #C, Commerce, TX 75428
+(903) 246-4424
+Monday to Friday, 9:00 AM to 5:00 PM
+
+Paris
+707 Lamar Ave, Suite #L, Paris, TX 75460
+(903) 609-0567
+Monday to Friday, 9:00 AM to 5:00 PM
+Saturday, 9:00 AM to 3:00 PM
+
+Grand Prairie
+325 W Westchester Pkwy, Ste 300, Grand Prairie, TX 75052
+(972) 262-5593
+Monday to Friday, 9:00 AM to 5:00 PM
+
+
+Delivery Workflow
+
+We should keep the work organized by branch and by concern.
+
+Main branch:
+Stable production-ready code only.
+
+Planning branch:
+ai/site-roadmap-deployment-guide
+Used for roadmap, planning, and documentation work.
+
+Feature branches:
+One concern per branch.
+Examples:
+seo/location-content-update
+seo/service-page-expansion
+dev/contact-form-lead-routing
+design/homepage-conversion-refresh
+dev/analytics-conversion-tracking
+
+Pull request rule:
+Each pull request should focus on one concern.
+Do not combine design changes, SEO content rewrites, analytics setup, and form routing in one large PR unless there is a strong reason.
+
+Deployment rule:
+Every branch should be deployable separately as a Vercel preview deployment.
+We should use preview deployments for review before merging to main.
+The production domain should only point to main after QA and approval.
+
+
+Suggested Branch Sequence
+
+Branch 1:
+seo/business-data-sync
+
+Purpose:
+Move verified business information from the current site into the new website content files.
+
+Scope:
+Update locations
+Update phone numbers
+Update hours
+Update services
+Update insurance messaging
+Update patient-facing trust copy
+Keep English and Spanish JSON aligned
+
+Do not:
+Change page layouts
+Add new components
+Change analytics
+Change form routing
+
+
+Branch 2:
+dev/contact-form-lead-routing
+
+Purpose:
+Make sure website inquiries actually reach the office.
+
+Scope:
+Wire contact form to email delivery
+Add recipient configuration
+Add service interest field
+Add preferred location field
+Add phone number validation
+Add spam protection
+Add success and failure states
+
+Do not:
+Rewrite homepage design
+Change service copy
+Change SEO pages
+
+
+Branch 3:
+design/homepage-conversion-refresh
+
+Purpose:
+Improve the homepage so visitors can quickly trust the practice and request an appointment.
+
+Scope:
+Improve hero section
+Add appointment CTA near the top
+Improve mobile CTA visibility
+Improve service cards
+Improve location cards
+Add review proof
+Add intake and appointment links
+
+Do not:
+Change backend form delivery
+Rewrite all service pages
+Add analytics unless the branch is explicitly expanded
+
+
+Branch 4:
+seo/location-page-optimization
+
+Purpose:
+Make every location page stronger for local search and patient conversion.
+
+Scope:
+Add accurate NAP data
+Add map links
+Add appointment links
+Add intake form links
+Add neighborhoods served
+Add location-specific services
+Add local metadata
+Add local business schema
+
+Do not:
+Change global design system
+Add unrelated service pages
+
+
+Branch 5:
+seo/service-page-expansion
+
+Purpose:
+Expand high-intent dental service pages.
+
+Priority service pages:
+Emergency dentist
+Tooth extractions
+Dental implants
+Dentures
+Partials
+Dental crowns
+Orthodontics
+Teeth cleaning
+Dental checkups
+Family dentistry
+Missing teeth replacement
+Insurance and financing
+
+Scope:
+Create or improve English and Spanish service content
+Add page-specific metadata
+Add FAQs
+Add service-specific CTAs
+Connect services to locations
+
+Do not:
+Machine-translate clinical Spanish without review
+Invent pricing or claims not confirmed by Sonria
+
+
+Branch 6:
+dev/analytics-conversion-tracking
+
+Purpose:
+Track which channels and pages produce leads.
+
+Scope:
+Add Google Analytics 4
+Add Google Search Console verification support
+Add Google Ads conversion tracking
+Track form submissions
+Track phone clicks
+Track appointment clicks
+Track map clicks
+Track intake form clicks
+
+Do not:
+Change page copy unless needed for event labels
+Change form behavior beyond tracking
+
+
+Branch 7:
+qa/production-readiness
+
+Purpose:
+Prepare for production launch.
+
+Scope:
+Run build
+Run lint
+Check mobile layouts
+Check all links
+Check all forms
+Check metadata
+Check sitemap
+Check robots
+Check location pages
+Check service pages
+Check English and Spanish routes
+Check page speed
+Check accessibility basics
+
+
+Coding Guide
+
+Use the existing Next.js structure.
+
+Content belongs in:
+data/site.en.json
+data/site.es.json
+
+Components belong in:
+components/sections/
+
+Routes belong in:
+app/[locale]/
+
+API routes belong in:
+app/api/
+
+Rules:
+Keep English and Spanish content shapes aligned.
+If a field is added to English, add the matching field to Spanish in the same PR.
+Do not add a CMS.
+Do not add heavy animation libraries.
+Do not add Three.js.
+Do not commit API keys.
+Do not commit .env.local.
+Do not change the Vercel scope.
+Do not make large unrelated refactors.
+Prefer small, reviewable changes.
+
+
+Design Guide
+
+The design should feel like a trusted neighborhood family dentist.
+
+Design direction:
+Warm
+Friendly
+Professional
+Bilingual
+Clear
+Practical
+Conversion-focused
+
+Avoid:
+Overly corporate design
+Aggressive sales language
+Generic stock-photo feel
+Too many decorative cards
+Heavy animations
+Hard-to-read text
+Hidden CTAs
+
+Important design priorities:
+Mobile call button should be easy to find
+Appointment request should be easy to start
+Location information should be very clear
+Pricing and specials should be easy to scan
+Reviews should appear early enough to build trust
+Real photos should replace generic placeholders where possible
+
+
+SEO Guide
+
+Local SEO is a major priority.
+
+Every location page should include:
+Practice name
+Full address
+Phone number
+Hours
+Map link
+Book appointment link
+New patient intake link
+Services offered
+Neighborhoods served
+Directions or parking notes
+Location-specific metadata
+Local business schema
+
+Every service page should include:
+Clear service title
+Patient-friendly explanation
+Who the service is for
+What to expect
+Benefits
+Pricing if confirmed
+Insurance or financing note if relevant
+FAQs
+Strong CTA
+Related locations
+Page-specific metadata
+
+Do not invent:
+Clinical claims
+Doctor credentials
+Insurance acceptance
+Pricing
+Treatment guarantees
+Review counts
+Awards
+
+Spanish SEO:
+Spanish content should be natural and clinically accurate.
+Do not rely on raw machine translation for clinical terms.
+Spanish pages should be reviewed before launch.
+
+
+Lead Capture Guide
+
+The website should capture leads through multiple paths:
+
+Phone calls
+Contact form
+Appointment request
+New patient intake form
+Map clicks
+Insurance verification
+Emergency dental CTA
+
+Recommended form fields:
+Full name
+Phone number
+Email
+Preferred location
+Service needed
+Insurance status
+Preferred appointment time
+Message
+Consent to be contacted
+
+Lead routing:
+At minimum, send all leads to a confirmed office email.
+Optional next step, send leads to a Google Sheet or CRM.
+Optional next step, send SMS alerts for emergency or implant leads.
+
+
+Analytics Guide
+
+We need analytics before active marketing.
+
+Track:
+Form submit
+Phone click
+Book appointment click
+New patient intake click
+Map click
+Google review click
+Service CTA click
+Insurance CTA click
+
+Use analytics to answer:
+Which pages generate leads?
+Which services get the most interest?
+Which location gets the most traffic?
+How many users call from mobile?
+Which campaign or channel is working?
+
+
+Google Business Profile Guide
+
+Google Maps will be one of the most important lead sources.
+
+We should:
+Link each location page to the correct Google Business Profile
+Use matching addresses and phone numbers
+Use matching business hours
+Use matching service categories
+Add review links per location
+Encourage review collection
+Add new office and team photos
+Create simple review request templates
+
+
+QA Checklist Before Production
+
+Business data checked
+English pages checked
+Spanish pages checked
+All locations checked
+All phone numbers checked
+All map links checked
+All intake links checked
+All appointment links checked
+Contact form sends email
+Spam protection works
+Mobile header works
+Mobile CTA works
+Sitemap works
+Robots works
+Metadata works
+Build passes
+Lint passes
+No API keys committed
+No .env.local committed
+Preview deployment reviewed
+Sonria team approves final business information
+
+
+What We Need From Sonria
+
+Because the current website already contains most of the business information, we mainly need confirmation and missing assets.
+
+Please confirm:
+Are all four locations still active?
+Are the addresses correct?
+Are the phone numbers correct?
+Are the hours correct?
+Should we reuse the current new patient intake links?
+Should we reuse the current book appointment links?
+Who should receive website leads by email?
+What are the final doctor names and bios?
+Are Medicaid and Medicare accepted at all locations?
+Which insurance plans are accepted?
+Are the current prices and specials still accurate?
+Can we reuse current review copy?
+Can we reuse current smile gallery images?
+
+Please provide if available:
+Logo file
+Real office photos
+Doctor photos
+Team photos
+YouTube testimonial links
+Google Business Profile links
+Google review links
+Updated flyers or brochures
+Any updated pricing sheets
+
+
+Immediate Next Step
+
+Start with the business data sync branch.
+
+The first implementation branch should update the new website with accurate location data, phone numbers, hours, services, insurance messaging, and review content from the current live site.
+
+After that, we should wire lead capture before doing large design or SEO expansions.
+
+Recommended order:
+1. Business data sync
+2. Contact form lead routing
+3. Homepage conversion refresh
+4. Location page SEO
+5. Service page SEO
+6. Analytics and conversion tracking
+7. Production QA
+

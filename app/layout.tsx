@@ -1,36 +1,35 @@
 import type { Metadata } from "next";
-import { Fraunces, DM_Sans } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
-const fontDisplay = Fraunces({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const fontSans = DM_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "700"],
-  variable: "--font-sans",
-  display: "swap",
-});
+const inter = Inter({ variable: "--font-sans", subsets: ["latin"] });
+const playfair = Playfair_Display({ variable: "--font-display", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sonriadentista.com"),
   title: {
-    default: "Bilingual Dentist in Arlington TX | Sonria Dentista",
+    default: "Sonria Dentista | Bilingual family dental care in North Texas",
     template: "%s | Sonria Dentista",
   },
   description:
-    "Bilingual family dental care led by Dr. Deepti Namineni. Implants, orthodontics, same-day visits across Arlington, Grand Prairie, Paris, and Commerce. 1,500+ 5-star reviews.",
+    "Bilingual dental care for the whole family. Dr. Sandeep Namineni and team across Arlington, Commerce, Paris, and Grand Prairie. Honest pricing, same-day care.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const searchConsoleToken = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+
   return (
-    <html className={`${fontSans.variable} ${fontDisplay.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-background text-foreground-soft">{children}</body>
+    <html className={`${inter.variable} ${playfair.variable} h-full antialiased`}>
+      {searchConsoleToken && (
+        <head>
+          <meta name="google-site-verification" content={searchConsoleToken} />
+        </head>
+      )}
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

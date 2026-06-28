@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import siteEn from "@/data/site.en.json";
-import { getAllArticles } from "@/lib/articles";
 
 const BASE = "https://sonriadentista.com";
 
@@ -8,8 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["en", "es"] as const;
   const services = siteEn.services.list.map((s) => s.slug);
   const locations = siteEn.locations.list.map((l) => l.slug);
-  const staticPages = ["about", "new-patients", "insurance", "faq", "contact", "articles"];
-  const articles = getAllArticles();
+  const staticPages = ["services", "about", "new-patients", "insurance", "faq", "contact"];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const l of locales) {
@@ -18,18 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({ url: `${BASE}/${l}/${p}`, lastModified: new Date(), priority: 0.7 });
     }
     for (const s of services) {
-      entries.push({ url: `${BASE}/${l}/services/${s}`, lastModified: new Date(), priority: 0.9 });
+      entries.push({ url: `${BASE}/${l}/services/${s}`, lastModified: new Date(), priority: 0.8 });
     }
     for (const loc of locations) {
-      entries.push({ url: `${BASE}/${l}/locations/${loc}`, lastModified: new Date(), priority: 0.9 });
+      entries.push({ url: `${BASE}/${l}/locations/${loc}`, lastModified: new Date(), priority: 0.8 });
     }
-  }
-  for (const a of articles) {
-    entries.push({
-      url: `${BASE}/${a.locale}/articles/${a.slug}`,
-      lastModified: new Date(a.publishedAt),
-      priority: 0.6,
-    });
   }
   return entries;
 }

@@ -1,133 +1,59 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFF1E6;
-  --card: #FFFAF3;
-
-  --foreground: #2A1810;
-  --foreground-soft: #4D2F22;
-  --muted: #7A5A48;
-  --muted-2: #A8876F;
-
-  --brand: #E8743C;
-  --brand-deep: #B8501F;
-  --brand-soft: #FFE3CE;
-
-  --accent: #D94B3D;
-  --accent-soft: #FBD9D2;
-
-  --secondary: #3D6B5C;
-  --secondary-soft: #DCE9E2;
-
-  --border-soft: #F0DCC4;
-  --border: #E2C5A6;
-
-  --radius-xs: 6px;
-  --radius-sm: 10px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 36px;
-  --radius-pill: 9999px;
+  --background: #FBF7EE;
+  --card: #FFFCF6;
+  --foreground: #2D2A24;
+  --muted: #5A554B;
+  --muted-2: #8A8270;
+  --sage: #7C9882;
+  --sage-deep: #5F7B65;
+  --sage-soft: #E6EFE8;
+  --terracotta: #C46A3A;
+  --terracotta-deep: #A35528;
+  --terracotta-soft: #F4E2D4;
+  --border-soft: #E6DDC9;
+  --gold: #D4A943;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-card: var(--card);
   --color-foreground: var(--foreground);
-  --color-foreground-soft: var(--foreground-soft);
   --color-muted: var(--muted);
   --color-muted-2: var(--muted-2);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
+  --color-sage-soft: var(--sage-soft);
+  --color-terracotta: var(--terracotta);
+  --color-terracotta-deep: var(--terracotta-deep);
+  --color-terracotta-soft: var(--terracotta-soft);
   --color-border-soft: var(--border-soft);
-  --color-border: var(--border);
-
-  --color-brand: var(--brand);
-  --color-brand-deep: var(--brand-deep);
-  --color-brand-soft: var(--brand-soft);
-  --color-accent: var(--accent);
-  --color-accent-soft: var(--accent-soft);
-  --color-secondary: var(--secondary);
-  --color-secondary-soft: var(--secondary-soft);
-
-  --color-terracotta: var(--brand);
-  --color-terracotta-deep: var(--brand-deep);
-  --color-terracotta-soft: var(--brand-soft);
-  --color-sage: var(--secondary);
-  --color-sage-deep: var(--secondary);
-  --color-sage-soft: var(--secondary-soft);
-  --color-gold: var(--accent);
-
+  --color-gold: var(--gold);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
-
-  --radius-xs: var(--radius-xs);
-  --radius-sm: var(--radius-sm);
-  --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-lg);
-  --radius-xl: var(--radius-xl);
-  --radius-pill: var(--radius-pill);
 }
 
 html, body {
   background: var(--background);
-  color: var(--foreground-soft);
+  color: var(--foreground);
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display), ui-serif, Georgia, serif;
-  color: var(--foreground);
-  letter-spacing: -0.012em;
-  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
-h1 {
-  letter-spacing: -0.022em;
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-h2 { line-height: 1.12; }
-h3 { line-height: 1.2; }
-
-.pullquote {
-  font-family: var(--font-display), ui-serif, Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  color: var(--foreground);
-}
+h1 { letter-spacing: -0.02em; }
 
 .shadow-warm {
-  box-shadow:
-    0 1px 2px rgba(42, 24, 16, 0.04),
-    0 6px 16px rgba(42, 24, 16, 0.07);
+  box-shadow: 0 1px 2px rgba(45, 42, 36, 0.04), 0 4px 12px rgba(45, 42, 36, 0.06);
 }
 .shadow-warm-lg {
-  box-shadow:
-    0 2px 6px rgba(42, 24, 16, 0.05),
-    0 18px 40px rgba(42, 24, 16, 0.12);
-}
-.shadow-glow {
-  box-shadow: 0 0 0 6px rgba(232, 116, 60, 0.10);
-}
-
-.chip {
-  border-radius: var(--radius-pill);
-  background: var(--card);
-  border: 1px solid var(--border-soft);
-  padding: 0.625rem 1rem;
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: var(--foreground);
-  transition: transform 120ms ease, box-shadow 120ms ease;
-}
-.chip:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(42, 24, 16, 0.07);
+  box-shadow: 0 2px 4px rgba(45, 42, 36, 0.04), 0 12px 32px rgba(45, 42, 36, 0.10);
 }
 
 .grain {
@@ -138,12 +64,7 @@ h3 { line-height: 1.2; }
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.05;
+  opacity: 0.06;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-::selection {
-  background: var(--brand-soft);
-  color: var(--brand-deep);
 }
