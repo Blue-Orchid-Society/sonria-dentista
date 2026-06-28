@@ -11,7 +11,14 @@ export async function Header({ locale }: { locale: Locale }) {
     <header className="sticky top-0 z-40 border-b border-border-soft bg-background/85 backdrop-blur">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-6">
         <Link href={`/${locale}`} className="flex items-center gap-2.5 group">
-          <span aria-hidden className="grid place-items-center w-9 h-9 rounded-full bg-terracotta text-white font-display text-lg leading-none">S</span>
+          <div className="flex items-center justify-center rounded-full  bg-terracotta border border-border-soft w-9 h-9 overflow-hidden">
+            <img
+              src={site.logoUrl}
+              alt={site.name}
+              className="h-9 w-9 rounded-full object-cover"
+              loading="eager"
+            />
+          </div>
           <span className="font-display text-xl text-foreground tracking-tight group-hover:text-terracotta transition">
             {site.name}
           </span>
