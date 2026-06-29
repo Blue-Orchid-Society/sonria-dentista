@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Emergency Dental Cost Estimator Tool for SMB Teams | Blue Orchid Society",
+  title: "Emergency Dental Cost Estimator | Sonria Dentista",
   description:
-    "Use this practical emergency dental cost estimator resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+    "Use this practical emergency dental cost estimator resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/emergency-dental-cost-estimator",
   },
@@ -136,7 +136,7 @@ export default async function EmergencyDentalCostEstimatorPage({
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Emergency Dental Cost Estimator Tool for SMB Teams",
+    name: "Emergency Dental Cost Estimator",
     description:
       "A practical calculator for estimating emergency dental costs and deciding the next step.",
     url: "https://sonriadentista.com/tools/emergency-dental-cost-estimator",
@@ -267,7 +267,7 @@ export default async function EmergencyDentalCostEstimatorPage({
             href="/contact"
             className="mt-6 inline-flex w-full items-center justify-center rounded-md border border-[#2f5d50] px-5 py-3 text-sm font-semibold text-[#2f5d50] transition hover:bg-white"
           >
-            Talk with Blue Orchid Society
+            Contact Sonria Dentista
           </Link>
         </aside>
       </section>
@@ -293,9 +293,9 @@ export default async function EmergencyDentalCostEstimatorPage({
           <div className="rounded-lg border border-[#e2d7c8] bg-white p-5">
             <h2 className="text-lg font-semibold">Operations opportunity</h2>
             <p className="mt-3 text-sm leading-6 text-[#4c5a51]">
-              If you manage a team, tools like this can reduce confusion,
-              improve intake, and route urgent cases faster when paired with
-              clear operations and automation.
+              Tools like this can reduce confusion before a visit,
+              help patients describe symptoms clearly, and route urgent cases faster with
+              a clear call or appointment request.
             </p>
           </div>
         </div>
@@ -303,17 +303,17 @@ export default async function EmergencyDentalCostEstimatorPage({
         <div className="mt-10 rounded-lg border border-[#d2c2af] bg-white p-6">
           <h2 className="text-2xl font-semibold">Related resources</h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
-            <Link className="text-[#2f5d50] underline" href="/ai-readiness">
-              AI readiness assessment
+            <Link className="text-[#2f5d50] underline" href="/tools">
+              Dental planning guide
             </Link>
             <Link className="text-[#2f5d50] underline" href="/tools">
-              AI tools and calculators
+              Dental tools and calculators
             </Link>
             <Link className="text-[#2f5d50] underline" href="/services">
-              AI implementation services
+              Dental services
             </Link>
             <Link className="text-[#2f5d50] underline" href="/contact">
-              Talk with Blue Orchid Society
+              Contact Sonria Dentista
             </Link>
           </div>
         </div>

@@ -7,7 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["en", "es"] as const;
   const services = siteEn.services.list.map((s) => s.slug);
   const locations = siteEn.locations.list.map((l) => l.slug);
-  const staticPages = ["services", "about", "new-patients", "insurance", "faq", "contact"];
+  const tools = [
+    "dental-veneer-cost-estimator",
+    "dental-implant-candicacy-quiz",
+    "invisalign-readiness-quiz",
+    "emergency-dental-cost-estimator",
+    "root-canal-cost-estimator",
+    "root-canal-recovery-timeline-estimator",
+    "same-day-dental-crown-cost-estimator",
+    "dental-crown-replacement-cost-estimator",
+    "wisdom-tooth-removal-cost-estimator",
+  ];
+  const staticPages = ["services", "tools", "about", "new-patients", "insurance", "faq", "contact"];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const l of locales) {
@@ -21,6 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const loc of locations) {
       entries.push({ url: `${BASE}/${l}/locations/${loc}`, lastModified: new Date(), priority: 0.8 });
     }
+  }
+  for (const tool of tools) {
+    entries.push({ url: `${BASE}/tools/${tool}`, lastModified: new Date(), priority: 0.65 });
   }
   return entries;
 }

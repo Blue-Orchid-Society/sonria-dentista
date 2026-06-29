@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Invisalign Readiness Quiz Tool for SMB Teams | Blue Orchid Society",
+  title: "Invisalign Readiness Quiz | Sonria Dentista",
   description:
-    "Use this practical invisalign readiness quiz resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+    "Use this practical invisalign readiness quiz resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/invisalign-readiness-quiz",
   },
@@ -53,9 +53,9 @@ export default function InvisalignReadinessQuizPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Invisalign Readiness Quiz Tool for SMB Teams",
+    name: "Invisalign Readiness Quiz",
     description:
-      "Use this practical invisalign readiness quiz resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+      "Use this practical invisalign readiness quiz resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
     url: "https://sonriadentista.com/tools/invisalign-readiness-quiz",
   };
 
@@ -180,14 +180,14 @@ export default function InvisalignReadinessQuizPage() {
           </div>
 
           <div className="mt-8 grid gap-3 text-sm">
-            <Link href="/ai-readiness" className="font-semibold text-terracotta hover:text-brand-deep">
-              AI readiness assessment
+            <Link href="/tools" className="font-semibold text-terracotta hover:text-brand-deep">
+              Dental planning guide
             </Link>
             <Link href="/services" className="font-semibold text-terracotta hover:text-brand-deep">
-              AI implementation services
+              Dental services
             </Link>
             <Link href="/contact" className="font-semibold text-terracotta hover:text-brand-deep">
-              Talk with Blue Orchid Society
+              Contact Sonria Dentista
             </Link>
           </div>
         </aside>

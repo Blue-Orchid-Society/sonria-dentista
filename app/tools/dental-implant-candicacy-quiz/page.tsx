@@ -3,9 +3,9 @@ import Link from "next/link";
 import { DentalImplantQuiz } from "./DentalImplantQuiz";
 
 export const metadata: Metadata = {
-  title: "Dental Implant Candicacy Quiz Tool for SMB Teams | Blue Orchid Society",
+  title: "Dental Implant Candidacy Quiz | Sonria Dentista",
   description:
-    "Use this practical dental implant candicacy quiz resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+    "Use this practical dental implant candicacy quiz resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/dental-implant-candicacy-quiz",
   },
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Dental Implant Candicacy Quiz Tool for SMB Teams",
+  name: "Dental Implant Candidacy Quiz",
   description:
     "Use this practical dental implant candicacy quiz resource to assess implant readiness, compare planning factors, and understand next steps.",
   url: "https://sonriadentista.com/tools/dental-implant-candicacy-quiz",
   mainEntity: {
     "@type": "SoftwareApplication",
-    name: "Dental Implant Candicacy Quiz Calculator",
+    name: "Dental Implant Candidacy Quiz Calculator",
     applicationCategory: "HealthApplication",
     operatingSystem: "Web",
     offers: {
@@ -38,7 +38,7 @@ const checkpoints = [
   "You understand implants often require planning, imaging, healing time, and a final restoration.",
 ];
 
-export default function DentalImplantCandicacyQuizPage() {
+export default function DentalImplantCandidacyQuizPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       <script
@@ -53,7 +53,7 @@ export default function DentalImplantCandicacyQuizPage() {
               Free implant planning tool
             </p>
             <h1 className="mt-4 font-display text-4xl text-brand-deep md:text-5xl">
-              Dental Implant Candicacy Quiz
+              Dental Implant Candidacy Quiz
             </h1>
             <p className="mt-5 text-lg leading-8 text-muted">
               Answer a few practical questions to estimate whether dental implants may be worth discussing with a dentist, what could affect timing, and which cost factors to ask about before treatment.
@@ -87,16 +87,16 @@ export default function DentalImplantCandicacyQuizPage() {
             <h2 className="font-display text-2xl text-brand-deep">Useful next steps</h2>
             <div className="mt-4 grid gap-3 text-sm font-semibold text-brand-deep">
               <Link className="rounded-md border border-border-soft px-4 py-3 hover:bg-sage/10" href="/services">
-                Review implementation services
+                Review dental implant services
               </Link>
               <Link className="rounded-md border border-border-soft px-4 py-3 hover:bg-sage/10" href="/tools">
                 Explore tools and calculators
               </Link>
-              <Link className="rounded-md border border-border-soft px-4 py-3 hover:bg-sage/10" href="/ai-readiness">
-                Take the AI readiness assessment
+              <Link className="rounded-md border border-border-soft px-4 py-3 hover:bg-sage/10" href="/tools">
+                Review related dental tools
               </Link>
               <Link className="rounded-md bg-terracotta px-4 py-3 text-white hover:bg-terracotta/90" href="/contact">
-                Talk with Blue Orchid Society
+                Contact Sonria Dentista
               </Link>
             </div>
           </div>

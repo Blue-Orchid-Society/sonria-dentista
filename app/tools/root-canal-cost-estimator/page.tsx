@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Root Canal Cost Estimator Tool for SMB Teams | Blue Orchid Society",
+  title: "Root Canal Cost Estimator | Sonria Dentista",
   description:
-    "Use this practical root canal cost estimator resource to assess your next move, prioritize improvements, and identify where AI can create leverage.",
+    "Use this practical root canal cost estimator resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/root-canal-cost-estimator",
   },
@@ -114,7 +114,7 @@ export default async function RootCanalCostEstimatorPage({
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Root Canal Cost Estimator Tool for SMB Teams",
+    name: "Root Canal Cost Estimator",
     description:
       "Use this practical root canal cost estimator resource to estimate treatment costs, compare dental insurance for root canal scenarios, and plan next steps.",
     url: "https://sonriadentista.com/tools/root-canal-cost-estimator",
@@ -157,13 +157,13 @@ export default async function RootCanalCostEstimatorPage({
                 href="/contact"
                 className="rounded-full bg-[#15352b] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#244d41]"
               >
-                Talk with Blue Orchid Society
+                Contact Sonria Dentista
               </Link>
               <Link
                 href="/tools"
                 className="rounded-full border border-[#c9b9a6] px-5 py-3 text-sm font-semibold text-[#15352b] transition hover:bg-white"
               >
-                View AI tools
+                View dental tools
               </Link>
             </div>
           </div>
@@ -315,21 +315,20 @@ export default async function RootCanalCostEstimatorPage({
           <section className="rounded-lg border border-[#d4c0ad] bg-[#fff8ef] p-6">
             <h2 className="text-2xl font-semibold text-[#15352b]">Next steps</h2>
             <p className="mt-4 leading-7 text-[#4b5b52]">
-              Blue Orchid Society helps teams turn high-intent topics like cost calculators into
-              practical acquisition systems, from AI readiness assessment through implementation.
+              Sonria Dentista helps patients understand dental cost factors, compare care options, and prepare for a confident visit.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                href="/ai-readiness"
+                href="/tools"
                 className="rounded-full border border-[#c9b9a6] px-4 py-2 text-sm font-semibold text-[#15352b] hover:bg-white"
               >
-                AI readiness assessment
+                Dental planning guide
               </Link>
               <Link
                 href="/services"
                 className="rounded-full border border-[#c9b9a6] px-4 py-2 text-sm font-semibold text-[#15352b] hover:bg-white"
               >
-                AI implementation services
+                Dental services
               </Link>
               <Link
                 href="/contact"
