@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronDown, MapPin } from "lucide-react";
+import { ChevronDown, MapPin, Menu } from "lucide-react";
 import { getSite, altLocale, type Locale } from "@/lib/content";
 
 export async function Header({ locale }: { locale: Locale }) {
@@ -88,6 +88,80 @@ export async function Header({ locale }: { locale: Locale }) {
           >
             {site.nav.book}
           </Link>
+          <details className="group/menu relative lg:hidden">
+            <summary
+              className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-full border border-border-soft bg-card text-foreground transition hover:border-terracotta hover:text-terracotta [&::-webkit-details-marker]:hidden"
+              aria-label={isEs ? "Abrir menu" : "Open menu"}
+            >
+              <Menu className="h-5 w-5" aria-hidden="true" />
+            </summary>
+            <div className="absolute right-0 top-full z-50 mt-3 w-[min(22rem,calc(100vw-2rem))] overflow-hidden rounded-xl border border-border-soft bg-background shadow-warm-lg">
+              <div className="max-h-[calc(100vh-7rem)] overflow-y-auto p-3">
+                <div className="grid gap-1 text-sm font-semibold text-foreground">
+                  <Link href={`/${locale}/services`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.services}
+                  </Link>
+                  <Link href={`/${locale}/tools`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.tools}
+                  </Link>
+                  <Link href={`/${locale}/about`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.about}
+                  </Link>
+                  <Link href={`/${locale}/new-patients`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.newPatients}
+                  </Link>
+                  <Link href={`/${locale}/insurance`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.insurance}
+                  </Link>
+                  <Link href={`/${locale}/faq`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.faq}
+                  </Link>
+                  <Link href={`/${locale}/contact`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {site.nav.contact}
+                  </Link>
+                </div>
+
+                <div className="mt-3 border-t border-border-soft pt-3">
+                  <p className="px-3 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-terracotta">
+                    {isEs ? "Consultorios" : "Locations"}
+                  </p>
+                  <div className="mt-2 grid gap-1">
+                    {site.locations.list.map((location) => (
+                      <Link
+                        key={location.slug}
+                        href={`/${locale}/locations/${location.slug}`}
+                        className="flex items-start gap-3 rounded-lg px-3 py-3 transition hover:bg-card"
+                      >
+                        <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-sage-soft text-sage-deep">
+                          <MapPin className="h-4 w-4" aria-hidden="true" />
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block font-semibold text-foreground">{location.city}</span>
+                          <span className="mt-0.5 block text-xs leading-snug text-muted">{location.phone}</span>
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-3 flex items-center rounded-full border border-border-soft bg-card text-xs sm:hidden">
+                  <Link
+                    href={`/${locale}`}
+                    aria-current="page"
+                    className="flex-1 rounded-full bg-foreground px-3 py-2 text-center font-semibold text-background"
+                  >
+                    {locale.toUpperCase()}
+                  </Link>
+                  <Link
+                    href={`/${other}`}
+                    className="flex-1 px-3 py-2 text-center font-semibold text-muted transition hover:text-foreground"
+                  >
+                    {other.toUpperCase()}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </details>
         </div>
       </div>
     </header>
