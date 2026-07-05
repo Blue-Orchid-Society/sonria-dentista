@@ -62,95 +62,111 @@ export function HeroLeadForm({
   return (
     <form
       onSubmit={handleSubmit}
-      className="mt-8 max-w-3xl rounded-[1.25rem] border border-white/20 bg-white/95 p-3 shadow-warm-lg backdrop-blur"
+      className="mt-8 max-w-3xl rounded-2xl border border-border-soft/60 bg-card/95 p-4 sm:p-5 shadow-warm-lg backdrop-blur-md"
     >
-      <div className="grid gap-2 md:grid-cols-[1fr_1fr_1fr_auto]">
-        <label className="sr-only" htmlFor="hero-name">
-          {isEs ? "Nombre" : "Name"}
-        </label>
-        <input
-          id="hero-name"
-          name="name"
-          required
-          autoComplete="name"
-          placeholder={isEs ? "Nombre" : "Name"}
-          className="min-h-12 rounded-2xl border border-transparent bg-background px-4 text-sm text-foreground outline-none transition focus:border-terracotta"
-        />
+      <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Name */}
+        <div>
+          <label className="sr-only" htmlFor="hero-name">
+            {isEs ? "Nombre" : "Name"}
+          </label>
+          <input
+            id="hero-name"
+            name="name"
+            required
+            autoComplete="name"
+            placeholder={isEs ? "Nombre" : "Name"}
+            className="w-full min-h-12 rounded-xl border border-border-soft bg-background px-4 text-sm text-foreground placeholder:text-muted-2 outline-none transition duration-200 focus:border-terracotta focus:ring-2 focus:ring-terracotta-soft/50"
+          />
+        </div>
 
-        <label className="sr-only" htmlFor="hero-phone">
-          {isEs ? "Telefono" : "Phone"}
-        </label>
-        <input
-          id="hero-phone"
-          name="phone"
-          required
-          autoComplete="tel"
-          placeholder={isEs ? "Telefono" : "Phone"}
-          className="min-h-12 rounded-2xl border border-transparent bg-background px-4 text-sm text-foreground outline-none transition focus:border-terracotta"
-        />
+        {/* Phone */}
+        <div>
+          <label className="sr-only" htmlFor="hero-phone">
+            {isEs ? "Telefono" : "Phone"}
+          </label>
+          <input
+            id="hero-phone"
+            name="phone"
+            required
+            autoComplete="tel"
+            placeholder={isEs ? "Telefono" : "Phone"}
+            className="w-full min-h-12 rounded-xl border border-border-soft bg-background px-4 text-sm text-foreground placeholder:text-muted-2 outline-none transition duration-200 focus:border-terracotta focus:ring-2 focus:ring-terracotta-soft/50"
+          />
+        </div>
 
-        <label className="sr-only" htmlFor="hero-email">
-          {isEs ? "Correo" : "Email"}
-        </label>
-        <input
-          id="hero-email"
-          name="email"
-          type="email"
-          required
-          autoComplete="email"
-          placeholder={isEs ? "Correo" : "Email"}
-          className="min-h-12 rounded-2xl border border-transparent bg-background px-4 text-sm text-foreground outline-none transition focus:border-terracotta"
-        />
+        {/* Email */}
+        <div>
+          <label className="sr-only" htmlFor="hero-email">
+            {isEs ? "Correo" : "Email"}
+          </label>
+          <input
+            id="hero-email"
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
+            placeholder={isEs ? "Correo" : "Email"}
+            className="w-full min-h-12 rounded-xl border border-border-soft bg-background px-4 text-sm text-foreground placeholder:text-muted-2 outline-none transition duration-200 focus:border-terracotta focus:ring-2 focus:ring-terracotta-soft/50"
+          />
+        </div>
 
-        <button
-          type="submit"
-          disabled={status === "sending"}
-          className="min-h-12 rounded-2xl bg-foreground px-5 text-sm font-semibold text-background transition hover:bg-terracotta disabled:cursor-not-allowed disabled:opacity-60"
-        >
-          {status === "sending" ? (isEs ? "Enviando" : "Sending") : isEs ? "Reservar" : "Request"}
-        </button>
-      </div>
-
-      <div className="mt-2 grid gap-2 md:grid-cols-3">
-        <label className="sr-only" htmlFor="hero-location">
-          {isEs ? "Ubicacion" : "Location"}
-        </label>
-        <select
-          id="hero-location"
-          name="location"
-          required
-          defaultValue=""
-          className="min-h-11 rounded-2xl border border-border-soft bg-card px-4 text-sm text-foreground outline-none transition focus:border-terracotta"
-        >
-          <option value="" disabled>
+        {/* Location */}
+        <div>
+          <label className="sr-only" htmlFor="hero-location">
             {isEs ? "Ubicacion" : "Location"}
-          </option>
-          {locations.map((location) => (
-            <option key={location.slug} value={location.slug}>
-              {location.city}
+          </label>
+          <select
+            id="hero-location"
+            name="location"
+            required
+            defaultValue=""
+            className="w-full min-h-12 rounded-xl border border-border-soft bg-background px-4 text-sm text-foreground outline-none transition duration-200 focus:border-terracotta focus:ring-2 focus:ring-terracotta-soft/50 cursor-pointer"
+          >
+            <option value="" disabled>
+              {isEs ? "Ubicacion" : "Location"}
             </option>
-          ))}
-        </select>
+            {locations.map((location) => (
+              <option key={location.slug} value={location.slug}>
+                {location.city}
+              </option>
+            ))}
+          </select>
+        </div>
 
-        <label className="sr-only" htmlFor="hero-service">
-          {isEs ? "Servicio" : "Service"}
-        </label>
-        <select
-          id="hero-service"
-          name="service"
-          required
-          defaultValue=""
-          className="min-h-11 rounded-2xl border border-border-soft bg-card px-4 text-sm text-foreground outline-none transition focus:border-terracotta md:col-span-2"
-        >
-          <option value="" disabled>
-            {isEs ? "Servicio necesario" : "Service needed"}
-          </option>
-          {services.map((service) => (
-            <option key={service.slug} value={service.slug}>
-              {service.name}
+        {/* Service */}
+        <div>
+          <label className="sr-only" htmlFor="hero-service">
+            {isEs ? "Servicio" : "Service"}
+          </label>
+          <select
+            id="hero-service"
+            name="service"
+            required
+            defaultValue=""
+            className="w-full min-h-12 rounded-xl border border-border-soft bg-background px-4 text-sm text-foreground outline-none transition duration-200 focus:border-terracotta focus:ring-2 focus:ring-terracotta-soft/50 cursor-pointer"
+          >
+            <option value="" disabled>
+              {isEs ? "Servicio necesario" : "Service needed"}
             </option>
-          ))}
-        </select>
+            {services.map((service) => (
+              <option key={service.slug} value={service.slug}>
+                {service.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Submit Button */}
+        <div>
+          <button
+            type="submit"
+            disabled={status === "sending"}
+            className="w-full min-h-12 px-5 rounded-xl bg-terracotta hover:bg-terracotta-deep text-sm font-semibold text-white shadow-warm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 active:scale-[0.98] cursor-pointer"
+          >
+            {status === "sending" ? (isEs ? "Enviando" : "Sending") : isEs ? "Reservar" : "Request"}
+          </button>
+        </div>
       </div>
 
       <label className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden">
@@ -158,13 +174,13 @@ export function HeroLeadForm({
         <input type="text" name="website" tabIndex={-1} autoComplete="off" />
       </label>
 
-      <label className="mt-3 flex gap-2 px-1 text-xs leading-relaxed text-muted">
+      <label className="mt-4 flex gap-2 px-1 text-xs leading-relaxed text-muted cursor-pointer">
         <input
           type="checkbox"
           name="consent"
           value="yes"
           required
-          className="mt-0.5 h-3.5 w-3.5 rounded border-border-soft accent-terracotta"
+          className="mt-0.5 h-3.5 w-3.5 rounded border-border-soft accent-terracotta cursor-pointer"
         />
         <span>
           {isEs

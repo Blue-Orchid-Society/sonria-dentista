@@ -1,28 +1,21 @@
-import { BadgeDollarSign, Languages, ShieldCheck, Sparkles } from "lucide-react";
-
-const ICONS = [ShieldCheck, Sparkles, BadgeDollarSign, Languages];
 const CARD_STYLES = [
   {
-    card: "bg-foreground text-background",
-    icon: "bg-white/12 text-gold",
+    card: "bg-foreground text-background hover:scale-[1.01] transition-transform duration-200",
     title: "text-white",
     body: "text-background/74",
   },
   {
-    card: "bg-sage-deep text-white",
-    icon: "bg-white/15 text-white",
+    card: "bg-sage-deep text-white hover:scale-[1.01] transition-transform duration-200",
     title: "text-white",
     body: "text-white/78",
   },
   {
-    card: "bg-terracotta text-white",
-    icon: "bg-white/16 text-white",
+    card: "bg-terracotta text-white hover:scale-[1.01] transition-transform duration-200",
     title: "text-white",
     body: "text-white/78",
   },
   {
-    card: "bg-gold text-foreground",
-    icon: "bg-foreground/10 text-foreground",
+    card: "bg-gold text-foreground hover:scale-[1.01] transition-transform duration-200",
     title: "text-foreground",
     body: "text-foreground/74",
   },
@@ -58,17 +51,13 @@ export function TrueDentalHome({ eyebrow, heading, intro, values }: Props) {
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {values.map((value, index) => {
-            const Icon = ICONS[index % ICONS.length];
             const style = CARD_STYLES[index % CARD_STYLES.length];
             return (
               <article
                 key={value.title}
                 className={`rounded-xl p-6 shadow-warm-lg ${style.card}`}
               >
-                <div className={`grid h-12 w-12 place-items-center rounded-full ${style.icon}`}>
-                  <Icon className="h-5 w-5" aria-hidden="true" />
-                </div>
-                <h3 className={`mt-5 font-display text-2xl ${style.title}`}>{value.title}</h3>
+                <h3 className={`font-display text-2xl ${style.title}`}>{value.title}</h3>
                 <p className={`mt-3 text-sm leading-relaxed ${style.body}`}>{value.body}</p>
               </article>
             );

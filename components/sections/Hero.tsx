@@ -1,9 +1,6 @@
 import type { Locale } from "@/lib/content";
-import { HeroLeadForm } from "@/components/sections/HeroLeadForm";
 
 type TrustSignal = { label: string; value: string };
-type LocationOption = { slug: string; city: string };
-type ServiceOption = { slug: string; name: string };
 
 type Props = {
   locale: Locale;
@@ -17,8 +14,6 @@ type Props = {
   videoUrl?: string;
   trustSignals: TrustSignal[];
   bilingualNote: string;
-  locations: LocationOption[];
-  services: ServiceOption[];
 };
 
 export function Hero({
@@ -33,16 +28,8 @@ export function Hero({
   videoUrl,
   trustSignals,
   bilingualNote,
-  locations,
-  services,
 }: Props) {
   const phoneHref = `tel:${phone.replace(/[^0-9+]/g, "")}`;
-  const statStyles = [
-    "bg-foreground text-background",
-    "bg-terracotta text-white",
-    "bg-sage-deep text-white",
-    "bg-gold text-foreground",
-  ];
 
   return (
     <section className="relative overflow-hidden bg-foreground text-background">
@@ -99,23 +86,17 @@ export function Hero({
             </a>
           </div>
 
-          <div id="hero-appointment">
-            <HeroLeadForm locale={locale} locations={locations} services={services} />
+          {/* Trust signals stats displayed under buttons */}
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 max-w-2xl">
+            {trustSignals.map((t) => (
+              <div key={t.label} className="border-l border-white/20 pl-4 py-1">
+                <div className="font-display text-3xl font-bold text-white md:text-4xl">{t.value}</div>
+                <div className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-background/80">
+                  {t.label}
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-      </div>
-
-      <div className="relative border-y border-white/10 bg-background text-foreground">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 py-4 md:grid-cols-4">
-          {trustSignals.map((t, index) => (
-            <div
-              key={t.label}
-              className={`rounded-xl px-5 py-5 shadow-warm ${statStyles[index % statStyles.length]}`}
-            >
-              <div className="font-display text-3xl md:text-4xl">{t.value}</div>
-              <div className="mt-1 text-xs font-semibold uppercase tracking-wider opacity-78">{t.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 

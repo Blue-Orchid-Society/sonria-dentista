@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { TrueDentalHome } from "@/components/sections/TrueDentalHome";
+import { HeroLeadForm } from "@/components/sections/HeroLeadForm";
 import { MissingTeethFeature } from "@/components/sections/MissingTeethFeature";
 import { SmileGallery } from "@/components/sections/SmileGallery";
 import { AffordabilityFeature } from "@/components/sections/AffordabilityFeature";
@@ -151,8 +152,6 @@ export default async function HomePage({
         videoUrl={site.hero.videoUrl}
         trustSignals={site.hero.trustSignals}
         bilingualNote={site.contactCTA.bilingualNote}
-        locations={site.locations.list.map((l) => ({ slug: l.slug, city: l.city }))}
-        services={overviewServices.map((s) => ({ slug: s.slug, name: s.name }))}
       />
       <TrueDentalHome
         eyebrow={homeCopy.trueHome.eyebrow}
@@ -160,6 +159,27 @@ export default async function HomePage({
         intro={homeCopy.trueHome.intro}
         values={site.about.values}
       />
+      <section id="hero-appointment" className="relative border-t border-border-soft bg-background py-16 text-foreground">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="max-w-3xl mx-auto text-center mb-8">
+            <h2 className="font-display text-3xl leading-tight text-foreground md:text-4xl">
+              {isEs ? "Reserva tu consulta hoy mismo" : "Book your consultation today"}
+            </h2>
+            <p className="mt-2 text-sm text-muted">
+              {isEs
+                ? "Completa el formulario a continuación y nos pondremos en contacto contigo en breve."
+                : "Fill out the form below and we'll be in touch shortly."}
+            </p>
+          </div>
+          <div className="mx-auto max-w-3xl">
+            <HeroLeadForm
+              locale={locale as "en" | "es"}
+              locations={site.locations.list.map((l) => ({ slug: l.slug, city: l.city }))}
+              services={overviewServices.map((s) => ({ slug: s.slug, name: s.name }))}
+            />
+          </div>
+        </div>
+      </section>
       <MissingTeethFeature
         locale={locale}
         eyebrow={homeCopy.missingTeeth.eyebrow}
