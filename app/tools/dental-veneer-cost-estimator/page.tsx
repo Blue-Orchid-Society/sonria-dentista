@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ToolAutoSubmitForm } from "@/components/ToolAutoSubmitForm";
 
 export const metadata: Metadata = {
   title: "Dental Veneer Cost Estimator | Sonria Dentista Arlington",
@@ -291,7 +292,7 @@ export default function DentalVeneerCostEstimatorPage({
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-[0.95fr_1.05fr] md:px-8">
-        <form className="rounded-lg border border-[#e8ded2] bg-white p-5 shadow-sm" action="/tools/dental-veneer-cost-estimator">
+        <ToolAutoSubmitForm className="rounded-lg border border-[#e8ded2] bg-white p-5 shadow-sm" action="/tools/dental-veneer-cost-estimator">
           <div className="grid gap-5">
             <fieldset>
               <legend className="text-sm font-semibold text-[#172026]">Veneer type</legend>
@@ -354,7 +355,7 @@ export default function DentalVeneerCostEstimatorPage({
               Update estimate
             </button>
           </div>
-        </form>
+        </ToolAutoSubmitForm>
 
         <div className="grid gap-5">
           <section className="rounded-lg border border-[#e8ded2] bg-white p-6 shadow-sm">

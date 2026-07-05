@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ToolAutoSubmitForm } from "@/components/ToolAutoSubmitForm";
 
 export const metadata: Metadata = {
   title: "Invisalign Readiness Quiz | Sonria Dentista",
@@ -99,7 +100,7 @@ export default function InvisalignReadinessQuizPage() {
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 py-14 lg:grid-cols-[1.35fr_0.85fr]">
-        <form id="readiness-quiz" className="rounded-2xl border border-border-soft bg-white p-6 shadow-warm md:p-8">
+        <ToolAutoSubmitForm id="readiness-quiz" className="rounded-2xl border border-border-soft bg-white p-6 shadow-warm md:p-8">
           <div className="flex flex-col gap-2 border-b border-border-soft pb-6">
             <h2 className="font-display text-3xl text-brand-deep">Quiz calculator</h2>
             <p className="text-muted">
@@ -151,7 +152,7 @@ export default function InvisalignReadinessQuizPage() {
               Reset
             </button>
           </div>
-        </form>
+        </ToolAutoSubmitForm>
 
         <aside className="rounded-2xl border border-border-soft bg-card p-6 md:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-terracotta">

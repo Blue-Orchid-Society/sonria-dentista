@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ToolAutoSubmitForm } from "@/components/ToolAutoSubmitForm";
 
 export const metadata: Metadata = {
   title: "Root Canal Recovery Timeline Estimator | Sonria Dentista Arlington",
@@ -215,7 +216,7 @@ export default async function RootCanalRecoveryTimelineEstimatorPage({
 
       <section className="py-12 md:py-16">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 lg:grid-cols-[1fr_0.9fr]">
-          <form className="rounded-3xl border border-charcoal/10 bg-white p-6 shadow-warm md:p-8">
+        <ToolAutoSubmitForm className="rounded-3xl border border-charcoal/10 bg-white p-6 shadow-warm md:p-8">
             <h2 className="font-display text-3xl font-semibold">Estimate your recovery window</h2>
             <p className="mt-3 text-sm leading-6 text-charcoal/70">
               Choose the closest match. This educational estimate does not replace your dentist&apos;s diagnosis or aftercare instructions.
@@ -278,7 +279,7 @@ export default async function RootCanalRecoveryTimelineEstimatorPage({
                 Update timeline
               </button>
             </div>
-          </form>
+        </ToolAutoSubmitForm>
 
           <aside className="rounded-3xl border border-charcoal/10 bg-white p-6 shadow-warm md:p-8">
             <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Your estimated timeline</p>
