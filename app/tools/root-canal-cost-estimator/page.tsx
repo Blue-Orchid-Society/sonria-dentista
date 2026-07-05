@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ToolAutoSubmitForm } from "@/components/ToolAutoSubmitForm";
 
 export const metadata: Metadata = {
   title: "Root Canal Cost Estimator | Sonria Dentista",
@@ -185,7 +186,7 @@ export default async function RootCanalCostEstimatorPage({
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-[0.95fr_1.05fr]">
-        <form className="rounded-lg border border-[#e1d8cc] bg-white p-6 shadow-sm">
+        <ToolAutoSubmitForm className="rounded-lg border border-[#e1d8cc] bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold text-[#15352b]">Build your estimate</h2>
 
           <fieldset className="mt-6">
@@ -270,7 +271,7 @@ export default async function RootCanalCostEstimatorPage({
           >
             Update estimate
           </button>
-        </form>
+        </ToolAutoSubmitForm>
 
         <div className="space-y-6">
           <section className="rounded-lg border border-[#e1d8cc] bg-white p-6 shadow-sm">

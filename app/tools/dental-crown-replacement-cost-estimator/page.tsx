@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ToolAutoSubmitForm } from "@/components/ToolAutoSubmitForm";
 
 export const metadata: Metadata = {
   title: "Dental Crown Replacement Cost Estimator | Sonria Dentista Arlington",
@@ -262,7 +263,7 @@ export default async function DentalCrownReplacementCostEstimatorPage({
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-[1fr_0.78fr]">
-        <form className="rounded-2xl border border-ink/10 bg-white p-6 shadow-warm" action="" method="get">
+        <ToolAutoSubmitForm className="rounded-2xl border border-ink/10 bg-white p-6 shadow-warm" action="" method="get">
           <div className="grid gap-5 md:grid-cols-2">
             <label className="block">
               <span className="text-sm font-semibold">Crown replacement type</span>
@@ -319,7 +320,7 @@ export default async function DentalCrownReplacementCostEstimatorPage({
           <button type="submit" className="mt-7 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-ink/90">
             Update estimate
           </button>
-        </form>
+        </ToolAutoSubmitForm>
 
         <aside className="space-y-5">
           <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-warm">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ToolAutoSubmitForm } from '@/components/ToolAutoSubmitForm';
 
 export const metadata: Metadata = {
   title: 'Wisdom Tooth Removal Cost Estimator | Sonria Dentista Arlington',
@@ -127,7 +128,7 @@ export default async function WisdomToothRemovalCostEstimator({ searchParams }: 
         </div>
       </section>
       <section className='mx-auto max-w-6xl px-5 py-10 md:px-8'>
-        <form className='grid gap-6 rounded-lg border border-[#e4d8ca] bg-white p-5 shadow-sm md:grid-cols-2 md:p-6'>
+        <ToolAutoSubmitForm className='grid gap-6 rounded-lg border border-[#e4d8ca] bg-white p-5 shadow-sm md:grid-cols-2 md:p-6'>
           <label className='grid gap-2'><span className='text-sm font-semibold'>How many wisdom teeth?</span><select name='teeth' defaultValue={toothCount} className='rounded-md border border-[#d6c8ba] bg-white px-3 py-3'>{Object.entries(toothCounts).map(([value, option]) => <option key={value} value={value}>{option.label}</option>)}</select></label>
           <label className='grid gap-2'><span className='text-sm font-semibold'>Most likely tooth position</span><select name='impaction' defaultValue={impaction} className='rounded-md border border-[#d6c8ba] bg-white px-3 py-3'>{Object.entries(impactions).map(([value, option]) => <option key={value} value={value}>{option.label}</option>)}</select></label>
           <label className='grid gap-2'><span className='text-sm font-semibold'>Sedation preference</span><select name='sedation' defaultValue={sedation} className='rounded-md border border-[#d6c8ba] bg-white px-3 py-3'>{Object.entries(sedations).map(([value, option]) => <option key={value} value={value}>{option.label}</option>)}</select></label>
@@ -137,7 +138,7 @@ export default async function WisdomToothRemovalCostEstimator({ searchParams }: 
             <div className='mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4'>{Object.entries(addOns).map(([value, option]) => <label key={value} className='flex gap-3 rounded-md border border-[#e4d8ca] bg-[#fbfaf8] p-3 text-sm'><input type='checkbox' name='addons' value={value} defaultChecked={selectedAddOns.includes(value as AddOn)} className='mt-1' /><span><span className='block font-medium'>{option.label}</span><span className='block text-[#6b7280]'>{formatCurrency(option.low)} - {formatCurrency(option.high)}</span></span></label>)}</div>
           </fieldset>
           <div className='md:col-span-2'><button className='rounded-md bg-[#172026] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#2f3b44]'>Update estimate</button></div>
-        </form>
+        </ToolAutoSubmitForm>
       </section>
       <section className='mx-auto grid max-w-6xl gap-6 px-5 pb-12 md:grid-cols-3 md:px-8'>{[{ title: 'Tooth position', body: complexity.note }, { title: 'Sedation planning', body: sedationChoice.note }, { title: 'Insurance reality', body: insuranceChoice.note }].map((item) => <article key={item.title} className='rounded-lg border border-[#e4d8ca] bg-white p-5 shadow-sm'><h2 className='text-lg font-bold text-[#172026]'>{item.title}</h2><p className='mt-3 text-sm leading-6 text-[#4b5563]'>{item.body}</p></article>)}</section>
       <section className='bg-white'><div className='mx-auto max-w-6xl px-5 py-12 md:px-8'><h2 className='text-2xl font-bold text-[#172026]'>What affects wisdom teeth removal cost?</h2><div className='mt-6 grid gap-5 md:grid-cols-2'>{['Simple extractions usually cost less than impacted wisdom teeth because they are easier to access.', 'Removing all four wisdom teeth costs more than removing one, but the per-tooth cost may be lower when treatment is planned together.', 'Nitrous, oral sedation, or an IV sedation referral can add cost for anxious patients or complex surgery.', 'X-rays and 3D imaging help evaluate roots, nerves, sinuses, infection, and referral needs.'].map((body, index) => <div key={body} className='rounded-lg border border-[#e4d8ca] p-5'><h3 className='font-semibold'>{['Simple vs impacted', 'Number of teeth', 'Sedation needs', 'Imaging and follow-up'][index]}</h3><p className='mt-2 text-sm leading-6 text-[#4b5563]'>{body}</p></div>)}</div></div></section>
