@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import siteEn from "@/data/site.en.json";
+import { getToolSlugs } from "@/lib/tools";
 
 const BASE = "https://sonriadentista.com";
 
@@ -7,17 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ["en", "es"] as const;
   const services = siteEn.services.list.map((s) => s.slug);
   const locations = siteEn.locations.list.map((l) => l.slug);
-  const tools = [
-    "dental-veneer-cost-estimator",
-    "dental-implant-candicacy-quiz",
-    "invisalign-readiness-quiz",
-    "emergency-dental-cost-estimator",
-    "root-canal-cost-estimator",
-    "root-canal-recovery-timeline-estimator",
-    "same-day-dental-crown-cost-estimator",
-    "dental-crown-replacement-cost-estimator",
-    "wisdom-tooth-removal-cost-estimator",
-  ];
+  const tools = getToolSlugs();
   const staticPages = ["services", "tools", "about", "new-patients", "insurance", "faq", "contact"];
 
   const entries: MetadataRoute.Sitemap = [];

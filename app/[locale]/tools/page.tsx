@@ -3,63 +3,9 @@ import Link from "next/link";
 import { ArrowRight, Calculator, CheckCircle2, Clock, ShieldCheck } from "lucide-react";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { getSite, type Locale } from "@/lib/content";
+import { getAllTools } from "@/lib/tools";
 
-const tools = [
-  {
-    href: "/tools/dental-veneer-cost-estimator",
-    title: "Dental veneer cost estimator",
-    description: "Compare common veneer cost factors before scheduling a cosmetic consultation.",
-    category: "Cosmetic dentistry",
-  },
-  {
-    href: "/tools/dental-implant-candicacy-quiz",
-    title: "Dental implant candidacy quiz",
-    description: "See which questions matter when deciding whether implants may be worth discussing.",
-    category: "Missing teeth",
-  },
-  {
-    href: "/tools/invisalign-readiness-quiz",
-    title: "Invisalign readiness quiz",
-    description: "Review smile alignment goals, timing, and care habits before an orthodontic visit.",
-    category: "Clear braces",
-  },
-  {
-    href: "/tools/emergency-dental-cost-estimator",
-    title: "Emergency dental cost estimator",
-    description: "Understand urgent care cost drivers for pain, swelling, broken teeth, or extractions.",
-    category: "Emergency care",
-  },
-  {
-    href: "/tools/root-canal-cost-estimator",
-    title: "Root canal cost estimator",
-    description: "Preview the treatment and restoration factors that can affect root canal pricing.",
-    category: "Restorative dentistry",
-  },
-  {
-    href: "/tools/root-canal-recovery-timeline-estimator",
-    title: "Root canal recovery timeline",
-    description: "Set expectations for soreness, eating, follow-up care, and when to call the office.",
-    category: "Restorative dentistry",
-  },
-  {
-    href: "/tools/same-day-dental-crown-cost-estimator",
-    title: "Same-day crown cost estimator",
-    description: "Compare crown material, appointment, and insurance factors before treatment planning.",
-    category: "Dental crowns",
-  },
-  {
-    href: "/tools/dental-crown-replacement-cost-estimator",
-    title: "Dental crown replacement cost estimator",
-    description: "Understand what changes replacement crown pricing and when evaluation is needed.",
-    category: "Dental crowns",
-  },
-  {
-    href: "/tools/wisdom-tooth-removal-cost-estimator",
-    title: "Wisdom tooth removal cost estimator",
-    description: "Review extraction complexity, sedation, and recovery factors before a consultation.",
-    category: "Extractions",
-  },
-];
+const pageSize = 9;
 
 const cardStyles = [
   "bg-foreground text-background",
@@ -67,6 +13,10 @@ const cardStyles = [
   "bg-terracotta text-white",
   "bg-gold text-foreground",
 ];
+
+function pageHref(locale: string, page: number) {
+  return page <= 1 ? `/${locale}/tools` : `/${locale}/tools?page=${page}`;
+}
 
 export async function generateMetadata({
   params,
@@ -93,12 +43,22 @@ export async function generateMetadata({
 
 export default async function ToolsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams?: Promise<{ page?: string }>;
 }) {
   const { locale } = await params;
+  const query = searchParams ? await searchParams : {};
   const site = await getSite(locale as Locale);
   const isEs = locale === "es";
+  const tools = getAllTools();
+  const pageCount = Math.max(1, Math.ceil(tools.length / pageSize));
+  const currentPage = Math.min(
+    pageCount,
+    Math.max(1, Number.parseInt(typeof query.page === "string" ? query.page : "1", 10) || 1)
+  );
+  const visibleTools = tools.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   return (
     <>
@@ -224,7 +184,7 @@ export default async function ToolsPage({
             </p>
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {tools.map((tool, index) => {
+            {visibleTools.map((tool, index) => {
               const isDark = index % 4 !== 3;
               return (
                 <Link
@@ -253,6 +213,50 @@ export default async function ToolsPage({
               );
             })}
           </div>
+          {pageCount > 1 ? (
+            <nav
+              className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6"
+              aria-label={isEs ? "Paginacion de herramientas" : "Tools pagination"}
+            >
+              <p className="text-sm font-semibold text-muted">
+                {isEs
+                  ? `Pagina ${currentPage} de ${pageCount}`
+                  : `Page ${currentPage} of ${pageCount}`}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {currentPage > 1 ? (
+                  <Link
+                    href={pageHref(locale, currentPage - 1)}
+                    className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
+                  >
+                    {isEs ? "Anterior" : "Previous"}
+                  </Link>
+                ) : null}
+                {Array.from({ length: pageCount }, (_, index) => index + 1).map((page) => (
+                  <Link
+                    key={page}
+                    href={pageHref(locale, page)}
+                    aria-current={page === currentPage ? "page" : undefined}
+                    className={`grid h-10 w-10 place-items-center rounded-full text-sm font-semibold transition ${
+                      page === currentPage
+                        ? "bg-terracotta text-white"
+                        : "border border-border bg-card text-foreground hover:border-terracotta hover:text-terracotta"
+                    }`}
+                  >
+                    {page}
+                  </Link>
+                ))}
+                {currentPage < pageCount ? (
+                  <Link
+                    href={pageHref(locale, currentPage + 1)}
+                    className="rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
+                  >
+                    {isEs ? "Siguiente" : "Next"}
+                  </Link>
+                ) : null}
+              </div>
+            </nav>
+          ) : null}
         </div>
       </section>
 
