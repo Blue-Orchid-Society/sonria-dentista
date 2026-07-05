@@ -43,6 +43,7 @@ next-env.d.ts
 # Local context (agent-only, not for git)
 .context/screenshots/
 .env.local
+.codebase-memory
 
 
 
