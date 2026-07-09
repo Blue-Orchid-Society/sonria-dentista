@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import siteEn from "@/data/site.en.json";
+import { getAllArticles } from "@/lib/articles";
 import { getToolSlugs } from "@/lib/tools";
 
 const BASE = "https://sonriadentista.com";
@@ -9,7 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const services = siteEn.services.list.map((s) => s.slug);
   const locations = siteEn.locations.list.map((l) => l.slug);
   const tools = getToolSlugs();
-  const staticPages = ["services", "tools", "about", "new-patients", "insurance", "faq", "contact"];
+  const articles = getAllArticles();
+  const staticPages = ["services", "tools", "articles", "about", "new-patients", "insurance", "faq", "contact"];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const l of locales) {
@@ -22,6 +24,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const loc of locations) {
       entries.push({ url: `${BASE}/${l}/locations/${loc}`, lastModified: new Date(), priority: 0.8 });
+    }
+    for (const article of articles.filter((item) => item.locale === l)) {
+      entries.push({ url: `${BASE}/${l}/articles/${article.slug}`, lastModified: new Date(article.updatedAt), priority: 0.7 });
     }
   }
   for (const tool of tools) {
