@@ -50,6 +50,72 @@ type JsonArticle = {
   body?: string | JsonArticleBlock[];
 };
 
+type ArticleImage = {
+  url: string;
+  alt: string;
+};
+
+const genericDentalImageIds = [
+  "photo-1606811841689-23dfddce3e95",
+  "photo-1606811971618-4486d14f3f99",
+];
+
+const articleImageRules: Array<{
+  pattern: RegExp;
+  image: ArticleImage;
+}> = [
+  {
+    pattern: /\b(recovery|timeline|healing|aftercare|post[-\s]?op)\b/i,
+    image: {
+      url: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
+      alt: "Modern dental treatment room prepared for a patient visit",
+    },
+  },
+  {
+    pattern: /\b(cost|price|pricing|budget|compare|estimate)\b/i,
+    image: {
+      url: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1800&q=80",
+      alt: "Dental team reviewing treatment options with a patient",
+    },
+  },
+  {
+    pattern: /\b(implant|implants|missing tooth|restoration)\b/i,
+    image: {
+      url: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1800&q=80",
+      alt: "Close-up dental exam for implant treatment planning",
+    },
+  },
+  {
+    pattern: /\b(veneer|veneers|cosmetic|smile)\b/i,
+    image: {
+      url: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
+      alt: "Cosmetic dental exam for smile treatment planning",
+    },
+  },
+  {
+    pattern: /\b(root canal|emergency|pain|urgent|wisdom tooth|extraction)\b/i,
+    image: {
+      url: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1800&q=80",
+      alt: "Dental instruments prepared for restorative treatment",
+    },
+  },
+];
+
+const fallbackArticleImages: ArticleImage[] = [
+  {
+    url: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
+    alt: "Modern dental treatment room prepared for a patient visit",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1800&q=80",
+    alt: "Dental team reviewing treatment options with a patient",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1800&q=80",
+    alt: "Dental instruments prepared for restorative treatment",
+  },
+];
+
 function articlesDir() {
   return path.join(process.cwd(), "content", "articles");
 }
@@ -88,6 +154,40 @@ function titleFromSlug(slug: string) {
     .split("-")
     .map((word) => (word ? `${word[0].toUpperCase()}${word.slice(1)}` : word))
     .join(" ");
+}
+
+function hashText(value: string) {
+  return value.split("").reduce((hash, char) => {
+    return (hash * 31 + char.charCodeAt(0)) >>> 0;
+  }, 0);
+}
+
+function isGenericDentalImage(url?: string) {
+  return Boolean(url && genericDentalImageIds.some((id) => url.includes(id)));
+}
+
+function fallbackArticleImage(slug: string, title: string, category: string): ArticleImage {
+  const topic = `${slug} ${title} ${category}`;
+  const matched = articleImageRules.find((rule) => rule.pattern.test(topic));
+  if (matched) return matched.image;
+
+  return fallbackArticleImages[hashText(slug) % fallbackArticleImages.length];
+}
+
+function resolveArticleImage(input: {
+  slug: string;
+  title: string;
+  category: string;
+  heroImage?: string;
+  heroImageAlt?: string;
+}): ArticleImage {
+  const fallback = fallbackArticleImage(input.slug, input.title, input.category);
+  const shouldUseFallback = !input.heroImage || isGenericDentalImage(input.heroImage);
+
+  return {
+    url: shouldUseFallback ? fallback.url : input.heroImage ?? fallback.url,
+    alt: input.heroImageAlt || (shouldUseFallback ? fallback.alt : input.title),
+  };
 }
 
 function bodyFromJson(value: JsonArticle["body"]): string {
@@ -134,20 +234,27 @@ function markdownArticleFromFile(fileName: string): Article | null {
   const locale = frontmatter.locale === "es" ? "es" : "en";
   const slug = frontmatter.slug || fallbackSlug;
   const stats = fs.statSync(filePath);
+  const title = frontmatter.title || titleFromSlug(slug);
+  const category = frontmatter.category || "Dental guide";
+  const image = resolveArticleImage({
+    slug,
+    title,
+    category,
+    heroImage: frontmatter.heroImage,
+    heroImageAlt: frontmatter.heroImageAlt,
+  });
 
   return {
     slug,
-    title: frontmatter.title || titleFromSlug(slug),
+    title,
     description:
       frontmatter.description ||
       "Patient-friendly dental guidance from Sonria Dentista.",
-    category: frontmatter.category || "Dental guide",
+    category,
     locale,
     publishedAt: frontmatter.publishedAt || new Date(stats.mtimeMs).toISOString().slice(0, 10),
-    heroImage:
-      frontmatter.heroImage ||
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
-    heroImageAlt: frontmatter.heroImageAlt || "",
+    heroImage: image.url,
+    heroImageAlt: image.alt,
     relatedTools: normalizedRelatedTools((frontmatter.relatedTools || "")
       .split(",")
       .map((item) => item.trim())
@@ -165,22 +272,29 @@ function jsonArticleFromFile(fileName: string): Article | null {
   const slug = parsed.slug || fallbackSlug;
   const locale = parsed.locale === "es" ? "es" : "en";
   const stats = fs.statSync(filePath);
+  const title = parsed.title || titleFromSlug(slug);
+  const category = parsed.category || "Dental guide";
+  const image = resolveArticleImage({
+    slug,
+    title,
+    category,
+    heroImage: parsed.heroImage,
+    heroImageAlt: parsed.heroImageAlt,
+  });
 
   return {
     slug,
-    title: parsed.title || titleFromSlug(slug),
+    title,
     description:
       parsed.description ||
       parsed.seoDescription ||
       parsed.summary ||
       "Patient-friendly dental guidance from Sonria Dentista.",
-    category: parsed.category || "Dental guide",
+    category,
     locale,
     publishedAt: parsed.publishedAt || new Date(stats.mtimeMs).toISOString().slice(0, 10),
-    heroImage:
-      parsed.heroImage ||
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
-    heroImageAlt: parsed.heroImageAlt || "",
+    heroImage: image.url,
+    heroImageAlt: image.alt,
     relatedTools: normalizedRelatedTools(parsed.relatedTools || []),
     body: bodyFromJson(parsed.body),
     updatedAt: stats.mtimeMs,
