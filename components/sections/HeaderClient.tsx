@@ -49,10 +49,7 @@ export function HeaderClient({
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/` || pathname === "/";
 
   useEffect(() => {
-    if (!isHome) {
-      setIsScrolled(true);
-      return;
-    }
+    if (!isHome) return;
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
@@ -63,7 +60,7 @@ export function HeaderClient({
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isHome]);
 
-  const useSolid = isScrolled || !isHome;
+  const useSolid = !isHome || isScrolled;
 
   return (
     <header
@@ -133,6 +130,12 @@ export function HeaderClient({
             className={`transition ${useSolid ? "hover:text-foreground" : "hover:text-white"}`}
           >
             {site.nav.tools}
+          </Link>
+          <Link
+            href={`/${locale}/articles`}
+            className={`transition ${useSolid ? "hover:text-foreground" : "hover:text-white"}`}
+          >
+            {isEs ? "Guias" : "Articles"}
           </Link>
 
           <div className="group relative">
@@ -259,6 +262,9 @@ export function HeaderClient({
                   </Link>
                   <Link href={`/${locale}/tools`} className="rounded-lg px-3 py-3 transition hover:bg-card">
                     {site.nav.tools}
+                  </Link>
+                  <Link href={`/${locale}/articles`} className="rounded-lg px-3 py-3 transition hover:bg-card">
+                    {isEs ? "Guias" : "Articles"}
                   </Link>
                   <Link href={`/${locale}/about`} className="rounded-lg px-3 py-3 transition hover:bg-card">
                     {site.nav.about}

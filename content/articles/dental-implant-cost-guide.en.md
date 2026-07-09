@@ -1,0 +1,35 @@
+---
+slug: dental-implant-cost-guide
+title: "Dental implant cost: what patients should compare before a visit"
+description: "A practical Sonria guide to the factors that can affect dental implant cost and the questions to ask before treatment planning."
+category: "Dental implants"
+locale: "en"
+publishedAt: "2026-07-09"
+heroImage: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1800&q=80"
+heroImageAlt: "Patient smiling during a dental visit"
+relatedTools: "dental-implant-candicacy-quiz"
+---
+
+Dental implant pricing can feel confusing because the final plan depends on more than the implant itself. A dentist may need to review the missing tooth area, bone support, gum health, bite forces, and whether the final restoration is a crown, bridge, or denture-supported option.
+
+This guide is meant to help you prepare for a conversation with the Sonria team. It does not replace an exam, but it can help you understand what questions matter.
+
+## What can affect implant cost
+
+- The number of missing teeth being replaced
+- Whether bone grafting or extractions are needed first
+- The type of final restoration used over the implant
+- Imaging, planning, sedation, and follow-up visits
+- Insurance benefits or financing options
+
+## Questions to ask at your visit
+
+- Am I a candidate for an implant right now?
+- Do I need any treatment before implant placement?
+- What restoration would be used after the implant heals?
+- What is included in the estimate?
+- What payment or insurance options can the team review with me?
+
+## When to call Sonria
+
+If you have a missing tooth, loose denture, broken tooth, or a gap that affects eating or smiling, it is worth scheduling a consultation. The team can review your goals, explain options in plain language, and help you compare next steps.
