@@ -52,7 +52,8 @@ export default async function ArticlePage({
   const site = await getSite(locale as Locale);
   const isEs = locale === "es";
   const blocks = markdownBlocks(article.body);
-  const tools = getAllTools().filter((tool) => article.relatedTools.includes(tool.slug));
+  const relatedToolSet = new Set(article.relatedTools.map((item) => item.replace(/^\/tools\//, "")));
+  const tools = getAllTools().filter((tool) => relatedToolSet.has(tool.slug) || relatedToolSet.has(tool.href.replace(/^\/tools\//, "")));
 
   const articleSchema = {
     "@context": "https://schema.org",

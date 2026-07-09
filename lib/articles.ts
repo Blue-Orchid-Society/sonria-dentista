@@ -28,8 +28,34 @@ type ArticleFrontmatter = {
   relatedTools?: string;
 };
 
+type JsonArticleBlock = {
+  type?: "h1" | "h2" | "h3" | "heading" | "p" | "paragraph" | "list";
+  text?: string;
+  level?: number;
+  items?: string[];
+};
+
+type JsonArticle = {
+  slug?: string;
+  title?: string;
+  description?: string;
+  seoDescription?: string;
+  summary?: string;
+  category?: string;
+  locale?: string;
+  publishedAt?: string;
+  heroImage?: string;
+  heroImageAlt?: string;
+  relatedTools?: string[];
+  body?: string | JsonArticleBlock[];
+};
+
 function articlesDir() {
   return path.join(process.cwd(), "content", "articles");
+}
+
+function jsonArticlesDir() {
+  return path.join(process.cwd(), "data", "articles");
 }
 
 function parseFrontmatter(raw: string): { frontmatter: ArticleFrontmatter; body: string } {
@@ -64,7 +90,43 @@ function titleFromSlug(slug: string) {
     .join(" ");
 }
 
-function articleFromFile(fileName: string): Article | null {
+function bodyFromJson(value: JsonArticle["body"]): string {
+  if (typeof value === "string") return value.trim();
+  if (!Array.isArray(value)) return "";
+
+  return value
+    .map((block) => {
+      const text = typeof block.text === "string" ? block.text.trim() : "";
+      if (!text && block.type !== "list") return "";
+
+      if (block.type === "h1") return `# ${text}`;
+      if (block.type === "h2") return `## ${text}`;
+      if (block.type === "h3") return `### ${text}`;
+      if (block.type === "heading") {
+        const level = block.level === 3 ? "###" : "##";
+        return `${level} ${text}`;
+      }
+      if (block.type === "list" && Array.isArray(block.items)) {
+        return block.items
+          .map((item) => item.trim())
+          .filter(Boolean)
+          .map((item) => `- ${item}`)
+          .join("\n");
+      }
+      return text;
+    })
+    .filter(Boolean)
+    .join("\n\n");
+}
+
+function normalizedRelatedTools(values: string[]): string[] {
+  return values
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .map((item) => item.replace(/^\/tools\//, ""));
+}
+
+function markdownArticleFromFile(fileName: string): Article | null {
   const filePath = path.join(articlesDir(), fileName);
   const raw = fs.readFileSync(filePath, "utf8");
   const { frontmatter, body } = parseFrontmatter(raw);
@@ -86,23 +148,61 @@ function articleFromFile(fileName: string): Article | null {
       frontmatter.heroImage ||
       "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
     heroImageAlt: frontmatter.heroImageAlt || "",
-    relatedTools: (frontmatter.relatedTools || "")
+    relatedTools: normalizedRelatedTools((frontmatter.relatedTools || "")
       .split(",")
       .map((item) => item.trim())
-      .filter(Boolean),
+      .filter(Boolean)),
     body,
     updatedAt: stats.mtimeMs,
   };
 }
 
-export function getAllArticles(locale?: Locale): Article[] {
-  const dir = articlesDir();
-  if (!fs.existsSync(dir)) return [];
+function jsonArticleFromFile(fileName: string): Article | null {
+  const filePath = path.join(jsonArticlesDir(), fileName);
+  const raw = fs.readFileSync(filePath, "utf8");
+  const parsed = JSON.parse(raw) as JsonArticle;
+  const fallbackSlug = fileName.replace(/\.json$/i, "");
+  const slug = parsed.slug || fallbackSlug;
+  const locale = parsed.locale === "es" ? "es" : "en";
+  const stats = fs.statSync(filePath);
 
-  return fs
-    .readdirSync(dir, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
-    .map((entry) => articleFromFile(entry.name))
+  return {
+    slug,
+    title: parsed.title || titleFromSlug(slug),
+    description:
+      parsed.description ||
+      parsed.seoDescription ||
+      parsed.summary ||
+      "Patient-friendly dental guidance from Sonria Dentista.",
+    category: parsed.category || "Dental guide",
+    locale,
+    publishedAt: parsed.publishedAt || new Date(stats.mtimeMs).toISOString().slice(0, 10),
+    heroImage:
+      parsed.heroImage ||
+      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1800&q=80",
+    heroImageAlt: parsed.heroImageAlt || "",
+    relatedTools: normalizedRelatedTools(parsed.relatedTools || []),
+    body: bodyFromJson(parsed.body),
+    updatedAt: stats.mtimeMs,
+  };
+}
+
+export function getAllArticles(locale?: Locale): Article[] {
+  const markdownArticles = fs.existsSync(articlesDir())
+    ? fs
+        .readdirSync(articlesDir(), { withFileTypes: true })
+        .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
+        .map((entry) => markdownArticleFromFile(entry.name))
+    : [];
+
+  const jsonArticles = fs.existsSync(jsonArticlesDir())
+    ? fs
+        .readdirSync(jsonArticlesDir(), { withFileTypes: true })
+        .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+        .map((entry) => jsonArticleFromFile(entry.name))
+    : [];
+
+  return [...markdownArticles, ...jsonArticles]
     .filter((article): article is Article => Boolean(article))
     .filter((article) => !locale || article.locale === locale)
     .sort((a, b) => {
