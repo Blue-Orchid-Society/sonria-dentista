@@ -68,7 +68,9 @@ export default async function ArticlesPage({
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-terracotta">
-                {articles.length} {isEs ? "guias" : "guides"}
+               {articles.length} {articles.length === 1 
+  ? (isEs ? "guía" : "guide") 
+  : (isEs ? "guías" : "guides")}
               </p>
               <h2 className="mt-2 font-display text-4xl text-foreground md:text-5xl">
                 {isEs ? "Ultimos articulos" : "Latest articles"}
@@ -124,8 +126,6 @@ export default async function ArticlesPage({
         <div className="mx-auto grid max-w-6xl gap-4 px-4 md:grid-cols-3">
           {[
             isEs ? "Escrito para pacientes" : "Written for patients",
-            isEs ? "Con enlaces internos" : "Built with internal links",
-            isEs ? "Listo para SEO" : "Ready for SEO",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3 rounded-xl bg-white/45 p-5 text-foreground">
               <CheckCircle2 className="h-5 w-5 text-sage-deep" aria-hidden="true" />
