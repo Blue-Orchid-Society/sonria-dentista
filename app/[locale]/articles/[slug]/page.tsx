@@ -52,29 +52,49 @@ export default async function ArticlePage({
   const site = await getSite(locale as Locale);
   const isEs = locale === "es";
   const blocks = markdownBlocks(article.body);
+  const faqs = faqItemsFromBlocks(blocks);
   const relatedToolSet = new Set(article.relatedTools.map((item) => item.replace(/^\/tools\//, "")));
   const tools = getAllTools().filter((tool) => relatedToolSet.has(tool.slug) || relatedToolSet.has(tool.href.replace(/^\/tools\//, "")));
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
-    description: article.description,
-    image: article.heroImage,
-    datePublished: article.publishedAt,
-    author: {
-      "@type": "Organization",
-      name: "Sonria Dentista",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Sonria Dentista",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://sonriadentista.com/logo.png",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: article.title,
+        description: article.description,
+        image: article.heroImage,
+        datePublished: article.publishedAt,
+        author: {
+          "@type": "Organization",
+          name: "Sonria Dentista",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "Sonria Dentista",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://sonriadentista.com/logo.png",
+          },
+        },
+        mainEntityOfPage: `https://sonriadentista.com/${locale}/articles/${slug}`,
       },
-    },
-    mainEntityOfPage: `https://sonriadentista.com/${locale}/articles/${slug}`,
+      ...(faqs.length
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
   };
 
   return (
@@ -269,6 +289,49 @@ function markdownBlocks(markdown: string): ArticleBlock[] {
   flushParagraph();
   flushList();
   return blocks;
+}
+
+function faqItemsFromBlocks(blocks: ArticleBlock[]): Array<{ question: string; answer: string }> {
+  const faqStart = blocks.findIndex((block) =>
+    block.type === "heading" && block.level === 2 && /^(faq|faqs|frequently asked questions|preguntas frecuentes)$/i.test(block.text.trim())
+  );
+  if (faqStart === -1) return [];
+
+  const faqs: Array<{ question: string; answer: string }> = [];
+  let currentQuestion = "";
+  let currentAnswer: string[] = [];
+
+  function flushFaq() {
+    const answer = currentAnswer.join(" ").replace(/\s+/g, " ").trim();
+    if (currentQuestion && answer) {
+      faqs.push({ question: currentQuestion, answer });
+    }
+    currentQuestion = "";
+    currentAnswer = [];
+  }
+
+  for (const block of blocks.slice(faqStart + 1)) {
+    if (block.type === "heading" && block.level === 2) break;
+
+    if (block.type === "heading" && block.level === 3) {
+      flushFaq();
+      currentQuestion = block.text;
+      continue;
+    }
+
+    if (!currentQuestion) continue;
+
+    if (block.type === "paragraph") {
+      currentAnswer.push(block.text);
+    }
+
+    if (block.type === "list") {
+      currentAnswer.push(block.items.join("; "));
+    }
+  }
+
+  flushFaq();
+  return faqs;
 }
 
 function formatDate(value: string, locale: string) {
