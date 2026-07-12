@@ -1,0 +1,43 @@
+{
+  "slug": "what-is-a-dental-crown",
+  "locale": "en",
+  "title": "What Is a Dental Crown?",
+  "seoTitle": "What Is a Dental Crown? Types, Cost, and When You Need One",
+  "seoDescription": "Learn what a dental crown is, when dentists recommend one, common crown types, expected costs, procedure steps, and how to decide if you need a crown in Arlington, TX.",
+  "publishedAt": "2026-07-12",
+  "author": "Sonria Dentista clinical team",
+  "category": "restorative",
+  "summary": "A practical guide to dental crowns: what they are, why they are used, what the appointment process looks like, common materials, cost factors, and when to call Sonria Dentista.",
+  "tags": ["dental crown", "tooth crown", "crown cost", "restorative dentistry", "arlington dentist"],
+  "heroImage": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80",
+  "heroImageAlt": "Dentist discussing a tooth restoration plan with a patient",
+  "body": [
+    {"type": "p", "text": "A dental crown is a custom-made cover that fits over a damaged, weakened, or heavily restored tooth. Patients often describe it as a cap, but a crown is more than a cosmetic shell. It is designed to protect the remaining tooth structure, restore chewing strength, and help the tooth look natural when you smile or speak."},
+    {"type": "p", "text": "At Sonria Dentista in Arlington, crowns are commonly recommended when a filling is no longer enough to support the tooth, after certain root canals, after a tooth cracks, or when an older crown needs to be replaced. The right recommendation depends on the tooth, bite pressure, symptoms, X-rays, and how much healthy tooth remains."},
+    {"type": "h2", "text": "What does a dental crown do?"},
+    {"type": "p", "text": "A crown covers the visible part of the tooth above the gumline. Once bonded or cemented in place, it helps hold the tooth together and spreads biting force across a stronger restoration."},
+    {"type": "ul", "items": ["Protects a tooth with a large cavity or large filling", "Restores a cracked, worn, or broken tooth", "Covers a tooth after root canal treatment when extra strength is needed", "Improves the shape, color, or alignment of a tooth when appropriate", "Completes a dental implant by replacing the visible tooth"]},
+    {"type": "h2", "text": "When do you need a crown instead of a filling?"},
+    {"type": "p", "text": "A filling works well when the tooth still has enough strong enamel and dentin to support normal chewing. A crown becomes more likely when the damaged area is large, a cusp is cracked, the tooth has had root canal therapy, or an old filling is failing around the edges."},
+    {"type": "p", "text": "There is not a single percentage that applies to every tooth. A back molar with heavy bite pressure may need a crown sooner than a front tooth with a small chip. That is why a crown decision should include an exam, bite evaluation, and X-rays rather than price alone."},
+    {"type": "h2", "text": "Common types of dental crowns"},
+    {"type": "ul", "items": ["Ceramic or porcelain crowns: often chosen for front teeth because they can closely match natural tooth color.", "Zirconia crowns: strong, tooth-colored crowns often used for molars and patients with heavier bite forces.", "Porcelain-fused-to-metal crowns: durable restorations with a metal base and porcelain exterior.", "Gold or metal crowns: very durable for certain back teeth, though less common when patients prefer tooth-colored options.", "Implant crowns: crowns attached to dental implants rather than natural tooth structure."]},
+    {"type": "h2", "text": "What happens during a crown appointment?"},
+    {"type": "p", "text": "Most crown treatment starts with an exam and imaging. If the tooth can be restored, the dentist numbs the area, removes decay or weak tooth structure, shapes the tooth, and takes a scan or impression. A temporary crown may be placed while the final crown is made, unless a same-day crown workflow is available for the case."},
+    {"type": "p", "text": "At the final visit, the dentist checks the crown fit, contacts, bite, and appearance before bonding or cementing it. A good crown should feel stable, let you chew comfortably, and blend with nearby teeth."},
+    {"type": "h2", "text": "How much does a dental crown cost?"},
+    {"type": "p", "text": "Dental crown cost varies by material, tooth location, whether a buildup is needed, insurance coverage, and whether additional treatment is required first. In Texas, many crown fees fall somewhere in the low four figures per tooth before insurance, but the exact estimate should come from an exam."},
+    {"type": "p", "text": "Ask whether your quote includes the exam, X-rays, core buildup, temporary crown, final crown, and any follow-up adjustments. If you have insurance, ask whether the plan classifies crowns as major restorative care and whether waiting periods or replacement limits apply."},
+    {"type": "h2", "text": "How long does a crown last?"},
+    {"type": "p", "text": "Many crowns last 10 years or longer with good home care, regular cleanings, and a stable bite. A crown can fail sooner if decay forms at the margin, the tooth fractures underneath, the bite is too heavy, or nighttime grinding is not controlled."},
+    {"type": "h2", "text": "Signs you should call a dentist"},
+    {"type": "ul", "items": ["Pain when biting or releasing pressure", "A visible crack, broken cusp, or large missing piece of tooth", "A loose, broken, or missing crown", "Swelling, pimple-like bump on the gums, or worsening toothache", "Sensitivity that lingers after cold, heat, or sweets"]},
+    {"type": "p", "text": "If you are in Arlington and think you may need a crown, Sonria Dentista can evaluate the tooth, explain your options in English or Spanish, and help you understand the likely cost before treatment."}
+  ],
+  "faqs": [
+    {"question": "Is a dental crown painful?", "answer": "The tooth is numbed during crown preparation, so the procedure should not be painful. Some soreness or bite sensitivity can happen afterward and should be checked if it persists."},
+    {"question": "Is a crown better than a filling?", "answer": "A crown is not automatically better. Fillings are appropriate for smaller areas of damage, while crowns are used when the tooth needs more coverage and strength."},
+    {"question": "Can a crowned tooth get a cavity?", "answer": "Yes. The crown itself cannot decay, but the natural tooth at the edge of the crown can. Brushing, flossing, and regular cleanings still matter."},
+    {"question": "Do all root canals need crowns?", "answer": "Many back teeth need crowns after root canal treatment because they handle heavy chewing forces. Some front teeth may not need a crown if enough healthy structure remains."}
+  ]
+}
