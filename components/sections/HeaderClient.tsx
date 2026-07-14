@@ -87,7 +87,7 @@ export function HeaderClient({
       </div>
 
       {/* Navbar Content */}
-      <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-6">
+      <div className="mx-auto max-w-9xl px-4 md:px-8 py-4 flex items-center justify-between gap-6">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-2.5 group">
           <div

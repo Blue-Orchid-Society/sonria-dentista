@@ -27,12 +27,22 @@ export default async function ContactPage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
-          <h1 className="font-display text-4xl md:text-6xl tracking-tight text-foreground">
+      <section className="relative overflow-hidden bg-foreground text-background">
+        <div className="absolute inset-0" aria-hidden>
+          <img
+            src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&fit=crop&w=2000&q=80"
+            alt=""
+            className="h-full w-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,18,14,0.88)_0%,rgba(20,18,14,0.68)_45%,rgba(20,18,14,0.35)_100%)]" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
+          <h1 className="font-display text-4xl md:text-6xl tracking-tight text-white">
             {site.contactPage.heading}
           </h1>
-          <p className="mt-5 text-lg text-muted max-w-2xl leading-relaxed">
+          <p className="mt-5 text-lg text-background/85 max-w-2xl leading-relaxed">
             {site.contactPage.subheading}
           </p>
         </div>
@@ -84,27 +94,37 @@ export default async function ContactPage({
         </div>
       </section>
 
-      <section className="bg-card border-y border-border-soft">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <h2 className="font-display text-3xl md:text-4xl tracking-tight text-foreground">
-            {site.locations.heading}
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {site.locations.list.map((l) => (
-              <Link
-                key={l.slug}
-                href={`/${locale}/locations/${l.slug}`}
-                className="rounded-2xl bg-background border border-border-soft p-6 hover:border-terracotta transition"
-              >
-                <div className="font-display text-xl text-foreground">{l.city}</div>
-                <p className="mt-2 text-sm text-muted leading-relaxed">{l.address}</p>
-                <p className="mt-3 text-xs uppercase tracking-wider text-terracotta">{l.phone}</p>
-                <p className="mt-1 text-xs text-muted-2">{l.hours}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+     <section className="relative overflow-hidden">
+  <div className="absolute inset-0" aria-hidden>
+    <img
+      src="https://images.unsplash.com/photo-1579488081688-3dbbbae7893e?auto=format&fit=crop&w=2000&q=80"
+      alt=""
+      className="h-full w-full object-cover"
+      loading="lazy"
+    />
+    <div className="absolute inset-0 bg-foreground/80" />
+  </div>
+
+  <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+    <h2 className="font-display text-3xl md:text-4xl tracking-tight text-white">
+      {site.locations.heading}
+    </h2>
+    <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {site.locations.list.map((l) => (
+        <Link
+          key={l.slug}
+          href={`/${locale}/locations/${l.slug}`}
+          className="rounded-2xl bg-background border border-border-soft p-6 hover:border-terracotta transition"
+        >
+          <div className="font-display text-xl text-foreground">{l.city}</div>
+          <p className="mt-2 text-sm text-muted leading-relaxed">{l.address}</p>
+          <p className="mt-3 text-xs uppercase tracking-wider text-terracotta">{l.phone}</p>
+          <p className="mt-1 text-xs text-muted-2">{l.hours}</p>
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
     </>
   );
 }
