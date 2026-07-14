@@ -1125,7 +1125,7 @@
       {
         "label": "Medicaid y Medicare",
         "price": "Aceptados",
-        "note": "El sitio actual menciona seguro dental, Medicare y Medicaid."
+        "note": "Trae la informacion de tu plan para que el equipo pueda revisar preguntas sobre seguro dental, Medicare y Medicaid."
       },
       {
         "label": "Financiamiento de terceros",
@@ -1478,7 +1478,7 @@
       },
       {
         "title": "Accesibilidad constante",
-        "body": "El mensaje actual incluye seguro dental, Medicaid, Medicare y financiamiento de terceros."
+        "body": "El equipo puede ayudar con preguntas sobre seguro dental, Medicaid, Medicare y financiamiento de terceros."
       },
       {
         "title": "Equipo dental bilingue",
@@ -1540,7 +1540,7 @@
   },
   "insurance": {
     "heading": "Seguro y financiamiento",
-    "intro": "El sitio actual de Sonria destaca seguro dental, Medicare, Medicaid, opciones de pago flexibles y financiamiento de terceros para hacer el cuidado dental mas accesible.",
+    "intro": "Sonria Dentista puede ayudar a pacientes a entender seguro dental, Medicare, Medicaid, opciones de pago flexibles y financiamiento de terceros antes de iniciar tratamiento.",
     "plansAccepted": [
       "Seguro dental",
       "Medicare",
@@ -1566,15 +1566,15 @@
     "faqs": [
       {
         "q": "Aceptan seguro dental?",
-        "a": "Si. El sitio actual indica que el seguro dental es bienvenido y que el equipo ayuda con preguntas de cobertura."
+        "a": "Si. Trae la informacion de tu seguro, y el equipo puede ayudarte con preguntas de cobertura antes de iniciar tratamiento."
       },
       {
         "q": "Aceptan Medicaid?",
-        "a": "Si. El sitio actual indica que Medicaid es bienvenido."
+        "a": "Medicaid puede aceptarse segun la ubicacion y el servicio. Llama al consultorio para que el equipo confirme tus opciones."
       },
       {
         "q": "Hay financiamiento disponible?",
-        "a": "Si. El sitio actual menciona opciones de pago flexibles y financiamiento de terceros."
+        "a": "Si. Puede haber opciones de pago flexibles y financiamiento de terceros para pacientes que califican."
       }
     ]
   },
@@ -1592,15 +1592,15 @@
       },
       {
         "q": "Aceptan Medicaid?",
-        "a": "El sitio actual indica que Medicaid es bienvenido."
+        "a": "Medicaid puede aceptarse segun la ubicacion y el servicio. Llama al consultorio para que el equipo confirme tus opciones."
       },
       {
         "q": "Mencionan Medicare?",
-        "a": "Si. El sitio actual incluye mensajes sobre seguro dental, Medicare y financiamiento."
+        "a": "Si. Trae la informacion de tu plan para que el equipo pueda revisar preguntas sobre seguro dental, Medicare y pagos."
       },
       {
         "q": "Ofrecen financiamiento?",
-        "a": "Si. El sitio actual menciona opciones de pago flexibles y financiamiento de terceros."
+        "a": "Si. Puede haber opciones de pago flexibles y financiamiento de terceros para pacientes que califican."
       },
       {
         "q": "Que servicios ofrecen?",

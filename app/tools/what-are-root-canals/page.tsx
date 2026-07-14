@@ -151,9 +151,9 @@ export default function WhatAreRootCanalsPage({ searchParams }: { searchParams?:
       </section>
       <section className='border-y border-slate-200 bg-white'>
         <div className='mx-auto max-w-6xl px-5 py-10'>
-          <p className='text-sm font-semibold uppercase tracking-[0.16em] text-[#0f5f5c]'>DataForSEO keyword brief</p>
-          <h2 className='mt-2 text-3xl font-bold'>Search demand behind this guide</h2>
-          <p className='mt-3 max-w-3xl leading-7 text-slate-600'>This tool targets high-intent informational searches and routes patients from education into an exam when symptoms suggest urgency.</p>
+          <p className='text-sm font-semibold uppercase tracking-[0.16em] text-[#0f5f5c]'>Patient search interest</p>
+          <h2 className='mt-2 text-3xl font-bold'>Common questions behind this guide</h2>
+          <p className='mt-3 max-w-3xl leading-7 text-slate-600'>This guide is built around the questions patients often ask when they are trying to understand tooth pain, root canals, and when to schedule an exam.</p>
           <div className='mt-6 overflow-x-auto rounded-lg ring-1 ring-slate-200'><table className='min-w-full divide-y divide-slate-200 text-left text-sm'><thead className='bg-slate-50 text-slate-700'><tr>{['Keyword', 'Intent', 'Volume', 'Comp.', 'CPC', 'Diff.', 'Opp.'].map((head) => <th key={head} className='px-4 py-3 font-bold'>{head}</th>)}</tr></thead><tbody className='divide-y divide-slate-200 bg-white'>{keywordTargets.map((target) => <tr key={target.keyword}><td className='px-4 py-3 font-semibold text-slate-950'>{target.keyword}</td><td className='px-4 py-3 capitalize text-slate-700'>{target.intent}</td><td className='px-4 py-3 text-slate-700'>{target.volume.toLocaleString()}</td><td className='px-4 py-3 capitalize text-slate-700'>{target.competition}</td><td className='px-4 py-3 text-slate-700'>{target.cpc}</td><td className='px-4 py-3 text-slate-700'>{target.difficulty}</td><td className='px-4 py-3 font-bold text-[#0f5f5c]'>{target.opportunity}</td></tr>)}</tbody></table></div>
         </div>
       </section>
