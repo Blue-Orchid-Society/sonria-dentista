@@ -76,18 +76,28 @@ export default async function ServiceDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
 
-      <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
-        <div className="mx-auto max-w-6xl px-4 py-16 md:py-24">
+      <section className="relative overflow-hidden bg-foreground text-background">
+        <div className="absolute inset-0" aria-hidden>
+          <img
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=2000&q=80"
+            alt=""
+            className="h-full w-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-foreground/80" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
           <Link
             href={`/${locale}#services`}
-            className="text-xs uppercase tracking-[0.18em] text-muted hover:text-foreground transition"
+            className="text-xs uppercase tracking-[0.18em] text-background/70 hover:text-white transition"
           >
             {labels.backToServices}
           </Link>
-          <h1 className="mt-4 font-display text-4xl md:text-6xl tracking-tight text-foreground max-w-3xl">
+          <h1 className="mt-4 font-display text-4xl md:text-6xl tracking-tight text-white max-w-3xl">
             {service.name}
           </h1>
-          <p className="mt-5 text-lg text-muted max-w-2xl leading-relaxed">
+          <p className="mt-5 text-lg text-background/85 max-w-2xl leading-relaxed">
             {service.longBlurb ?? service.blurb}
           </p>
           {service.price && (
@@ -102,18 +112,19 @@ export default async function ServiceDetailPage({
               data-track-category="lead"
               data-track-label="service_hero_appointment"
               data-track-service={service.slug}
-              className="rounded-full bg-foreground px-6 py-3 text-background text-sm font-semibold hover:bg-terracotta transition"
+              className="rounded-full bg-white px-6 py-3 text-foreground text-sm font-semibold hover:bg-terracotta hover:text-white transition"
             >
               {labels.cta}
             </Link>
             <a
+            
               href={site.contact.phoneHref}
               data-track-event="phone_click"
               data-track-category="lead"
               data-track-label="service_hero_phone"
               data-track-service={service.slug}
               data-track-destination={site.contact.phoneHref}
-              className="rounded-full border border-border-soft bg-card px-6 py-3 text-foreground text-sm font-semibold hover:border-terracotta hover:text-terracotta transition"
+              className="rounded-full border border-white/25 bg-white/12 px-6 py-3 text-white text-sm font-semibold backdrop-blur hover:bg-white hover:text-foreground transition"
             >
               {site.contact.phone}
             </a>
@@ -242,7 +253,7 @@ export default async function ServiceDetailPage({
               data-track-service={service.slug}
               data-track-destination={site.contact.phoneHref}
               className="rounded-full bg-terracotta px-6 py-3 text-white text-sm font-semibold hover:bg-terracotta-deep transition shadow-warm"
-            >
+           >
               {site.contact.phone}
             </a>
             <Link
