@@ -52,7 +52,7 @@ export function Hero({
         <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-foreground/80 to-transparent" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col justify-center px-4 pt-32 pb-16 md:pt-40 md:pb-20">
+      <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 pt-32 pb-16 md:pt-40 md:pb-20">
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold text-background/85 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
