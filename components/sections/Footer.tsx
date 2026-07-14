@@ -31,7 +31,7 @@ export async function Footer({ locale }: { locale: Locale }) {
             {site.locations.list.map((l) => (
               <li key={l.slug}>
                 <Link href={`/${locale}/locations/${l.slug}`} className="text-muted hover:text-foreground transition">
-                  {l.city}{l.primary ? " (HQ)" : ""}
+                  {l.city}
                 </Link>
               </li>
             ))}

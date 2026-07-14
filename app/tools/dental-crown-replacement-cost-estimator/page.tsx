@@ -334,9 +334,9 @@ export default async function DentalCrownReplacementCostEstimatorPage({
           </div>
 
           <div className="rounded-2xl border border-ink/10 bg-white p-6 shadow-warm">
-            <h2 className="font-display text-2xl">Search demand inputs</h2>
+            <h2 className="font-display text-2xl">Common cost questions</h2>
             <p className="mt-3 text-sm leading-6 text-ink/72">
-              Built around high-intent DataForSEO keyword variants for crown replacement pricing, insurance, and local appointment readiness.
+              Built around common patient questions about crown replacement pricing, insurance, and when to schedule an appointment.
             </p>
             <div className="mt-4 space-y-2">
               {keywordSignals.map((signal) => (

@@ -5,7 +5,7 @@ import { DentalImplantQuiz } from "./DentalImplantQuiz";
 export const metadata: Metadata = {
   title: "Dental Implant Candidacy Quiz | Sonria Dentista",
   description:
-    "Use this practical dental implant candicacy quiz resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
+    "Use this practical dental implant candidacy quiz resource to assess your next move, prepare for a consultation, and understand what to ask before scheduling care.",
   alternates: {
     canonical: "/tools/dental-implant-candicacy-quiz",
   },
@@ -16,7 +16,7 @@ const schema = {
   "@type": "WebPage",
   name: "Dental Implant Candidacy Quiz",
   description:
-    "Use this practical dental implant candicacy quiz resource to assess implant readiness, compare planning factors, and understand next steps.",
+    "Use this practical dental implant candidacy quiz resource to assess implant readiness, compare planning factors, and understand next steps.",
   url: "https://sonriadentista.com/tools/dental-implant-candicacy-quiz",
   mainEntity: {
     "@type": "SoftwareApplication",

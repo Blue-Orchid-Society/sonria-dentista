@@ -229,8 +229,8 @@ export default async function InvisalignCostTimelineGuidePage({ searchParams }: 
       <section className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-lg bg-slate-900 p-6 text-white">
-            <h2 className="text-2xl font-bold">Keyword research used for this guide</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-300">This page is built around DataForSEO-backed variants for Arlington patients comparing Invisalign cost, timeline, readiness, and next steps.</p>
+            <h2 className="text-2xl font-bold">Common planning questions</h2>
+            <p className="mt-3 text-sm leading-6 text-slate-300">This page is built around the questions Arlington patients often ask when comparing Invisalign cost, timeline, readiness, and next steps.</p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link href="/en/services/invisalign" className="rounded-md bg-white px-4 py-2 text-sm font-bold text-slate-950">Invisalign service</Link>
               <Link href="/en/contact" className="rounded-md border border-white/40 px-4 py-2 text-sm font-bold text-white">Contact the team</Link>

@@ -71,7 +71,7 @@ const testimonials = {
     eyebrow: "Resenas de pacientes",
     heading: "Pacientes confian sus sonrisas a Sonria",
     subheading:
-      "Fragmentos de resenas reales del sitio actual de Sonria y perfiles publicos.",
+      "Comentarios de pacientes que comparten su experiencia con el equipo de Sonria.",
     items: [
       {
         quote:
@@ -284,7 +284,7 @@ const homeSections = {
       eyebrow: "Galeria de sonrisas",
       heading: "Resultados que se notan",
       body:
-        "La calidad del trabajo dental se entiende mejor cuando se pueden ver resultados. Estas imagenes vienen del sitio actual de Sonria y se pueden reemplazar despues con casos nuevos aprobados.",
+        "La calidad del trabajo dental se entiende mejor cuando se pueden ver resultados. Esta galeria muestra ejemplos para ayudar a pacientes a imaginar su siguiente paso.",
     },
     affordability: {
       eyebrow: "Seguro dental, Medicare y financiamiento",

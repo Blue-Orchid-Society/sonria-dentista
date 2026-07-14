@@ -1112,7 +1112,7 @@
           "Useful for families and larger treatment plans"
         ],
         "whyChoose": "Sonria emphasizes affordability, practical guidance, and clear communication before treatment begins.",
-        "insuranceNote": "Current site messaging includes dental insurance, Medicare, Medicaid, and third-party financing. Final benefits depend on patient plan and eligibility.",
+        "insuranceNote": "Dental insurance, Medicare, Medicaid, and third-party financing may help with treatment costs. Final benefits depend on each patient's plan and eligibility.",
         "faqs": [
           {
             "q": "Do you accept dental insurance?",
@@ -1137,7 +1137,7 @@
       {
         "label": "Medicaid and Medicare",
         "price": "Accepted",
-        "note": "Current site lists dental insurance, Medicare, and Medicaid messaging."
+        "note": "Bring your plan details so the team can help review dental insurance, Medicare, and Medicaid questions."
       },
       {
         "label": "3rd-party financing",
@@ -1552,7 +1552,7 @@
   },
   "insurance": {
     "heading": "Insurance and financing",
-    "intro": "The current Sonria site highlights dental insurance, Medicare, Medicaid, flexible payment options, and third-party financing to make dental care more affordable.",
+    "intro": "Sonria Dentista can help patients understand dental insurance, Medicare, Medicaid, flexible payment options, and third-party financing before treatment begins.",
     "plansAccepted": [
       "Dental insurance",
       "Medicare",
@@ -1578,15 +1578,15 @@
     "faqs": [
       {
         "q": "Do you accept dental insurance?",
-        "a": "Yes. The current site states that dental insurance is welcome and that the team can help answer coverage questions."
+        "a": "Yes. Bring your insurance information, and the team can help answer coverage questions before treatment begins."
       },
       {
         "q": "Is Medicaid accepted?",
-        "a": "Yes. The current site states that Medicaid is welcome."
+        "a": "Medicaid may be accepted depending on the location and service. Please call the office so the team can confirm your options."
       },
       {
         "q": "Is financing available?",
-        "a": "Yes. The current site mentions flexible payment options and third-party financing."
+        "a": "Yes. Flexible payment options and third-party financing may be available for qualifying patients."
       }
     ]
   },
@@ -1604,15 +1604,15 @@
       },
       {
         "q": "Do you accept Medicaid?",
-        "a": "The current site states that Medicaid is welcome."
+        "a": "Medicaid may be accepted depending on the location and service. Please call the office so the team can confirm your options."
       },
       {
         "q": "Is Medicare mentioned?",
-        "a": "Yes. The current site includes Dental Insurance, Medicare, and Financing messaging."
+        "a": "Yes. Please bring your plan information so the team can review dental insurance, Medicare, and payment questions with you."
       },
       {
         "q": "Do you offer financing?",
-        "a": "Yes. The current site mentions flexible payment options and third-party financing."
+        "a": "Yes. Flexible payment options and third-party financing may be available for qualifying patients."
       },
       {
         "q": "What services do you offer?",
