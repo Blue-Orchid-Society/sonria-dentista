@@ -79,8 +79,8 @@ export function HeaderClient({
         <Link href={`/${locale}/contact`} className="hover:underline flex items-center justify-center gap-1.5">
           <span>
             {isEs
-              ? "¡Los niños nos aman, los padres confían en nosotros! ✨ Reserva hoy"
-              : "Kids love us, parents trust us! ✨ Book your visit today"}
+              ? "¡Los niños nos aman, los padres confían en nosotros!  Reserva hoy"
+              : "Kids love us, parents trust us! Book your visit today"}
           </span>
           <span className="text-[10px]">→</span>
         </Link>
