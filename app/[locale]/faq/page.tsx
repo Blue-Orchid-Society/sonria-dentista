@@ -25,12 +25,22 @@ export default async function FaqPage({
 
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-sage-soft via-background to-terracotta-soft/40">
-        <div className="mx-auto max-w-4xl px-4 py-16 md:py-24 text-center">
-          <h1 className="font-display text-4xl md:text-6xl tracking-tight text-foreground">
+      <section className="relative overflow-hidden bg-foreground text-background">
+        <div className="absolute inset-0" aria-hidden>
+          <img
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=2000&q=80"
+            alt=""
+            className="h-full w-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-foreground/80" />
+        </div>
+
+        <div className="relative mx-auto max-w-4xl px-4 py-16 md:py-24 text-center">
+          <h1 className="font-display text-4xl md:text-6xl tracking-tight text-white">
             {site.faq.heading}
           </h1>
-          <p className="mt-5 text-lg text-muted leading-relaxed">{site.faq.subheading}</p>
+          <p className="mt-5 text-lg text-background/85 leading-relaxed">{site.faq.subheading}</p>
         </div>
       </section>
 
