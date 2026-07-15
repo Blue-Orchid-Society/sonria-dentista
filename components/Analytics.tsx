@@ -67,7 +67,7 @@ export function Analytics() {
 function inferLinkEvent(href: string, path: string) {
   if (href.startsWith("tel:")) return { eventName: "phone_click", category: "lead" };
   if (href.startsWith("mailto:")) return { eventName: "email_click", category: "lead" };
-  if (href.includes("/book/") || href.includes("book.patientxpress.us")) {
+  if (href.includes("/appointment/") || href.includes("book.patientxpress.us")) {
     return { eventName: "appointment_click", category: "lead" };
   }
   if (href.includes("google.com/maps") || href.includes("share.google")) {

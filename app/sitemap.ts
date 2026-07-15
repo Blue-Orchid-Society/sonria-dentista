@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
     for (const loc of locations) {
       entries.push({ url: `${BASE}/${l}/locations/${loc}`, lastModified: new Date(), priority: 0.8 });
+      entries.push({ url: `${BASE}/${l}/appointment/${loc}`, lastModified: new Date(), priority: 0.65 });
     }
     for (const article of articles.filter((item) => item.locale === l)) {
       entries.push({ url: `${BASE}/${l}/articles/${article.slug}`, lastModified: new Date(article.updatedAt), priority: 0.7 });

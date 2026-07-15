@@ -56,7 +56,7 @@ export default async function LocationDetailPage({
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
   const phoneHref = loc.phoneHref ?? `tel:${loc.phone.replace(/[^0-9+]/g, "")}`;
-  const appointmentHref = `/${locale}/book/${loc.slug}`;
+  const appointmentHref = `/${locale}/appointment/${loc.slug}`;
   const schema = buildLocalBusinessSchema({
     siteName: site.name,
     loc,

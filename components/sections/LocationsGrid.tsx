@@ -70,7 +70,7 @@ export function LocationsGrid({ heading, subheading, locations, locale }: Props)
                     </a>
                   )}
                   <a
-                    href={`/${locale}/book/${location.slug}`}
+                    href={`/${locale}/appointment/${location.slug}`}
                     className="inline-flex items-center gap-2 rounded-full border border-border-soft bg-background px-4 py-2 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
                   >
                     <CalendarDays className="h-4 w-4" aria-hidden="true" />
