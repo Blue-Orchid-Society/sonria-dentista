@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locations = siteEn.locations.list.map((l) => l.slug);
   const tools = getToolSlugs();
   const articles = getAllArticles();
-  const staticPages = ["services", "tools", "articles", "about", "new-patients", "insurance", "faq", "contact"];
+  const staticPages = ["services", "tools", "articles", "locations", "about", "new-patients", "insurance", "faq", "contact"];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const l of locales) {

@@ -140,7 +140,7 @@ export function HeaderClient({
 
           <div className="group relative">
             <Link
-              href={`/${locale}#locations`}
+              href={`/${locale}/locations`}
               className={`inline-flex items-center gap-1.5 transition ${
                 useSolid ? "hover:text-foreground" : "hover:text-white"
               }`}

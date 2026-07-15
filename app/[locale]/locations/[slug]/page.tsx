@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { CalendarDays, ClipboardList, MapPin, Phone, Star } from "lucide-react";
+import { CalendarDays, MapPin, Phone, Star } from "lucide-react";
 import { getSite, type Locale } from "@/lib/content";
 
 export const dynamicParams = false;
@@ -56,6 +56,7 @@ export default async function LocationDetailPage({
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
   const phoneHref = loc.phoneHref ?? `tel:${loc.phone.replace(/[^0-9+]/g, "")}`;
+  const appointmentHref = `/${locale}/book/${loc.slug}`;
   const schema = buildLocalBusinessSchema({
     siteName: site.name,
     loc,
@@ -81,7 +82,7 @@ export default async function LocationDetailPage({
 
         <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
           <Link
-            href={`/${locale}#locations`}
+            href={`/${locale}/locations`}
             className="text-xs font-semibold uppercase tracking-[0.18em] text-background/70 transition hover:text-white"
           >
             {labels.backToLocations}
@@ -117,20 +118,18 @@ export default async function LocationDetailPage({
               <Phone className="h-4 w-4" aria-hidden="true" />
               {loc.phone}
             </a>
-            {loc.appointmentUrl && (
-              <a
-                href={loc.appointmentUrl}
-                data-track-event="appointment_click"
-                data-track-category="lead"
-                data-track-label="location_hero_appointment"
-                data-track-location={loc.slug}
-                data-track-destination={loc.appointmentUrl}
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
-              >
-                <CalendarDays className="h-4 w-4" aria-hidden="true" />
-                {labels.bookHere}
-              </a>
-            )}
+            <a
+              href={appointmentHref}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="location_hero_appointment"
+              data-track-location={loc.slug}
+              data-track-destination={appointmentHref}
+              className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
+            >
+              <CalendarDays className="h-4 w-4" aria-hidden="true" />
+              {labels.bookHere}
+            </a>
             {loc.googleMapsUrl && (
               <a
                 href={loc.googleMapsUrl}
@@ -172,30 +171,16 @@ export default async function LocationDetailPage({
           </div>
 
           <div className="grid gap-4 md:grid-cols-2">
-            {loc.appointmentUrl && (
-              <ActionCard
-                href={loc.appointmentUrl}
-                eventName="appointment_click"
-                category="lead"
-                label="location_action_appointment"
-                location={loc.slug}
-                icon={<CalendarDays className="h-5 w-5" aria-hidden="true" />}
-                title={labels.bookHere}
-                body={labels.bookBody}
-              />
-            )}
-            {loc.intakeFormUrl && (
-              <ActionCard
-                href={loc.intakeFormUrl}
-                eventName="intake_click"
-                category="lead"
-                label="location_action_intake"
-                location={loc.slug}
-                icon={<ClipboardList className="h-5 w-5" aria-hidden="true" />}
-                title={labels.intake}
-                body={labels.intakeBody}
-              />
-            )}
+            <ActionCard
+              href={appointmentHref}
+              eventName="appointment_click"
+              category="lead"
+              label="location_action_appointment"
+              location={loc.slug}
+              icon={<CalendarDays className="h-5 w-5" aria-hidden="true" />}
+              title={labels.bookHere}
+              body={labels.bookBody}
+            />
             {loc.googleMapsUrl && (
               <ActionCard
                 href={loc.googleMapsUrl}
@@ -339,19 +324,17 @@ export default async function LocationDetailPage({
             >
               {loc.phone}
             </a>
-            {loc.appointmentUrl && (
-              <a
-                href={loc.appointmentUrl}
-                data-track-event="appointment_click"
-                data-track-category="lead"
-                data-track-label="location_final_appointment"
-                data-track-location={loc.slug}
-                data-track-destination={loc.appointmentUrl}
-                className="rounded-full border border-border-soft bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
-              >
-                {labels.cta}
-              </a>
-            )}
+            <a
+              href={appointmentHref}
+              data-track-event="appointment_click"
+              data-track-category="lead"
+              data-track-label="location_final_appointment"
+              data-track-location={loc.slug}
+              data-track-destination={appointmentHref}
+              className="rounded-full border border-border-soft bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
+            >
+              {labels.cta}
+            </a>
           </div>
         </div>
       </section>
@@ -436,10 +419,8 @@ function getLabels(isEs: boolean, city: string) {
     bookHere: isEs ? `Reservar en ${city}` : `Book at ${city}`,
     map: isEs ? "Ver mapa" : "View map",
     patientActions: isEs ? "Para pacientes" : "For patients",
-    actionHeading: isEs ? "Agenda, completa formularios y llega sin dudas." : "Book, complete forms, and arrive with confidence.",
+    actionHeading: isEs ? "Agenda tu visita y llega sin dudas." : "Book your visit and arrive with confidence.",
     bookBody: isEs ? "Usa el enlace de cita de esta ubicacion." : "Use the appointment link for this location.",
-    intake: isEs ? "Formulario nuevo paciente" : "New patient intake",
-    intakeBody: isEs ? "Completa tu informacion antes de tu visita." : "Complete your information before your visit.",
     mapBody: isEs ? "Abre indicaciones actualizadas en Google Maps." : "Open current directions in Google Maps.",
     reviews: isEs ? "Resenas" : "Reviews",
     reviewBody: isEs ? "Lee resenas y senales de confianza de esta ubicacion." : "Read reviews and trust signals for this office.",

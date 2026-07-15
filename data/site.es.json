@@ -1148,8 +1148,8 @@
         "hours": "Lun-Vie 9am-5pm | Sab 9am-3pm",
         "heroImageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
         "heroImageAlt": "Consultorio dental moderno para Sonria Dentista Arlington",
-        "primary": true,
-        "longBlurb": "Sonria Dentista de Arlington atiende familias desde el consultorio principal en Baird Farm Rd con cuidado bilingue, odontologia preventiva, emergencias, reemplazo dental y servicios para la familia.",
+        "primary": false,
+        "longBlurb": "Sonria Dentista de Arlington atiende familias desde el consultorio en Baird Farm Rd con cuidado bilingue, odontologia preventiva, emergencias, reemplazo dental y servicios para la familia.",
         "neighborhoods": [
           "Arlington",
           "North Arlington",
@@ -1184,8 +1184,7 @@
         ],
         "seoTitle": "Dentista en Arlington TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista en Arlington TX. Cuidado dental bilingue para familias, examenes, implantes, extracciones, dentaduras y mas. Llama (682) 284-1120.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-arlington/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-arlington/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=ZDc0ODVlYjktZTg5MS00OTBmLThmNzEtYjExZmU4&rwg_token=AE37R_jkLVpLPLwJkf14N-o-_uLGkGFg_UORM8rJ7cxWOwqh_ql-jT5iBlH99LFyvRZ4wlzCFxMieeBQNpjgWaKCZSau94lmgg%3D%3D",
         "googleMapsUrl": "https://share.google/EsTl4cn0L1ebLWzIA",
         "socialLinks": {
           "facebook": "https://www.facebook.com/sonrisadentista/",
@@ -1238,8 +1237,6 @@
         ],
         "seoTitle": "Dentista en Commerce TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista en Commerce TX. Examenes, limpiezas, implantes, ortodoncia, extracciones y cuidado familiar bilingue. Llama (903) 246-4424.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-commerce/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-commerce/",
         "googleMapsUrl": "https://share.google/cgWdMmvMl1IAiXHpM",
         "socialLinks": {
           "facebook": "https://www.facebook.com/commercedentalandorthodontics/",
@@ -1292,8 +1289,6 @@
         ],
         "seoTitle": "Dentista en Paris TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista en Paris TX. Cuidado dental bilingue para familias, examenes, extracciones, dentaduras, implantes y mas. Llama (903) 609-0567.",
-        "appointmentUrl": "https://sonriadentista.com/new-patient-form-paris/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-paris/",
         "googleMapsUrl": "https://share.google/AWVla7LUrtlAHN7jE",
         "socialLinks": {
           "facebook": "https://www.facebook.com/sonriadentistaofparis/",
@@ -1347,8 +1342,7 @@
         ],
         "seoTitle": "Dentista en Grand Prairie TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista en Grand Prairie TX. Cuidado dental bilingue, limpiezas, implantes, extracciones, dentaduras y mas. Llama (972) 262-5593.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-grand-prairie/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=MDYzZmJhMjUtNzRhMS00MDQzLTk0MjUtY2E0NjQ0&rwg_token=AE37R_g7W6_RnqFCS7mo8ddGpk2UrQwXkNerOPZx2iYoajQqeIQ4EqPo-vgPdycGGMPQu1bgbCUsI83FbchB8Fs0qKn2QJS8yg%3D%3D",
         "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
         "socialLinks": {
           "facebook": "https://www.facebook.com/thegrandprairiedentistimplantsandbraces/"
@@ -1434,26 +1428,6 @@
         "locationSlugs": [
           "commerce",
           "paris"
-        ]
-      },
-      {
-        "slug": "chu",
-        "name": "Dra. Chu",
-        "initials": "CC",
-        "imageUrl": "/images/Dr%20Joy.webp",
-        "imageAlt": "Foto temporal de perfil para Dra. Chu",
-        "title": "DDS, PhD - Ortodoncia",
-        "bio": [
-          "La Dra. Chu aporta mas de 20 anos de experiencia en ortodoncia y un doctorado en Biologia Oral de Ohio State University.",
-          "Se especializa en brackets e Invisalign con un enfoque basado en la ciencia para el movimiento dental preciso."
-        ],
-        "highlights": [
-          "Doctorado en Biologia Oral",
-          "Mas de 20 anos de experiencia en ortodoncia",
-          "Miembro de la Asociacion Americana de Ortodoncistas"
-        ],
-        "locationSlugs": [
-          "commerce"
         ]
       }
     ]
@@ -1648,8 +1622,7 @@
       "Lun-Vie 9am-5pm",
       "Sabado varia por ubicacion",
       "Dom Cerrado"
-    ],
-    "appointmentUrl": "https://sonriadentista.com/request-an-appointment/"
+    ]
   },
   "nav": {
     "services": "Servicios",
