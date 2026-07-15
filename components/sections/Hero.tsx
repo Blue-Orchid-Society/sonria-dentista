@@ -66,10 +66,11 @@ export function Hero({
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
-              href="#hero-appointment"
+              href={`/${locale}/contact`}
               data-track-event="appointment_click"
               data-track-category="lead"
               data-track-label="hero_primary"
+              data-track-destination={`/${locale}/contact`}
               className="rounded-full bg-terracotta px-6 py-3.5 text-sm font-semibold text-white shadow-warm transition hover:bg-terracotta-deep"
             >
               {ctaPrimary}
