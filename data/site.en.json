@@ -1196,8 +1196,7 @@
         ],
         "seoTitle": "Dentist in Arlington TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista in Arlington TX. Bilingual family dental care, checkups, implants, extractions, dentures, and more. Call (682) 284-1120.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-arlington/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-arlington/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=ZDc0ODVlYjktZTg5MS00OTBmLThmNzEtYjExZmU4&rwg_token=AE37R_jkLVpLPLwJkf14N-o-_uLGkGFg_UORM8rJ7cxWOwqh_ql-jT5iBlH99LFyvRZ4wlzCFxMieeBQNpjgWaKCZSau94lmgg%3D%3D",
         "googleMapsUrl": "https://share.google/EsTl4cn0L1ebLWzIA",
         "socialLinks": {
           "facebook": "https://www.facebook.com/sonrisadentista/",
@@ -1250,8 +1249,6 @@
         ],
         "seoTitle": "Dentist in Commerce TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista in Commerce TX. Bilingual dental checkups, cleanings, implants, orthodontics, extractions, and family care. Call (903) 246-4424.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-commerce/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-commerce/",
         "googleMapsUrl": "https://share.google/cgWdMmvMl1IAiXHpM",
         "socialLinks": {
           "facebook": "https://www.facebook.com/commercedentalandorthodontics/",
@@ -1304,8 +1301,6 @@
         ],
         "seoTitle": "Dentist in Paris TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista in Paris TX. Bilingual family dental care, checkups, extractions, dentures, implants, and more. Call (903) 609-0567.",
-        "appointmentUrl": "https://sonriadentista.com/new-patient-form-paris/",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-paris/",
         "googleMapsUrl": "https://share.google/AWVla7LUrtlAHN7jE",
         "socialLinks": {
           "facebook": "https://www.facebook.com/sonriadentistaofparis/",
@@ -1359,8 +1354,7 @@
         ],
         "seoTitle": "Dentist in Grand Prairie TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista in Grand Prairie TX. Bilingual dental care, cleanings, implants, extractions, dentures, and more. Call (972) 262-5593.",
-        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=MDYzZmJhMjUtNzRhMS00MDQzLTk0MjUtY2E0NjQ0&rwg_token=AE37R_g4MAHy5x6vE-Ez5bqNltXiUdFHsjgk9lRXLFdww_-jslsPKofXVXQ5kox3TgKY8jG5eogL1Uyz4hCDjXV2VUzlWDevxQ%3D%3D",
-        "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=MDYzZmJhMjUtNzRhMS00MDQzLTk0MjUtY2E0NjQ0&rwg_token=AE37R_g7W6_RnqFCS7mo8ddGpk2UrQwXkNerOPZx2iYoajQqeIQ4EqPo-vgPdycGGMPQu1bgbCUsI83FbchB8Fs0qKn2QJS8yg%3D%3D",
         "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
         "socialLinks": {
           "facebook": "https://www.facebook.com/thegrandprairiedentistimplantsandbraces/"
@@ -1640,8 +1634,7 @@
       "Mon-Fri 9am-5pm",
       "Sat hours vary by location",
       "Sun Closed"
-    ],
-    "appointmentUrl": "https://sonriadentista.com/request-an-appointment/"
+    ]
   },
   "nav": {
     "services": "Services",
