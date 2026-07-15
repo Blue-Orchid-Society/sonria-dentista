@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { CalendarDays, Mail, MapPin, Phone } from "lucide-react";
 import { getSite, type Locale } from "@/lib/content";
-import { ContactForm } from "@/components/sections/ContactForm";
 
 export async function generateMetadata({
   params,
@@ -49,13 +49,53 @@ export default async function ContactPage({
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-        <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr]">
-          <ContactForm
-            locale={locale as Locale}
-            labels={site.contactPage.formLabels}
-            locations={site.locations.list.map((l) => ({ slug: l.slug, city: l.city }))}
-            services={site.services.list.map((s) => ({ slug: s.slug, name: s.name }))}
-          />
+        <div className="grid gap-10 lg:grid-cols-[1.45fr_0.9fr]">
+          <div>
+            <div className="max-w-2xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-terracotta">
+                {isEs ? "Elige una ubicacion" : "Choose a location"}
+              </p>
+              <h2 className="mt-3 font-display text-3xl text-foreground md:text-4xl">
+                {isEs ? "Reserva directamente con tu consultorio" : "Book directly with your office"}
+              </h2>
+              <p className="mt-4 leading-7 text-muted">
+                {isEs
+                  ? "Usa el enlace de cita de la ubicacion que prefieras o llama al consultorio para recibir ayuda del equipo."
+                  : "Use the appointment link for your preferred location or call the office for help from the team."}
+              </p>
+            </div>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {site.locations.list.map((location) => (
+                <article key={location.slug} className="rounded-2xl border border-border-soft bg-card p-6 shadow-warm">
+                  <h3 className="font-display text-2xl text-foreground">{location.city}</h3>
+                  <p className="mt-3 flex gap-2 text-sm leading-6 text-muted">
+                    <MapPin className="mt-1 h-4 w-4 shrink-0 text-sage-deep" aria-hidden="true" />
+                    <span>{location.address}</span>
+                  </p>
+                  <p className="mt-3 text-sm font-semibold text-foreground">{location.hours}</p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {location.appointmentUrl && (
+                      <a
+                        href={`/${locale}/book/${location.slug}`}
+                        className="inline-flex items-center gap-2 rounded-full bg-terracotta px-4 py-2 text-sm font-semibold text-white transition hover:bg-terracotta-deep"
+                      >
+                        <CalendarDays className="h-4 w-4" aria-hidden="true" />
+                        {isEs ? "Reservar" : "Book"}
+                      </a>
+                    )}
+                    <a
+                      href={location.phoneHref}
+                      className="inline-flex items-center gap-2 rounded-full border border-border-soft bg-background px-4 py-2 text-sm font-semibold text-foreground transition hover:border-sage hover:text-sage-deep"
+                    >
+                      <Phone className="h-4 w-4" aria-hidden="true" />
+                      {location.phone}
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
           <aside className="space-y-6">
             <div className="rounded-2xl bg-card border border-border-soft p-6">
               <div className="text-xs uppercase tracking-wider text-terracotta font-semibold">
@@ -65,6 +105,7 @@ export default async function ContactPage({
                 href={site.contact.phoneHref}
                 className="mt-2 block font-display text-2xl text-foreground hover:text-terracotta transition"
               >
+                <Phone className="mr-2 inline h-5 w-5" aria-hidden="true" />
                 {site.contact.phone}
               </a>
               <p className="mt-3 text-sm text-muted leading-relaxed">{site.contactCTA.bilingualNote}</p>
@@ -77,6 +118,7 @@ export default async function ContactPage({
                 href={`mailto:${site.contact.email}`}
                 className="mt-2 block text-base text-foreground hover:text-terracotta transition break-all"
               >
+                <Mail className="mr-2 inline h-5 w-5" aria-hidden="true" />
                 {site.contact.email}
               </a>
             </div>

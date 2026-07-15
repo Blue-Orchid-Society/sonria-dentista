@@ -1160,8 +1160,8 @@
         "hours": "Mon-Fri 9am-5pm | Sat 9am-3pm",
         "heroImageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
         "heroImageAlt": "Modern dental treatment room for Sonria Dentista Arlington",
-        "primary": true,
-        "longBlurb": "Sonria Dentista of Arlington serves families from the main Arlington office on Baird Farm Rd with bilingual care, preventive dentistry, emergency treatment, tooth replacement, and family dental services.",
+        "primary": false,
+        "longBlurb": "Sonria Dentista of Arlington serves families from the Arlington office on Baird Farm Rd with bilingual care, preventive dentistry, emergency treatment, tooth replacement, and family dental services.",
         "neighborhoods": [
           "Arlington",
           "North Arlington",
@@ -1359,7 +1359,7 @@
         ],
         "seoTitle": "Dentist in Grand Prairie TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista in Grand Prairie TX. Bilingual dental care, cleanings, implants, extractions, dentures, and more. Call (972) 262-5593.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-grand-prairie/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=MDYzZmJhMjUtNzRhMS00MDQzLTk0MjUtY2E0NjQ0&rwg_token=AE37R_g4MAHy5x6vE-Ez5bqNltXiUdFHsjgk9lRXLFdww_-jslsPKofXVXQ5kox3TgKY8jG5eogL1Uyz4hCDjXV2VUzlWDevxQ%3D%3D",
         "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
         "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
         "socialLinks": {
@@ -1446,26 +1446,6 @@
         "locationSlugs": [
           "commerce",
           "paris"
-        ]
-      },
-      {
-        "slug": "chu",
-        "name": "Dr. Chu",
-        "initials": "CC",
-        "imageUrl": "/images/Dr%20Joy.webp",
-        "imageAlt": "Orthodontist profile placeholder for Dr. Chu",
-        "title": "DDS, PhD - Orthodontics",
-        "bio": [
-          "Dr. Chu brings more than 20 years of orthodontic expertise and a PhD in Oral Biology from Ohio State University.",
-          "She specializes in braces and Invisalign with a scientifically informed approach for precise tooth movement."
-        ],
-        "highlights": [
-          "PhD in Oral Biology",
-          "20+ years orthodontic experience",
-          "American Association of Orthodontists member"
-        ],
-        "locationSlugs": [
-          "commerce"
         ]
       }
     ]

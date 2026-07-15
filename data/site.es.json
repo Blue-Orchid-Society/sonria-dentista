@@ -1148,8 +1148,8 @@
         "hours": "Lun-Vie 9am-5pm | Sab 9am-3pm",
         "heroImageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1800&q=80",
         "heroImageAlt": "Consultorio dental moderno para Sonria Dentista Arlington",
-        "primary": true,
-        "longBlurb": "Sonria Dentista de Arlington atiende familias desde el consultorio principal en Baird Farm Rd con cuidado bilingue, odontologia preventiva, emergencias, reemplazo dental y servicios para la familia.",
+        "primary": false,
+        "longBlurb": "Sonria Dentista de Arlington atiende familias desde el consultorio en Baird Farm Rd con cuidado bilingue, odontologia preventiva, emergencias, reemplazo dental y servicios para la familia.",
         "neighborhoods": [
           "Arlington",
           "North Arlington",
@@ -1347,7 +1347,7 @@
         ],
         "seoTitle": "Dentista en Grand Prairie TX | Sonria Dentista",
         "seoDescription": "Sonria Dentista en Grand Prairie TX. Cuidado dental bilingue, limpiezas, implantes, extracciones, dentaduras y mas. Llama (972) 262-5593.",
-        "appointmentUrl": "https://sonriadentista.com/appointment-form-grand-prairie/",
+        "appointmentUrl": "https://book.patientxpress.us/book-appt/V2?license=MDYzZmJhMjUtNzRhMS00MDQzLTk0MjUtY2E0NjQ0&rwg_token=AE37R_g4MAHy5x6vE-Ez5bqNltXiUdFHsjgk9lRXLFdww_-jslsPKofXVXQ5kox3TgKY8jG5eogL1Uyz4hCDjXV2VUzlWDevxQ%3D%3D",
         "intakeFormUrl": "https://sonriadentista.com/new-patient-form-grand-prairie/",
         "googleMapsUrl": "https://share.google/5QxegPdTT5vAGyXjX",
         "socialLinks": {
@@ -1434,26 +1434,6 @@
         "locationSlugs": [
           "commerce",
           "paris"
-        ]
-      },
-      {
-        "slug": "chu",
-        "name": "Dra. Chu",
-        "initials": "CC",
-        "imageUrl": "/images/Dr%20Joy.webp",
-        "imageAlt": "Foto temporal de perfil para Dra. Chu",
-        "title": "DDS, PhD - Ortodoncia",
-        "bio": [
-          "La Dra. Chu aporta mas de 20 anos de experiencia en ortodoncia y un doctorado en Biologia Oral de Ohio State University.",
-          "Se especializa en brackets e Invisalign con un enfoque basado en la ciencia para el movimiento dental preciso."
-        ],
-        "highlights": [
-          "Doctorado en Biologia Oral",
-          "Mas de 20 anos de experiencia en ortodoncia",
-          "Miembro de la Asociacion Americana de Ortodoncistas"
-        ],
-        "locationSlugs": [
-          "commerce"
         ]
       }
     ]

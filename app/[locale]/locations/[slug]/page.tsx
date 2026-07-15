@@ -56,6 +56,7 @@ export default async function LocationDetailPage({
   const labels = getLabels(isEs, loc.city);
   const reviewUrl = loc.socialLinks?.yelp ?? loc.googleMapsUrl;
   const phoneHref = loc.phoneHref ?? `tel:${loc.phone.replace(/[^0-9+]/g, "")}`;
+  const appointmentHref = `/${locale}/book/${loc.slug}`;
   const schema = buildLocalBusinessSchema({
     siteName: site.name,
     loc,
@@ -119,12 +120,12 @@ export default async function LocationDetailPage({
             </a>
             {loc.appointmentUrl && (
               <a
-                href={loc.appointmentUrl}
+                href={appointmentHref}
                 data-track-event="appointment_click"
                 data-track-category="lead"
                 data-track-label="location_hero_appointment"
                 data-track-location={loc.slug}
-                data-track-destination={loc.appointmentUrl}
+                data-track-destination={appointmentHref}
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white hover:text-foreground"
               >
                 <CalendarDays className="h-4 w-4" aria-hidden="true" />
@@ -174,7 +175,7 @@ export default async function LocationDetailPage({
           <div className="grid gap-4 md:grid-cols-2">
             {loc.appointmentUrl && (
               <ActionCard
-                href={loc.appointmentUrl}
+                href={appointmentHref}
                 eventName="appointment_click"
                 category="lead"
                 label="location_action_appointment"
@@ -341,12 +342,12 @@ export default async function LocationDetailPage({
             </a>
             {loc.appointmentUrl && (
               <a
-                href={loc.appointmentUrl}
+                href={appointmentHref}
                 data-track-event="appointment_click"
                 data-track-category="lead"
                 data-track-label="location_final_appointment"
                 data-track-location={loc.slug}
-                data-track-destination={loc.appointmentUrl}
+                data-track-destination={appointmentHref}
                 className="rounded-full border border-border-soft bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:border-terracotta hover:text-terracotta"
               >
                 {labels.cta}
