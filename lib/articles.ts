@@ -16,18 +16,6 @@ export type Article = {
   updatedAt: number;
 };
 
-type ArticleFrontmatter = {
-  slug?: string;
-  title?: string;
-  description?: string;
-  category?: string;
-  locale?: string;
-  publishedAt?: string;
-  heroImage?: string;
-  heroImageAlt?: string;
-  relatedTools?: string;
-};
-
 type JsonArticleBlock = {
   type?: "h1" | "h2" | "h3" | "heading" | "p" | "paragraph" | "list";
   text?: string;
@@ -117,36 +105,7 @@ const fallbackArticleImages: ArticleImage[] = [
 ];
 
 function articlesDir() {
-  return path.join(process.cwd(), "content", "articles");
-}
-
-function jsonArticlesDir() {
   return path.join(process.cwd(), "data", "articles");
-}
-
-function parseFrontmatter(raw: string): { frontmatter: ArticleFrontmatter; body: string } {
-  const normalized = raw.replace(/^\uFEFF/, "");
-  if (!normalized.startsWith("---")) {
-    return { frontmatter: {}, body: normalized.trim() };
-  }
-
-  const end = normalized.indexOf("\n---", 3);
-  if (end === -1) {
-    return { frontmatter: {}, body: normalized.trim() };
-  }
-
-  const frontmatterText = normalized.slice(3, end).trim();
-  const body = normalized.slice(end + 4).trim();
-  const frontmatter: ArticleFrontmatter = {};
-
-  for (const line of frontmatterText.split(/\r?\n/)) {
-    const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (!match) continue;
-    const [, key, value] = match;
-    frontmatter[key as keyof ArticleFrontmatter] = value.replace(/^["']|["']$/g, "").trim();
-  }
-
-  return { frontmatter, body };
 }
 
 function titleFromSlug(slug: string) {
@@ -226,46 +185,8 @@ function normalizedRelatedTools(values: string[]): string[] {
     .map((item) => item.replace(/^\/tools\//, ""));
 }
 
-function markdownArticleFromFile(fileName: string): Article | null {
-  const filePath = path.join(articlesDir(), fileName);
-  const raw = fs.readFileSync(filePath, "utf8");
-  const { frontmatter, body } = parseFrontmatter(raw);
-  const fallbackSlug = fileName.replace(/\.md$/i, "").replace(/\.(en|es)$/i, "");
-  const locale = frontmatter.locale === "es" ? "es" : "en";
-  const slug = frontmatter.slug || fallbackSlug;
-  const stats = fs.statSync(filePath);
-  const title = frontmatter.title || titleFromSlug(slug);
-  const category = frontmatter.category || "Dental guide";
-  const image = resolveArticleImage({
-    slug,
-    title,
-    category,
-    heroImage: frontmatter.heroImage,
-    heroImageAlt: frontmatter.heroImageAlt,
-  });
-
-  return {
-    slug,
-    title,
-    description:
-      frontmatter.description ||
-      "Patient-friendly dental guidance from Sonria Dentista.",
-    category,
-    locale,
-    publishedAt: frontmatter.publishedAt || new Date(stats.mtimeMs).toISOString().slice(0, 10),
-    heroImage: image.url,
-    heroImageAlt: image.alt,
-    relatedTools: normalizedRelatedTools((frontmatter.relatedTools || "")
-      .split(",")
-      .map((item) => item.trim())
-      .filter(Boolean)),
-    body,
-    updatedAt: stats.mtimeMs,
-  };
-}
-
 function jsonArticleFromFile(fileName: string): Article | null {
-  const filePath = path.join(jsonArticlesDir(), fileName);
+  const filePath = path.join(articlesDir(), fileName);
   const raw = fs.readFileSync(filePath, "utf8");
   const parsed = JSON.parse(raw) as JsonArticle;
   const fallbackSlug = fileName.replace(/\.json$/i, "");
@@ -301,24 +222,16 @@ function jsonArticleFromFile(fileName: string): Article | null {
   };
 }
 
-export function getAllArticles(locale?: Locale): Article[] {
-  const markdownArticles = fs.existsSync(articlesDir())
+export function getAllArticles(): Article[] {
+  const jsonArticles = fs.existsSync(articlesDir())
     ? fs
         .readdirSync(articlesDir(), { withFileTypes: true })
-        .filter((entry) => entry.isFile() && entry.name.endsWith(".md"))
-        .map((entry) => markdownArticleFromFile(entry.name))
-    : [];
-
-  const jsonArticles = fs.existsSync(jsonArticlesDir())
-    ? fs
-        .readdirSync(jsonArticlesDir(), { withFileTypes: true })
         .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
         .map((entry) => jsonArticleFromFile(entry.name))
     : [];
 
-  return [...markdownArticles, ...jsonArticles]
+  return jsonArticles
     .filter((article): article is Article => Boolean(article))
-    .filter((article) => !locale || article.locale === locale)
     .sort((a, b) => {
       const dateCompare = b.publishedAt.localeCompare(a.publishedAt);
       if (dateCompare !== 0) return dateCompare;
@@ -326,13 +239,12 @@ export function getAllArticles(locale?: Locale): Article[] {
     });
 }
 
-export function getArticleBySlug(slug: string, locale: Locale): Article | null {
-  return getAllArticles(locale).find((article) => article.slug === slug) ?? null;
+export function getArticleBySlug(slug: string): Article | null {
+  return getAllArticles().find((article) => article.slug === slug) ?? null;
 }
 
 export function getArticleStaticParams() {
-  return getAllArticles().map((article) => ({
-    locale: article.locale,
-    slug: article.slug,
-  }));
+  return (["en", "es"] as const).flatMap((locale) =>
+    getAllArticles().map((article) => ({ locale, slug: article.slug })),
+  );
 }

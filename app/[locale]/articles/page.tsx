@@ -36,7 +36,7 @@ export default async function ArticlesPage({
   const { locale } = await params;
   const site = await getSite(locale as Locale);
   const isEs = locale === "es";
-  const articles = getAllArticles(locale as Locale);
+  const articles = getAllArticles();
 
   return (
     <>
